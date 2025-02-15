@@ -1,9 +1,9 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Civie Ris Documenation",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/main-logo.png",
+    "light": "/logo/main-logo.png"
   },
   "favicon": "/favicon.svg",
   "colors": {
