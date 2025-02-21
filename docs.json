@@ -54,6 +54,30 @@
         ]
       }
     ],
+     {
+        "tab": "CIVIE",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "Introduction",
+              "Calendar",
+              "Patients"
+            ]
+          },
+          {
+            "group": "Essentials",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code",
+              "essentials/images",
+              "essentials/settings",
+              "essentials/navigation",
+              "essentials/reusable-snippets"
+            ]
+          }
+        ]
+      },
     "global": {
       "anchors": [
         {
