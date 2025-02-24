@@ -586,26 +586,26 @@ The **Incoming Documents** tab in **CIVIE** is used to **manage, categorize, and
 
 * **Filters & Search** – Quickly locate documents based on time range and worklist type.
 
-* **Integration with Orders & Patients** – Link documents directly to patient records and orders.
+* **Integrate with Orders & Patients** – Link documents directly to patient records and orders.
 
-| **Column Name**  | Description                                                        |
-| ---------------- | ------------------------------------------------------------------ |
-| Document #       | Unique identifier for each document.                               |
-| File Name        | Name of the received or uploaded file.                             |
-| Status           | Indicates if the document is **New, In Progress, or Completed**.   |
-| Referring Doctor | Displays the name of the referring physician (if linked).          |
-| Location         | Specifies the facility where the document was received.            |
-| Patient          | Links the document to a specific patient (if assigned).            |
-| Order            | Links the document to a medical order (if applicable).             |
-| E-mail           | Displays the sender’s email if received via email.                 |
-| Calling Number   | Shows the number associated with the document if received via fax. |
-| Actions          | Options to **view, edit, or assign** the document.                 |
+| **Column Name**  | Description                                                      |
+| ---------------- | ---------------------------------------------------------------- |
+| Document #       | Unique identifier for each document.                             |
+| File Name        | Name of the received or uploaded file.                           |
+| Status           | Indicates if the document is **New, In Progress, or Completed**. |
+| Referring Doctor | Displays the name of the referring physician (if linked).        |
+| Location         | Specifies the facility where the document was received.          |
+| Patient          | Links the document to a specific patient (if assigned).          |
+| Order            | Links the document to a medical order (if applicable).           |
+| E-mail           | Displays the sender’s email if received via email.               |
+| Calling Number   | Shows the contact number associated with the document.           |
+| Actions          | Options to **view, edit, or d**ownload the document.             |
 
 ## **Navigating the Incoming Documents Module**
 
 **Summary Section**
 
-* Displays document statistics:
+* Displays document count:
 
   * **All Documents** – Total number of documents.
 
@@ -628,9 +628,27 @@ The **Incoming Documents** tab in **CIVIE** is used to **manage, categorize, and
 <Steps>
   <Step title="Click Upload Files in the top right corner." />
 
-  <Step title="Select the document from your local device." />
+  <Step title="Upload Methods">
+    1. **Drag & Drop your files**
 
-  <Step title="Choose the document type (e.g., Order Document, Insurance, Referral)." />
+       * Drag files directly into the upload box.
+
+       * Alternatively, click **"Browse to Upload"** to select files manually.
+
+       * Select Location and the document type (e.g., Order Document, Insurance, Referral).
+
+       * Click the **Upload** button.
+
+    2. **Scan Documents**
+
+       * ~~The scanning feature is currently ~~~~**disabled**~~~~ due to an outdated ~~~~**Dynamsoft Service**~~~~ on the device.~~
+
+       *
+  </Step>
+
+  <Step title="Click &#x22;Back&#x22; (top-right) to return to the previous page.">
+
+  </Step>
 </Steps>
 
 <Note>
@@ -650,25 +668,61 @@ The **Incoming Documents** tab in **CIVIE** is used to **manage, categorize, and
 ### **View & Search for a Document**
 
 <Steps>
-  <Step title="Click the All Documents, Today, Yesterday, This Week or This Month. to process document." />
+  <Step title="On the Documents Dashboard:">
+    * Apply a filter by selecting All Docs, Today, or This Week to refine the document list.&#x20;
+
+    * Once the relevant documents are identified, select the specific document for processing.
+  </Step>
 
   <Step title="Use the Search bar  or filters  to find a specific document." />
 
-  <Step title="Use the Search bar  or filters  to find a specific document." />
-
-  <Step title="Click on the Eye icon  to preview the document." />
+  <Step title="Click on the Eye icon  to view the document." />
 </Steps>
 
-### **Upload a New Document**
+### **Verify & Edit Document Details**
 
 <Steps>
-  <Step title="Click + Upload Files in the top-right corner." />
+  <Step title="Click the Edit (✏️) icon besides the selected patient document.">
+    1.
 
-  <Step title="Select a file from your device." />
+    <Tabs>
+      <Tab title="Left Panel">
+        **Left Panel-Document Preview:** Displays the scanned/faxed document.
+      </Tab>
 
-  <Step title="Enter document details and link it to a patient or order." />
+      <Tab title="Right Panel">
+        **Right Panel-Document Details:** Shows metadata such as:
 
-  <Step title="Click Upload to finalize." />
+        1. **Document Number & Date Received**
+
+        2. **Created By & Modified Date**
+
+        3. **Document Type** (e.g., RX, Face Sheet)
+      </Tab>
+    </Tabs>
+
+    1. When selecting the document type, first choose the relevant pages by using the checkboxes next to each page or by selecting **Select All**.&#x20;
+
+    2. Then, specify the document type, such as **Rx Medical Order**, **Facesheet**, **Insurance Card**, or other applicable categories.
+  </Step>
+
+  <Step title="Patient Information:">
+    Enter the patient's details in this section, retrieved from the document in the left panel. This information links the document to the corresponding patient record.
+
+
+
+    To [enter ](https://collaborativeimaging.mintlify.app/Test_Doc/CIVIE_UserManual#:~:text=Adding%20a%20New%20Appointment)the New patient information details follow this steps 123&#x20;
+
+
+  </Step>
+
+  <Step title="Order Detail Field:">
+    Enter the procedure and exam details in this section, sourced from the document in the left panel.
+  </Step>
+
+  <Step title="Complete Button">
+    Click the **Complete** button after entering all required details to mark the document as complete.
+  </Step>
 </Steps>
 
-##
+New
