@@ -1496,36 +1496,40 @@ This EDI setup tab contains the list of existing EDI settings defined to extract
 
 ### **Add Carrier Settings**
 
-**Step 1: Navigate** **to** **the** **Settings** **Tab**:
+<Steps>
+  <Step title="Navigate to the Settings Tab:">
+    * After completing the **Details** tab, click **Next** to go to setting tab in the Add Carriers page.
 
-* After completing the **Details** tab, click **Next** to go to setting tab in the Add Carriers page.
+      * Input the number of **Threshold Days** in the provided field. This defines the time frame for processing or adjustments.
 
-  * Input the number of **Threshold Days** in the provided field. This defines the time frame for processing or adjustments.
+      * Enter the **Policy ID Mask** if applicable, to specify any patterns or formats required for policy IDs.
 
-  * Enter the **Policy ID Mask** if applicable, to specify any patterns or formats required for policy IDs.
+      * Choose the appropriate **Claim Filing Code** from the dropdown menu. This is a mandatory field and must be selected to proceed.
+  </Step>
 
-  * Choose the appropriate **Claim Filing Code** from the dropdown menu. This is a mandatory field and must be selected to proceed.
+  <Step title="Additional Toggle Settings:">
+    * Adjust the following options as needed by toggling the switches:
 
-**Step 2: Additional Toggle Settings:**
+      * **Eligibility Checked:** Toggle if eligibility checks are required.
 
-* Adjust the following options as needed by toggling the switches:
+      * **Coverage Detection:** Toggle if coverage detection is enabled.
 
-  * **Eligibility Checked:** Toggle if eligibility checks are required.
+      * **Government Carrier:** Toggle if this carrier is a government carrier.
 
-  * **Coverage Detection:** Toggle if coverage detection is enabled.
+      * **PA NP Hold:** Toggle if prior authorization/NP hold is required.
 
-  * **Government Carrier:** Toggle if this carrier is a government carrier.
+      * **AF Adjusted:** Toggle if AF adjustments apply.
 
-  * **PA NP Hold:** Toggle if prior authorization/NP hold is required.
+      * **After Hours Adjustment:** Toggle if after-hours adjustments are enabled.
 
-  * **AF Adjusted:** Toggle if AF adjustments apply.
+      * **Use G0279:** Toggle if the carrier uses G0279 for processing.
+  </Step>
 
-  * **After Hours Adjustment:** Toggle if after-hours adjustments are enabled.
-
-  * **Use G0279:** Toggle if the carrier uses G0279 for processing.
-
-Once all necessary fields and toggles are configured, click the **Save** button to add the new carrier to the system.
-If you wish to discard the changes, click **Cancel**.
+  <Step title="Save ">
+    Once all necessary fields and toggles are configured, click the **Save** button to add the new carrier to the system.
+    If you wish to discard the changes, click **Cancel**.
+  </Step>
+</Steps>
 
 ### **Activity**
 
@@ -1533,132 +1537,172 @@ Activity Click the Activity tab to monitor and review the history or updates mad
 
 **Edit Carrier Information**
 
-* Click the Edit button to modify carrier details.
+<Steps>
+  <Step title="Click the Edit button to modify carrier details.">
 
-  ![Picture5.png](/.attachments/Picture5-3bdef1b9-e395-41f8-9ee7-205ca38f3810.png)
+  </Step>
 
-* Update fields such as Carrier Code, Carrier Company Name, Priority\*\*,\*\* and Carrier Group. Also, update the carrier address and contact information as required.
+  <Step title="Update fields such as Carrier Code, Carrier Company Name, Priority, and Carrier Group. Also, update the carrier address and contact information as required.">
 
-* Navigate to the Settings tab to adjust threshold days, policy ID mask, claim filing code, and carrier settings using toggle.
+  </Step>
 
-* Click **Save** to apply changes or **Cancel** to discard.
+  <Step title="Navigate to the Settings tab to adjust threshold days, policy ID mask, claim filing code, and carrier settings using toggle.">
+
+  </Step>
+
+  <Step title="Click Save to apply changes or Cancel to discard.">
+
+  </Step>
+</Steps>
 
 ## **Carrier Plans**
 
-**Step 1: Navigate to the Carrier Plans Page**:
+<Steps>
+  <Step title="Navigate to the Carrier Plans Page:">
+    * Click the **Carriers Plan** to view the list of carrier plans.
+  </Step>
 
-* Click the **Carriers Plan** to view the list of carrier plans.
+  <Step title="Search for a Carrier Plan:">
+    * Use the **Search** bar at the top-left to locate a specific plan by entering the Carrier Code, Plan Name, or other details.
+  </Step>
 
-**Step 2: Search for a Carrier Plan**:
+  <Step title="Update Carrier Plan:">
+    * Select options from the dropdowns in the grid columns to update the respective carrier plan’s fields.
+  </Step>
 
-* Use the **Search** bar at the top-left to locate a specific plan by entering the Carrier Code, Plan Name, or other details.
+  <Step title="Save Changes:">
+    * After making updates, ensure you save the changes by clicking the **Save** button.
+  </Step>
 
-**Step 3: Update Carrier Plan**:
-·       Select options from the dropdowns in the grid columns to update the respective carrier plan’s fields.
-**Save Changes**:
+  <Step title="Filter Carrier Plans:">
+    * Use the **Filter** button to narrow down the carrier plans based on specific attributes.
+  </Step>
 
-* After making updates, ensure you save the changes by clicking the **Save** button.
+  <Step title="Activate or Deactivate Carrier Plan:">
+    * Tick the checkbox.
 
-**Step 5: Filter Carrier Plans**:
+    * Toggle the De-Active switch in the top-right corner to display inactive carriers plan or to activate/deactivate a carrier.
 
-* Use the **Filter** button to narrow down the carrier plans based on specific attributes.
+    * Click to confirm the change. Inactive carriers will remain unavailable for further processes until reactivated.
+  </Step>
+</Steps>
 
-**Step 6: Activate or Deactivate Carrier Plan:**
+### **Add a New Carrier Plan**
 
-* Tick the checkbox.
+<Steps>
+  <Step title="Navigate to Add Carriers Plan Page:">
+    * Click the **Add** button. This will take you to the Add Carriers plan page.
+  </Step>
 
-* Toggle the De-Active switch in the top-right corner to display inactive carriers plan or to activate/deactivate a carrier.
+  <Step title="Add Carrier Plan Details">
+    **Fill** **in** **the** **Carrier Plan** **Details**:
 
-* Click to confirm the change. Inactive carriers will remain unavailable for further processes until reactivated.
+    * **Carrier** **Plan** **Name** (mandatory): Enter a unique code/name for the carrier plan.
 
-### Add a New Carrier Plan
+    * **Carrier** **Group** (mandatory): Select the relevant group for the carrier from the dropdown.
 
- **Navigate** **to** **Add** **Carriers** **Plan** **Page**:
+    * **Carrier** (mandatory Select the relevant carrier from the dropdown.
 
-* Click the **Add** button. This will take you to the Add Carriers plan page.
+    * **Priority** (mandatory): Choose the priority level for the carrier from the dropdown.
+  </Step>
 
-**Add Carrier Plan Details**
+  <Step title="Enter Address Information:">
+    * **Address** 1: Provide the primary address of the carrier plan.
 
-**Step 1: Fill** **in** **the** **Carrier Plan** **Details**:
+    * **Address** 2: (Optional) Enter additional address details if applicable.
 
-* **Carrier** **Plan** **Name** (mandatory): Enter a unique code/name for the carrier plan.
+    * **City**: Input the city name where the carrier is located.
 
-* **Carrier** **Group** (mandatory): Select the relevant group for the carrier from the dropdown.
+    * **State**: Specify the state from the dropdown.
 
-* ·       **Carrier** (mandatory Select the relevant carrier from the dropdown.
+    * **Zip code**: Enter the ZIP code for the carrier's address.
+  </Step>
 
-* ·       **Priority** (mandatory): Choose the priority level for the carrier from the dropdown.
-  **Step 2: Enter** **Address** **Information**:
-  ·       **Address** 1: Provide the primary address of the carrier plan.
-  ·       **Address** 2: (Optional) Enter additional address details if applicable.
-  ·       **City**: Input the city name where the carrier is located.
-  ·       **State**: Specify the state from the dropdown.
-  ·       **Zip code**: Enter the ZIP code for the carrier's address.
-  **Step 3: Add** **Contact** **Details**:
-  ·       **Phone**: Provide the primary contact number for the carrier plan.
-  ·       **Fax**: (Optional) Enter the carrier's fax number if available.
-  ·       **Email**: Add a valid email address for the carrier plan.
-  **Step 4: Proceed** **with** **Settings**:
-  ·       Once all required fields are filled, click the **Next** button at the bottom right to proceed to the **Settings**  tab.
+  <Step title="Add Contact Details:">
+    * **Phone**: Provide the primary contact number for the carrier plan.
 
-### Add Carrier Plan Settings
+    * **Fax**: (Optional) Enter the carrier's fax number if available.
 
-**Step 1: Navigate** **to** **the** **Settings** **Tab**:
+    * **Email**: Add a valid email address for the carrier plan.
+  </Step>
 
-* After completing the **Details** tab, click **Next** to go to setting tab in the Add Carriers Plan page.
+  <Step title="Proceed with Settings:">
+    Once all required fields are filled, click the **Next** button at the bottom right to proceed to the **Settings**  tab.
+  </Step>
+</Steps>
 
-* Input the number of **Threshold Days** in the provided field. This defines the time frame for processing or adjustments.
+### **Add Carrier Plan Settings**
 
-* Enter the **Policy ID Mask** if applicable, to specify any patterns or formats required for policy IDs.
+<Steps>
+  <Step title=" Navigate to the Settings Tab:">
+    * After completing the **Details** tab, click **Next** to go to setting tab in the Add Carriers Plan page.
 
-* Choose the appropriate **Claim Filing Code** from the dropdown menu. This is a mandatory field and must be selected to proceed.
+    * Input the number of **Threshold Days** in the provided field. This defines the time frame for processing or adjustments.
 
-**Step 2: Additional Toggle Settings:**
+    * Enter the **Policy ID Mask** if applicable, to specify any patterns or formats required for policy IDs.
 
-* Adjust the following options as needed by toggling the switches:
+    * Choose the appropriate **Claim Filing Code** from the dropdown menu. This is a mandatory field and must be selected to proceed.
+  </Step>
 
-  * **Eligibility Checked:** Toggle if eligibility checks are required.
+  <Step title="Additional Toggle Settings:">
+    * Adjust the following options as needed by toggling the switches:
 
-  * **Coverage Detection:** Toggle if coverage detection is enabled.
+      * **Eligibility Checked:** Toggle if eligibility checks are required.
 
-  * **Government Carrier:** Toggle if this carrier is a government carrier.
+      * **Coverage Detection:** Toggle if coverage detection is enabled.
 
-  * **PA NP Hold:** Toggle if prior authorization/NP hold is required.
+      * **Government Carrier:** Toggle if this carrier is a government carrier.
 
-  * **AF Adjusted:** Toggle if AF adjustments apply.
+      * **PA NP Hold:** Toggle if prior authorization/NP hold is required.
 
-  * **After Hours Adjustment:** Toggle if after-hours adjustments are enabled.
+      * **AF Adjusted:** Toggle if AF adjustments apply.
 
-  * **Use G0279:** Toggle if the carrier uses G0279 for processing.
+      * **After Hours Adjustment:** Toggle if after-hours adjustments are enabled.
 
-Once all necessary fields and toggles are configured, click the **Save** button to add the new carrier plan to the system.
-If you wish to discard the changes, click **Cancel**.
+      * **Use G0279:** Toggle if the carrier uses G0279 for processing.
 
-### Activity
+    Once all necessary fields and toggles are configured, click the **Save** button to add the new carrier plan to the system.
+    If you wish to discard the changes, click **Cancel**.
+  </Step>
+</Steps>
 
-**Activity**: Click the Activity tab to monitor and review the history or updates made to the carrier plan.
-**Edit a Carrier Plan Information**
-Click the Edit button to modify carrier details.
+### **Activity**
 
-* ·        Update fields such as Carrier Plan Name, Carrier, Priority\*\*,\*\* and Carrier Group. Also, update the carrier address and contact information as required.
+<Steps>
+  <Step title="Activity">
+    Click the Activity tab to monitor and review the history or updates made to the carrier plan.
+  </Step>
 
-* ·        Navigate to the Settings tab to adjust threshold days, policy ID mask, claim filing code, and carrier settings using toggle.
+  <Step title="Edit a Carrier Plan Information">
+    Click the **Edit** button to modify carrier details.
 
-* ·        Click **Save** to apply changes or **Cancel** to discard.
+    * Update fields such as Carrier Plan Name, Carrier, Priority,and Carrier Group. Also, update the carrier address and contact information as required.
+
+    * Navigate to the Settings tab to adjust threshold days, policy ID mask, claim filing code, and carrier settings using toggle
+  </Step>
+
+  <Step title="Click Save to apply changes or Cancel to discard.">
+
+  </Step>
+</Steps>
 
 ## Carrier Group
 
-**Step 1: Navigate to the Carrier Groups Page**:
+<Steps>
+  <Step title="Navigate to the Carrier Groups Page:">
+    * Go to the **Settings** section and click on **Carrier Groups** to view the list of existing groups.
+  </Step>
 
-* Go to the **Settings** section and click on **Carrier Groups** to view the list of existing groups.
+  <Step title="Search for a Carrier Group:">
+    * Use the **Search** bar at the top-left to find a specific carrier group by entering the **Group Name** or other details.
+  </Step>
 
-**Step 2: Search for a Carrier Group**:
+  <Step title="Filter Carrier Groups:">
+    * Use the **Filter** button to narrow down the list of carrier groups based on specific criteria.
+  </Step>
+</Steps>
 
-* Use the **Search** bar at the top-left to find a specific carrier group by entering the **Group Name** or other details.
-
-**Step 3: Filter Carrier Groups**:
-
-* Use the **Filter** button to narrow down the list of carrier groups based on specific criteria.
+##
 
 **Step 4: View Group Details**:
 
