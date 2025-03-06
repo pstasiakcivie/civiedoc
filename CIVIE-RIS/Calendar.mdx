@@ -1,5 +1,163 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: 'Calendar Module'
+description: 'Comprehensive guide to using the Calendar module in CIVIE RIS'
 ---
 
+# Calendar Overview
+
+The Calendar module in CIVIE provides a centralized scheduling system for managing patient appointments, resource availability, and location-specific scheduling. It allows users to view, create, edit, and manage appointment slots, ensuring efficient workflow management for radiology and medical practices.
+
+## Key Features
+
+- **Appointment Scheduling** – Create, modify, reschedule, and cancel appointments
+- **Resource & Location Management** – Assign appointments to specific facilities, rooms, and modalities
+- **Filters & Search** – Quickly filter appointments by location, resource, status, and captions
+- **View Options** – Switch between day, week, list, and status views for better visibility
+- **Blocked Slots Management** – Track unavailable slots due to holidays, tech unavailability, or other constraints
+- **Waitlist Management** – Manage patient waitlists for available slots
+
+## Filtering Appointments
+
+<Steps>
+  <Step title="Open the Filters Panel on the left." />
+  <Step title="Select the required Location and Resource." />
+  <Step title="Choose the Appointment Status (e.g., Scheduled, Cancelled)." />
+  <Step title="Modify Captions to display specific details on patient cards." />
+  <Step title="Upon selecting filter fields, the calendar appointments are automatically filtered." />
+  <Step title="To clear the applied filters, click Reset." />
+</Steps>
+
+## Adding a New Appointment
+
+<Steps>
+  <Step title="Click the + New Appointment button">
+    Located at the top-right corner of the calendar. This opens the **Patient Details** page, where users can:
+    - Search for an existing patient or add a new patient
+    - Select the order type for scheduling
+  </Step>
+
+  <Step title="Access the Patient Details Form">
+    - Click on the Order Type Dropdown to select the appropriate order
+    - Default order type is online order
+    - Available order types include:
+      - Patient Self-Schedule
+      - Follow-Up Order
+      - Phone Order
+      - Walk-In Order
+      - Physician Portal
+      - EMR Orders
+      - BCS Measure
+  </Step>
+
+  <Step title="Enter Patient Information">
+    - Fill in mandatory fields (marked with *)
+    - Select Gender, Preferred Language, Race, Marital Status, and Ethnicity
+    - Check "Is Blocked" checkbox if needed and provide reason
+    - Select appropriate Patient Flag
+  </Step>
+
+  <Step title="Add Address Details">
+    - Navigate to Address tab
+    - Enter address details (Address 1, Address 2)
+    - Provide ZIP Code, City, State, and Country
+    - Add contact details:
+      - Primary Phone
+      - Secondary Phone
+      - Email
+      - Alternate Email
+    - Select Contact Preference
+    - Choose Location Preference
+  </Step>
+
+  <Step title="Enter Emergency Contact Information">
+    - Navigate to Emergency Contact tab
+    - Click + Add Contact
+    - Provide Full Name, Phone and Relationship
+    - Click Save to confirm
+  </Step>
+</Steps>
+
+## Right-Click Events
+
+The Calendar module provides an intuitive interface for managing appointments and schedules through right-click actions.
+
+### Booking and Managing Slots
+
+When clicking on an available slot, a "+" icon appears. Right-clicking provides these options:
+
+- Appointment Booking
+- Block Slot
+- Open Slot
+- Running Late
+- Show Waitlist
+
+#### Appointment Booking
+
+<Steps>
+  <Step title="Right-click on the + icon and select Appointment Booking" />
+  <Step title="Complete the Appointment Booking pop-up form" />
+  <Step title="Select existing patient or add new patient" />
+  <Step title="Add Referring Physician" />
+  <Step title="Search and add required exams" />
+  <Step title="Review available documents" />
+  <Step title="Click Submit to finalize" />
+</Steps>
+
+#### Block Slot
+
+<Steps>
+  <Step title="Right-click on the + icon and select Block Slot" />
+  <Step title="Enter block slot title" />
+  <Step title="Add description (optional)" />
+  <Step title="Select occurrence type">
+    - Weekly
+    - Monthly
+    - Custom
+  </Step>
+  <Step title="Set date and time range" />
+  <Step title="Click Block to finalize" />
+</Steps>
+
+## Appointment Summary
+
+View detailed appointment information by clicking on a scheduled appointment.
+
+### Key Information Sections
+
+1. **Appointment Status**
+   - Displayed in top-right corner
+   - Shows current status (e.g., "In Progress")
+
+2. **Pending Verification / Missing Information**
+   - Missing Exam Diagnosis
+   - Missing Order Document
+   - Missing Guarantor Information
+   - Missing Insurance
+   - Missing Insurance Authorization
+   - Missing Insurance Eligibility
+   - Missing Patient Address
+
+3. **Booking Details**
+   - Patient Name
+   - MRN (Medical Record Number)
+   - DOB, Gender
+   - Phone & Email
+   - Billing Type
+
+4. **Exam Info**
+   - Exam Name
+   - Scheduled Date & Time
+   - Location
+   - Exam Category
+
+5. **Physician Information**
+   - Referring physician's name and ID
+
+<Tip>
+## Best Practices
+
+- **Use Filters** to quickly locate relevant appointments
+- **Keep appointment status updated** to ensure workflow efficiency
+- **Regularly check the waitlist** for rescheduling opportunities
+- **Verify insurance & eligibility** before confirming appointments
+</Tip>

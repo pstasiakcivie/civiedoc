@@ -54,7 +54,10 @@
       "pages": [
         "introduction",
         "quickstart",
-        "development"
+        "development",
+        "User_Manual/CIVIE_UserManual",
+        "CIVIE-RIS/Patients",
+        "CIVIE-RIS/Calendar"
       ]
     },
     {
