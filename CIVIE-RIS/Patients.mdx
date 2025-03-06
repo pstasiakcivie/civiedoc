@@ -1,5 +1,223 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: 'Patient Management'
+description: 'Comprehensive guide to managing patient records, demographics, and related information in CIVIE RIS'
 ---
 
+# Patient Management Overview
+
+The Patient Management module in CIVIE RIS provides a centralized system for managing patient records, demographics, medical history, and related information. This comprehensive guide covers all aspects of patient management functionality.
+
+## Patient Worklist
+
+The Patient Worklist serves as your main dashboard for accessing and managing patient records.
+
+### Key Features
+
+<CardGroup cols={2}>
+  <Card title="Search & Filter" icon="magnifying-glass">
+    Quickly locate patient records using advanced search and filtering options
+  </Card>
+  <Card title="Record Management" icon="user-pen">
+    Add new patients, edit existing records, and manage patient information
+  </Card>
+  <Card title="Merge Records" icon="code-merge">
+    Identify and combine duplicate patient records
+  </Card>
+  <Card title="Data Export" icon="file-export">
+    Download patient data in various formats for reporting
+  </Card>
+</CardGroup>
+
+### Searching for Patients
+
+<Accordion title="Search Methods">
+  <AccordionGroup>
+    <Accordion title="Quick Search">
+      Use the search bar at the top to find patients by:
+      - MRN (Medical Record Number)
+      - Name (First, Last, or Full)
+      - Date of Birth
+      - Phone Number
+      - Email Address
+    </Accordion>
+
+    <Accordion title="Advanced Filters">
+      Access the Filters panel to refine results by:
+      - Alerts
+      - Demographics
+      - Insurance Status
+      - Custom Date Ranges
+      - Location
+    </Accordion>
+  </AccordionGroup>
+</Accordion>
+
+## Managing Patient Records
+
+### Adding a New Patient
+
+<Steps>
+  <Step title="Access New Patient Form">
+    Click the "+ New Patient" button in the top-right corner of the Patient Worklist
+  </Step>
+
+  <Step title="Enter Demographics">
+    Fill in required fields:
+    - First and Last Name
+    - Date of Birth
+    - Gender
+    - Preferred Language
+    - Race and Ethnicity
+    - Marital Status
+  </Step>
+
+  <Step title="Contact Information">
+    Provide:
+    - Primary Address
+    - Phone Numbers
+    - Email Addresses
+    - Contact Preferences
+  </Step>
+
+  <Step title="Additional Details">
+    Add optional information:
+    - Emergency Contacts
+    - Insurance Details
+    - Employer Information
+    - Patient Notes
+  </Step>
+</Steps>
+
+### Editing Patient Information
+
+<Tabs>
+  <Tab title="Demographics">
+    <Steps>
+      <Step title="Access Edit Mode">
+        Click the Edit icon next to the patient's record
+      </Step>
+      <Step title="Update Fields">
+        Modify any of the following:
+        - Personal Information
+        - Contact Details
+        - Language Preferences
+        - Demographics
+      </Step>
+      <Step title="Save Changes">
+        Click "Save" to apply updates
+      </Step>
+    </Steps>
+  </Tab>
+
+  <Tab title="Insurance">
+    <Steps>
+      <Step title="Add New Insurance">
+        Click "+ Add Insurance" in the Insurance tab
+      </Step>
+      <Step title="Enter Details">
+        Provide:
+        - Insurance Carrier
+        - Policy Information
+        - Coverage Details
+        - Verification Status
+      </Step>
+      <Step title="Verify Coverage">
+        Use "Verify Eligibility" to check insurance status
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+### Medical History Management
+
+<AccordionGroup>
+  <Accordion title="Allergies">
+    Add and manage patient allergies:
+    - Allergy Name
+    - Reaction Details
+    - Severity Level
+    - Onset Date
+  </Accordion>
+
+  <Accordion title="Medications">
+    Track current and past medications:
+    - Medication Name
+    - Dosage Information
+    - Frequency
+    - Start/End Dates
+  </Accordion>
+
+  <Accordion title="Medical Problems">
+    Document ongoing and resolved conditions:
+    - Diagnosis
+    - Status (Active/Controlled/Resolved)
+    - Problem Synopsis
+    - Related Notes
+  </Accordion>
+</AccordionGroup>
+
+## Advanced Features
+
+### Merging Patient Records
+
+<Steps>
+  <Step title="Initiate Merge">
+    Click "Merge Patient" in the top menu
+  </Step>
+  <Step title="Select Records">
+    Choose two patient records to merge
+  </Step>
+  <Step title="Review Information">
+    Compare and select which information to retain
+  </Step>
+  <Step title="Confirm Merge">
+    Add any necessary notes and confirm the merge
+  </Step>
+</Steps>
+
+<Warning>
+  Merging patient records cannot be undone. Please review all information carefully before confirming.
+</Warning>
+
+### Document Management
+
+<CardGroup cols={2}>
+  <Card title="Upload Documents" icon="file-arrow-up">
+    Add new patient documents:
+    - Medical Records
+    - Insurance Cards
+    - Consent Forms
+  </Card>
+  <Card title="View History" icon="clock-rotate-left">
+    Access complete document history and audit trail
+  </Card>
+</CardGroup>
+
+### Communication History
+
+Track all patient communications:
+- Message History
+- Appointment Reminders
+- Follow-up Communications
+- Patient Portal Messages
+
+## Best Practices
+
+<Tip>
+  ### Recommended Workflows
+
+  - Verify patient information at each visit
+  - Regularly update insurance information
+  - Document all communication attempts
+  - Maintain detailed notes for special circumstances
+</Tip>
+
+<Note>
+  ### Data Security
+
+  All patient information is protected under HIPAA guidelines. Ensure you:
+  - Log out after each session
+  - Never share login credentials
+  - Report any suspicious activity
+  - Follow all security protocols
+</Note>

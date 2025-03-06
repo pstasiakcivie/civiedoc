@@ -1,5 +1,197 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: 'Calendar'
+description: 'CIVIE Calendar Documentation'
 ---
 
+# Calendar Overview
+
+The Calendar module in CIVIE provides a comprehensive scheduling system for managing patient appointments, resource availability, and location-specific scheduling. This documentation covers all aspects of the calendar functionality to help users effectively manage their scheduling needs.
+
+## Key Features
+
+<CardGroup cols={2}>
+  <Card title="Appointment Management" icon="calendar-days">
+    Create, modify, reschedule and cancel appointments with ease
+  </Card>
+  <Card title="Resource Planning" icon="building" >
+    Manage facilities, rooms, modalities and staff scheduling
+  </Card>
+  <Card title="Smart Filtering" icon="filter">
+    Filter by location, resource, status and other parameters
+  </Card>
+  <Card title="Multiple Views" icon="table-columns">
+    Switch between day, week, list and status views
+  </Card>
+</CardGroup>
+
+## Calendar Navigation
+
+### View Options
+
+<Tabs>
+  <Tab title="Day View">
+    Shows detailed hourly schedule for a single day. Ideal for focused daily planning.
+  </Tab>
+  <Tab title="Week View">
+    Displays entire week's schedule. Best for weekly planning and resource allocation.
+  </Tab>
+  <Tab title="List View">
+    Shows appointments in list format. Good for quick scanning and searching.
+  </Tab>
+  <Tab title="Status View">
+    Groups appointments by their current status (scheduled, completed, etc.).
+  </Tab>
+</Tabs>
+
+### Filtering Appointments
+
+<Steps>
+  <Step title="Open Filters Panel">
+    Click the filter icon in the left sidebar to access filtering options
+  </Step>
+  <Step title="Select Parameters">
+    Choose from:
+    - Location
+    - Resource
+    - Appointment Status
+    - Custom Captions
+  </Step>
+  <Step title="Apply Filters">
+    Calendar will automatically update to show filtered results
+  </Step>
+  <Step title="Reset Filters">
+    Click "Reset" to clear all applied filters
+  </Step>
+</Steps>
+
+## Appointment Management
+
+### Creating New Appointments
+
+<Steps>
+  <Step title="Initiate Booking">
+    Click "+ New Appointment" button or double-click an empty time slot
+  </Step>
+  <Step title="Patient Selection">
+    Search existing patients or add new patient information
+  </Step>
+  <Step title="Order Details">
+    Select order type:
+    - Patient Self-Schedule
+    - Follow-Up Order
+    - Phone Order
+    - Walk-In Order
+    - Physician Portal
+    - EMR Orders
+    - BCS Measure
+  </Step>
+  <Step title="Appointment Details">
+    Complete required fields:
+    - Date and Time
+    - Location
+    - Resource/Room
+    - Exam Type
+    - Special Instructions
+  </Step>
+  <Step title="Confirm Booking">
+    Review details and click "Save" to create appointment
+  </Step>
+</Steps>
+
+### Managing Blocked Slots
+
+<AccordionGroup>
+  <Accordion title="Creating Blocked Slots" icon="lock">
+    1. Right-click desired time slot
+    2. Select "Block Slot"
+    3. Enter blocking details:
+       - Title
+       - Description
+       - Duration
+       - Recurrence pattern (if any)
+    4. Save changes
+  </Accordion>
+  
+  <Accordion title="Modifying Blocked Slots" icon="pen-to-square">
+    1. Right-click blocked slot
+    2. Choose edit option
+    3. Update details as needed
+    4. Save changes
+  </Accordion>
+  
+  <Accordion title="Removing Blocked Slots" icon="unlock">
+    1. Right-click blocked slot
+    2. Select "Delete" or "Unblock"
+    3. Confirm action
+    4. For recurring blocks, choose:
+       - Delete single occurrence
+       - Delete entire series
+  </Accordion>
+</AccordionGroup>
+
+## Status Management
+
+### Available Status Options
+
+<CardGroup cols={3}>
+  <Card title="Scheduled" icon="calendar-check">
+    Initial status for new appointments
+  </Card>
+  <Card title="Confirmed" icon="circle-check">
+    Patient has confirmed attendance
+  </Card>
+  <Card title="Checked In" icon="door-open">
+    Patient has arrived at facility
+  </Card>
+  <Card title="In Progress" icon="spinner">
+    Exam/procedure is underway
+  </Card>
+  <Card title="Completed" icon="flag-checkered">
+    Appointment finished successfully
+  </Card>
+  <Card title="Cancelled" icon="ban">
+    Appointment has been cancelled
+  </Card>
+</CardGroup>
+
+### Updating Appointment Status
+
+<Steps>
+  <Step title="Select Appointment">
+    Click on the appointment you want to update
+  </Step>
+  <Step title="Choose New Status">
+    Right-click and select appropriate status from dropdown
+  </Step>
+  <Step title="Add Notes">
+    Enter any relevant notes about the status change
+  </Step>
+  <Step title="Confirm Update">
+    Click "Save" to apply new status
+  </Step>
+</Steps>
+
+<Note>
+  Status changes are logged and tracked for audit purposes. Always include relevant notes when changing appointment status.
+</Note>
+
+## Best Practices
+
+<Tip>
+### Calendar Management Tips
+
+- Regularly review upcoming appointments
+- Keep appointment status updated
+- Use consistent naming conventions for blocked slots
+- Check waitlist when cancellations occur
+- Verify insurance and eligibility before confirming appointments
+</Tip>
+
+<Warning>
+### Important Considerations
+
+- Always verify patient information before booking
+- Check for scheduling conflicts
+- Ensure proper resource allocation
+- Follow up on pending confirmations
+</Warning>
