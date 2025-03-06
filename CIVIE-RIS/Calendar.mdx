@@ -1,5 +1,226 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: 'Calendar'
+description: 'CIVIE RIS Calendar Module - A comprehensive guide to managing appointments, schedules, and resources.'
 ---
 
+# Calendar Overview
+
+The **Calendar** module in CIVIE RIS provides a centralized scheduling system for managing patient appointments, resource availability, and location-specific scheduling. It enables users to efficiently view, create, edit, and manage appointment slots for radiology and medical practices.
+
+## Key Features
+
+- **Appointment Scheduling** – Create, modify, reschedule, and cancel appointments
+- **Resource & Location Management** – Assign appointments to specific facilities, rooms, and modalities
+- **Filters & Search** – Quick filtering by location, resource, status, and captions
+- **View Options** – Switch between day, week, list, and status views
+- **Blocked Slots Management** – Track unavailable slots due to holidays or tech unavailability
+- **Waitlist Management** – Manage patient waitlists for available slots
+
+## Filtering Appointments
+
+<Steps>
+  <Step title="Open Filters Panel">
+    Click the Filters panel on the left side of the calendar
+  </Step>
+
+  <Step title="Select Location and Resource">
+    Choose the required location and resource from the dropdown menus
+  </Step>
+
+  <Step title="Choose Appointment Status">
+    Filter by status (e.g., Scheduled, Cancelled)
+  </Step>
+
+  <Step title="Modify Captions">
+    Customize the display of patient information on appointment cards
+  </Step>
+
+  <Step title="View Filtered Results">
+    Calendar appointments are automatically filtered based on your selections
+  </Step>
+
+  <Step title="Reset Filters">
+    Click "Reset" to clear all applied filters
+  </Step>
+</Steps>
+
+## Adding a New Appointment
+
+<Steps>
+  <Step title="Initiate New Appointment">
+    Click the "+ New Appointment" button in the top-right corner to open the Patient Details page
+  </Step>
+
+  <Step title="Select Order Type">
+    Choose from available options:
+    - Patient Self-Schedule
+    - Follow-Up Order
+    - Phone Order
+    - Walk-In Order
+    - Physician Portal
+    - EMR Orders
+    - BCS Measure
+  </Step>
+
+  <Step title="Patient Information">
+    - Search for existing patient or click "+ New Patient"
+    - Fill in required fields (marked with *)
+    - Select Gender, Preferred Language, Race, Marital Status, and Ethnicity
+    - Set Patient Flags if applicable
+  </Step>
+
+  <Step title="Address Details">
+    - Enter primary and secondary address
+    - Provide contact information (phone, email)
+    - Set contact preferences (Text, Email, Fax, Phone Call)
+    - Choose Location Preference
+  </Step>
+
+  <Step title="Emergency Contact">
+    - Click "+ Add Contact"
+    - Enter Full Name, Phone, and Relationship
+    - Save the contact information
+  </Step>
+
+  <Step title="Guarantor Details">
+    - Add guarantor information
+    - Specify relationship to patient
+    - Enter contact details
+    - Set address (same as patient or different)
+  </Step>
+
+  <Step title="Insurance Information">
+    - Add primary and secondary insurance
+    - Enter policy details
+    - Specify financial information
+    - Save insurance record
+  </Step>
+
+  <Step title="Employer Information">
+    - Add employer details
+    - Enter contact information
+    - Provide address details
+  </Step>
+
+  <Step title="Additional Notes">
+    - Add relevant notes
+    - Select note type (Important, Warning, Information)
+    - Save notes and confirm appointment
+  </Step>
+</Steps>
+
+## Right-Click Actions
+
+The Calendar provides context-specific actions through right-click menus on appointments and time slots.
+
+### Available Slot Actions
+
+When right-clicking on an available slot, you can:
+
+<AccordionGroup>
+  <Accordion title="Appointment Booking" icon="calendar-plus">
+    <Steps>
+      <Step title="Access Booking">
+        Right-click the "+" icon and select "Appointment Booking"
+      </Step>
+      <Step title="Select Patient">
+        Choose existing patient or add new
+      </Step>
+      <Step title="Add Referring Physician">
+        Search or add new referring physician
+      </Step>
+      <Step title="Select Exams">
+        Add required examination details
+      </Step>
+      <Step title="Review Documents">
+        Check available patient documents
+      </Step>
+      <Step title="Submit">
+        Confirm and create the appointment
+      </Step>
+    </Steps>
+  </Accordion>
+
+  <Accordion title="Block Slot" icon="ban">
+    <Steps>
+      <Step title="Initialize">
+        Right-click and select "Block Slot"
+      </Step>
+      <Step title="Enter Details">
+        - Add title and description
+        - Select occurrence type (Weekly/Monthly/Custom)
+        - Set date and time range
+      </Step>
+      <Step title="Confirm">
+        Click "Block" to finalize
+      </Step>
+    </Steps>
+  </Accordion>
+
+  <Accordion title="Open Slot" icon="door-open">
+    <Steps>
+      <Step title="Access">
+        Right-click and choose "Open Slot"
+      </Step>
+      <Step title="Configure">
+        - Enter title and description
+        - Select location
+        - Choose occurrence pattern
+        - Set time range
+      </Step>
+      <Step title="Save">
+        Click "Submit" to confirm
+      </Step>
+    </Steps>
+  </Accordion>
+</AccordionGroup>
+
+### Managing Existing Appointments
+
+When right-clicking on a scheduled appointment, you can update its status to:
+
+- Confirm
+- Checked In
+- Preparation
+- Tech Acknowledged
+- In Progress
+- Complete
+- No Show
+- Cancelled
+- Arrived
+- On Hold
+- Running Late
+
+<Steps>
+  <Step title="Select Appointment">
+    Click on the appointment to update
+  </Step>
+  <Step title="Choose Status">
+    Right-click and select the appropriate status
+  </Step>
+  <Step title="Add Notes">
+    Enter any necessary notes in the confirmation dialog
+  </Step>
+  <Step title="Confirm">
+    Click "Yes" to update the status
+  </Step>
+</Steps>
+
+## Appointment Summary
+
+<Note>
+Click on any scheduled appointment to view detailed information in the right panel, including:
+- Current appointment status
+- Missing information alerts
+- Patient details
+- Exam information
+- Physician details
+</Note>
+
+<Tip>
+**Best Practices**
+- Use filters to quickly locate relevant appointments
+- Keep appointment status updated for workflow efficiency
+- Regularly check the waitlist for rescheduling opportunities
+- Verify insurance & eligibility before confirming appointments
+</Tip>
