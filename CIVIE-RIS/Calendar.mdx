@@ -3,10 +3,6 @@ title: "Calendar Overview"
 description: "The Calendar Tab in the CIVIE application provides a centralized scheduling system for managing patient appointments, resource availability, and location-specific scheduling. It allows users to view, create, edit, and manage appointment slots, ensuring efficient workflow management for radiology and medical practices."
 ---
 
-<Info>
-  The Calendar module is designed to optimize **radiology appointment scheduling** and **resource allocation** for improved efficiency.
-</Info>
-
 ## Key Features
 
 <Accordion title="Appointment Scheduling">
@@ -183,15 +179,31 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
   <Tab title="Booking and Managing Slots">
     When clicking on an available slot in the \*\*CIVIE Calendar\*\*, a \*\*“+” icon\*\* appears. Right-clicking on this icon provides the following options:
 
-    * Appointment Booking\\
 
-    * Block Slot
 
-    * Open Slot
+    <CardGroup>
+      <Card title="Appointment Booking" icon="book" color="green">
+        Schedule a new appointment for a patient
+      </Card>
 
-    * Running Late
+      <Card title="Block Slot" icon="block">
+        Block a time slot to prevent scheduling conflicts
+      </Card>
 
-    * Show Waitlist
+      <Card title="Open Slot" icon="check">
+        Reopen a blocked slot for scheduling.
+      </Card>
+
+      <Card title="Running Late" icon="clock">
+        Mark an appointment as running late and notify patients.
+      </Card>
+
+      <Card title="Show Waitlist" icon="list">
+        View and manage patients on the waitlist
+      </Card>
+    </CardGroup>
+
+
   </Tab>
 
   <Tab title="Managing Appointments">
@@ -223,71 +235,69 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
 
 # Steps for Right-Click Actions
 
-<Accordion title="New Accordion" defaultOpen="false">
+<Accordion title="Right-Click Actions" defaultOpen={false}>
+  <Steps>
+    <Step title="Booking an Appointment">
+      1. Right-click on the **“+” icon** and select **Appointment Booking**.
 
+      2. The **Appointment Booking** pop-up appears.
+
+      3. Select an existing patient or add a new patient.
+
+      4. Add the referring physician or add a new referring physician.
+
+      5. Search and add the required exams.
+
+      6. In the **Documents section**, any available documents for the selected patient will be displayed.
+
+      7. Click **Submit** to finalize the appointment.
+    </Step>
+
+    <Step title="Blocking a Slot">
+      1. Right-click on the **“+” icon** and select **Block Slot**.
+
+      2. Enter a title for the blocked slot.
+
+      3. Add a description (optional).
+
+      4. Select the occurrence type: **Weekly, Monthly, or Custom**.
+
+      5. Enter the **From Date & Time** and **To Date & Time**.
+
+      6. Click **Block** to finalize.
+    </Step>
+
+    <Step title="Opening a Slot">
+      1. Right-click on the **“+” icon** and select **Open Slot**.
+
+      2. Enter a title for the open slot.
+
+      3. Add a description (optional).
+
+      4. Select the location using the dropdown.
+
+      5. Choose the occurrence type: **Weekly, Monthly, or Custom**.
+
+      6. Enter the **From Date & Time** and **To Date & Time**.
+
+      7. Click **Submit** to confirm the open slot.
+    </Step>
+
+    <Step title="Marking as Running Late">
+      1. Right-click on the **“+” icon** and select **Running Late**.
+
+      2. Enter delay details and notify the patient.
+    </Step>
+
+    <Step title="Showing Waitlist">
+      1. Right-click on the **“+” icon** and select **Show Waitlist**.
+
+      2. The **Waitlist window** opens, displaying patients on the waitlist for the selected slot.
+    </Step>
+  </Steps>
+
+  # M
 </Accordion>
-
-#
-
-<Steps>
-  <Step title="Booking an Appointment">
-    1. Right-click on the **“+” icon** and select **Appointment Booking**.
-
-    2. The **Appointment Booking** pop-up appears.
-
-    3. Select an existing patient or add a new patient.
-
-    4. Add the referring physician or add a new referring physician.
-
-    5. Search and add the required exams.
-
-    6. In the **Documents section**, any available documents for the selected patient will be displayed.
-
-    7. Click **Submit** to finalize the appointment.
-  </Step>
-
-  <Step title="Blocking a Slot">
-    1. Right-click on the **“+” icon** and select **Block Slot**.
-
-    2. Enter a title for the blocked slot.
-
-    3. Add a description (optional).
-
-    4. Select the occurrence type: **Weekly, Monthly, or Custom**.
-
-    5. Enter the **From Date & Time** and **To Date & Time**.
-
-    6. Click **Block** to finalize.
-  </Step>
-
-  <Step title="Opening a Slot">
-    1. Right-click on the **“+” icon** and select **Open Slot**.
-
-    2. Enter a title for the open slot.
-
-    3. Add a description (optional).
-
-    4. Select the location using the dropdown.
-
-    5. Choose the occurrence type: **Weekly, Monthly, or Custom**.
-
-    6. Enter the **From Date & Time** and **To Date & Time**.
-
-    7. Click **Submit** to confirm the open slot.
-  </Step>
-
-  <Step title="Marking as Running Late">
-    1. Right-click on the **“+” icon** and select **Running Late**.
-
-    2. Enter delay details and notify the patient.
-  </Step>
-
-  <Step title="Showing Waitlist">
-    1. Right-click on the **“+” icon** and select **Show Waitlist**.
-
-    2. The **Waitlist window** opens, displaying patients on the waitlist for the selected slot.
-  </Step>
-</Steps>
 
 # Managing Blocked Slots
 
@@ -338,53 +348,3 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
 # Appointment Summary
 
 The **Appointment Summary** section provides **detailed information** about the scheduled appointment.
-
-<Expandable title="View Appointment Details">
-  Click on a patient’s **scheduled appointment** to open the **Appointment Summary** in the right panel.
-</Expandable>
-
-<Accordion title="Key Information Displayed">
-  <Section title="Appointment Status">
-    Displayed in the **top-right corner** (e.g., **In Progress**).
-  </Section>
-
-  <Section title="Pending Verification / Missing Information">
-    Highlights missing details that must be completed before processing:
-
-    <Checklist>
-      * Missing Exam Diagnosis
-
-      * Missing Order Document
-
-      * Missing Guarantor Information
-
-      * Missing Insurance
-
-      * Missing Insurance Authorization
-
-      * Missing Insurance Eligibility
-
-      * Missing Patient Address
-    </Checklist>
-  </Section>
-
-  <Section title="Booking Details">
-    Displays patient and appointment details:
-
-    * **Patient Name**
-
-    * **MRN (Medical Record Number)**
-
-    * **DOB, Gender**
-
-    * **Phone & Email**
-
-    * **Billing Type (Medical Insurance)**
-  </Section>
-</Accordion>
-
-<Callout>
-  ✅ Regularly update patient information to avoid last-minute delays.
-  ✅ Attach necessary documents before the appointment date.
-  ✅ Ensure insurance & eligibility are verified before the exam.
-</Callout>
