@@ -70,8 +70,6 @@ description: "The Calendar Tab in the CIVIE application provides a centralized s
 </Steps>
 
 <Note>
-
-
   Utilizing filters can help you quickly locate patient appointments and improve scheduling efficiency.
 </Note>
 
@@ -171,7 +169,7 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
 
 <Tabs>
   <Tab title="Booking and Managing Slots">
-    When clicking on an available slot in the \*\*CIVIE Calendar\*\*, a \*\*“+” icon\*\* appears. Right-clicking on this icon provides the following options:
+    When clicking on an available slot in the CIVIE Calendar, a + icon appears. Right-clicking on this icon provides the following options:
 
     <CardGroup>
       <Card title="Appointment Booking" icon="book">
@@ -360,8 +358,6 @@ Click on a patient’s **scheduled appointment** to open the **Appointment Summa
 
       &#x20;     \- Missing Patient Address
     </Warning>
-
-
   </Accordion>
 
   <Accordion title="Booking Details" defaultOpen={false}>
@@ -376,6 +372,24 @@ Click on a patient’s **scheduled appointment** to open the **Appointment Summa
     * Phone & Email
 
     * Billing Type (Medical Insurance)
+  </Accordion>
+
+  <Accordion title="Exam Info" defaultOpen={false}>
+    * Lists **exam details**, including:
+
+      * **Exam Name** (e.g., US Saline Hysterosonogram)
+
+      * **Scheduled Date & Time**
+
+      * **Location** (e.g., Lake Worth US Vascular)
+
+      * **Exam Category** (Routine, STAT, etc.)
+  </Accordion>
+
+  <Accordion title="New Accordion" defaultOpen="false">
+    #### **Physician Information**
+
+    * Displays the **referring physician’s name and ID**.
   </Accordion>
 </AccordionGroup>
 
