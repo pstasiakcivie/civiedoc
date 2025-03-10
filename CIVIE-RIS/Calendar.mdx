@@ -223,8 +223,52 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
     </CardGroup>
   </Tab>
 
+  <Tab title="Managing Blocked Slot">
+    <CardGroup cols="2">
+      <Card title="Decline" icon="sparkles">
+        Physicians can decline:
+
+        **Declining a Single Occurrence:**
+
+        1. 1\. Right-click on the blocked slot.
+
+        2. 2\. Select **Decline** from the menu.
+
+        3. 3\. Choose **Occurrence** to remove only the selected instance.
+
+        4. 4\. Confirm the action by clicking **Yes** on the pop-up.
+
+        **Declining an Entire Series:**
+
+        1. 1\. Right-click on the blocked slot.
+
+        2. 2\. Select **Decline** from the menu.
+
+        3. 3\. Choose **Series** to remove all occurrences.
+
+        4. 4\. Confirm the action by clicking **Yes** on the pop-up.
+
+
+      </Card>
+
+      <Card title="Delete" icon="sparkles">
+        **Removing a Blocked Slot:**
+
+        If a blocked slot is **non-recurring (single occurrence)** and needs to be removed:
+
+        1. 1\. Right-click on the blocked slot.
+
+        2. 2\. Select **Delete** from the menu.
+
+        3. 3\. Confirm the action by clicking **Yes** on the pop-up.
+      </Card>
+    </CardGroup>
+  </Tab>
+
   <Tab title="Managing Appointments">
     Users can **update the appointment status** based on communication (call, text, or email) by selecting:
+
+    1. steps tbd
 
     | **Status**            | **Definition**                                                                                     |    |
     | :-------------------- | :------------------------------------------------------------------------------------------------- | :- |
@@ -239,164 +283,11 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
     | **Arrived**           | The patient has reached the facility but has not yet checked in.                                   |    |
     | **On Hold**           | The appointment is temporarily paused due to unforeseen circumstances.                             |    |
     | **Running Late**      | The patient has informed the facility that they will arrive later than the scheduled time.         |    |
+    |                       |                                                                                                    |    |
 
     *
   </Tab>
-
-  <Tab title="Managing Blocked Slot">
-    <Accordion title="Declining a Blocked Slot">
-      Physicians can decline:
-
-      * A **single occurrence** of the blocked slot.
-
-      * The **entire series** of a recurring blocked slot (e.g., weekly, monthly).
-
-      <Steps>
-        <Step title="Declining a Single Occurrence">
-          1. Right-click on the blocked slot.
-
-          2. Select **Decline** from the menu.
-
-          3. Choose **Occurrence** to remove only the selected instance.
-
-          4. Confirm the action by clicking **Yes** on the pop-up.
-        </Step>
-
-        <Step title="Declining an Entire Series">
-          1. Right-click on the blocked slot.
-
-          2. Select **Decline** from the menu.
-
-          3. Choose **Series** to remove all occurrences.
-
-          4. Confirm the action by clicking **Yes** on the pop-up.
-        </Step>
-      </Steps>
-    </Accordion>
-
-    <Accordion title="Deleting a Blocked Slot">
-      If a blocked slot is **non-recurring (single occurrence)** and needs to be removed:
-
-      <Steps>
-        <Step title="Removing a Blocked Slot">
-          1. Right-click on the blocked slot.
-
-          2. Select **Delete** from the menu.
-
-          3. Confirm the action by clicking **Yes** on the pop-up.
-        </Step>
-      </Steps>
-    </Accordion>
-  </Tab>
 </Tabs>
-
-## Steps for Right-Click Actions
-
-<Accordion title="Right-Click Actions" defaultOpen={true}>
-  <Steps>
-    <Step title="Booking an Appointment">
-      1. Right-click on the **“+” icon** and select **Appointment Booking**.
-
-      2. The **Appointment Booking** pop-up appears.
-
-      3. Select an existing patient or add a new patient.
-
-      4. Add the referring physician or add a new referring physician.
-
-      5. Search and add the required exams.
-
-      6. In the **Documents section**, any available documents for the selected patient will be displayed.
-
-      7. Click **Submit** to finalize the appointment.
-    </Step>
-
-    <Step title="Blocking a Slot">
-      1. Right-click on the **“+” icon** and select **Block Slot**.
-
-      2. Enter a title for the blocked slot.
-
-      3. Add a description (optional).
-
-      4. Select the occurrence type: **Weekly, Monthly, or Custom**.
-
-      5. Enter the **From Date & Time** and **To Date & Time**.
-
-      6. Click **Block** to finalize.
-    </Step>
-
-    <Step title="Opening a Slot">
-      1. Right-click on the **“+” icon** and select **Open Slot**.
-
-      2. Enter a title for the open slot.
-
-      3. Add a description (optional).
-
-      4. Select the location using the dropdown.
-
-      5. Choose the occurrence type: **Weekly, Monthly, or Custom**.
-
-      6. Enter the **From Date & Time** and **To Date & Time**.
-
-      7. Click **Submit** to confirm the open slot.
-    </Step>
-
-    <Step title="Marking as Running Late">
-      1. Right-click on the **“+” icon** and select **Running Late**.
-
-      2. Enter delay details and notify the patient.
-    </Step>
-
-    <Step title="Showing Waitlist">
-      1. Right-click on the **“+” icon** and select **Show Waitlist**.
-
-      2. The **Waitlist window** opens, displaying patients on the waitlist for the selected slot.
-    </Step>
-  </Steps>
-</Accordion>
-
-<Accordion title="Declining a Blocked Slot">
-  Physicians can decline:
-
-  * A **single occurrence** of the blocked slot.
-
-  * The **entire series** of a recurring blocked slot (e.g., weekly, monthly).
-
-  <Steps>
-    <Step title="Declining a Single Occurrence">
-      1. Right-click on the blocked slot.
-
-      2. Select **Decline** from the menu.
-
-      3. Choose **Occurrence** to remove only the selected instance.
-
-      4. Confirm the action by clicking **Yes** on the pop-up.
-    </Step>
-
-    <Step title="Declining an Entire Series">
-      1. Right-click on the blocked slot.
-
-      2. Select **Decline** from the menu.
-
-      3. Choose **Series** to remove all occurrences.
-
-      4. Confirm the action by clicking **Yes** on the pop-up.
-    </Step>
-  </Steps>
-</Accordion>
-
-<Accordion title="Deleting a Blocked Slot">
-  If a blocked slot is **non-recurring (single occurrence)** and needs to be removed:
-
-  <Steps>
-    <Step title="Removing a Blocked Slot">
-      1. Right-click on the blocked slot.
-
-      2. Select **Delete** from the menu.
-
-      3. Confirm the action by clicking **Yes** on the pop-up.
-    </Step>
-  </Steps>
-</Accordion>
 
 ## Appointment Summary
 
