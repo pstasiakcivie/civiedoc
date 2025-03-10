@@ -152,25 +152,77 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
   <Tab title="Booking and Managing Slots">
     When clicking on an available slot in the CIVIE Calendar, a **+ icon** appears. **Right-clicking** on this icon provides the following options:
 
-    <CardGroup>
+    <CardGroup cols={1}>
       <Card title="Appointment Booking" icon="book">
-        Schedule a new appointment for a patient
+        1. Schedule a new appointment for a patient
+
+        2. 1\. Right-click on the **“+” icon** and select **Appointment Booking**.
+
+        3. 2,. The **Appointment Booking** pop-up appears.
+
+        4. 3\. Select an existing patient or add a new patient.
+
+        5. 4\. Add the referring physician or add a new referring physician.
+
+        6. 5\. Search and add the required exams.
+
+        7. 6\. In the **Documents section**, any available documents for the selected patient will be displayed.
+
+        8. 7\. Click **Submit** to finalize the appointment.
       </Card>
 
       <Card title="Block Slot" icon="block">
-        Block a time slot to prevent scheduling conflicts
+        Block a time slot to prevent scheduling conflicts.
+
+        1. Right-click on the **“+” icon** and select **Block Slot**.
+
+        2. Enter a title for the blocked slot.
+
+        3. Add a description (optional).
+
+        4. Select the occurrence type: **Weekly, Monthly, or Custom**.
+
+        5. Enter the **From Date & Time** and **To Date & Time**.
+
+        6. Click **Block** to finalize.
       </Card>
 
       <Card title="Open Slot" icon="check">
         Reopen a blocked slot for scheduling.
+
+        1. Right-click on the **“+” icon** and select **Open Slot**.
+
+        2. Enter a title for the open slot.
+
+        3. Add a description (optional).
+
+        4. Select the location using the dropdown.
+
+        5. Choose the occurrence type: **Weekly, Monthly, or Custom**.
+
+        6. Enter the **From Date & Time** and **To Date & Time**.
+
+        7. Click **Submit** to confirm the open slot.
       </Card>
 
       <Card title="Running Late" icon="clock">
         Mark an appointment as running late and notify patients.
+
+
+
+        1. Right-click on the **“+” icon** and select **Running Late**.
+
+        2. Enter delay details and notify the patient.
       </Card>
 
       <Card title="Show Waitlist" icon="list">
-        View and manage patients on the waitlist
+        View and manage patients on the waitlist.
+
+
+
+        1. Right-click on the **“+” icon** and select **Show Waitlist**.
+
+        2. The **Waitlist window** opens, displaying patients on the waitlist for the selected slot.
       </Card>
     </CardGroup>
   </Tab>
@@ -194,11 +246,57 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
 
     *
   </Tab>
+
+  <Tab title="Managing Blocked Slot">
+    <Accordion title="Declining a Blocked Slot">
+      Physicians can decline:
+
+      * A **single occurrence** of the blocked slot.
+
+      * The **entire series** of a recurring blocked slot (e.g., weekly, monthly).
+
+      <Steps>
+        <Step title="Declining a Single Occurrence">
+          1. Right-click on the blocked slot.
+
+          2. Select **Decline** from the menu.
+
+          3. Choose **Occurrence** to remove only the selected instance.
+
+          4. Confirm the action by clicking **Yes** on the pop-up.
+        </Step>
+
+        <Step title="Declining an Entire Series">
+          1. Right-click on the blocked slot.
+
+          2. Select **Decline** from the menu.
+
+          3. Choose **Series** to remove all occurrences.
+
+          4. Confirm the action by clicking **Yes** on the pop-up.
+        </Step>
+      </Steps>
+    </Accordion>
+
+    <Accordion title="Deleting a Blocked Slot">
+      If a blocked slot is **non-recurring (single occurrence)** and needs to be removed:
+
+      <Steps>
+        <Step title="Removing a Blocked Slot">
+          1. Right-click on the blocked slot.
+
+          2. Select **Delete** from the menu.
+
+          3. Confirm the action by clicking **Yes** on the pop-up.
+        </Step>
+      </Steps>
+    </Accordion>
+  </Tab>
 </Tabs>
 
 ## Steps for Right-Click Actions
 
-<Accordion title="Right-Click Actions" defaultOpen={false}>
+<Accordion title="Right-Click Actions" defaultOpen={true}>
   <Steps>
     <Step title="Booking an Appointment">
       1. Right-click on the **“+” icon** and select **Appointment Booking**.
@@ -259,8 +357,6 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
     </Step>
   </Steps>
 </Accordion>
-
-## Managing Blocked Slot
 
 <Accordion title="Declining a Blocked Slot">
   Physicians can decline:
