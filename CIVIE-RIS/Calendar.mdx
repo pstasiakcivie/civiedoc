@@ -70,6 +70,8 @@ description: "The Calendar Tab in the CIVIE application provides a centralized s
 </Steps>
 
 <Note>
+
+
   Utilizing filters can help you quickly locate patient appointments and improve scheduling efficiency.
 </Note>
 
@@ -149,24 +151,16 @@ description: "The Calendar Tab in the CIVIE application provides a centralized s
   </Step>
 </Steps>
 
-<Info>
-  Using **filters** helps quickly locate relevant appointments. Ensure the **appointment status** is always updated for better workflow efficiency.
-</Info>
-
-<Note>
-  Regularly check the **Waitlist** for **rescheduling opportunities** and verify **insurance & eligibility** before confirming appointments.
-</Note>
-
 <Tip>
   ## **Best Practices**
 
-  * **Use Filters** to quickly locate relevant appointments.
+  ✅ **Use Filters** to quickly locate relevant appointments.
 
-  * **Keep the appointment status updated** to ensure workflow efficiency.
+  ✅ **Keep the appointment status updated** to ensure workflow efficiency.
 
-  * **Regularly check the waitlist** for rescheduling opportunities.
+  ✅ **Regularly check the waitlist** for rescheduling opportunities.
 
-  * **Verify insurance & eligibility** before confirming appointments.
+  ✅ **Verify insurance & eligibility** before confirming appointments.
 </Tip>
 
 # Right-Click Events
@@ -180,7 +174,7 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
     When clicking on an available slot in the \*\*CIVIE Calendar\*\*, a \*\*“+” icon\*\* appears. Right-clicking on this icon provides the following options:
 
     <CardGroup>
-      <Card title="Appointment Booking" icon="book" color="green">
+      <Card title="Appointment Booking" icon="book">
         Schedule a new appointment for a patient
       </Card>
 
@@ -223,7 +217,7 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
   </Tab>
 </Tabs>
 
-# Steps for Right-Click Actions
+## Steps for Right-Click Actions
 
 <Accordion title="Right-Click Actions" defaultOpen={false}>
   <Steps>
@@ -289,7 +283,7 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
   # M
 </Accordion>
 
-# Managing Blocked Slots
+## Managing Blocked Slots
 
 <Accordion title="Declining a Blocked Slot">
   Physicians can decline:
@@ -335,6 +329,62 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
   </Steps>
 </Accordion>
 
-# Appointment Summary
+## Appointment Summary
 
 The **Appointment Summary** section provides **detailed information** about the scheduled appointment.
+
+**View Appointment Details**
+
+Click on a patient’s **scheduled appointment** to open the **Appointment Summary** in the right panel.
+
+<AccordionGroup>
+  <Accordion title="Key Information Displayed" defaultOpen={false}>
+    **Appointment Status:** Displayed in the top-right corner *(e.g., In Progress*).
+  </Accordion>
+
+  <Accordion title="Pending Verification / Missing Information" defaultOpen={false}>
+    Highlights missing details that must be completed before processing:
+
+    <Warning>
+      &#x20;     -Missing Exam Diagnosis
+
+      &#x20;     \- Missing Order Document
+
+      &#x20;     \- Missing Guarantor Information
+
+      &#x20;     \- Missing Insurance
+
+      &#x20;     \- Missing Insurance Authorization
+
+      &#x20;     \- Missing Insurance Eligibility
+
+      &#x20;     \- Missing Patient Address
+    </Warning>
+
+
+  </Accordion>
+
+  <Accordion title="Booking Details" defaultOpen={false}>
+    Displays patient and appointment details:
+
+    * Patient Name
+
+    * MRN (Medical Record Number)
+
+    * DOB, Gender
+
+    * Phone & Email
+
+    * Billing Type (Medical Insurance)
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+  ## **Best Practices**
+
+  ✅ Regularly update patient information to avoid last-minute delays.
+
+  ✅ Attach necessary documents before the appointment date.
+
+  ✅ Ensure insurance & eligibility are verified before the exam.
+</Tip>
