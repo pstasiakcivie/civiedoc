@@ -3,8 +3,6 @@ title: "Calendar Overview"
 description: "The Calendar Tab in the CIVIE application provides a centralized scheduling system for managing patient appointments, resource availability, and location-specific scheduling. It allows users to view, create, edit, and manage appointment slots, ensuring efficient workflow management for radiology and medical practices."
 ---
 
-
-
 ## &#x20;<Icon icon="key" color="black" size={27} />  Key Features
 
 > **Appointment scheduling:** Users can **create, modify, reschedule, and cancel** appointments directly from the calendar interface.
@@ -79,8 +77,6 @@ description: "The Calendar Tab in the CIVIE application provides a centralized s
     * Select the **Order Type** from options like **Online Order, Self-Schedule, Follow-Up, Walk-In, Physician Portal, EMR Orders, or BCS Measure**.
 
     ![](/images/image\(3\).jpg)
-
-
   </Step>
 
   <Step title="For a new patient fill in the details">
@@ -168,7 +164,7 @@ description: "The Calendar Tab in the CIVIE application provides a centralized s
   ✅ **Verify insurance & eligibility** before confirming appointments.
 </Tip>
 
-## Right-Click Events
+## <Icon icon="computer-mouse" color="black" size="27" /> Right-Click Events
 
 The **Calendar module** in CIVIE provides an intuitive interface for managing **appointments and schedules**. Users can **right-click** on any appointment or blocked slot to access various actions, such as **declining, deleting, or updating appointment statuses**. Additionally, right-clicking on a **blank slot** allows users to manage scheduling with options like **booking appointments, blocking slots, and accessing waitlists**.
 
@@ -180,15 +176,11 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
       <Card title="Appointment Booking" icon="book">
         1. **Schedule a new appointment for a patient:**
 
+        2. 1\. Right-click on the **“+” icon** and select **Appointment Booking**.
 
+        3. 2,. The **Appointment Booking** pop-up appears.
 
-        1. 1\. Right-click on the **“+” icon** and select **Appointment Booking**.
-
-
-
-        1. 2,. The **Appointment Booking** pop-up appears.
-
-        2. 3\. Select an existing patient or add a new patient.
+        4. 3\. Select an existing patient or add a new patient.
 
         ![](/images/2025-03-0713_08_30-DEVv2Desktop-DesktopViewer.png)
 
@@ -212,11 +204,9 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
 
         4. 4\. Select the occurrence type: **Weekly, Monthly, or Custom**.
 
+        5. 5\. Enter the **From Date & Time** and **To Date & Time**.
 
-
-        1. 5\. Enter the **From Date & Time** and **To Date & Time**.
-
-        2. 6\. Click **Block** to finalize.
+        6. 6\. Click **Block** to finalize.
       </Card>
 
       <Card title="Open Slot" icon="check">
@@ -228,17 +218,13 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
 
         3. 3\. Add a description (optional).
 
+        4. 4\. Select the location using the dropdown.
 
+        5. 5\. Choose the occurrence type: **Weekly, Monthly, or Custom**.
 
-        1. 4\. Select the location using the dropdown.
+        6. 6\. Enter the **From Date & Time** and **To Date & Time**.
 
-        2. 5\. Choose the occurrence type: **Weekly, Monthly, or Custom**.
-
-        3. 6\. Enter the **From Date & Time** and **To Date & Time**.
-
-
-
-        1. 7\. Click **Submit** to confirm the open slot.
+        7. 7\. Click **Submit** to confirm the open slot.
       </Card>
 
       <Card title="Running Late" icon="clock">
@@ -246,9 +232,7 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
 
         2. 1\. Right-click on the **“+” icon** and select **Running Late**.
 
-
-
-        1. 2\. Enter delay details and notify the patient.
+        3. 2\. Enter delay details and notify the patient.
       </Card>
 
       <Card title="Show Waitlist" icon="list">
@@ -256,9 +240,7 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
 
         1. 1\. Right-click on the **“+” icon** and select **Show Waitlist**.
 
-
-
-        1. 2\. The **Waitlist window** opens, displaying patients on the waitlist for the selected slot.
+        2. 2\. The **Waitlist window** opens, displaying patients on the waitlist for the selected slot.
       </Card>
     </CardGroup>
   </Tab>
@@ -329,11 +311,101 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
   </Tab>
 </Tabs>
 
-## Appointment Summary
+## <Icon icon="rectangle-list" color="black" size="27" /> Appointment Summary
 
 The **Appointment Summary** section provides **detailed information** about the scheduled appointment.
 
-**View Appointment Details**
+![](/images/image\(11\).jpg)
+
+Pending Documents & Forms: Send digital links for patient completion.
+
+## **Sending Check-In Link & QR Code**
+
+The **CIVIE Calendar** allows users to send a **check-in link** or generate a **QR code** for patients to check in seamlessly.
+
+**Quick Access:** Patients can check in using a direct link sent via **text or email**, or by scanning a **QR code**.
+
+<Accordion title="Sending Check-In Link to Patient" defaultOpen={false}>
+  <Steps>
+    <Step title="Navigate to Appointment Summary">
+      1. Open the **Appointment Summary** panel.
+
+      2. Locate the **Booking Details** section.
+    </Step>
+
+    <Step title="Send Check-In Link">
+      1. Click on **"Send Check-In Link"**.
+
+      ![](/images/image\(10\).jpg)2.  A pop-up titled **"Send form Link to Patient"** will appear.
+
+
+    </Step>
+
+    <Step title="Choose Delivery Method">
+      * **Text Message:** Enter the patient’s phone number.
+
+      * **Email:** Enter the patient’s email address.
+    </Step>
+
+    <Step title="Confirm and Send">
+      * Click **"Send"** to share the link with the patient.
+
+      * The patient receives the link and can check in directly.
+
+
+    </Step>
+  </Steps>
+
+  <Tip>
+    ## **Best Practices**
+
+    **Benefits of Sending Check-In Links**
+
+    ✅ Reduces waiting time at the front desk.
+    ✅ Ensures a seamless check-in process.
+    ✅ Allows patients to update information remotely.
+  </Tip>
+</Accordion>
+
+<Accordion title="Generating & Viewing Check-In QR Code" defaultOpen={false}>
+  <Steps>
+    <Step title="Navigate to Appointment Summary">
+      1. Open the **Appointment Summary** panel.
+
+      2. Locate the **Booking Details** section.
+    </Step>
+
+    <Step title="Open QR Code">
+      1. Click on the **QR Code Icon** next to "Send Check-In Link".
+
+      ![](/images/image\(13\).jpg)2. A pop-up titled **"Check-In QR Code"** will appear.
+    </Step>
+
+    <Step title="Patient Scan & Check-In">
+      * The patient can scan the **QR Code** using their mobile device.
+
+      * Alternatively, they can click on **"Click here to go for check-in"** below the QR code.
+    </Step>
+  </Steps>
+
+  <Tip>
+
+
+    ## **Best Practices**
+
+
+
+    🔍 **Best Practice:** Ensure the patient receives either the **check-in link** or **QR code** well before their appointment to avoid delays.
+
+
+
+    ✅ These steps ensure a seamless patient check-in process via **direct links or QR scanning**!
+  </Tip>
+
+
+</Accordion>
+
+## **View Appointment Details**
 
 Click on a patient’s **scheduled appointment** to open the **Appointment Summary** in the right panel.
 
