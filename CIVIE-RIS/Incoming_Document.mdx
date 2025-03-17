@@ -9,53 +9,27 @@ import { Steps, Step, Tabs, Tab, Card, Note, Icon, Accordion, AccordionItem } fr
 
 ## ![Incoming Documents](/images/IncomingDocument.png)
 
-📌 **Navigating the Incoming Documents Module**
-
-📊 **Summary Section**
-
-<Card>
+<Card title="Summary Section" icon="section">
   This section displays the total count of received documents based on different time frames:
 
-  <ul>
-  📁 All Documents
+  All Document- Total number of Document.
 
-  – Total number of documents.
+  Todat- Document received today.
 
-  📅 Today
+  Yesterday- Document received the previous day.
 
-  – Documents received today.
+  This Week- Document received this week.
 
-  📆 Yesterday
-
-  – Documents received the previous day.
-
-  📈 This Week
-
-  – Documents received this week.
-
-  📊 This Month
-
-  – Documents received this month.
-
-  </ul>
+  This Month- Document this Month.
 </Card>
 
-### 📌 **Worklists**
+<Card title="Worklists" icon="list">
+  My Personal Worklist- Document assigned to the logged-in user.
 
-<Card>
-  <ul>
-  🧑‍💼 My Personal Worklist
-
-  – Documents assigned to the logged-in user.
-
-  👥 Shared Worklist
-
-  – Documents shared among multiple users for collaborative processing.
-
-  </ul>
+  Shared Worklist- Document shared among multiple users for collaborative processing
 </Card>
 
-## 🔍 **Search and Filters**
+##   <Icon icon="filter-list" iconType="regular" color="black" size="27" />  **Search and Filters**
 
 To **quickly locate** a document, use the **search and filter** options available in the worklist.
 
@@ -74,7 +48,7 @@ To **quickly locate** a document, use the **search and filter** options availabl
   </Step>
 </Steps>
 
-## 📋 **Creating Custom Worklists**
+## <Icon icon="list-ul" color="black" size="27" /> **Creating Custom Worklists**
 
 <Steps>
   <Step title="Access the Worklist Panel">
@@ -97,7 +71,7 @@ To **quickly locate** a document, use the **search and filter** options availabl
   </Step>
 </Steps>
 
-## 📤 **Uploading New Documents**
+## <Icon icon="upload" color="black" size="27" /> **Uploading New Documents**
 
 <Steps>
   <Step title="Click 'Upload Files' in the top-right corner.">
@@ -112,21 +86,24 @@ To **quickly locate** a document, use the **search and filter** options availabl
 </Steps>
 
 <Note>
-  ## ✅ **Best Practices**
+  ## **Best Practices**
 
-  \- Regularly review and assign documents to avoid backlog.
-  \- Ensure all uploaded documents are properly categorized.
-  \- Use filters to locate documents quickly.
-  \- Link documents to patient records for streamlined medical record management.
+  ✅ Regularly review and assign documents to avoid backlog.
+
+  ✅Ensure all uploaded documents are properly categorized.
+
+  ✅Use filters to locate documents quickly.
+
+  ✅Link documents to patient records for streamlined medical record management.
 </Note>
 
-## 📝 **Processing a Document**
+## <Icon icon="file-check" color="black" size="27" />**Processing a Document**
 
-### 📌 **View & Search for a Document**
+### **View & Search for a Document**
 
 <Steps>
   <Step title="Filter & Select">
-    \- Use the **All Docs, Today, or This Week** filters to refine the document list.
+    \- Use the **All Docs, Today, or This Week** filters to refine the d✅ocument list.
     \- Select the document for processing.
   </Step>
   <Step title="Search">
@@ -137,22 +114,22 @@ To **quickly locate** a document, use the **search and filter** options availabl
   </Step>
 </Steps>
 
-## ✏️ **Verify & Edit Document Details**
+## <Icon icon="pencil" color="black" size="27" /> **Verify & Edit Document Details**
 
 <Steps>
   <Step title="Click the Edit (✏️) icon">
-    <Tabs>
-      <Tab title="Left Panel">
-        **Left Panel - Document Preview:** Displays the scanned/faxed document.
-      </Tab>
-      <Tab title="Right Panel">
-        **Right Panel - Document Details:** Shows metadata such as:
+    <CardGroup cols={2}>
+      <Card title="Left Panel " icon="left">
+        **Document Preview:** Displays the scanned/faxed document.
+      </Card>
+      <Card title="Right Panel" icon="Right">
+        **Document Details:** Shows metadata such as:
 
-        \- 📑 **Document Number & Date Received**
-        \- 👤 **Created By & Modified Date**
-        \- 📄 **Document Type** (e.g., RX, Face Sheet)
-      </Tab>
-    </Tabs>
+        📑 **Document Number & Date Received** 👤 **Created By & Modified Date**
+
+        📄 **Document Type** (e.g., RX, Face Sheet)
+      </Card>
+    </CardGroup>
   </Step>
   <Step title="Assign Document Type">
     \- Select **Rx Medical Order, Facesheet, Insurance Card**, etc.
