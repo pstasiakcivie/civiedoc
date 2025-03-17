@@ -7,26 +7,24 @@ description: "Learn how The Incoming Documents module in CIVIE helps you manage,
 
 import { Steps, Step, Tabs, Tab, Card, Note, Icon, Accordion, AccordionItem } from "mintlify/components";
 
-## ![Incoming Documents](/images/IncomingDocument.png)
-
 <Card title="Summary Section" icon="section">
   This section displays the total count of received documents based on different time frames:
 
-  All Document- Total number of Document.
+  **All Document**\- Total number of Documents.
 
-  Todat- Document received today.
+  **Today**\- Documents received today.
 
-  Yesterday- Document received the previous day.
+  **Yesterday**\- Documents received the previous day.
 
-  This Week- Document received this week.
+  **This Week**\- Documents received this week.
 
-  This Month- Document this Month.
+  **This Month**\- Documents this Month.
 </Card>
 
 <Card title="Worklists" icon="list">
-  My Personal Worklist- Document assigned to the logged-in user.
+  **My Personal Worklist- **Documents assigned to the logged-in user.
 
-  Shared Worklist- Document shared among multiple users for collaborative processing
+  **Shared Worklist- **Documents shared among multiple users for collaborative processing
 </Card>
 
 ## <Icon icon="filter-list" iconType="duotone" color="black" size="27" />  **Search and Filters**
@@ -99,22 +97,26 @@ To **quickly locate** a document, use the **search and filter** options availabl
 
 ## <Icon icon="file-check" iconType="duotone" color="black" size="27" />**Processing a Document**
 
-### **View & Search for a Document**
+### 
 
-<Steps>
-  <Step title="Filter & Select">
-    \- Use the **All Docs, Today, or This Week** filters to refine the d✅ocument list.
-    \- Select the document for processing.
-  </Step>
-  <Step title="Search">
-    \- Use the **Search bar** or filters to find a specific document.
-  </Step>
-  <Step title="View Document">
-    \- Click on the **Eye icon** to preview the document.
-  </Step>
-</Steps>
+<Accordion title="View & Search for a Document" icon="eye">
+  <Steps>
+    <Step title="Filter & Select">
+      \- Use the **All Docs, Today, or This Week** filters to refine the document list.
 
-## <Icon icon="pencil" iconType="duotone" color="black" size="27" /> **Verify & Edit Document Details**
+      \- Select the document for processing.
+    </Step>
+    <Step title="Search">
+      \- Use the **Search bar** or filters to find a specific document.
+    </Step>
+    <Step title="View Document">
+      \- Click on the **Eye icon** to preview the document.
+    </Step>
+  </Steps>
+</Accordion>
+
+
+## <Icon icon="pencil" iconType="duotone" color="black" size="26" />  **Verify & Edit Document Details**
 
 <Steps>
   <Step title="Click the Edit (✏️) icon">
@@ -142,7 +144,7 @@ To **quickly locate** a document, use the **search and filter** options availabl
     \- Use <Icon icon="magnifying-glass" iconType="solid" /> to search by **Exam Code, Procedure, CPT Code**.
   </Step>
   <Step title="Manage Insurance Information">
-    \- Select existing insurance or add a new entry.
+    \- Select existing insurance or add a new entry.\
     \- Click **Verify Eligibility** to check status.
   </Step>
   <Step title="Managing Alerts & Tags">
