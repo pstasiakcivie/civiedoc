@@ -1,0 +1,218 @@
+---
+title: "Incoming Documents"
+description: "Learn how to manage and process incoming documents in CIVIE."
+---
+
+import { Steps, Step, Tabs, Tab, Card, Note, Icon, Accordion, AccordionItem } from "mintlify/components";
+
+# 📂 Incoming Documents
+
+The **Incoming Documents** module in **CIVIE** helps you **manage, categorize, and process received documents** related to **patients, orders, and billing**. It ensures that important medical records are efficiently handled and easily accessible.
+
+![Incoming Documents](/images/IncomingDocument.png)
+
+## 🏷️ **Key Features**
+
+<Card>
+  <ul>
+    <li>📊 <b>Document Summary Dashboard</b> – Displays document counts for different time periods.</li>
+    <li>📂 <b>Worklists</b> – Categorizes documents into <b>Personal</b> and <b>Shared Worklists</b> for tracking.</li>
+    <li>📥 <b>Document Upload</b> – Allows users to manually upload patient-related files.</li>
+    <li>🔎 <b>Filters & Search</b> – Quickly locate documents based on time range and worklist type.</li>
+    <li>🔗 <b>Integrate with Orders & Patients</b> – Link documents directly to patient records and orders.</li>
+  </ul>
+</Card>
+
+***
+
+## 📌 **Navigating the Incoming Documents Module**
+
+### 📊 **Summary Section**
+
+<Card>
+  This section displays the total count of received documents based on different time frames:
+
+  <ul>
+    <li>📁 <b>All Documents</b> – Total number of documents.</li>
+    <li>📅 <b>Today</b> – Documents received today.</li>
+    <li>📆 <b>Yesterday</b> – Documents received the previous day.</li>
+    <li>📈 <b>This Week</b> – Documents received this week.</li>
+    <li>📊 <b>This Month</b> – Documents received this month.</li>
+  </ul>
+</Card>
+
+### 📌 **Worklists**
+
+<Card>
+  <ul>
+    <li>🧑‍💼 <b>My Personal Worklist</b> – Documents assigned to the logged-in user.</li>
+    <li>👥 <b>Shared Worklist</b> – Documents shared among multiple users for collaborative processing.</li>
+  </ul>
+</Card>
+
+***
+
+## 🔍 **Search and Filters**
+
+To **quickly locate** a document, use the **search and filter** options available in the worklist.
+
+<Steps>
+  <Step title="Search Fields">
+    * Utilize the search bar at the top to locate a document by entering **Document Name, Location, or File Name**.
+
+    * Enter the search query, and results will update in real time.
+  </Step>
+
+  <Step title="Filter Panel">
+    * Click on the **Filters** panel and select from the available options: **Alerts, MRN, Name, DOB, etc.**.
+
+    * Click **Apply** to refine the results or **Reset Filters** to clear them.
+  </Step>
+
+  <Step title="Worklist Dropdown">
+    * Select the desired date range from the **Worklist Range** dropdown (**Today, Last Week, Custom Date Range**).
+
+    * Use **Worklist Category** to further narrow down the results.
+  </Step>
+</Steps>
+
+***
+
+## 📋 **Creating Custom Worklists**
+
+<Steps>
+  <Step title="Access the Worklist Panel">
+    Navigate to the **Worklists** page and open the panel from the right-side menu.
+  </Step>
+
+  <Step title="Create a New Worklist">
+    Click the **+** icon to initiate a new worklist.
+  </Step>
+
+  <Step title="Enter Worklist Details">
+    Provide a **Worklist Name** and **Description**.
+  </Step>
+
+  <Step title="Configure Access Preferences">
+    * Enable **Add to Dashboard, Quick Search, or Main Menu** as needed.
+  </Step>
+
+  <Step title="Define Filter Conditions">
+    Configure **fields, operators, and values** to refine data selection.
+  </Step>
+
+  <Step title="Save the Worklist">
+    Click **SAVE** to finalize.
+  </Step>
+</Steps>
+
+***
+
+## 📤 **Uploading New Documents**
+
+<Steps>
+  <Step title="Click 'Upload Files' in the top-right corner." />
+
+  <Step title="Upload Methods">
+    **Drag & Drop files** or click **"Browse to Upload"** to select files manually.
+
+    * Select Location and document type (**Order Document, Insurance, Referral**).
+
+    * Click the **Upload** button.
+  </Step>
+</Steps>
+
+<Note>
+  ## ✅ **Best Practices**
+
+  * Regularly review and assign documents to avoid backlog.
+
+  * Ensure all uploaded documents are properly categorized.
+
+  * Use filters to locate documents quickly.
+
+  * Link documents to patient records for streamlined medical record management.
+</Note>
+
+***
+
+## 📝 **Processing a Document**
+
+### 📌 **View & Search for a Document**
+
+<Steps>
+  <Step title="Filter & Select">
+    * Use the **All Docs, Today, or This Week** filters to refine the document list.
+
+    * Select the document for processing.
+  </Step>
+
+  <Step title="Search">
+    * Use the **Search bar** or filters to find a specific document.
+  </Step>
+
+  <Step title="View Document">
+    * Click on the **Eye icon** to preview the document.
+  </Step>
+</Steps>
+
+***
+
+## ✏️ **Verify & Edit Document Details**
+
+<Steps>
+  <Step title="Click the Edit (✏️) icon">
+    <Tabs>
+      <Tab title="Left Panel">
+        **Left Panel - Document Preview:** Displays the scanned/faxed document.
+      </Tab>
+
+      <Tab title="Right Panel">
+        **Right Panel - Document Details:** Shows metadata such as:
+
+        * 📑 **Document Number & Date Received**
+
+        * 👤 **Created By & Modified Date**
+
+        * 📄 **Document Type** (e.g., RX, Face Sheet)
+      </Tab>
+    </Tabs>
+  </Step>
+
+  <Step title="Assign Document Type">
+    * Select **Rx Medical Order, Facesheet, Insurance Card**, etc.
+  </Step>
+
+  <Step title="Enter Patient Information">
+    * Manually enter details retrieved from the document.
+  </Step>
+
+  <Step title="Order Detail Field">
+    * Select, search, or add a new order.
+
+    * Use <Icon icon="magnifying-glass" iconType="solid" /> to search by **Exam Code, Procedure, CPT Code**.
+  </Step>
+
+  <Step title="Manage Insurance Information">
+    * Select existing insurance or add a new entry.
+
+    * Click **Verify Eligibility** to check status.
+  </Step>
+
+  <Step title="Managing Alerts & Tags">
+    * **Alert Flags**: Displays patient conditions (e.g., **Wheelchair, Smoker**).
+
+    * **Tags**: Categorizes exams or conditions.
+  </Step>
+
+  <Step title="Complete Button">
+    * Click **Complete** to finalize or select another status (**Escalate, Tech Review, Client Review**).
+  </Step>
+</Steps>
+
+***
+
+### ✅ **You’re all set!**
+
+This guide ensures efficient handling of **Incoming Documents** in **CIVIE**.
+Need more help? Visit the [Support Page](https://civieris.com/support). 🚀
