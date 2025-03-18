@@ -52,7 +52,6 @@
     {
       "group": "Get Started",
       "pages": [
-        "CIVIE-RIS/Calendar.mdx"
         "introduction",
         "quickstart",
         "development"
