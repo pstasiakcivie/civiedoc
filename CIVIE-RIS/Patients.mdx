@@ -82,7 +82,7 @@ The **Custom Worklist** enables users to efficiently manage, track, and prioriti
       
     </Step>
     <Step title="On the Review page, ">
-      - Add any merge comments if necessary and click Save to complete the process.
+      - Add any merge comments if necessary and click **Save** to complete the process.
     </Step>
     <Step title="Click Close">
       - To cancel and return without merging,
@@ -131,7 +131,7 @@ The **Custom Worklist** enables users to efficiently manage, track, and prioriti
     <Step title="Enter Emergency Contact Information">
       - Navigate to **Emergency Contact** tab.
       - Click **\+ Add Contact** button.
-      - Provide a \*\*Full Name, Phone \*\*and **Relationship**.
+      - Provide a **Full Name**, **Phone** and **Relationship**.
       - Click **Save** to confirm.
     </Step>
     <Step title="Enter Guarantor Details">
@@ -169,11 +169,11 @@ The **Custom Worklist** enables users to efficiently manage, track, and prioriti
       <Frame>
         
       </Frame>
-      - Click \*\*\+ Add Employer \*\*button.
+      - Click **\+ Add Employer** button.
       - Fill in the following details:
-        - \*\*Employer Name, Website, \*\*and **Phone Number.**
-        - \*\*Email, Alternative Email, \*\*and **Fax.**
-        - \*\*Address (Street Name, Zip Code, City, \*\*and **State).**
+        - **Employer Name**, **Website**, and **Phone Number.**
+        - **Email**, **Alternative Email**, and **Fax.**
+        - **Address (Street Name, Zip Code, City**, and **State).**
       - Click **Save** to confirm.
     </Step>
     <Step title="Add Notes">
@@ -214,37 +214,37 @@ The **Custom Worklist** enables users to efficiently manage, track, and prioriti
           - **Emergency Contact Information**
         </Step>
         <Step title="Adding Allergy Details">
-          - Click the \*\*\+ Add Allergies \*\*button
-          - Enter **Allergy Name**
-          - Specify \*\*Reaction \*\*and **Reaction Code**
-          - Select \*\*Severity \*\*and **Onset Date**
-          - Click **Save**
+          - Click the **\+ Add Allergies** button.
+          - Enter **Allergy Name.**
+          - Specify **Reaction** and **Reaction Code.**
+          - Select **Severity** and **Onset Date.**
+          - Click **Save** to submit.
         </Step>
         <Step title="Adding Medications Details">
-          - Click the \*\*\+ Add Medications \*\*button
-          - Enter **Medication Name**
-          - Specify \*\*Dose \*\*and **Unit**
-          - Click **Save**
+          - Click the **\+ Add Medications** button.
+          - Enter **Medication Name.**
+          - Specify **Dose** and **Unit.**
+          - Click \*\*Save \*\*to submit.
         </Step>
         <Step title="Adding Medical Problems">
-          - Click the **\+ Add Problems** button
-          - Enter **Diagnosis**
-          - Select **Diagnosis Date** and **Problem Status** (Active, Controlled, Resolved)
-          - Provide a **Problem Synopsis**
-          - Click **Save**
+          - Click the **\+ Add Problems** button.
+          - Enter **Diagnosis.**
+          - Select **Diagnosis Date** and **Problem Status** (Active, Controlled, Resolved).
+          - Provide a **Problem Synopsis.**
+          - Click **Save** to submit\*\*.\*\*
         </Step>
         <Step title="Adding Past Medical History ">
-          - Click the \*\*\+ Past Medical History \*\*button
-          - Select \*\*Start \*\*and **End Date**
-          - Add **Description**
-          - Click **Save**
+          - Click the **\+ Past Medical History** button.
+          - Select **Start** and **End Date.**
+          - Add **Description.**
+          - Click **Save** to sumit.
         </Step>
         <Step title="Adding Past Surgical History">
-          - Click the \*\*\+ Past Surgical History \*\*button
+          - Click the **\+ Past Surgical History** button
           - Enter **Diagnosis**
           - Select **Start and End Date**
           - Add **Description**
-          - Click **Save**
+          - Click \*\*Save \*\*to submit.
         </Step>
       </Steps>
     </Accordion>
@@ -267,7 +267,78 @@ The **Custom Worklist** enables users to efficiently manage, track, and prioriti
           Allows users to search, view, and manage patient orders.
 
           - **Search Orders:** Use the search functionality to locate specific orders.
-          - **Add New Order:** Click the **Add Order** button to create a new order. (_[Link to steps]_)
+          - **Add New Order:** Click the **Add Order** button to create a new order.
+
+            <Accordion title="Adding an Order" icon="address-book" iconType="duotone">
+              <Steps>
+                <Step title="Patient Information">
+                  This section is pre-filled with following patient details:
+                  - **Name, Gender, **and **Age**
+                  - **Date of Birth, Phone Number, **and **Email**
+                  - **Address **and **Guarantor**
+
+                  Verify the provided information or click the **Edit **icon to make changes if needed.
+                </Step>
+                <Step title="Referring Physician">
+                  This field is **mandatory**.
+                  - Select a **Referring Physician** from the dropdown.
+                  - Click the **\+ icon** to add a new one if not listed.
+
+                  A **Missing Referring Physician** warning will show if this field is left empty.
+                </Step>
+                <Step title="Add Exams">
+                  - Click **Add New Exam** button to link procedures.
+                  - You can search by **Name **or **Code** and **Add** **Multiple Exams**.
+                  - Exams will appear in this section once added.
+                </Step>
+                <Step title="Billing Type and Insurance Details">
+                  - Choose a **Billing Type** (e.g., Medical Insurance, Self-Pay).
+                  - Click **Add Insurance** if not already linked.
+
+                  If insurance exists, you’ll see:
+                  - **Provider**, **Payer ID**, and **Policy No**
+                  - **Insured name** and **DOB**
+
+                  Click **Verify Eligibility** to confirm coverage.\
+                  🟡 If unverified, the status is shown as **Unverified** in yellow.
+                </Step>
+                <Step title="Co-Pay & Financial Info (Optional)">
+                  You can enter the following if applicable:
+                  - **Co-Pay**
+                  - **Co-Insurance**
+                  - **Deductible**
+                  - **Out-of-Pocket**
+
+                  Click each button to input values.
+                </Step>
+                <Step title="Authorizations (If present)">
+                  If the exam requires prior authorization, look for the Auth-Request received from the insurance:
+                  - Click **Add Authorizations. **
+                  - Enter the number or attach documents and complete the order.
+                </Step>
+                <Step title="Set Preferences">
+                  Choose:
+                  - **Preferred Location**
+                  - **Preferred Date** (optional).\
+                    These help schedule the order efficiently.
+                </Step>
+                <Step title="Primary Care Physician (Optional)">
+                  - Select the PCP from the list.
+                  - Or use the **\+ icon** to add a new one.
+                </Step>
+                <Step title="Save or Cancel the Order">
+                  - Click **Save** to add the order.
+                  - Click **Cancel** if you don’t wish to proceed.
+                </Step>
+              </Steps>
+              <Note>
+                **Best Practices**
+                - Ensure Referring Physician and Exams are filled.
+                - Use Verify Eligibility to prevent billing delays.
+                - Keep all patient and insurance data accurate.
+                - Set preferences for smoother scheduling.
+              </Note>
+            </Accordion>
         </Step>
         <Step title="Insurance Tab">
           Enables users to search and view both active and inactive insurance details.
@@ -280,7 +351,7 @@ The **Custom Worklist** enables users to efficiently manage, track, and prioriti
         </Step>
         <Step title="Click the three-dot menu (⋮) next to the insurance entry.">
           - Select **Disable** to deactivate the insurance record.
-          - Confirm the action when prompted\*\*.\*\*
+          - Confirm the action when prompted.
           - **Verify Eligibility:** Use the **Verify Eligibility** feature to check coverage in real-time and view the **Eligibility Response** immediately.
         </Step>
         <Step title="Billing Tab">
@@ -320,117 +391,13 @@ The **Custom Worklist** enables users to efficiently manage, track, and prioriti
 <Accordion title="To edit patient information do the following:" defaultOpen="false" icon="Pencil">
   <Steps>
     <Step title="Click the Edit Icon: ">
-      - Click the Edit icon to enable editing mode.
+      - Click the **Edit** icon to enable editing mode.
     </Step>
     <Step title="Update Patient Information: ">
-      - Modify the necessary fields, such as\*\*Patient Details, Address, Insurance, Guarantor Details, \*\* etc.
+      - Modify the necessary fields, such as **Patient Details**, **Address**, **Insurance**, **Guarantor Details**, etc.
     </Step>
     <Step title="Save Changes">
-      - Click \*\*Save \*\*to apply and confirm the updates.
+      - Click **Save** to apply and confirm the updates.
     </Step>
   </Steps>
-</Accordion>
-
-### add order
-
-<Accordion title="New Accordion" icon="sparkles">
-  Follow these steps to fill out and complete an online order in CIVIE after clicking **\+ Add Order**.
-
-  This section is pre-filled with patient details like:
-
-  - Name, Gender, Age
-  - Date of Birth, Phone Number, Email
-  - Address and Guarantor
-
-  ✅ You can verify this information or click the **edit icon** to make changes if needed.
-
-  **2. 👨‍⚕️ Referring Physician**
-
-  ⚠️ This field is **required**.
-
-  - Use the dropdown to select a referring physician from the list.
-  - If not listed, click the **“\+” icon** to add a new one.
-
-  If left empty, a **“Missing Referring Physician”** warning will appear.
-
-  **3. 📋 Add Exams**
-
-  - Click **“Add New Exam”** to start adding procedures or tests.
-  - You can:
-    - Search by name or code
-    - Add multiple exams as needed
-  - Once added, exams appear in this section.
-
-  **4. 💳 Billing Type and Insurance Details**
-
-  - Select the **Billing Type** (e.g., Medical Insurance, Self-Pay)
-  - Click **“Add Insurance”** if it hasn’t already been added.
-
-  If insurance is linked, you’ll see:
-
-  - Insurance Provider (e.g., AETNA)
-  - Payer ID and Policy Number
-  - Insured Individual and DOB
-
-  👉 Use **“Verify Eligibility”** to confirm status.
-
-  🟡 If not verified, it shows as **“Unverified”** in yellow.
-
-  ---
-
-  ## 5. 💲 Co-Pay & Financial Info
-
-  You can fill in optional fields:
-
-  - Co-Pay
-  - Co-Insurance
-  - Deductible
-  - Out-of-Pocket
-
-  Click the respective button to enter each value.
-
-  ---
-
-  ## 6. 📑 Authorizations
-
-  If any exam needs prior authorization:
-
-  - Click **“Add Authorizations”**
-  - Enter the authorization number or upload a document.
-
-  ---
-
-  ## 7. 📅 Preferences
-
-  Set scheduling preferences:
-
-  - **Preferred Location** (e.g., CIVIE – BELLE GLADE)
-  - **Preferred Date** (optional)
-
-  These help route the order efficiently.
-
-  ---
-
-  ## 8. 👩‍⚕️ Primary Care Physician (Optional)
-
-  - Select the patient’s PCP from the list
-  - Or click the **“\+” icon** to add a new PCP
-
-  ---
-
-  ## 9. 💾 Save or Cancel the Order
-
-  - Click **“Save”** to store the order
-  - Click **“Cancel”** if you don’t want to proceed
-
-  ---
-
-  <Note>
-    ### ✅ Tips for Best Results
-
-    - Double-check all required fields like **Referring Physician** and **Exams**
-    - Use **Verify Eligibility** to avoid billing issues
-    - Keep patient and insurance data up to date
-    - Set location and date preferences to streamline scheduling
-  </Note>
 </Accordion>
