@@ -19,9 +19,9 @@ The **Incoming Documents** page consists of the following sections:
 > - **This Week** – Documents received during the current week.
 > - **This Month** – Documents received during the current month.
 
-> **Shared Worklis**-My Personal Worklist- Displays documents that are assigned specifically to the logged-in user. These documents are designated for individual processing and responsibility. Users can view, verify, and take action on the assigned documents, ensuring accountability and efficient management of their workload.
+> **My Personal Worklist**- Displays documents that are assigned specifically to the logged-in user. These documents are designated for individual processing and responsibility. Users can view, verify, and take action on the assigned documents, ensuring accountability and efficient management of their workload.
 
-> **Shared Worklis**-Contains documents that are accessible to multiple users for collaborative review and processing. This worklist allows different team members to work on the same set of documents, ensuring that urgent or high-priority items can be addressed efficiently by any available user. It enhances teamwork and flexibility by enabling document handling without dependency on a single user.
+> **Shared Worklist**-Contains documents that are accessible to multiple users for collaborative review and processing. This worklist allows different team members to work on the same set of documents, ensuring that urgent or high-priority items can be addressed efficiently by any available user. It enhances teamwork and flexibility by enabling document handling without dependency on a single user.
 
 ## <Icon icon="filter-list" iconType="duotone" color="black" size="27" />  **Search and Filters**
 
@@ -46,6 +46,8 @@ To **quickly locate** a document, use the **search and filter** options availabl
 </CardGroup>
 
 ## <Icon icon="list-ul" iconType="duotone" color="black" size="27" /> **Creating Custom Worklists**
+
+The **Custom Worklist** enables users to efficiently manage, track, and prioritize incoming files. By organizing documents based on predefined criteria such as type, urgency, or assigned personnel, the worklist streamlines workflows, enhances collaboration, and ensures quick access to critical information. This feature also supports automation, reducing manual effort while maintaining compliance and accuracy in document processing.
 
 <Steps>
   <Step title="Access the Worklist Panel">
@@ -78,6 +80,8 @@ To **quickly locate** a document, use the **search and filter** options availabl
 
 ## <Icon icon="upload" iconType="duotone" color="black" size="27" /> **Uploading New Documents**
 
+The **Upload Document** feature allows users to securely add and store essential files within the system. This ensures that all relevant documents, such as referrals, authorizations, and medical records, are easily accessible for review and processing.
+
 <Steps>
   <Step title="Click 'Upload Files' in the top-right corner.">
     <Frame>
@@ -107,7 +111,9 @@ To **quickly locate** a document, use the **search and filter** options availabl
 
 ## <Icon icon="file-check" iconType="duotone" color="black" size="27" /> **Processing a Document**
 
-<Accordion title="Processing a Document" icon="file">
+**Processing a Document** enables users to efficiently review and manage documents. It allows seamless access to relevant files, updating of patient details, and status tracking to ensure accurate processing, and improving efficiency.
+
+<Accordion title="Search and Select the Document to Process" icon="file">
   <Steps>
     <Step title="On the Documents Dashboard:">
       - Choose the set of documents to work on from **Summary, My Personal Worklist, or Shared Worklist**, based on your requirements.
@@ -146,11 +152,8 @@ To **quickly locate** a document, use the **search and filter** options availabl
           ![images/document.png](/images/document.png)
         </Frame>
         <Steps>
-          <Step title="Assign Document Type">
-            Select the document type from- **Rx Medical Order, Facesheet, Insurance Card**, etc.
-          </Step>
           <Step title="Enter Patient Information">
-            Manually enter details retrieved from the document.
+            - Manually enter details retrieved from the document.
           </Step>
           <Step title="Order Detail Field">
             - Select, search, or add a new order.
@@ -166,6 +169,19 @@ To **quickly locate** a document, use the **search and filter** options availabl
           </Step>
           <Step title="Complete Button">
             - Click **Complete** to finalize or select another status (**Escalate, Tech Review, Client Review**).
+            - If a user is unable to complete the incoming document due to reasons such as insufficient information or an invalid document, they can update the document status accordingly:
+
+              | Status               | Description                                                             |
+              | -------------------- | ----------------------------------------------------------------------- |
+              | **Save In Progress** | Temporarily save the document and resume work later.                    |
+              | **Escalate**         | Notify a higher authority if additional review is required              |
+              | **Client Review**    | Select this if the document needs verification from the client.         |
+              | **Tech Review**      | Choose this if a technical expert needs to review the document.         |
+              | **Invalid**          | Mark the document as invalid if it does not meet the required criteria. |
+              | **Completed All**    | Use this when all necessary documents have been uploaded and verified.  |
+              | **Priority**         | Assign this status to urgent cases requiring immediate attention.       |
+
+              Once the appropriate status is selected, click **Save** and then **Complete** to finalize the document processing.
           </Step>
         </Steps>
       </Tab>

@@ -30,122 +30,68 @@ description: "The Order Worklist page provides a centralized and organized list 
   </Steps>
 </Accordion>
 
-<Accordion title=" Exporting Data" icon="download">
-  Download order details for record-keeping or further analysis.
+## <Icon icon="filter-list" iconType="duotone" color="black" size="27" />  **Search and Filters**
 
-  <Steps>
-    <Step title="Export ">
-      - Click the **Export** button in the top-right corner to download the order list for external use or reference.
-    </Step>
-  </Steps>
-</Accordion>
+To **quickly locate** a document, use the **search and filter** options available in the worklist.
 
-## <Icon icon="filter-list" iconType="duotone" color="black" size="24" /> **Search and Filters**
+<CardGroup cols="2">
+  <Card title="Search Fields" icon="sparkles">
+    Use the search fields at the top of each column to filter results based on specific criteria.
 
-<Accordion title="To quickly locate a Order Worklist, use the search and filter options available in the worklist." icon="filter">
-  <Steps>
-    <Step title="Search Fields">
-      Use the search fields at the top of each column to filter results based on specific criteria.
+    - 1. Utilize the search bar at the top to locate a patient by entering **Document Name, Location, or File Name**.
+      2. 
+    - 1. Enter the search query, and the results will automatically update in real time.
+  </Card>
+  <Card title="Filter Panel" icon="Filter">
+    Apply specific filters using the filter panel on the right to refine the list further.
 
-      - Utilize the search bar at the top to locate a patient by entering **MRN**, **Name**, **Date of Birth (DOB)**, **Phone Number**, or **Email**.
-      - Enter the search query, and the results will automatically update in real time.
-    </Step>
-    <Step title="Filter Panel">
-      Apply specific filters using the filter panel on the right to refine the list further.
+    - 1. Click on the **Filters** panel on the right and select from the following options: **Source, Document, Location, File name etc.**
+      2. 
+    - 1. Click **Apply** to update the results based on the selected filters.
+    - 1. To clear all applied filters, click the **Reset Filters** button at the top.
+  </Card>
+</CardGroup>
 
-      - Click on the **Filters** panel on the right and select from the following options: **Alerts, MRN, First, Last, or Middle Nam, Date of Birth (DOB),** etc.
-      - Click **Apply** to update the results based on the selected filters.
-      - To clear all applied filters, click the **Reset Filters** button at the top.
-    </Step>
-    <Step title="Worklist Dropdown">
-      Refine the patient list using the **Worklist Range** dropdown and additional category filters.
+## <Icon icon="list-ul" iconType="duotone" color="black" size="27" /> **Creating Custom Worklists**
 
-      - Select the desired date range from the **Worklist Range** dropdown (e.g., **Today**, **Last Week**, **Custom Date Range**).
-      - Use the **Worklist Category** dropdown to further narrow down the selection based on specific worklist criteria.
-    </Step>
-  </Steps>
-</Accordion>
+<Steps>
+  <Step title="Access the Worklist Panel">
+    Navigate to the **Worklists** page and open the panel from the right-side menu.
+  </Step>
+  <Step title="Create a New Worklist">
+    Click the <Icon icon="plus-large" iconType="solid" size="15" /> icon to initiate a new worklist.
 
-## <Icon icon="rectangle-list" iconType="duotone" color="black" size="24" /> **Creating customized Work lists**
+    <Frame>
+      ![Orderworklistworklist Pn](/images/orderworklistworklist.png)
+    </Frame>
+  </Step>
+  <Step title="Enter Worklist Details">
+    Provide a **Worklist Name** and **Description**.
 
-<Accordion title="To create a customize worklist, follow these steps:" icon="List">
-  <Steps>
-    <Step title="Access the Worklist Panel">
-      Navigate to the **Worklists** page and open the panel from the right-side menu.
-    </Step>
-    <Step title="Create a New Worklist">
-      Click the **+** icon to initiate a new worklist.
-    </Step>
-    <Step title="Enter Worklist Details">
-      Provide a **Worklist Name** and **Description** for identification.
-    </Step>
-    <Step title="Select a Worklist Category ">
-      Choose the appropriate category to classify the worklist.
-    </Step>
-    <Step title="Configure Access Preferences ">
-      Enable the necessary checkboxes to determine accessibility:
+    <Frame>
+      ![Orderworklistcreatenewworklist Pn](/images/orderworklistcreatenewworklist.png)
+    </Frame>
+  </Step>
+  <Step title="Configure Access Preferences">
+    Enable **Add to Dashboard, Quick Search, or Main Menu** as needed.
+  </Step>
+  <Step title="Define Filter Conditions">
+    Configure **fields, operators, and values** to refine data selection.
+  </Step>
+  <Step title="Save the Worklist">
+    Click **Save** to finalize.
+  </Step>
+</Steps>
 
-      - **Add to Dashboard** – Display the worklist on the dashboard.
-      - **Add to My Quick Search** – Include it in the quick search for easy retrieval.
-      - **Add to Main Menu** – Make it available in the main navigation menu.
-    </Step>
-    <Step title="Define Filter Conditions">
-      Configure **fields, operators, and values** to extract relevant data from the complete order list.
-    </Step>
-    <Step title="Preview the Worklist">
-      Review the filtered results to ensure accuracy.
-    </Step>
-    <Step title="Save the Worklist">
-      Click **SAVE** to finalize and store the worklist.
-    </Step>
-  </Steps>
-</Accordion>
+<Note>
+  **Best Practices**
 
-## <Icon icon="address-card" iconType="duotone" color="black" size="26" /> **Adding a New Order**
+  ✅ Regularly review the documents to avoid backlog.
 
-<Accordion title="To add a new worklist, follow these steps:" icon="Plus">
-  <Steps>
-    <Step title="New Order">
-      - Click on the **+ New Order** button in the top-right corner. This will open the add order page.
-    </Step>
-    <Step title="Add New Patient">
-      - Search for an existing patient or   to create an order.
-      - Select the corresponding referring physician or add a new referring physician as required.
-    </Step>
-    <Step title="Click on Add New Exam link To add a new exam, follow these steps:">
-      - **Click "Add New Exam"** – Select the **Add New Exam** link.
-      - **Enter Exam/Procedure** – Input the exam or procedure name.
-      - **Search by ICD Code (Optional)** – Enter the ICD code or search for the relevant procedure.
-    </Step>
-    <Step title="Select Appropriate Details – Use the provided dropdown menus to choose:">
-      Billing Component Type
+  ✅Ensure all uploaded documents are properly categorized.
 
-      - Exam Priority
-      - Radiology Group
-      - Reading Doctor
-    </Step>
-    <Step title="Enable Waitlist (If Needed)">
-      Check the **Waitlist** box if applicable.
-    </Step>
-    <Step title=" Save or Cancel ">
-      Click **SAVE** to confirm or **CANCEL** to discard changes.
-    </Step>
-    <Step title="Select Billing Type">
-      Choose an existing billing type. If unavailable, add a new insurance for billing.
-    </Step>
-    <Step title="Enter Authorization Details">
-      Select or + **add** **authorization** details if applicable.
-    </Step>
-    <Step title="Provide Physician Information">
-      Enter the **Primary** **Care Physician** and Referring Physician details.
-    </Step>
-    <Step title="Save or Cancel ">
-      Click **SAVE** to confirm or **CANCEL** to discard changes.
-    </Step>
-  </Steps>
-</Accordion>
-
-## <Icon icon="pencil" iconType="duotone" color="black" size="24" /> **Editing an Order**
+  ✅Link documents to patient records for streamlined medical record management.
+</Note>
 
 <Accordion title="To Edit worklist, follow these steps:" icon="pencil">
   <Steps>
@@ -159,4 +105,120 @@ description: "The Order Worklist page provides a centralized and organized list 
       
     </Step>
   </Steps>
+</Accordion>
+
+##  <Icon icon="address-card" iconType="duotone" color="#090909" size="27" /> **Adding a New Order**
+
+<Accordion title="Add New Order" icon="sparkles">
+  <Steps>
+    <Step title='Click the "+ New Order" button located at the top-right corner of the Order worklist'>
+      <Frame>
+        ![2025 03 25 09 34 09 Pn](/images/2025-03-25_09-34-09.png)
+      </Frame>
+      This will open the **Order Details** page, where users can:
+
+      <Frame>
+        ![2025 03 13 15 09 33 Pn](/images/2025-03-13_15-09-33.png)
+      </Frame>
+      - **Search for an existing patient** or **add a new patient** to create an appointment.
+      - **Select the order type** for which the appointment needs to be scheduled.
+    </Step>
+    <Step title="Access the Patient Details Form">
+      - Click on the Order Type Dropdown and Select the appropriate order by default selected order type is online order. User can change the order to – Using **Patient Self-Schedule** , **Follow-Up Order** , **Phone Order**, **Walk-In Order, Physician Portal, EMR Orders, and BCS Measure**.
+
+        <Frame>
+          ![2025 03 13 15 09 12 Pn](/images/2025-03-13_15-09-12.png)
+        </Frame>
+      - While adding a new patient, click on **\+ New Patient**.
+    </Step>
+    <Step title="Enter Patient Information">
+      - Fill in the patient details in the respective fields. Fields marked with an asterisk (\*) are mandatory.
+
+      <Frame>
+        ![2025 03 13 15 10 36 Pn](/images/2025-03-13_15-10-36.png)
+      </Frame>
+      - Select the Gender, **Preferred Language, Race,** **Marital Status and Ethnicity**.
+      - Check the **Is Blocked** checkbox to block a slot for the appointment. Then, add the reason for blocking the slot.
+      - Next, select the appropriate **Patient Flag**.
+    </Step>
+    <Step title="Add Address Details">
+      - Navigate to **Address** tab.
+
+      <Frame>
+        ![2025 03 13 15 11 22 Pn](/images/2025-03-13_15-11-22.png)
+      </Frame>
+      - Enter the address details appropriately in the **Address 1** and **Address 2** fields.
+      - Provide the **ZIP Code**, **City**, **State**, and **Country**.
+      - Add the contact details in their respective fields: **Primary Phone**, **Secondary Phone**, **Email**, and **Alternate Email**.
+      - Next, select the **Contact Preference** by checking the relevant options (**Text**, **Email**, **Fax**, **Phone Call**).
+      - Finally, choose the **Location Preference** from the dropdown menu.
+    </Step>
+    <Step title="Enter Emergency Contact Information">
+      - Navigate to **Emergency Contact** tab.
+      - Click **\+ Add Contact** button\*\*.\*\*
+      - Provide a **Full Name, Phone and Relationship**.
+      - Click **Save** to confirm.
+    </Step>
+    <Step title="Enter Guarantor Details">
+      - Navigate to **Guarantor** tab.
+
+      <Frame>
+        ![2025 03 13 15 12 15 Pn](/images/2025-03-13_15-12-15.png)
+      </Frame>
+      - Click **\+ Add Guarantor**.
+      - Enter the guarantor’s details:
+      - **First Name, Last Name, Date of Birth, SSN (if applicable)**
+      - Select **Relationship with  Patient** and **Gender.**
+      - Choose **Same Address as Patient** if the guarantor's address matches the patient's. If not, enter the address manually.
+      - Click **Save** to confirm.
+    </Step>
+    <Step title="Enter Add Insurance">
+      - Navigate to **Insurance** tab.
+
+      <Frame>
+        ![2025 03 13 15 13 17 Pn](/2025-03-25_09-36-34.png)
+      </Frame>
+      - Click **\+ Add Insurance**. Fill in:
+        - **Insurance Rank** (Primary, Secondary)
+        - **Insurance Type** (Medical, Vision, Dental, etc.)
+        - **Relationship to Policy Holder** (Self, Spouse, Child, etc.)
+        - **Insurance Carrier** (Search or manually enter)
+        - **Policy Number, Group Number**
+      - Enter financial details:
+        - **Remaining Deductible, Coinsurance, Copay, Out-of-Pocket**
+      - Click **Save** to update the insurance record
+    </Step>
+    <Step title="Enter Employer Tab">
+      - Navigate to **Employer** tab.
+
+      <Frame>
+        ![2025 03 13 15 13 43 Pn](/images/2025-03-13_15-13-17.png)
+      </Frame>
+      - Click **\+ Add Employer**.
+      - Enter:
+        - **Employer Name, Website, Phone Number.**
+        - **Email, Alternative Email, Fax.**
+        - **Address (Street Name, Zip Code, City, State).**
+      - Click **Save** to confirm.
+    </Step>
+    <Step title="Enter Notes Tab">
+      - Navigate to **Notes** tab.
+
+      <Frame>
+        ![2025 03 13 15 13 43 Pn](/images/2025-03-13_15-13-43.png)
+      </Frame>
+      - Click the **Add Note** button.
+      - Type a note in the text box provided.
+      - Select a note type:
+        - **Important** (Red), **Warning** (Yellow), **Information** (Blue).
+      - Click **Add** to save the note.
+    </Step>
+  </Steps>
+</Accordion>
+
+
+## **Editing an Order**
+
+<Accordion title="New Accordion" icon="sparkles">
+  
 </Accordion>

@@ -88,74 +88,239 @@ To **quickly locate** a patient, use the **search and filter** options available
   </Steps>
 </Accordion>
 
-## Adding a New Patient
+## **Adding a New Patient**
 
-<Accordion title="To add New Patient do the following:" defaultOpen="false">
+<Accordion title="Add New Patient" icon="sparkles">
   <Steps>
-    <Step title="Click on the + New Patient button in the top-right corner.">
-      
+    <Step title='Click the "+ New Patient" button located at the top-right corner of the Order worklist'>
+      - While adding a new patient, click on **\+ New Patient**.
+
+      <Frame>
+        
+      </Frame>
+      This will open the **Patient Demographic** page, where users can add new patient details:
+
+      <Frame>
+        
+      </Frame>
     </Step>
-    <Step title="A patient registration form will appear.">
-      - Steps to enter the patient information [.](https://collaborativeimaging.mintlify.app/Test_Doc/CIVIE_UserManual#:~:text=Enter%20Patient%20Information)
+    <Step title="Enter Patient Information">
+      - Fill in the patient details in the respective fields. Fields marked with an asterisk (\*) are mandatory.
+
+      <Frame>
+        
+      </Frame>
+      - Select the Gender, **Preferred Language, Race,** **Marital Status and Ethnicity**.
+      - Check the **Is Blocked** checkbox to block a slot for the appointment. Then, add the reason for blocking the slot.
+      - Next, select the appropriate **Patient Flag**.
+    </Step>
+    <Step title="Add Address Details">
+      - Navigate to **Address** tab.
+
+      <Frame>
+        
+      </Frame>
+      - Enter the address details appropriately in the **Address 1** and **Address 2** fields.
+      - Provide the **ZIP Code**, **City**, **State**, and **Country**.
+      - Add the contact details in their respective fields: **Primary Phone**, **Secondary Phone**, **Email**, and **Alternate Email**.
+      - Next, select the **Contact Preference** by checking the relevant options (**Text**, **Email**, **Fax**, **Phone Call**).
+      - Finally, choose the **Location Preference** from the dropdown menu.
+    </Step>
+    <Step title="Enter Emergency Contact Information">
+      - Navigate to **Emergency Contact** tab.
+      - Click **\+ Add Contact** button\*\*.\*\*
+      - Provide a **Full Name, Phone and Relationship**.
+      - Click **Save** to confirm.
+    </Step>
+    <Step title="Enter Guarantor Details">
+      - Navigate to **Guarantor** tab.
+
+      <Frame>
+        
+      </Frame>
+      - Click **\+ Add Guarantor**.
+      - Enter the guarantor’s details:
+      - **First Name, Last Name, Date of Birth, SSN (if applicable)**
+      - Select **Relationship with  Patient** and **Gender.**
+      - Choose **Same Address as Patient** if the guarantor's address matches the patient's. If not, enter the address manually.
+      - Click **Save** to confirm.
+    </Step>
+    <Step title="Enter Add Insurance">
+      - Navigate to **Insurance** tab.
+
+      <Frame>
+        
+      </Frame>
+      - Click **\+ Add Insurance**. Fill in:
+        - **Insurance Rank** (Primary, Secondary)
+        - **Insurance Type** (Medical, Vision, Dental, etc.)
+        - **Relationship to Policy Holder** (Self, Spouse, Child, etc.)
+        - **Insurance Carrier** (Search or manually enter)
+        - **Policy Number, Group Number**
+      - Enter financial details:
+        - **Remaining Deductible, Coinsurance, Copay, Out-of-Pocket**
+      - Click **Save** to update the insurance record
+    </Step>
+    <Step title="Enter Employer Tab">
+      - Navigate to **Employer** tab.
+
+      <Frame>
+        
+      </Frame>
+      - Click **\+ Add Employer**.
+      - Enter:
+        - **Employer Name, Website, Phone Number.**
+        - **Email, Alternative Email, Fax.**
+        - **Address (Street Name, Zip Code, City, State).**
+      - Click **Save** to confirm.
+    </Step>
+    <Step title="Enter Notes Tab">
+      - Navigate to **Notes** tab.
+
+      <Frame>
+        
+      </Frame>
+      - Click the **Add Note** button.
+      - Type a note in the text box provided.
+      - Select a note type:
+        - **Important** (Red), **Warning** (Yellow), **Information** (Blue).
+      - Click **Add** to save the note.
     </Step>
   </Steps>
 </Accordion>
+
+## 
+
+<Tabs>
+  <Tab title="right">
+    f
+
+    <Accordion title="To view the patient details do the following:" defaultOpen="false">
+      Users can view patient details by clicking the **View** button, which opens a detailed patient information panel organized into multiple tabs:
+
+      <Steps>
+        <Step title="Overview Tab">
+          Displays **today's appointment** along with a list of all previous appointments.
+
+          - **Filtering Options:** Users can filter appointments using the **Search by Details** dropdown, **Date Range**, or a direct **Search by Details** field.
+          - **Actions:**
+            - **Add Order:** Click the **Add Order** button to create a new order. (_[Link to steps]_)
+            - **Add Note:** Click the **Add Note** button to attach a note. (_[Link to steps]_)
+        </Step>
+        <Step title="Orders Tab">
+          Allows users to search, view, and manage patient orders.
+
+          - **Search Orders:** Use the search functionality to locate specific orders.
+          - **Add New Order:** Click the **Add Order** button to create a new order. (_[Link to steps]_)
+        </Step>
+        <Step title="Insurance Tab">
+          Enables users to search and view both active and inactive insurance details.
+
+          - **Add New Insurance:** Click to add new insurance information. (_[Link to steps]_)
+          - Click on the **three-dot menu** (⋮) next to the insurance entry.
+          - Select **Edit** to update insurance details.
+          - Make the necessary changes to the insurance information.
+          - Click **Save** to apply the updates.
+        </Step>
+        <Step title="Click the three-dot menu (⋮) next to the insurance entry.">
+          - Select **Disable** to deactivate the insurance record.
+          - Confirm the action when prompted\*\*.\*\*
+          - **Verify Eligibility:** Use the **Verify Eligibility** feature to check coverage in real-time and view the **Eligibility Response** immediately.
+        </Step>
+        <Step title="Billing Tab">
+          Displays patient billing details, including existing invoices and charge summaries.
+        </Step>
+        <Step title="Making a Payment">
+          Follow these steps to make a payment:
+
+          - **Click the Make Payment Button:** Select the **Make Payment** button next to the invoice you wish to pay.
+          - **Review Payment Breakdown:** A payment breakdown popup will appear, displaying the invoice details.
+          - **Enter Payment Details:**
+            - Input the **amount** to be paid.
+            - Select the **payment mode** (e.g., **Card**, **Cash**, **Check**).
+            - Enter the required payment details based on the selected mode.
+          - **Submit Payment:** Click **Submit** to process the payment.
+          - **Split Payment Option:** If needed, use the **Split Payment** feature to divide the payment across multiple methods.
+        </Step>
+        <Step title="Documents Tab">
+          Enables users to search and view all documents linked to the selected patient, including scanned and faxed documents.
+
+          - **Document Actions:**
+            - **View**, **Download**, or **Delete** documents using the corresponding icons.
+            - **Edit Document Type:** Click the **Edit** icon to change the document type by selecting the appropriate option from the available list.
+        </Step>
+        <Step title="Communication Tab">
+          Displays the patient's communication history, including message chats and order follow-up messages.
+
+          - **Send Message:** Click the **Send Message** button to initiate a new message.
+        </Step>
+      </Steps>
+    </Accordion>
+  </Tab>
+  <Tab title="Left">
+    gfdgd
+
+    <Accordion title="Patient Details" icon="left">
+      <Steps>
+        <Step title="Opening Patient Information">
+          - Click on **View Details** to open the patient's information in a new tab.
+        </Step>
+        <Step title="Left Panel Options:">
+          - **Edit Patient Demographics** – Modify personal details.
+          - **Send Registration Link** – Share a registration link with the patient.
+          - **View Balance and Patient Responsibility** – Check financial details.
+        </Step>
+        <Step title="Editing and Updating Patient Information">
+          Users can update the following details:
+
+          - **Active Insurance Details**
+          - **Guarantor Information**
+          - **Employer Details**
+          - **Emergency Contact Information**
+        </Step>
+        <Step title="Adding Allergies">
+          - Click \+ Add Allergies
+          - Enter **Allergy Name**
+          - Specify **Reaction & Reaction Code**
+          - Select **Severity and Onset Date**
+          - Click **Save**
+        </Step>
+        <Step title="Adding Medications">
+          - Click \+ Add Medications
+          - Enter **Medication Name**
+          - Specify **Dose & Unit**
+          - Click **Save**
+        </Step>
+        <Step title="Adding Medical Problems">
+          - Click \+ Add Problems
+          - Enter **Diagnosis**
+          - Select **Diagnosis Date** and **Problem Status** (Active, Controlled, Resolved)
+          - Provide a **Problem Synopsis**
+          - Click **Save**
+        </Step>
+        <Step title="Adding Past Medical History">
+          - Click \+ Past Medical History
+          - Select **Start and End Date**
+          - Enter **Description**
+          - Click **Save**
+        </Step>
+        <Step title="Adding Past Surgical History">
+          - Click \+ Past Surgical History
+          - Enter **Diagnosis**
+          - Select **Start and End Date**
+          - Enter **Description**
+          - Click **Save**
+        </Step>
+      </Steps>
+    </Accordion>
+  </Tab>
+</Tabs>
+
+fdd
 
 ### **Viewing and Editing Patient Details**
 
-<Accordion title="To view the patient details do the following:" defaultOpen="false">
-  <Steps>
-    <Step title="Opening Patient Information">
-      - Click on **View Details** to open the patient's information in a new tab.
-    </Step>
-    <Step title="Left Panel Options:">
-      - **Edit Patient Demographics** – Modify personal details.
-      - **Send Registration Link** – Share a registration link with the patient.
-      - **View Balance and Patient Responsibility** – Check financial details.
-    </Step>
-    <Step title="Editing and Updating Patient Information">
-      Users can update the following details:
-
-      - **Active Insurance Details**
-      - **Guarantor Information**
-      - **Employer Details**
-      - **Emergency Contact Information**
-    </Step>
-    <Step title="Adding Allergies">
-      - Click <Icon icon="plus-large" iconType="solid" size="15" /> Add Allergies
-      - Enter **Allergy Name**
-      - Specify **Reaction & Reaction Code**
-      - Select **Severity and Onset Date**
-      - Click **Save**
-    </Step>
-    <Step title="Adding Medications">
-      - Click <Icon icon="plus-large" iconType="solid" size="15" />  Add Medications
-      - Enter **Medication Name**
-      - Specify **Dose & Unit**
-      - Click **Save**
-    </Step>
-    <Step title="Adding Medical Problems">
-      - Click  <Icon icon="plus-large" iconType="solid" size="15" />  Add Problems
-      - Enter **Diagnosis**
-      - Select **Diagnosis Date** and **Problem Status** (Active, Controlled, Resolved)
-      - Provide a **Problem Synopsis**
-      - Click **Save**
-    </Step>
-    <Step title="Adding Past Medical History">
-      - Click  <Icon icon="plus-large" iconType="solid" size="15" />  Past Medical History
-      - Select **Start and End Date**
-      - Enter **Description**
-      - Click **Save**
-    </Step>
-    <Step title="Adding Past Surgical History">
-      - Click <Icon icon="plus-large" iconType="solid" size="15" /> + Past Surgical History
-      - Enter **Diagnosis**
-      - Select **Start and End Date**
-      - Enter **Description**
-      - Click **Save**
-    </Step>
-  </Steps>
-</Accordion>
+fdd
 
 ### **Editing Patient Information**
 
@@ -175,66 +340,131 @@ Follow these steps to edit patient information:
   </Steps>
 </Accordion>
 
-### **Viewing Patient Details**
+### **Viewing Patient Detail**
 
-<Accordion title="To view the patient details do the following:" defaultOpen="false">
-  Users can view patient details by clicking the **View** button, which opens a detailed patient information panel organized into multiple tabs:
+<Tabs>
+  <Tab title="Left Panel">
+    Paste
 
-  <Steps>
-    <Step title="Overview Tab">
-      Displays **today's appointment** along with a list of all previous appointments.
+    <Accordion title="Patient Details" icon="left">
+      <Steps>
+        <Step title="Opening Patient Information">
+          - Click on **View Details** to open the patient's information in a new tab.
+        </Step>
+        <Step title="Left Panel Options:">
+          - **Edit Patient Demographics** – Modify personal details.
+          - **Send Registration Link** – Share a registration link with the patient.
+          - **View Balance and Patient Responsibility** – Check financial details.
+        </Step>
+        <Step title="Editing and Updating Patient Information">
+          Users can update the following details:
 
-      - **Filtering Options:** Users can filter appointments using the **Search by Details** dropdown, **Date Range**, or a direct **Search by Details** field.
-      - **Actions:**
-        - **Add Order:** Click the **Add Order** button to create a new order. (_[Link to steps]_)
-        - **Add Note:** Click the **Add Note** button to attach a note. (_[Link to steps]_)
-    </Step>
-    <Step title="Orders Tab">
-      Allows users to search, view, and manage patient orders.
+          - **Active Insurance Details**
+          - **Guarantor Information**
+          - **Employer Details**
+          - **Emergency Contact Information**
+        </Step>
+        <Step title="Adding Allergies">
+          - Click \+ Add Allergies
+          - Enter **Allergy Name**
+          - Specify **Reaction & Reaction Code**
+          - Select **Severity and Onset Date**
+          - Click **Save**
+        </Step>
+        <Step title="Adding Medications">
+          - Click \+ Add Medications
+          - Enter **Medication Name**
+          - Specify **Dose & Unit**
+          - Click **Save**
+        </Step>
+        <Step title="Adding Medical Problems">
+          - Click \+ Add Problems
+          - Enter **Diagnosis**
+          - Select **Diagnosis Date** and **Problem Status** (Active, Controlled, Resolved)
+          - Provide a **Problem Synopsis**
+          - Click **Save**
+        </Step>
+        <Step title="Adding Past Medical History">
+          - Click \+ Past Medical History
+          - Select **Start and End Date**
+          - Enter **Description**
+          - Click **Save**
+        </Step>
+        <Step title="Adding Past Surgical History">
+          - Click \+ Past Surgical History
+          - Enter **Diagnosis**
+          - Select **Start and End Date**
+          - Enter **Description**
+          - Click **Save**
+        </Step>
+      </Steps>
+    </Accordion>
+    left
+  </Tab>
+  <Tab title="Righ Panel">
+    Paste
 
-      - **Search Orders:** Use the search functionality to locate specific orders.
-      - **Add New Order:** Click the **Add Order** button to create a new order. (_[Link to steps]_)
-    </Step>
-    <Step title="Insurance Tab">
-      Enables users to search and view both active and inactive insurance details.
+    <Accordion title="To view the patient details do the following:" defaultOpen="false">
+      Users can view patient details by clicking the **View** button, which opens a detailed patient information panel organized into multiple tabs:
 
-      - **Add New Insurance:** Click to add new insurance information. (_[Link to steps]_)
-      - Click on the **three-dot menu** (⋮) next to the insurance entry.
-      - Select **Edit** to update insurance details.
-      - Make the necessary changes to the insurance information.
-      - Click **Save** to apply the updates.
-    </Step>
-    <Step title="Click the three-dot menu (⋮) next to the insurance entry.">
-      - Select **Disable** to deactivate the insurance record.
-      - Confirm the action when prompted**.**
-      - **Verify Eligibility:** Use the **Verify Eligibility** feature to check coverage in real-time and view the **Eligibility Response** immediately.
-    </Step>
-    <Step title="Billing Tab">
-      Displays patient billing details, including existing invoices and charge summaries.
-    </Step>
-    <Step title="Making a Payment">
-      Follow these steps to make a payment:
+      <Steps>
+        <Step title="Overview Tab">
+          Displays **today's appointment** along with a list of all previous appointments.
 
-      - **Click the Make Payment Button:** Select the **Make Payment** button next to the invoice you wish to pay.
-      - **Review Payment Breakdown:** A payment breakdown popup will appear, displaying the invoice details.
-      - **Enter Payment Details:**
-        - Input the **amount** to be paid.
-        - Select the **payment mode** (e.g., **Card**, **Cash**, **Check**).
-        - Enter the required payment details based on the selected mode.
-      - **Submit Payment:** Click **Submit** to process the payment.
-      - **Split Payment Option:** If needed, use the **Split Payment** feature to divide the payment across multiple methods.
-    </Step>
-    <Step title="Documents Tab">
-      Enables users to search and view all documents linked to the selected patient, including scanned and faxed documents.
+          - **Filtering Options:** Users can filter appointments using the **Search by Details** dropdown, **Date Range**, or a direct **Search by Details** field.
+          - **Actions:**
+            - **Add Order:** Click the **Add Order** button to create a new order. (_[Link to steps]_)
+            - **Add Note:** Click the **Add Note** button to attach a note. (_[Link to steps]_)
+        </Step>
+        <Step title="Orders Tab">
+          Allows users to search, view, and manage patient orders.
 
-      - **Document Actions:**
-        - **View**, **Download**, or **Delete** documents using the corresponding icons.
-        - **Edit Document Type:** Click the **Edit** icon to change the document type by selecting the appropriate option from the available list.
-    </Step>
-    <Step title="Communication Tab">
-      Displays the patient's communication history, including message chats and order follow-up messages.
+          - **Search Orders:** Use the search functionality to locate specific orders.
+          - **Add New Order:** Click the **Add Order** button to create a new order. (_[Link to steps]_)
+        </Step>
+        <Step title="Insurance Tab">
+          Enables users to search and view both active and inactive insurance details.
 
-      - **Send Message:** Click the **Send Message** button to initiate a new message.
-    </Step>
-  </Steps>
-</Accordion>
+          - **Add New Insurance:** Click to add new insurance information. (_[Link to steps]_)
+          - Click on the **three-dot menu** (⋮) next to the insurance entry.
+          - Select **Edit** to update insurance details.
+          - Make the necessary changes to the insurance information.
+          - Click **Save** to apply the updates.
+        </Step>
+        <Step title="Click the three-dot menu (⋮) next to the insurance entry.">
+          - Select **Disable** to deactivate the insurance record.
+          - Confirm the action when prompted\*\*.\*\*
+          - **Verify Eligibility:** Use the **Verify Eligibility** feature to check coverage in real-time and view the **Eligibility Response** immediately.
+        </Step>
+        <Step title="Billing Tab">
+          Displays patient billing details, including existing invoices and charge summaries.
+        </Step>
+        <Step title="Making a Payment">
+          Follow these steps to make a payment:
+
+          - **Click the Make Payment Button:** Select the **Make Payment** button next to the invoice you wish to pay.
+          - **Review Payment Breakdown:** A payment breakdown popup will appear, displaying the invoice details.
+          - **Enter Payment Details:**
+            - Input the **amount** to be paid.
+            - Select the **payment mode** (e.g., **Card**, **Cash**, **Check**).
+            - Enter the required payment details based on the selected mode.
+          - **Submit Payment:** Click **Submit** to process the payment.
+          - **Split Payment Option:** If needed, use the **Split Payment** feature to divide the payment across multiple methods.
+        </Step>
+        <Step title="Documents Tab">
+          Enables users to search and view all documents linked to the selected patient, including scanned and faxed documents.
+
+          - **Document Actions:**
+            - **View**, **Download**, or **Delete** documents using the corresponding icons.
+            - **Edit Document Type:** Click the **Edit** icon to change the document type by selecting the appropriate option from the available list.
+        </Step>
+        <Step title="Communication Tab">
+          Displays the patient's communication history, including message chats and order follow-up messages.
+
+          - **Send Message:** Click the **Send Message** button to initiate a new message.
+        </Step>
+      </Steps>
+    </Accordion>
+    abaove
+  </Tab>
+</Tabs>
