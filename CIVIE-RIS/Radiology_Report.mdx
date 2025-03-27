@@ -1,0 +1,116 @@
+---
+title: "Radiology Report"
+description: "The Radiology Reports module manages the delivery and status of radiology reports. Users can track the transmission of reports, filter based on delivery status, and take necessary actions for failed or incomplete reports."
+---
+
+## <Icon icon="filter-list" iconType="duotone" color="black" size="27" />  **Search and Filters**
+
+To **quickly locate** a patient, use the **search and filter** options available in the worklist:
+
+<CardGroup cols="3">
+  <Card title="Search Fields" icon="magnifying-glass" iconType="duotone">
+    Use the search fields at the top of each column to filter results based on specific criteria.
+
+    - 1. Utilize the search bar at the top to locate a patient by entering **MRN**, **Name**, **Date of Birth (DOB)**, **Phone Number**, or **Email**.
+    - 1. Enter the search query, and the results will automatically update in real time.
+  </Card>
+  <Card title="Filter Panel" icon="Filter">
+    - 1. Click on the **Filters** panel on the right and select from the following options: **Alerts, MRN, First, Last, or Middle Nam, Date of Birth (DOB),** etc.
+    - 1. Click **Apply** to update the results based on the selected filters.
+    - 1. To clear all applied filters, click the **Reset Filters** button at the top.
+  </Card>
+  <Card title="Worklist Dropdown" icon="list">
+    Refine the patient list using the **Worklist Range** dropdown and additional category filters.
+
+    - 1. Select the desired date range from the **Worklist Range** dropdown (e.g., **Today**, **Last Week**, **Custom Date Range**).
+    - 1. Use the **Worklist Category** dropdown to further narrow down the selection based on specific worklist criteria.
+  </Card>
+</CardGroup>
+
+## **Creating Customized Worklists**
+
+The **Custom Worklist** enables users to efficiently manage, track, and prioritize patient details. By organizing patient details based on predefined criteria, the worklist streamlines workflows, and ensures quick access to patient information. This feature also supports automation, reducing manual effort while maintaining compliance and security.
+
+<Accordion title="To add a new worklist, follow these steps:" icon="newspaper" iconType="duotone">
+  <Steps>
+    <Step title="Access the Worklist Panel">
+      Navigate to the **Worklists** page and open the panel from the right-side menu.
+    </Step>
+    <Step title="Create a New Worklist">
+      Click the <Icon icon="plus-large" />  icon to initiate a new worklist.
+    </Step>
+    <Step title="Enter Worklist Details">
+      Provide a **Worklist Name** and **Description** for identification.
+    </Step>
+    <Step title="Select a Worklist Category ">
+      Choose the appropriate category to classify the worklist.
+    </Step>
+    <Step title="Configure Access Preferences ">
+      Enable the necessary checkboxes to determine accessibility:
+
+      - **Add to Dashboard** – Display the worklist on the dashboard.
+      - **Add to My Quick Search** – Include it in the quick search for easy retrieval.
+      - **Add to Main Menu** – Make it available in the main navigation menu.
+    </Step>
+    <Step title="Define Filter Conditions">
+      Configure **fields, operators, and values** to extract relevant data from the complete patient details.
+    </Step>
+    <Step title="Preview the Worklist">
+      Review the filtered results to ensure accuracy.
+    </Step>
+    <Step title="Save the Worklist">
+      Click **Save** to finalize and store the worklist.Adding Patient Information
+
+      - To edit patient details, Click, Edit icon next to the patient name
+      - Enter the patient’s details in this section, retrieved from the document in the left panel. This information links the document to the corresponding patient record.
+      - Steps to enter the patient information [**Click Here.**](https://collaborativeimaging.mintlify.app/Test_Doc/CIVIE_UserManual#:~:text=Enter%20Patient%20Information)
+    </Step>
+  </Steps>
+</Accordion>
+
+## **Adding Patient Information**
+
+<Accordion title="To add patient do the following:" icon="address-card" iconType="duotone">
+  - To edit patient details, Click, \*\*Edit \*\*icon next to the patient name
+  - Enter the patient’s details in this section, retrieved from the document in the left panel. This information links the document to the corresponding patient record.
+  - Steps to enter the patient information [**Click Here**](Adding_a_new_patient)**.**
+</Accordion>
+
+## **Editing a referring doctor**
+
+<Accordion title="To edit an reffeing doctor do the following:" icon="pen-to-square" iconType="duotone">
+  <Steps>
+    <Step title="To edit referring doctor">
+      - Click, **Edit** icon next to the referring name.
+    </Step>
+    <Step title="Click on the referring doctor">
+      - To Edit an referring doctor **Click here**
+    </Step>
+    <Step title="Exam Details Section">
+      - Displays **Procedure Name, ICD Code, and Accession Number**.
+
+      <Frame>
+        **Status Labels**
+
+        | Satus            | Description                                                   |
+        | ---------------- | ------------------------------------------------------------- |
+        | - **Primary**    | - Indicates the main procedure type.                          |
+        | - **Routine**    | - Signifies a routine (non-urgent) exam.                      |
+        | - **Checked In** | - Confirms the patient has arrived and is ready for the exam. |
+      </Frame>
+    </Step>
+    <Step title="Exam Processing">
+      <Frame>
+        | Status                     | Description                                                                                                                 |
+        | -------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+        | **Actual Exam Start Time** | Enter the exact start time of the procedure.                                                                                |
+        | **Actual Exam End Time**   | Enter the completion time of the procedure.                                                                                 |
+        | **Assigned Technologist**  | Select the technologist responsible for conducting the exam.                                                                |
+        | **Reason for Exam**        | 1. Pre-filled details explaining why the exam is being performed.                                                           |
+        | **Tech Comments**          | Additional notes or observations from the technologist.                                                                     |
+        | **Supplies Used**          | 1. Document the medical supplies used during the procedure. 2. Click **"\+ Add New Supplies"** to enter new supply details. |
+        | **Show More Fields**       | Expands additional documentation fields if required.                                                                        |
+      </Frame>
+    </Step>
+  </Steps>
+</Accordion>
