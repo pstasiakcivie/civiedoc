@@ -112,7 +112,7 @@ The **Custom Worklist** enables users to efficiently manage, track, and prioriti
 <Accordion title="Add New Patient" icon="newspaper" iconType="duotone">
   <Steps>
     <Step title='Click the "+ New Patient" button located at the top-right corner of the patients.'>
-      - [**While adding a new patient, click on \+ New Patient.**](Add)
+      - **While adding a new patient, click on \+ New Patient.**
 
       <Frame>
         ![P1 Pn](/images/p1.png)
@@ -313,76 +313,98 @@ The **Custom Worklist** enables users to efficiently manage, track, and prioriti
           - **Search Orders:** Use the search functionality to locate specific orders.
           - **Add New Order:** Click the **Add Order** button to create a new order.
 
-            <Accordion title="Adding an Order" icon="address-book" iconType="duotone">
-              <Steps>
-                <Step title="Patient Information">
-                  This section is pre-filled with following patient details:
-                  - Name, Gender, \*\*and **Age**
-                  - \*\*Date of Birth, Phone Number, \*\*and **Email**
-                  - Address and **Guarantor**
+          <Accordion title="Adding an Order. Click on the patient’s name to open their profile." description="To add an order for an existing patient, first search for the patient using their name, MRN, or contact details. Once you’ve located the correct patient, follow the steps below to proceed:" icon="address-book" iconType="duotone">
+            <Steps>
+              <Step title="New Step">
+                
+              </Step>
+            </Steps>
+            <Note>
+              **Best Practices**
 
-                  Verify the provided information or click the \*\*Edit \*\*icon to make changes if needed.
-                </Step>
-                <Step title="Referring Physician">
-                  This field is **mandatory**.
-                  - Select a **Referring Physician** from the dropdown.
-                  - Click the **\+ icon** to add a new one if not listed.
+              - Ensure Referring Physician and Exams are filled.
+              - Use Verify Eligibility to prevent billing delays.
+              - Keep all patient and insurance data accurate.
+              - Set preferences for smoother scheduling.
+            </Note>
+          </Accordion>
+          <Accordion title="Adding an New Order" icon="address-book" iconType="duotone">
+            <Steps>
+              <Step title="Patient Information">
+                This section is pre-filled with following patient details:
 
-                  A **Missing Referring Physician** warning will show if this field is left empty.
-                </Step>
-                <Step title="Add Exams">
-                  - Click **Add New Exam** button to link procedures.
-                  - You can search by **Name** or **Code** and **Add** **Multiple Exams**.
-                  - Exams will appear in this section once added.
-                </Step>
-                <Step title="Billing Type and Insurance Details">
-                  - Choose a **Billing Type** (e.g., Medical Insurance, Self-Pay).
-                  - Click **Add Insurance** if not already linked.
+                - Name, Gender, \*\*and **Age**
+                - \*\*Date of Birth, Phone Number, \*\*and **Email**
+                - Address and **Guarantor**
 
-                  If insurance exists, you’ll see:
-                  - **Provider**, **Payer ID**, and **Policy No**
-                  - **Insured name** and **DOB**
+                Verify the provided information or click the \*\*Edit \*\*icon to make changes if needed.
+              </Step>
+              <Step title="Referring Physician">
+                This field is **mandatory**.
 
-                  Click **Verify Eligibility** to confirm coverage.\
-                  🟡 If unverified, the status is shown as **Unverified** in yellow.
-                </Step>
-                <Step title="Co-Pay & Financial Info (Optional)">
-                  You can enter the following if applicable:
-                  - **Co-Pay**
-                  - **Co-Insurance**
-                  - **Deductible**
-                  - **Out-of-Pocket**
+                - Select a **Referring Physician** from the dropdown.
+                - Click the **\+ icon** to add a new one if not listed.
 
-                  Click each button to input values.
-                </Step>
-                <Step title="Authorizations (If present)">
-                  If the exam requires prior authorization, look for the Auth-Request received from the insurance:
-                  - Click **Add Authorizations**.
-                  - Enter the number or attach documents and complete the order.
-                </Step>
-                <Step title="Set Preferences">
-                  Choose:
-                  - **Preferred Location**
-                  - **Preferred Date** (optional).\
-                    These help schedule the order efficiently.
-                </Step>
-                <Step title="Primary Care Physician (Optional)">
-                  - Select the PCP from the list.
-                  - Or use the **\+ icon** to add a new one.
-                </Step>
-                <Step title="Save or Cancel the Order">
-                  - Click **Save** to add the order.
-                  - Click **Cancel** if you don’t wish to proceed.
-                </Step>
-              </Steps>
-              <Note>
-                **Best Practices**
-                - Ensure Referring Physician and Exams are filled.
-                - Use Verify Eligibility to prevent billing delays.
-                - Keep all patient and insurance data accurate.
-                - Set preferences for smoother scheduling.
-              </Note>
-            </Accordion>
+                A **Missing Referring Physician** warning will show if this field is left empty.
+              </Step>
+              <Step title="Add Exams">
+                - Click **Add New Exam** button to link procedures.
+                - You can search by **Name** or **Code** and **Add** **Multiple Exams**.
+                - Exams will appear in this section once added.
+              </Step>
+              <Step title="Billing Type and Insurance Details">
+                - Choose a **Billing Type** (e.g., Medical Insurance, Self-Pay).
+                - Click **Add Insurance** if not already linked.
+
+                If insurance exists, you’ll see:
+
+                - **Provider**, **Payer ID**, and **Policy No**
+                - **Insured name** and **DOB**
+
+                Click **Verify Eligibility** to confirm coverage.\
+                🟡 If unverified, the status is shown as **Unverified** in yellow.
+              </Step>
+              <Step title="Co-Pay & Financial Info (Optional)">
+                You can enter the following if applicable:
+
+                - **Co-Pay**
+                - **Co-Insurance**
+                - **Deductible**
+                - **Out-of-Pocket**
+
+                Click each button to input values.
+              </Step>
+              <Step title="Authorizations (If present)">
+                If the exam requires prior authorization, look for the Auth-Request received from the insurance:
+
+                - Click **Add Authorizations**.
+                - Enter the number or attach documents and complete the order.
+              </Step>
+              <Step title="Set Preferences">
+                Choose:
+
+                - **Preferred Location**
+                - **Preferred Date** (optional).\
+                  These help schedule the order efficiently.
+              </Step>
+              <Step title="Primary Care Physician (Optional)">
+                - Select the PCP from the list.
+                - Or use the **\+ icon** to add a new one.
+              </Step>
+              <Step title="Save or Cancel the Order">
+                - Click **Save** to add the order.
+                - Click **Cancel** if you don’t wish to proceed.
+              </Step>
+            </Steps>
+            <Note>
+              **Best Practices**
+
+              - Ensure Referring Physician and Exams are filled.
+              - Use Verify Eligibility to prevent billing delays.
+              - Keep all patient and insurance data accurate.
+              - Set preferences for smoother scheduling.
+            </Note>
+          </Accordion>
         </Step>
         <Step title="Insurance Tab">
           - Insurance tab shows the list of existing insurance records with key info like policy number, status, and history.
