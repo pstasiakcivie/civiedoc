@@ -3,16 +3,16 @@ title: "Radiology Report"
 description: "The Radiology Reports module manages the delivery and status of radiology reports. Users can track the transmission of reports, filter based on delivery status, and take necessary actions for failed or incomplete reports."
 ---
 
-> <Icon icon="mailbox" iconType="duotone" color="#100f0f" size="21" /> \*\*Send Report: \*\*Initiates or re-initiates the delivery of the radiology report to the intended recipient via the selected method (e.g., fax, email, portal).\
+> <Icon icon="mailbox" iconType="duotone" color="#100f0f" size="21" /> **Send Report:** Initiates or re-initiates the delivery of the radiology report to the intended recipient via the selected method (e.g., fax, email, portal).\
 > Used when a report is ready to be sent or needs to be resent after a failed attempt.
 
-> <Icon icon="presentation-screen" iconType="duotone" color="#070707" size="22" /> \*\*Requeue: \*\*Places the report back into the delivery queue for another delivery attempt. Useful when a report has failed or timed out and you want the system to retry sending it.
+> <Icon icon="presentation-screen" iconType="duotone" color="#070707" size="22" /> **Requeue**: Places the report back into the delivery queue for another delivery attempt. Useful when a report has failed or timed out and you want the system to retry sending it.
 
-> <Icon icon="file-export" iconType="duotone" color="#070707" size="22" /> \*\*Move to External Queue: \*\*Transfers the report to a separate queue designated for **external systems or partners** (e.g., third-party vendors, referring clinics). Often used when internal delivery is not applicable or the recipient is outside the primary network.
+> <Icon icon="file-export" iconType="duotone" color="#070707" size="22" /> **Move to External Queue**: Transfers the report to a separate queue designated for **external systems or partners** (e.g., third-party vendors, referring clinics). Often used when internal delivery is not applicable or the recipient is outside the primary network.
 
-> <Icon icon="circle-exclamation" iconType="duotone" color="#090808" size="22" />  \*\*Move to Invalid Queue: \*\*Marks the report as **invalid or unprocessable** and moves it to the Invalid Queue. Typically used when data is incorrect, missing, or the recipient information is invalid. This action helps exclude these reports from normal processing and follow-up.
+> <Icon icon="circle-exclamation" iconType="duotone" color="#090808" size="22" />  **Move to Invalid Queue**: Marks the report as **invalid or unprocessable** and moves it to the Invalid Queue. Typically used when data is incorrect, missing, or the recipient information is invalid. This action helps exclude these reports from normal processing and follow-up.
 
-> <Icon icon="hand-holding-box" iconType="duotone" color="#010101" size="22" /> \*\*Resolve: \*\*Closes or marks a report issue as addressed.\
+> <Icon icon="hand-holding-box" iconType="duotone" color="#010101" size="22" /> **Resolve**: Closes or marks a report issue as addressed.\
 > Use this when:
 >
 > - A failed delivery has been manually handled,
@@ -21,7 +21,7 @@ description: "The Radiology Reports module manages the delivery and status of ra
 >
 > Once resolved, the report is no longer flagged for action in the worklist.
 
-> <Icon icon="eye" iconType="duotone" color="#030303" size="22" /> \*\*View Report: \*\*After clicking the <Icon icon="eye" iconType="duotone" /> **icon**, the system opens a **PDF preview panel** where you can:
+> <Icon icon="eye" iconType="duotone" color="#030303" size="22" /> **View Report:** After clicking the <Icon icon="eye" iconType="duotone" /> **icon**, the system opens a **PDF preview panel** where you can:
 >
 > - 📥 **Download** the report
 > - 📤 **Send via Fax/Email**
@@ -100,6 +100,8 @@ The **Custom Worklist** enables users to efficiently manage, track, and prioriti
 <Accordion title="To manage patient details do the following:" icon="address-card" iconType="duotone">
   <Steps>
     <Step title="Overview Tab">
+      ![2025 03 28 09 47 01 Pn](/images/2025-03-28_09-47-01.png)
+
       1. To view patient details, Click <Icon icon="eye" /> icon next to the patient name. Click the **Edit (🖊️) icon** next to the specific section (e.g., **Active Insurance**, **Guarantor**, **Employer**, etc.) in the **Patient View Details** panel.
 
          💡 Not sure how to edit or what each section includes?\
@@ -112,6 +114,8 @@ The **Custom Worklist** enables users to efficiently manage, track, and prioriti
     <Step title="Forms Tab">
       View completed patient intake forms such as Scheduling Questions, HIPAA Consent, and Privacy Practices.
 
+      ![2025 03 28 09 47 39 Pn](/images/2025-03-28_09-47-39.png)
+
       Use the **Send Link** or **Start Wizard** button to initiate a new form.
 
       Click the **View** button next to each form to preview.
@@ -119,11 +123,15 @@ The **Custom Worklist** enables users to efficiently manage, track, and prioriti
     <Step title="Document Tab">
       View uploaded documents like Insurance Card, Photo ID, and RX under **Order Documents**.
 
+      ![2025 03 28 09 47 53 Pn](/images/2025-03-28_09-47-53.png)
+
       - Click **Upload Document** to add new files.
       - Use the **View** button to preview each item.
     </Step>
     <Step title="Comments Tab">
       Displays user comments with timestamps and contributor names.
+
+      ![2025 03 28 09 48 07 Pn](/images/2025-03-28_09-48-07.png)
 
       - Click **\+ Add Comment** to add a new note.
       - Use the **Reply** option to respond to existing comments.
@@ -131,15 +139,23 @@ The **Custom Worklist** enables users to efficiently manage, track, and prioriti
     <Step title="Charges Tab">
       Shows billing details such as insurance, deductible, copay, and total due.
 
+      ![2025 03 28 09 48 19 Pn](/images/2025-03-28_09-48-19.png)
+
       - Click **Edit Charges** to make changes, or **Pay Now** to process a payment.
       - View/download billing documents using **Good Faith Estimate** or **Invoice** buttons.
     </Step>
     <Step title="Tasks Tab">
       - View assigned tasks with tags (Order/Patient), due dates, and status.
+
+      ![2025 03 28 09 48 36 Pn](/images/2025-03-28_09-48-36.png)
+
       - Use **Add New Task** to create one or reply/comment on existing ones.
     </Step>
     <Step title="History Tab">
       - Shows a timeline of actions such as report delivery and order status changes.
+
+      ![2025 03 28 09 49 11 Pn](/images/2025-03-28_09-49-11.png)
+
       - Click **Refresh** to update the view with latest entries.
     </Step>
   </Steps>
