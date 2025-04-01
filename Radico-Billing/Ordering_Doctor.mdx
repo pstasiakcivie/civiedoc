@@ -1,0 +1,114 @@
+---
+title: "New file"
+description: "The Ordering Doctor section allows users to view, add, and manage ordering physicians in the system. Ensuring accurate doctor details is crucial for proper claim submission and report association. This module helps maintain a validated list of ordering doctors, ensuring compliance with regulatory requirements."
+---
+
+
+## 📂 Accessing the Ordering Doctor List
+
+<Steps>
+  <Step title="Navigate to the Ordering Doctor Section">
+    - From the left-side menu, go to **Settings \> Ordering Doctor**.
+    - The **Ordering Doctor list** page opens, displaying all registered doctors.
+    - Each entry includes:
+      - NPI (National Provider Identifier)
+      - Doctor’s Name (First, Middle, Last)
+      - Degree (MD, DO, etc.)
+      - License Number
+      - Status (Active/Inactive)
+    - 💡 _Note: Inactive doctors do not appear in claim entry dropdowns._
+  </Step>
+</Steps>
+
+## 🔎 Searching for a Doctor
+
+<Steps>
+  <Step title="Search by Keywords">
+    - Use the **Search** bar to look up a doctor using NPI, name, or relevant keyword.
+    - Results update dynamically as you type.
+  </Step>
+</Steps>
+
+---
+
+## 🧮 Applying Filters
+
+<Steps>
+  <Step title="Filter the Doctor List">
+    - Click the **Filter** button at the top-right.
+    - Apply filters like:
+      - Status (Active/Inactive)
+      - Degree (MD, DO, etc.)
+    - Click **Apply** to view results.
+    - 💡 _Note: Filtering is helpful in systems with large datasets._
+  </Step>
+</Steps>
+
+## 🔄 Updating Ordering Doctor Details
+
+<Steps>
+  <Step title="Refresh Doctor Profile">
+    - Select the doctor to update.
+    - Click the **Refresh** icon beside their name.
+    - The system pulls the latest data from the NPI Registry.
+    - 💡 _Note: Any updates from the official registry will be reflected._
+  </Step>
+</Steps>
+
+## 🔘 Enabling or Disabling an Ordering Doctor
+
+<Steps>
+  <Step title="Change Doctor Status">
+    - Locate the doctor in the list.
+    - Use the **Status toggle**:
+      - Purple = Active (available in claims)
+      - Gray = Inactive (hidden from dropdowns)
+
+      <Info>
+        💡 _Note: Disabling does not remove the doctor. You can reactivate them anytime._
+      </Info>
+  </Step>
+</Steps>
+
+## ➕ Adding a New Ordering Doctor
+
+<Steps>
+  <Step title="Enter NPI Information">
+    - Click the **Add Ordering Doctor** button.
+    - Enter the doctor's **NPI** in the field provided.
+    - The system may auto-validate against the NPI Registry.
+
+      <Info>
+        💡 _NPI is mandatory for claim submission._
+      </Info>
+  </Step>
+  <Step title="Enter Name and Degree">
+    - First Name (Mandatory)
+    - Middle Name (Optional)
+    - Last Name (Mandatory)
+    - Degree (e.g., MD, DO, MBBS)
+  </Step>
+  <Step title="Enter Licensing and Contact Info">
+    - License Number
+    - Telephone (Format: (999) 999-9999)
+
+      <Info>
+        💡 _Ensure the license is current and valid._
+      </Info>
+  </Step>
+  <Step title="Enter Taxonomy Code and Status">
+    - Taxonomy Code: Defines the doctor's specialty
+    - Use the **Status Toggle** to mark as Active or Inactive
+  </Step>
+  <Step title="Set Enumeration Date">
+    - Enter the **Enumeration Date** (MM/DD/YYYY)
+
+      <Info>
+        💡 _Enumeration is when the NPI was officially assigned._
+      </Info>
+  </Step>
+  <Step title="Save or Cancel">
+    - Click **Save** to add the doctor to the system.
+    - Click **Cancel** to discard the entry.
+  </Step>
+</Steps>
