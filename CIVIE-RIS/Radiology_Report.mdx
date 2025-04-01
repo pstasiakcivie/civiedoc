@@ -3,8 +3,8 @@ title: "Radiology Report"
 description: "The Radiology Reports module manages the delivery and status of radiology reports. Users can track the transmission of reports, filter based on delivery status, and take necessary actions for failed or incomplete reports."
 ---
 
-> <Icon icon="mailbox" iconType="duotone" color="#100f0f" size="21" /> **Send Report:** Initiates or re-initiates the delivery of the radiology report to the intended recipient via the selected method (e.g., fax, email, portal).\
-> Used when a report is ready to be sent or needs to be resent after a failed attempt.
+**Send Report:** Initiates or re-initiates the delivery of the radiology report to the intended recipient via the selected method (e.g., fax, email, portal).\
+Used when a report is ready to be sent or needs to be resent after a failed attempt.
 
 > <Icon icon="presentation-screen" iconType="duotone" color="#070707" size="22" /> **Requeue**: Places the report back into the delivery queue for another delivery attempt. Useful when a report has failed or timed out and you want the system to retry sending it.
 
@@ -32,31 +32,31 @@ description: "The Radiology Reports module manages the delivery and status of ra
 
 ## <Icon icon="filter-list" iconType="duotone" color="black" size="27" />  **Search and Filters**
 
-To **quickly locate** a patient, use the **search and filter** options available in the worklist:
+To **quickly locate** a radiology report, use the **search and filter** options available in the worklist:
 
 <CardGroup cols="3">
   <Card title="Search Fields" icon="magnifying-glass" iconType="duotone">
     Use the search fields at the top of each column to filter results based on specific criteria.
 
-    - 1. Utilize the search bar at the top to locate a patient by entering **MRN**, **Name**, **Date of Birth (DOB)**, **Phone Number**, or **Email**.
-    - 1. Enter the search query, and the results will automatically update in real time.
+    - Utilize the search bar at the top to locate a patient by entering **MRN**, **Name**, **Date of Birth (DOB)** etc.
+    - Enter the search query, and the results will automatically update in real time.
   </Card>
-  <Card title="Filter Panel" icon="Filter">
-    - 1. Click on the **Filters** panel on the right and select from the following options: **Alerts, MRN, First, Last, or Middle Nam, Date of Birth (DOB),** etc.
-    - 1. Click **Apply** to update the results based on the selected filters.
-    - 1. To clear all applied filters, click the **Reset Filters** button at the top.
+  <Card title="Filter Panel" icon="filter">
+    - Click on the **Filters** panel on the right and select from the following options: **Alerts, MRN, patient Name, or Referrng Doctor, Date of Birth (DOB),** etc.
+    - Click **Apply** to update the results based on the selected filters.
+    - To clear all applied filters, click the **Reset Filters** button at the top.
   </Card>
   <Card title="Worklist Dropdown" icon="list">
     Refine the patient list using the **Worklist Range** dropdown and additional category filters.
 
-    - 1. Select the desired date range from the **Worklist Range** dropdown (e.g., **Today**, **Last Week**, **Custom Date Range**).
-    - 1. Use the **Worklist Category** dropdown to further narrow down the selection based on specific worklist criteria.
+    - Select the desired date range from the **Worklist Range** dropdown (e.g., **Today**, **Last Week**, **Custom Date Range**).
+    - Use the **Worklist Category** dropdown to further narrow down the selection based on specific worklist criteria.
   </Card>
 </CardGroup>
 
 ## **Creating Customized Worklists**
 
-The **Custom Worklist** enables users to efficiently manage, track, and prioritize patient details. By organizing patient details based on predefined criteria, the worklist streamlines workflows, and ensures quick access to patient information. This feature also supports automation, reducing manual effort while maintaining compliance and security.
+The **Custom Worklist** enables users to efficiently manage, track, and prioritize report details. By organizing reports based on predefined criteria, the worklist streamlines workflows, and ensures quick access to patient reports. This feature also supports automation, reducing manual effort while maintaining compliance and security.
 
 <Accordion title="To add a new worklist, follow these steps:" icon="newspaper" iconType="duotone">
   <Steps>
@@ -69,10 +69,10 @@ The **Custom Worklist** enables users to efficiently manage, track, and prioriti
     <Step title="Enter Worklist Details">
       Provide a **Worklist Name** and **Description** for identification.
     </Step>
-    <Step title="Select a Worklist Category ">
+    <Step title="Select a Worklist Category">
       Choose the appropriate category to classify the worklist.
     </Step>
-    <Step title="Configure Access Preferences ">
+    <Step title="Configure Access Preferences">
       Enable the necessary checkboxes to determine accessibility:
 
       - **Add to Dashboard** – Display the worklist on the dashboard.
@@ -89,20 +89,24 @@ The **Custom Worklist** enables users to efficiently manage, track, and prioriti
       Click **Save** to finalize and store the worklist.Adding Patient Information
 
       - To edit patient details, Click, Edit icon next to the patient name
-      - Enter the patient’s details in this section, retrieved from the document in the left panel. This information links the document to the corresponding patient record.
-      - Steps to enter the patient information [**Click Here.**](https://collaborativeimaging.mintlify.app/Test_Doc/CIVIE_UserManual#:~:text=Enter%20Patient%20Information)
+      - Enter the patient's details in this section, retrieved from the document in the left panel. This information links the document to the corresponding patient record.
+      - Steps to enter the patient information [**Click Here.**](https://collaborativeimaging.mintlify.app/Test_Doc/CIVIE_UserManual#:~:text=Enter%20Patient%20Information)
     </Step>
   </Steps>
 </Accordion>
 
 ## **Viewing Detailed Radiology Reports**
 
-<Accordion title="To manage patient details do the following:" icon="address-card" iconType="duotone">
+<Accordion title="To manage patient details do the following:(remove this)" icon="address-card" iconType="duotone">
+  When you click on the **Accession Number** from the Radiology Reports worklist, a detailed view of the selected report appears. This view displays complete information on delivery status, attempts, and audit history for that specific report.
+
+  This data is structured and grouped under the following tabs for easy navigation and review:
+
   <Steps>
     <Step title="Overview Tab">
       ![2025 03 28 09 47 01 Pn](/images/2025-03-28_09-47-01.png)
 
-      1. To view patient details, Click <Icon icon="eye" /> icon next to the patient name. Click the **Edit (🖊️) icon** next to the specific section (e.g., **Active Insurance**, **Guarantor**, **Employer**, etc.) in the **Patient View Details** panel.
+      1. To view patient details, Click <Icon icon="eye" /> icon next to the patient name.
 
          💡 Not sure how to edit or what each section includes?\
          👉 [Click here to view the full step-by-step guide for editing in the Patient View ](https://collaborativeimaging.mintlify.app/CIVIE-RIS/Patients#viewing-patient-details)([left panel](https://collaborativeimaging.mintlify.app/CIVIE-RIS/Patients#viewing-patient-details)).
@@ -168,8 +172,39 @@ The **Custom Worklist** enables users to efficiently manage, track, and prioriti
 
      💡 Not sure how to edit or what each section includes?\
      👉 [Click here to view the full step-by-step guide for editing in the Patient View](https://collaborativeimaging.mintlify.app/CIVIE-RIS/Patients#viewing-patient-details) ([**left panel**](https://collaborativeimaging.mintlify.app/CIVIE-RIS/Patients#viewing-patient-details)).
+</Accordion>
 
+<Accordion title="Steps to Edit or Add a Referring Physician" icon="user-check">
   <Steps>
-    
+    <Step title="Access the Edit Referring Physician Panel">
+      - This window includes multiple tabs: **Physician Detail**, **Practices**, **Security**, and **Notes/Comments**.
+    </Step>
+    <Step title="Fill Physician Detail Tab">
+      - Enter or update physician's **First Name**, **Last Name**, and **NPI Number**.
+      - Select the appropriate **Degree Type** from the dropdown.
+      - Fill in **Address1**, **Address2**, **City**, **State**, and **Zip Code**.
+      - Under **Special Options**, check applicable boxes (e.g., "Is Facility User", "Need Fax Confirmation").
+      - Enter **Fax**, **Phone**, and **Email** details.
+      - Choose **Preferred Contact Method** (Text, Email, Fax, or Phone Call).
+      - Select options for **Primary/Secondary/Tertiary Marketing Staff** and **EMR System**.
+      - Add any additional notes in the **Notes** section at the bottom.
+    </Step>
+    <Step title="Assign Practices in the Practices Tab">
+      - Under the **Search Facility** section, use filters to locate the desired practice(s).
+      - Select one or multiple practices by checking the box next to each.
+      - Click **Add Selected** to move them into the "Selected Facilities" section.
+    </Step>
+    <Step title="Configure Settings in the Security Tab">
+      - Send a **Registration Link** to the physician via the provided button.
+      - Toggle **Is Verified**, **Enable 2 Factor Authentication**, and **Is Active** switches as needed.
+    </Step>
+    <Step title="Add Notes or Comments in Notes/Comments Tab">
+      - This tab allows adding internal notes or comments related to the referring physician.
+      - Click **Refresh** to check for existing comments.
+    </Step>
+    <Step title="Save the Information">
+      - After entering all necessary details across the tabs, click **Save** to apply the changes.
+      - Click **Cancel** to discard any modifications and exit the panel.
+    </Step>
   </Steps>
 </Accordion>
