@@ -11,77 +11,115 @@ To **quickly locate** a patient, use the **search and filter** options available
   <Card title="Search Fields" icon="magnifying-glass" iconType="duotone">
     Use the search fields at the top of each column to filter results based on specific criteria.
 
-    - 1. Utilize the search bar at the top to locate a patient by entering **MRN**, **Name**, **Date of Birth (DOB)**, **Phone Number**, or **Email**.
-    - 1. Enter the search query, and the results will automatically update in real time.
+    - Utilize the search bar at the top to locate a patient by entering **MRN**, **Name**, **Date of Birth (DOB)**, **Phone Number**, or **Email**.
+    - Enter the search query, and the results will automatically update in real time.
   </Card>
-  <Card title="Filter Panel" icon="Filter">
-    - 1. Click on the **Filters** panel on the right and select from the following options: **Alerts, MRN, First, Last, or Middle Nam, Date of Birth (DOB),** etc.
-    - 1. Click **Apply** to update the results based on the selected filters.
-    - 1. To clear all applied filters, click the **Reset Filters** button at the top.
+  <Card title="Filter Panel" icon="filter">
+    - Click on the **Filters** panel on the right and select from the following options: **Alerts, MRN, First, Last, or Middle Name, Date of Birth (DOB),** etc.
+    - Click **Apply** to update the results based on the selected filters.
+    - To clear all applied filters, click the **Reset Filters** button at the top.
   </Card>
   <Card title="Worklist Dropdown" icon="list">
     Refine the patient list using the **Worklist Range** dropdown and additional category filters.
 
-    - 1. Select the desired date range from the **Worklist Range** dropdown (e.g., **Today**, **Last Week**, **Custom Date Range**).
-    - 1. Use the **Worklist Category** dropdown to further narrow down the selection based on specific worklist criteria.
+    - Select the desired date range from the **Worklist Range** dropdown (e.g., **Today**, **Last Week**, **Custom Date Range**).
+    - Use the **Worklist Category** dropdown to further narrow down the selection based on specific worklist criteria.
+  </Card>
+  <Card title="Status Filter" icon="sparkles">
+    Use the **Status Filter** panel to quickly view orders based on their current state—such as _Arrived_, _Checked In_, _Preparation_, _In Progress_, _Completed_, and more—for efficient tracking and workflow management.
   </Card>
 </CardGroup>
 
-## **Creating Customized Worklists**
+## 🗂️**Creating Customized Worklists**
 
-The **Custom Worklist** enables users to efficiently manage, track, and prioritize patient details. By organizing patient details based on predefined criteria, the worklist streamlines workflows, and ensures quick access to patient information. This feature also supports automation, reducing manual effort while maintaining compliance and security.
+The **Custom Worklist** enables efficient management and prioritization of patient data, automates sorting, and supports secure workflows.
 
 <Accordion title="To add a new worklist, follow these steps:" icon="newspaper" iconType="duotone">
   <Steps>
     <Step title="Access the Worklist Panel">
-      Navigate to the **Worklists** page and open the panel from the right-side menu.
+      Navigate to the **Worklists** page and open the panel from the right.
     </Step>
     <Step title="Create a New Worklist">
-      Click the <Icon icon="plus-large" />  icon to initiate a new worklist.
+      Click the <Icon icon="plus-large" /> icon.
     </Step>
     <Step title="Enter Worklist Details">
-      Provide a **Worklist Name** and **Description** for identification.
+      Provide a **Worklist Name** and a short **Description**.
     </Step>
-    <Step title="Select a Worklist Category ">
-      Choose the appropriate category to classify the worklist.
+    <Step title="Select a Worklist Category">
+      Choose a category to classify the worklist.
     </Step>
-    <Step title="Configure Access Preferences ">
-      Enable the necessary checkboxes to determine accessibility:
+    <Step title="Configure Access Preferences">
+      Enable the relevant checkboxes:
 
-      - **Add to Dashboard** – Display the worklist on the dashboard.
-      - **Add to My Quick Search** – Include it in the quick search for easy retrieval.
-      - **Add to Main Menu** – Make it available in the main navigation menu.
+      - **Add to Dashboard**
+      - **Add to My Quick Search**
+      - **Add to Main Menu**
     </Step>
     <Step title="Define Filter Conditions">
-      Configure **fields, operators, and values** to extract relevant data from the complete patient details.
+      Configure **fields**, **operators**, and **values** to extract needed records.
     </Step>
     <Step title="Preview the Worklist">
-      Review the filtered results to ensure accuracy.
+      Review your filtered results.
     </Step>
     <Step title="Save the Worklist">
-      Click **Save** to finalize and store the worklist.Adding Patient Information
+      Click **Save** to store it.
 
-      - To edit patient details, Click, Edit icon next to the patient name
-      - Enter the patient’s details in this section, retrieved from the document in the left panel. This information links the document to the corresponding patient record.
-      - Steps to enter the patient information [**Click Here.**](https://collaborativeimaging.mintlify.app/Test_Doc/CIVIE_UserManual#:~:text=Enter%20Patient%20Information)
+      **Adding Patient Info:**
+
+      - Click the **Edit** icon to modify patient data.
+      - This links the data to the patient record from the left panel.
+      - [Steps to enter the information.](https://collaborativeimaging.mintlify.app/Test_Doc/CIVIE_UserManual#:~:text=Enter%20Patient%20Information)
     </Step>
   </Steps>
 </Accordion>
 
-## **Editing Encounter Details**
+## 📝 Editing Encounter Details
 
-When you click on the **patient name** or **referring physician** from the Radiology Reports worklist, a detailed view of the selected report appears. This view displays complete information on delivery status, attempts, and audit history for that specific report.
-
-<Accordion title="To edit encounter details do the following:" icon="pen-to-square" iconType="duotone">
+<Accordion title="Steps to Edit Encounter Details and Exam Information" icon="file-pen">
   <Steps>
-    <Step title="Open the Encounter Details Page">
-      - To make changes to a Encounter details, click the **Edit icon** beside the patient's name.
-      - You can update patient demographics by entering details sourced from the document shown in the **left panel**. This document is automatically linked to the corresponding patient record.
+    <Step title="Access Encounter Details">
+      Click the **Edit (pencil)** icon under the Encounter Details section of the patient's order.
 
-        💡 Not sure how to edit or what each section includes?\
-        👉 **Click here to view the full step-by-step guide for editing Patient**.
+      This opens the full encounter information panel where patient, physician, and exam data can be reviewed and updated.
     </Step>
-    <Step title="New Step">
-      
+    <Step title="Review Header Information">
+      View key identifiers such as **Order Status**, **Accession Number**, and **Appointment Status**.
+
+      Patient and referring physician information is displayed for quick reference.
+    </Step>
+    <Step title="Review and Update Reason and Symptoms">
+      Confirm or enter the **Reason** and **Symptoms** for the order.
+
+      Add any **Additional Notes** related to the patient’s medical condition.
+    </Step>
+    <Step title="Update Exam Details">
+      - Under the **Exams** section, update the following fields:
+        - **Exam Start/End Time**: Specify the time frame of the exam.
+        - **Assigned Technologist**: Select the technologist responsible for performing the exam.
+        - **Reason for Exam**: Provide a brief explanation of the purpose.
+        - **Tech Comments**: Add any technologist notes (if applicable).
+      - Expand additional fields using **Show More Fields** to enter:
+        - **Diagnosis**, **Technologist Comments**, **Instructions for Radiologist**
+        - **Prior Notes**, **Notes for Scheduler**, **Other Notes**
+        - Select from dropdowns for **Admitting Physician**, **Admitting Staff**, **Admitting Doctor**, and **Admitting Technologist**
+    </Step>
+    <Step title="Manage Supplies (if applicable)">
+      - If exam requires specific supplies, click **\+ Add New Supplies**.
+      - Enter supply name and quantity used if available.
+    </Step>
+    <Step title="Save or Cancel Changes">
+      After reviewing or entering the required data, click **Save** to update the encounter record.
+
+      - To exit without saving, click **Cancel**.
+    </Step>
+    <Step title="Other Tabs Overview (Forms, Notes, Tasks, History)">
+      **Forms Tab**: Displays patient intake or consent forms. Allows viewing or initiating new forms.
+
+      **Notes Tab**: Contains any additional notes added by staff for context or instructions.
+
+      **Tasks Tab**: Shows assigned tasks related to this order, including due dates and status.
+
+      **History Tab**: Tracks chronological updates and actions taken on the order, including status changes, comments, and notifications.
     </Step>
   </Steps>
+</Accordion>

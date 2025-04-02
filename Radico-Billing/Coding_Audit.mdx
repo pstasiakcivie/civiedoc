@@ -88,32 +88,36 @@ description: "Coding audits play a crucial role in ensuring compliance, accuracy
 
 ## 🧾 Coding Report Layout
 
-<Card title="🧍 Left Panel – Radiology Report Details" icon="left-from-line">
-  - Displays:
-    - **Facility/Practice Name**
-    - **Patient Info**
-    - **Indication, Comparison, Technique** sections
-</Card>
+<CardGroup cols={2}>
+  <Card title="Left Panel" icon="arrow-left-to-bracket" iconType="duotone" color="#0d0c0c">
+    ## **Radiology Report Details**
 
-<Card title="🖊️ Right Panel – Coding Audit Fields" icon="right-from-line">
-  - Add and verify **CPT Codes** with fields for:
-    - CPT Code, Procedure Name, Modifiers (M1–M4)
-  - Actions:
-  - 1. ➕ **Add CPT Line**
-    - 2. 🗑️ **Delete**
-</Card>
+    - **Displays**:
+      - **Facility/Practice Name**
+      - **Patient Info**
+      - **Indication, Comparison, Technique** sections
+  </Card>
+  <Card title="Right Panel" icon="arrow-right-to-bracket" iconType="duotone" color="#080808">
+    ## **Coding Audit Fields** 
 
-<Card title="🧠 ICD Section" icon="brain-circuit">
-  - Assign appropriate **ICD diagnosis codes** based on the report.
-  - 1. 🔍 _Ensure CPT & ICD codes align with clinical findings._
-</Card>
+    - _Add and verify _**_CPT Codes_**_ with fields for:_
+      - _CPT Code, Procedure Name, Modifiers (M1–M4)_
+    - **Actions:**
+    - ➕ Add CPT Line
+      - 🗑️ Delete
+  </Card>
+  <Card title="ICD Section" icon="brain-circuit" iconType="duotone" color="#070707">
+    - _Assign appropriate _**_ICD diagnosis codes_**_ based on the report._
+    - 🔍 _Ensure CPT & ICD codes align with clinical findings._
+  </Card>
+  <Card title="AI, Historical, and Crosswalk Matching" icon="chart-pie-simple" iconType="duotone" color="#181717">
+    - Visual aids for code validation:
+      - 1. AI Suggestions
+      - 2. Historical Patterns
+      - 3. Crosswalk Recommendations
+  </Card>
+</CardGroup>
 
-<Card title="🤖 AI, Historical, and Crosswalk Matching" icon="chart-pie">
-  - Visual aids for code validation:
-    - **1. AI Suggestions**
-    - **2. Historical Patterns**
-    - **3. Crosswalk Recommendations**
-</Card>
 
 ## ✅ Finalizing the Audit
 

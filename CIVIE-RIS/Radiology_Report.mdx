@@ -3,33 +3,6 @@ title: "Radiology Report"
 description: "The Radiology Reports module manages the delivery and status of radiology reports. Users can track the transmission of reports, filter based on delivery status, and take necessary actions for failed or incomplete reports."
 ---
 
-**Send Report:** Initiates or re-initiates the delivery of the radiology report to the intended recipient via the selected method (e.g., fax, email, portal).\
-Used when a report is ready to be sent or needs to be resent after a failed attempt.
-
-> <Icon icon="presentation-screen" iconType="duotone" color="#070707" size="22" /> **Requeue**: Places the report back into the delivery queue for another delivery attempt. Useful when a report has failed or timed out and you want the system to retry sending it.
-
-> <Icon icon="file-export" iconType="duotone" color="#070707" size="22" /> **Move to External Queue**: Transfers the report to a separate queue designated for **external systems or partners** (e.g., third-party vendors, referring clinics). Often used when internal delivery is not applicable or the recipient is outside the primary network.
-
-> <Icon icon="circle-exclamation" iconType="duotone" color="#090808" size="22" />  **Move to Invalid Queue**: Marks the report as **invalid or unprocessable** and moves it to the Invalid Queue. Typically used when data is incorrect, missing, or the recipient information is invalid. This action helps exclude these reports from normal processing and follow-up.
-
-> <Icon icon="hand-holding-box" iconType="duotone" color="#010101" size="22" /> **Resolve**: Closes or marks a report issue as addressed.\
-> Use this when:
->
-> - A failed delivery has been manually handled,
-> - A report was sent through an alternative method,
-> - Or no further action is needed.
->
-> Once resolved, the report is no longer flagged for action in the worklist.
-
-> <Icon icon="eye" iconType="duotone" color="#030303" size="22" /> **View Report:** After clicking the <Icon icon="eye" iconType="duotone" /> **icon**, the system opens a **PDF preview panel** where you can:
->
-> - 📥 **Download** the report
-> - 📤 **Send via Fax/Email**
-> - 🖼️ **View DICOM Images**
-> - 🔍 Zoom in/out or navigate between pages
->
-> Use this panel to quickly review and manage the report before taking further action.
-
 ## <Icon icon="filter-list" iconType="duotone" color="black" size="27" />  **Search and Filters**
 
 To **quickly locate** a radiology report, use the **search and filter** options available in the worklist:
@@ -95,75 +68,63 @@ The **Custom Worklist** enables users to efficiently manage, track, and prioriti
   </Steps>
 </Accordion>
 
-## **Viewing Detailed Radiology Reports**
+h2?
 
-<Accordion title="To manage patient details do the following:(remove this)" icon="address-card" iconType="duotone">
-  When you click on the **Accession Number** from the Radiology Reports worklist, a detailed view of the selected report appears. This view displays complete information on delivery status, attempts, and audit history for that specific report.
-
-  This data is structured and grouped under the following tabs for easy navigation and review:
-
+<Accordion title="Radiology Report Actions – Icon Functions" icon="send">
   <Steps>
-    <Step title="Overview Tab">
-      ![2025 03 28 09 47 01 Pn](/images/2025-03-28_09-47-01.png)
+    <Step title="📤 Send Report">
+      Click the **Send Report** icon to initiate or re-initiate delivery of the radiology report.
 
-      1. To view patient details, Click <Icon icon="eye" /> icon next to the patient name.
+      The system sends the report to the intended recipient using the selected method (e.g., **Fax**, **Email**, or **Portal**).
 
-         💡 Not sure how to edit or what each section includes?\
-         👉 [Click here to view the full step-by-step guide for editing in the Patient View ](https://collaborativeimaging.mintlify.app/CIVIE-RIS/Patients#viewing-patient-details)([left panel](https://collaborativeimaging.mintlify.app/CIVIE-RIS/Patients#viewing-patient-details)).
-      2. To make changes to a patient's information, click the <Icon icon="pen-to-square" iconType="duotone" color="#0f0e0e" /> **icon** beside the patient's name.
-
-         💡 Not sure how to edit or what each section includes?\
-         👉[ Click here to view the full step-by-step guide for editing  Patient](https://collaborativeimaging.mintlify.app/CIVIE-RIS/Patients#editing-patient-details).
+      - This is commonly used when:
+        - The report is being sent for the first time.
+        - A previous delivery attempt failed and needs to be retried.
     </Step>
-    <Step title="Forms Tab">
-      View completed patient intake forms such as Scheduling Questions, HIPAA Consent, and Privacy Practices.
+    <Step title="🔁 Requeue">
+      Click the **Requeue** icon to place the report back into the system's delivery queue.
 
-      ![2025 03 28 09 47 39 Pn](/images/2025-03-28_09-47-39.png)
-
-      Use the **Send Link** or **Start Wizard** button to initiate a new form.
-
-      Click the **View** button next to each form to preview.
+      - This is helpful when a delivery attempt failed or timed out.
+      - The system will attempt to resend the report automatically.
     </Step>
-    <Step title="Document Tab">
-      View uploaded documents like Insurance Card, Photo ID, and RX under **Order Documents**.
+    <Step title="🌐 Move to External Queue">
+      Use the **Move to External Queue** icon to transfer the report to a queue meant for external recipients (e.g., third-party vendors, referring clinics).
 
-      ![2025 03 28 09 47 53 Pn](/images/2025-03-28_09-47-53.png)
-
-      - Click **Upload Document** to add new files.
-      - Use the **View** button to preview each item.
+      - This is used when internal routing is not applicable.
     </Step>
-    <Step title="Comments Tab">
-      Displays user comments with timestamps and contributor names.
+    <Step title="🚫 Move to Invalid Queue">
+      Click the **Move to Invalid Queue** icon to mark the report as invalid or unprocessable.
 
-      ![2025 03 28 09 48 07 Pn](/images/2025-03-28_09-48-07.png)
-
-      - Click **\+ Add Comment** to add a new note.
-      - Use the **Reply** option to respond to existing comments.
+      - This is typically used when recipient information is incorrect or missing.
+      - Once moved, the report is excluded from standard processing.
     </Step>
-    <Step title="Charges Tab">
-      Shows billing details such as insurance, deductible, copay, and total due.
+    <Step title="✅ Resolve">
+      Use the **Resolve** icon to mark the report issue as addressed.
 
-      ![2025 03 28 09 48 19 Pn](/images/2025-03-28_09-48-19.png)
+      - This is useful when:
+        - A failed delivery has been manually handled.
+        - The report has been sent through an alternate method.
+        - No further action is required.
 
-      - Click **Edit Charges** to make changes, or **Pay Now** to process a payment.
-      - View/download billing documents using **Good Faith Estimate** or **Invoice** buttons.
+        Once resolved, the report will no longer be flagged for attention.
     </Step>
-    <Step title="Tasks Tab">
-      - View assigned tasks with tags (Order/Patient), due dates, and status.
+    <Step title="👁️ View Report">
+      Click the **View Report** (eye) icon to open a detailed PDF preview panel.
 
-      ![2025 03 28 09 48 36 Pn](/images/2025-03-28_09-48-36.png)
+      - From this panel, you can:
 
-      - Use **Add New Task** to create one or reply/comment on existing ones.
-    </Step>
-    <Step title="History Tab">
-      - Shows a timeline of actions such as report delivery and order status changes.
 
-      ![2025 03 28 09 49 11 Pn](/images/2025-03-28_09-49-11.png)
+      - 📥 **Download** the report
+      - 📤 **Send via Fax or Email**
+      - 🖼️ **View linked DICOM images**
+      - 🔍 **Zoom in/out** and navigate through the report pages
 
-      - Click **Refresh** to update the view with latest entries.
+      This allows for quick review and report management before sending or reprocessing.
     </Step>
   </Steps>
 </Accordion>
+
+## **Viewing Detailed Radiology Reports**
 
 <Accordion title="Radiology Report Details Tabs" icon="sparkles">
   When you click on the **patient name** from the Radiology Reports worklist, a detailed view of the selected report appears. This view displays complete information on delivery status, attempts, and audit history for that specific report.
@@ -174,7 +135,9 @@ The **Custom Worklist** enables users to efficiently manage, track, and prioriti
      👉 [Click here to view the full step-by-step guide for editing in the Patient View](https://collaborativeimaging.mintlify.app/CIVIE-RIS/Patients#viewing-patient-details) ([**left panel**](https://collaborativeimaging.mintlify.app/CIVIE-RIS/Patients#viewing-patient-details)).
 </Accordion>
 
-<Accordion title="Steps to Edit or Add a Referring Physician" icon="user-check">
+## **Editing Referring Doctor**
+
+<Accordion title="Steps to Edit Referring Doctor/Physician" icon="user-check">
   <Steps>
     <Step title="Access the Edit Referring Physician Panel">
       - This window includes multiple tabs: **Physician Detail**, **Practices**, **Security**, and **Notes/Comments**.
