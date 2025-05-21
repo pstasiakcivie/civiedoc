@@ -1,0 +1,243 @@
+---
+title: "Medical Record Request"
+description: "The Medical Record Requests module allows users to manage and track all requests for patient reports and CDs across locations. It provides a categorized, filterable worklist where requests are organized by status—New, Processing, Failed, Completed, and Cancelled. Users can create, edit, and fulfill requests, define delivery preferences (email, fax, text, or in-person), and specify delivery contacts. This module ensures secure and efficient handling of patient record retrieval and delivery while maintaining full traceability and accountability."
+---
+
+# **Adding a New Request**
+
+To submit a new medical record request:
+
+- Click on the **\+ New Request** button at the top right.
+- An **Add Request** form will open, this form allows you to initiate a new request for a patient’s medical records, including images and reports, based on selected parameters as follows:
+
+<AccordionGroup>
+  <Accordion title="New Accordion">
+    <Steps>
+      <Step title="Select Request Details tab">
+        **Location**: Choose the relevant facility from the dropdown.
+
+        **Due Date:** Enter the expected completion date.
+
+        **Request Type**: Select the priority type (e.g., STAT, Routine).
+
+        **Status:** Default is set to NEW, but can be updated to Processing, Completed, etc.
+      </Step>
+      <Step title="Requested By">
+        **Requested By:** Choose the name of the requestor from the dropdown. This could be a physician or internal user.
+      </Step>
+      <Step title="Record Belongs To">
+        **Search Patient**: Start typing the patient’s name to auto-search and link the request to a patient profile.
+      </Step>
+      <Step title="What is Requested">
+        Select one or both options: Reports and CD.
+
+        Specify the Exam Duration using: Start Date and End Date.
+      </Step>
+      <Step title="Type of Studies">
+        Use the dropdown to Search or Select Studies (e.g., MRI, CT, Mammogram).
+
+        **Note**: You must select at least one modality to proceed.
+      </Step>
+      <Step title="Please indicate How You Would Like These to Be Received">
+        Choose between:
+
+        - Other (Email/Fax/Mail/Text)
+        - In-person Pickup
+
+        If Other is selected:
+
+        - Add one or more delivery methods:
+          - Delivery Method: Select Email, Mail Address, Text, etc.
+          - Delivery To: Specify the destination (e.g., email address or mailing address).
+          - Contact Name: Enter the recipient’s name.
+          - Use the ➕ icon to add multiple methods and 🗑️ to remove.
+
+        If Inperson selected:
+
+        - Add pickup details:
+          - Pickup Date Time.
+          - Enable checkbox if it is Same as Patient.
+          - Pickup Person Name and Phone.
+      </Step>
+      <Step title="Save and Cancel">
+        Click **Save** to submit the request or click **Cancel** to exit without saving.
+      </Step>
+    </Steps>
+  </Accordion>
+  <Accordion title="Comments Tab">
+    - Switch to the Comments tab to add comments or add notes for tracking purposes.
+    - To add a comment:
+      - Click **Add Comment**.
+      - Enter the comment/Message in the text box provided.
+      - Click the **Add** button to post the comment.
+  </Accordion>
+  <Accordion title="Documents Tab">
+    <Steps>
+      <Step title="Choose Fax Document">
+        Click this button to open the **Incoming Documents** window. Here, you can:
+
+        - View documents received via fax.
+        - Search by **File Name**, **Patient Name**, or **Create Date**.
+        - Use the dropdown to filter by document status (e.g., New, Reviewed).
+        - Click **Select** next to the relevant file to attach it to the current request.
+      </Step>
+      <Step title="Scan Document">
+        This allows users to scan physical documents directly into the system and attach them to the request.
+      </Step>
+      <Step title="Upload From Computer">
+        Use this option to upload digital files (PDFs, images, etc.) from your local system.
+      </Step>
+      <Step title="Save and Cancel">
+        
+
+        Click **Save** to apply changes or Click **Cancel** to exit without saving.
+      </Step>
+    </Steps>
+  </Accordion>
+</AccordionGroup>
+
+# Editing a Medical Record Request
+
+View and Edit Existing Requests
+
+- In the last column of each row, you will see a **Edit** icon (✏️). Click this to open the selected request.
+- You can review and modify the information as needed.
+
+**Steps to Edit a Medical Record Request**
+
+<AccordionGroup>
+  <Accordion title="Request details">
+    <Steps>
+      <Step title="Request details">
+        Click the **Edit** icon (✏️) from the Medical Record Requests list.
+
+        A right-side panel titled **Edit** **Request** will open displaying detailed request information.
+      </Step>
+      <Step title="Verify Request Metadata">
+        View the Created By, Created Date, Modified By, and Modified Date at the top.
+
+        This helps in tracking who initiated or last updated the request.
+      </Step>
+      <Step title="Review & Update Request Details">
+        **Location**: Select the applicable facility from the dropdown.
+
+        **Due Date**: Adjust the due date if necessary.
+
+        **Request Type**: Choose from available types such as STAT or Routine.
+
+        **Status**: Update the request status (e.g., NEW, PROCESSING, COMPLETED).
+      </Step>
+      <Step title="Referring Physician Details">
+        Confirm or update the Referring Physician name.
+
+        Phone and fax numbers are auto populated if linked.
+      </Step>
+      <Step title="Patient Information Section">
+        - Review details under Patient Information including:
+          - Patient Name
+          - Gender
+          - Date of Birth
+          - Primary Phone
+          - Address
+        - Click the **Eye** icon to view more patient information or use the Trash icon to remove the record.
+      </Step>
+      <Step title="Select What is Requested">
+        - Tick the checkboxes for:
+          - Reports
+          - CD
+        - This defines what part of the medical record is being requested.
+      </Step>
+      <Step title="Set the Exam Duration">
+        Enter the Start Date and End Date for the requested exams.
+      </Step>
+      <Step title="Type of Studies">
+        Use the Search or Select Studies dropdown to choose the specific study type (e.g., MRI, CT, Mammogram).
+      </Step>
+      <Step title="Entering the Note">
+        - Type in your note or instruction.
+        - Clearly specify:
+          - Purpose of the note (e.g., missing consent, follow-up required).
+          - Responsible person/team if action is needed.
+          - Any deadlines or critical dates if applicable.
+      </Step>
+      <Step title="Adding Delivery Methods">
+        **Select the Delivery Method**
+
+        You can choose between two main options:
+
+        - Other (Email / Fax / Mail / Text)
+        - In-Person Pickup
+
+        By default, the Other option is selected.
+
+        You may click the ➕ icon to add another delivery method, or the 🗑️ (delete) icon to remove a specific method.
+
+        Once basic request details are updated, you can access additional tabs for more context or required documentation.
+      </Step>
+    </Steps>
+  </Accordion>
+  <Accordion title="Procedures Tab">
+    <Steps>
+      <Step title="Link More Exams">
+        - Click the **\+ Link More Exams** button to open the Attach Procedures window.
+        - This window shows all available exams associated with the patient, including:
+          - Exam Name
+          - Appointment Date
+          - Modality (e.g., US, MG)
+      </Step>
+      <Step title="Search & Filter ">
+        Use the top fields to **Search & Filter** the procedure list:
+
+        - **Procedure** – Search by name or code
+        - **Start** **Date** / **End** **Date** – Filter exams based on a date range
+
+        Select & Link
+
+        - Use the checkbox next to the desired exam(s) to select them.
+        - Click the Link button to add the selected procedure(s) to the current request.
+      </Step>
+    </Steps>
+  </Accordion>
+  <Accordion title="Comments Tab">
+    Switch to the Comments tab to review existing comments or add notes for tracking purposes.
+
+    - To add a comment:
+      - Click into the comment field.
+      - Type the comment.
+      - Click the **Add** button.
+
+    Use this space to collaborate or flag follow-ups for staff.
+  </Accordion>
+  <Accordion title="Documents Tab">
+    <Steps>
+      <Step title="Choose Fax Document:">
+        Select a document received via fax that's available in the incoming document list.
+      </Step>
+      <Step title="Scan Document:">
+        If connected to a scanner, use this option to scan and directly upload a physical document.
+      </Step>
+      <Step title="Upload From Computer:">
+        Browse and attach a document from your local computer.
+      </Step>
+      <Step title=" Attached Document List">
+        You’ll see a list of newly added or existing documents.
+
+        Each file will display its name and allow you to select the appropriate **document type** (e.g., _Medical Records Request_).
+
+        Click the **trash icon 🗑️** to remove an attached document if it's incorrect or no longer needed.
+      </Step>
+      <Step title="Save and Cancel">
+        Click **Save** at the bottom of the drawer to confirm changes. Use **Cancel** if you wish to discard updates and exit the drawer
+      </Step>
+    </Steps>
+  </Accordion>
+</AccordionGroup>
+
+
+<Note>
+  **Best Practices**
+
+  - Always double-check patient information and referring details before submitting.
+  - Use STAT type only for urgent requests.
+  - Keep track of changes via the Modified Date and Modified By fields for auditing.
+</Note>
