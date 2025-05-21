@@ -1,0 +1,171 @@
+---
+title: "Resources"
+description: "The Resources module helps manage and organize diagnostic equipment or exam rooms (e.g., MRI, CT, Ultrasound) by location and modality. Users can activate or deactivate resources, define operational hours for each day, and set custom working and break times. The interface offers filters by resource name, location, modality, creator, and creation date. This module ensures efficient scheduling, resource allocation, and workflow management by aligning available equipment with scheduling demands."
+---
+
+**Active Toggle:**\
+Use the toggle switch to enable or disable a resource.
+
+- Enabled (Green): The resource is available for scheduling.
+- Disabled (Grey): The resource is not available for scheduling.
+
+This helps control which resources can be used based on their availability.
+
+# Adding New Resources
+
+<AccordionGroup>
+  <Accordion title="Add Resources">
+    <Step title="Open the Add Resource Form">
+      Click on the **\+ New Resource** button at the top-right of the Resources screen.
+
+      An add resource form opens consisting of **Resource** **Details** and **Schedule** **tab**.
+    </Step>
+    <Step title="Enter Resource Details">
+      **Resource Name**: Enter a unique name for the resource (e.g., BG MRI, Duluth X-Ray).
+
+      **Location**: Select the location where this resource is available.
+
+      **Modality**: Choose the type of imaging modality (e.g., MRI, Ultrasound, X-Ray).
+    </Step>
+    <Note>
+      **_Note_:  **Selecting at least one modality is mandatory before proceeding.
+    </Note>
+  </Accordion>
+  <Accordion title="Schedule Tab">
+    **Set Exam Room Hours ()**
+
+    - Use the toggle next to each day to mark the exam room as Open or Closed based on its availability for the day.
+    - For open days, set:
+      - Start Time and End Time under _Working Hours_.
+      - Optionally add Break Start and Break End Time.
+      - Use the **\+ icon** to add multiple break hours.
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  **Best Practices**
+
+  ✅ Set consistent operating hours to avoid appointment conflicts.\
+  ✅ Include break hours to prevent overbooking.\
+  ✅ Use clear, location-specific resource names for easy identification in scheduling.\
+  ✅ Always verify the modality matches what’s available in the facility.
+</Note>
+
+# Editing Resources
+
+Click on the **Edit** Icon next to the desired resource from the resource list.
+
+<AccordionGroup>
+  <Accordion title="Resource Details tab:">
+    - Update Resource Name by editing the text field.
+    - Change Location by selecting a new option from the Locations dropdown.
+    - Modify Modality by selecting or deselecting modalities from the Modality dropdown list.
+  </Accordion>
+  <Accordion title="Schedule section">
+    <Steps>
+      <Step title="Select the Day">
+        Use the toggle switch next to each day to mark it as Open or Closed based on the availability.
+      </Step>
+      <Step title="Set Working Hours">
+        Enter the Start time and End time under the Working Hours section for each open day.
+      </Step>
+      <Step title="Set Break Hours (Optional)">
+        If applicable, enter Start time and End time under the Break Hours section.
+
+        Use the plus (\+) icon to add multiple break slots.
+      </Step>
+      <Step title="Review and Save">
+        Double-check the time entries for accuracy.
+
+        Ensure both start and end times are filled if a break is added.
+
+        Click **Save **to update the exam room hours for the resource.
+      </Step>
+    </Steps>
+  </Accordion>
+  <Accordion title="Exam tab">
+    <Steps>
+      <Step title="Click on the Exams Tab">
+        Navigate to the Exams tab to view or manage exam mappings for the selected resource.
+      </Step>
+      <Step title="Add Exam Mapping">
+        Click the \+ Add Exam Mapping button to open a new entry row for exam configuration.
+      </Step>
+      <Step title="Enter Exam Details">
+        ExamCode: Type or search for the relevant exam code.
+
+        CPTCode: Enter the CPT (Current Procedural Terminology) code if applicable.
+
+        Procedure: Specify the name of the procedure or exam.
+
+        Modality: Select the modality (e.g., MRI, CT, X-Ray) associated with the procedure.
+
+        Duration (Min): Enter the expected duration of the exam in minutes.
+
+        WeekDay: Choose the days of the week the exam is available.
+
+        StartTime / EndTime: Set the time range for when the exam can be scheduled.
+      </Step>
+      <Step title="Save the Mapping">
+        After entering all required information, save the mapping so it is linked to the resource.
+      </Step>
+    </Steps>
+  </Accordion>
+  <Accordion title="Staff Tab">
+    <Steps>
+      <Step title="Navigate to the Staff Tab">
+        Click on the Staff tab to view or assign staff members linked to the resource.
+      </Step>
+      <Step title="Select Existing Staff">
+        Use the dropdown to search and select from a list of existing staff members available in the system.
+      </Step>
+      <Step title="Assign Staff">
+        Once a staff member is selected, click the Assign button to link them to the resource.
+      </Step>
+      <Step title="Review Assigned Staff">
+        Assigned staff members will be listed below. You can view or remove them as needed.
+      </Step>
+    </Steps>
+  </Accordion>
+  <Accordion title="Special Hours tab">
+    <Steps>
+      <Step title="Go to the Special Hours Tab">
+        Click on the Special Hours tab to manage unique availability outside standard working hours.
+      </Step>
+      <Step title="Click + New Special Hours">
+        Click the \+ New Special Hours button to open a new entry form.
+      </Step>
+      <Step title="Enter Special Hour Details">
+        - Fill in the following fields:
+          - **Title**: Name of the special schedule (e.g., Holiday Hours, Extended Evening).
+          - **Type**: Select from options like Open Calendar.
+          - **Description**: Provide a short explanation if needed.
+          - **Special Day**: Choose the exact date for the special availability.
+          - **Start Time &** **End Time**: Define the specific time window for this special schedule.
+      </Step>
+      <Step title="Save Changes">
+        Once all fields are filled, save the entry to apply special hours for the selected date.
+      </Step>
+    </Steps>
+  </Accordion>
+  <Accordion title="Resource Entities Details Tab">
+    <Steps>
+      <Step title="Navigate to Resource Entities Details">
+        Click on the Resource Entities Details tab to configure technical DICOM communication settings.
+      </Step>
+      <Step title="View Modality List">
+        You will see a list of modalities (e.g., MR) for the selected resource.
+      </Step>
+      <Step title="Edit AE Configuration">
+        Click the Edit icon next to a modality to input or update the following:
+
+        - **Calling AE Title:** Name used by the sending device (Application Entity).
+        - **Calling AE IP**: IP address of the sending machine.
+        - **Calling AE Port**: Port number used for the communication.
+      </Step>
+      <Step title="Save Details">
+        After filling in the AE Title, IP, and Port, save the changes to ensure proper DICOM communication between systems.
+      </Step>
+    </Steps>
+  </Accordion>
+</AccordionGroup>
