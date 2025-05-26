@@ -1,0 +1,96 @@
+---
+title: "Templates, Macros, Pick Lists, and Error Handling"
+description: "Detailed steps for managing report templates, macros, pick lists, and handling warnings/errors in CIVR."
+---
+
+## Templates
+
+The Templates section displays a list of templates mapped to the launched study based on matching criteria such as location, modality, and procedure. Templates appear only when these criteria align and showcase the most frequently used ones from the past 14 days. Additionally, related mapped orders based on the same criteria are shown for easy reference.
+
+Templates help standardize report structures by allowing users to predefine sections for specific locations, modalities, and procedures.
+
+### Steps to Create a New Template
+
+1. Click on **Create New Template** icon; it redirects the user to the Macro Editor page.
+2. In the left panel, enter a unique name for the template (e.g., Macro [Name]).
+3. Select the **Location** where this template will be applied.
+4. Use **Advanced Settings** to specify:
+   - Modality (e.g., MRI, CT)
+   - Procedure (e.g., CT Abdomen, Chest X-ray)
+5. **Clone**: Duplicate an existing template or macro to quickly reuse its structure with a new name or slight modifications.
+6. Click **Save** to store the template.
+
+Users can also add a new template from this section by clicking the **Add Template** icon. Additionally, options to **Preview**, **Edit**, and **Delete** existing templates are available for easy management.
+
+A window to add template will open, enter the details, and save it.
+
+Similarly, a user can edit an existing template from here as well, by clicking on the **Edit Template** icon.
+
+The **Edit Template** window will open as shown below:
+
+> **NOTE:**
+> If a user closes the window without saving the edited changes, then the following warning message shows up on the screen:
+
+A user can filter through the templates by clicking the **Filter Template** icon.
+
+A user can view the details of a specific template by using the **Preview** icon.
+
+> **Note:** User can create templates from RadFlow as well by using the **RadFlow’s CIVR setting** option.
+
+---
+
+## Macro Management
+
+Macros are reusable text blocks that include dynamic fields, headers, and variables perfect for frequently used report phrases or structured sections.
+
+### Steps to Create a Macro
+
+1. Go to the **Macros** tab.
+2. Enter a unique **Macro Name**.
+3. Select a **Location** (e.g., site or facility where this macro applies).
+4. (Optional) Use **Advanced Settings** to specify:
+   - Modality
+   - Procedure
+5. Use the **text editor** to create the macro content, adding fields or variables as needed.
+6. Click **Save**.
+
+---
+
+## Pick List Management
+
+The Pick List feature allows users to create predefined sets of values (options) that can be inserted into templates or macros for faster and more consistent reporting.
+
+### Steps to Create a Pick List
+
+1. Go to the **Pick List** tab inside the Macro Editor interface.
+2. Enter the **Pick List Name** (e.g., “Macro Pick [Name]”).
+3. Under **Pick List Options**, type the values you want users to choose from.
+4. Assign each option a **Keyword** that will be used during dictation or template insertion.
+5. Optionally, select a **Default** value to be pre-filled.
+6. Choose the **Location** to associate the pick list with a specific site or context.
+7. Click **Save** to finish creating your pick list.
+
+In a report, the **Common Macro** section shows the collection of phrases from the macros and the pick list.
+
+> **NOTE:**
+>
+> - Ability to filter out & load the list of macro and picklist under **Common Macros** tab.
+> - Filter button & sort functionality is provided on the headers of each of the corresponding list.
+
+> **NOTE:** If a user has dragged a picklist in the dictation window while dictating the report and then if a user clicks on the added picklist, the right-side section gets hidden, and the picklist values are shown in the right-side pane in its place.
+
+A user can view the details of a specific template, macro, or picklist by using the **Preview** icon.
+
+By default, the selected values for templates, macros, and pick lists will be automatically restored when opening an order.
+
+---
+
+## WARNING / ERROR / CORRECTION
+
+In the **Warning/Error/Correction** section, the warnings, errors, and word suggestions in the report are displayed (if any).
+
+> **NOTE:**
+>
+> 1. The warnings/errors/corrections are refreshed automatically while dictating a report. These errors are removed if the conditions for them are satisfied while dictating the report.
+>
+> 2. If there are errors (deficiencies) present and a Physician signs the report, a confirmation alert will be shown. (add screenshot)

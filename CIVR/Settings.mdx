@@ -1,0 +1,286 @@
+---
+title: "Settings and Customization in CIVR"
+description: "Detailed guide to configuring preferences, keyboard shortcuts, mic settings, dictation modes, templates, and more in the CIVR platform."
+---
+
+## 7. Settings
+
+### Preferences
+
+The Preferences section in CIVR allows users to personalize their dictation environment to match individual workflow styles, comfort, and system integration needs. These settings cover visual layout, dictation workflow, AI behavior, hardware support, and general application preferences.
+
+#### Preferences Configuration – Summary Table
+
+**Steps to Open and Configure Preferences**
+
+Click the **Settings** tab and select **Preference**. Use the dropdown sections to expand each category (e.g., Editor, AI Features, Application Preferences).
+
+| Section                         | Details                                                                                                                                                                                                                                                                                                |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Editor Preferences**          | Set your preferred background and field colors for the dictation window. Adjust line and paragraph spacing to improve readability. Change font size and picklist delimiters. Optionally, hide the right pane automatically during dictation.                                                           |
+| **Dictation Workflow Settings** | Set how many comparisons appear in reports. Enable auto-numbering for impressions. Automatically load original reports when adding addendums. Show a warning before signing reports. Enable auto-draft to save progress during dictation. Choose whether to show impressions at the top of the report. |
+| **AI Features**                 | Select the dictation engine (e.g., CIVR Custom Speech). Enable AI modes: Default Mode includes report correction and template matching. Turbo Mode auto-generates impressions and documents critical findings. Nitro Mode creates full reports from key findings.                                      |
+| **Hardware Support**            | Enable support for gaming mice. Configure external microphones. Set Push/Hold-to-Talk behavior if needed.                                                                                                                                                                                              |
+| **Application Preferences**     | Use Safe Mode for a simplified version of CIVR. Disable the CIVR setup wizard if you don't want to see it again.                                                                                                                                                                                       |
+| **Resetting Preferences**       | Click Reset All to quickly revert all settings to their original defaults.                                                                                                                                                                                                                             |
+
+**Best Practices**
+
+- ✔️ Enable Auto Drafting to prevent accidental data loss during interruptions. A study can be accessed by only one user at a time; if the dictation window is closed without signing, the study will automatically move to Result Pending status.
+- ✔️ Use Turbo Mode for a balance of automation and customization.
+- ⚠️ Disable Nitro Mode if full AI-driven reporting isn't needed.
+
+---
+
+### Keyboard Commands
+
+The Keyboard section in CIVR allows users to configure custom key bindings for frequently used actions, enabling faster navigation through keyboard shortcuts during report creation. These shortcuts streamline the reporting workflow and reduce the need to switch between mouse and keyboard.
+
+#### How to Access Keyboard Settings
+
+1. Click the **Settings** tab from the top menu.
+2. Select the **Keyboard** option from the horizontal sub-menu.
+3. The **Configure Keyboard Commands** page will appear.
+
+#### Steps to Set Up Keyboard Shortcuts
+
+1. Go to the **Settings** tab and select **Keyboard**.
+2. View the list of commands and their current shortcut keys.
+3. Click on any key combination to change it.
+4. Press your preferred shortcut from the keyboard (e.g., Ctrl \+ S) and click **Save**.
+
+**Best Practices**
+
+- ✅ Assign shortcuts that align with your muscle memory for a smoother experience.
+- 🔄 Use the Reset button to quickly restore default key bindings if needed.
+- 🎯 Keep frequently used actions like "Sign Report" or "Mic On/Off" easily accessible via simple combinations (e.g., Ctrl \+ S, F2).
+
+---
+
+### Mic Settings
+
+The Mic settings in CIVR allow users to assign specific actions to the buttons on supported dictation microphones. This functionality enables radiologists to perform frequent actions such as signing, navigating, and generating reports directly from their handheld mic.
+
+**Supported Microphones**
+
+- Olympus RecMic
+- Philips SpeechMike
+
+🎤 Use the **Microphone dropdown menu** to select your preferred device.
+
+#### How to Access Mic Configuration?
+
+1. Go to the **Settings** tab and click on the **Mic** option.
+2. From the Microphone dropdown, select either Olympus Rec Mic or Philips Speech Mike.
+3. For each button (e.g., Forward, Play, Function Key 1), choose an action from the dropdown next to it.
+4. Common actions include:
+   - Move to next or previous word, line, field, paragraph, or section.
+   - Open macro pick list or generate AI report.
+   - Save or draft the report.
+   - Turn Mic On/Off.
+   - Sign report.
+   - Save as template.
+   - Cancel action.
+5. Once all button actions are set, click **Save**.
+6. Click **Reset** if you want to undo all changes and restore defaults.
+
+**Best Practices**
+
+- ✅ Map commonly used commands like Save, Sign, and Mic On/Off to easily accessible buttons.
+- 🛑 Avoid assigning multiple navigation functions to the same key to prevent conflicts.
+- 🔄 Use the Reset button if you need to start fresh or test alternate setups.
+
+---
+
+### Dictation Mode
+
+The Dictation Mode section helps you configure mic sensitivity, directionality, and noise cancellation for optimal voice recognition. Choosing the right recording mode ensures clear speech capture in different environments.
+
+#### Steps to Configure Dictation Mode
+
+1. Click on the **Settings** tab, then select **Dictation Mode**.
+2. Choose the **Beep Sound Volume** (e.g., Volume 1) from the dropdown.
+3. Review and select the **LED Color Mode** based on your working environment:
+   - Blue: Quiet Environment (Default, recommended for most users).
+   - Green: Noisy Environment for Speech Recognition.
+   - Red: Noisy Environment for Classic Dictation.
+   - Purple: Custom Mode (only configurable via SDK).
+4. Adjust settings for each mode:
+   - Set Directionality: OFF / HIGH
+   - Set Noise Cancellation: OFF / MID / HIGH
+   - Toggle Intelligent Auto Mode: ON / OFF
+5. Fine-tune Directionality and Noise Cancellation using sliders at the bottom.
+6. Click **Save** to apply or **Reset** to discard changes.
+
+**To Switch Modes Manually (Using the Mic)**
+
+- Press F1 \+ INSERT together for more than 5 seconds to toggle modes.
+- Manual switch doesn’t support Purple Mode.
+
+**Recommendation**
+If you are using Krisp or another external noise cancellation tool, stick with Blue Mode – Quiet Environment for best results.
+
+---
+
+## Voice Command
+
+The Voice Command section in CIVR allows you to perform key actions using your voice command. This enables fast, hands-free interaction while dictating reports or navigating the interface.
+
+### Steps to Use Voice Commands
+
+1. Go to the **Settings** tab and select **Voice Command**.
+2. View the list of available voice commands under **Voice Commands for Dictation**.
+3. Speak the exact phrase listed to trigger that command in CIVR.
+
+**Tips for Better Results**
+
+- Speak clearly and at a steady pace.
+- Use exact command phrases shown in the list.
+- Use **Save** to retain changes to your voice command settings.
+- Use **Reset** to restore default commands.
+
+---
+
+## Phrase List
+
+The Phrase List in CIVR lets you manage frequently used medical terms or report fragments. These phrases improve speech recognition accuracy and speed up documentation when dictating through CIVR.
+
+### Steps to Access and Manage the Phrase List
+
+1. Go to the **Settings** tab and click on the **Phrase List** option.
+2. Use the **search field** to find a specific phrase.
+3. Select the dictation engine (e.g., **CIVR Custom Speech**) from the dropdown.
+4. Click **Filter** to apply your search or click **Clear** to reset it.
+
+**Actions You Can Perform**
+
+- **Edit a Phrase**: Click the ✏️ icon next to any phrase to update it.
+- **Delete a Phrase**: Click the 🗑️ icon to remove a phrase from the list.
+
+**Tips**
+
+- Use commonly dictated clinical terms to boost accuracy.
+- Regularly review and clean up unused or outdated phrases.
+- Keep phrases short and specific for better voice recognition.
+
+---
+
+## Lookup
+
+The Lookup section helps fine-tune how CIVR handles specific words or phrases during dictation. It ensures certain rules are applied (or ignored) in relation to formatting, punctuation, or capitalization.
+
+### Steps to Use the Lookup Section
+
+1. Go to the **Settings** tab and click on **Lookup**.
+2. Use the **Select Lookup Type** dropdown to choose a rule type (e.g., _IgnoreCapitalizeMay_, _IgnoreColonAfterWord_).
+3. Type a word or phrase into the **Enter Lookup Phrase** field.
+4. Click **Filter** to search or **Clear** to reset your filter.
+
+**Managing Entries**
+
+- Click the ✏️ **Edit** icon to modify an existing phrase or rule.
+- Click the 🗑️ **Delete** icon to remove it.
+
+**Tips**
+
+- Use Lookup to avoid unintended formatting changes during dictation.
+- Keep phrases short, specific, and lowercase unless formatting requires otherwise.
+- Regularly review and update rules for cleaner, accurate reports.
+
+---
+
+## Template
+
+The Template section lets you create, organize, and apply structured report templates based on procedure, location, and modality. These templates streamline dictation and promote consistency across reports.
+
+### Mass Copy Functionality
+
+Allows users to copy multiple or all templates at once from a selected user, making bulk template transfer quick and efficient.
+
+### Steps to Access and Filter Templates
+
+1. Go to the **Settings** tab and click on **Template**.
+2. Use the filters at the top to search by:
+   - Name
+   - Location
+   - Modality
+   - Procedure
+   - User
+3. Click **Filter** to apply your selections or **Clear** to reset.
+
+**Actions You Can Perform**
+
+- **Edit Template**: Click the ✏️ icon to update the template content.
+- **Delete Template**: Click the 🗑️ icon to remove the template from the list.
+- **Toggle Active/Inactive**: Use the **IsActive** switch to enable or disable a template.
+- **Import Templates**: Click the **Import** button to upload template files.
+- **Add New Template**: Click the ➕ icon beside the **IsError** checkbox to create a new template.
+
+**Tips**
+
+- Use detailed, intuitive template names for easy recognition.
+- Keep templates updated with the latest report standards.
+- Assign templates to the correct modality and procedure for automatic matching during dictation.
+
+---
+
+## Template Library
+
+The Template Library allows users to browse pre-built templates based on imaging specialties and procedures. You can view, select, and clone existing templates to customize them for your reporting needs.
+
+### Steps to Use the Template Library
+
+1. Go to the **Settings** tab and click on **Template Library**.
+2. Choose your specialty from the categories listed at the top:
+   - CT & CTA
+   - E&M
+   - FLUOROSCOPY
+   - MAMMOGRAPHY
+   - MRI & MRA
+   - NUCLEAR MEDICINE
+   - OTHER
+   - ULTRASOUND & DUPLEX
+   - X-RAY
+   - None
+3. Use the **Search Template** bar to look for a specific template by name.
+4. Click **Filter** to apply your search or **Clear** to reset.
+5. Select any template from the list on the left.
+6. The selected template will load in the right panel showing:
+   - Name
+   - Modality
+   - Procedure
+   - Editable template content area
+7. Click the 👁️ icon to **preview** the template content.
+8. Click **Clone** to duplicate the selected template and modify it as per your requirements.
+
+**Tips**
+
+- Clone templates to avoid creating them from scratch.
+- Use specialties to narrow down relevant templates.
+- Edit the cloned version to include your site-specific preferences or style.
+
+---
+
+## Gaming Mice
+
+The Gaming Mice section in CIVR allows users to configure programmable buttons on supported gaming mice. These buttons can be used to control dictation actions like moving between fields or toggling the mic.
+
+🎮 **Note:** Full support for gaming mice is still under development.
+
+### Steps to Configure Gaming Mouse Buttons
+
+1. Go to the **Settings** tab and click on **Gaming Mice**.
+2. For each button (e.g., Left Click, G-6, G-7), choose an action from the dropdown.
+3. Example configurations:
+   - Middle Button → On/Off Mic
+   - Forward Button → Move to next field
+   - Back Button → Move to previous field
+4. Additional programmable buttons include **G-6 to G-11**, which can be assigned as needed.
+5. Click **Save** to apply your settings.
+6. Click **Reset** to undo changes and return to default.
+
+**Tips**
+
+- Use accessible buttons (like the middle or side buttons) for frequently used actions.
+- Avoid assigning conflicting actions to adjacent buttons for smoother workflow.
+- Check back later for enhanced support as this feature evolves.

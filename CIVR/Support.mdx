@@ -1,0 +1,146 @@
+---
+title: "Support Tools and Modules in CIVR"
+description: "Guide to using External VR, User Access, Manage Orders, Address Book, and Addendum Requests from the Support tab."
+---
+
+## External VR
+
+The **External VR** section under the Support tab allows administrators to manage external voice recognition credentials for users. This includes setting up, launching, editing, and deleting external VR configurations—typically used for integrations such as M*Modal’s Fluency Direct.
+
+### Navigating to External VR
+1. Go to the **top navigation bar**.
+2. Click **Support**.
+3. From the dropdown, select **External VR**.
+
+### Filtering Users
+At the top of the External VR screen:
+- **Select a User**: Choose a specific user to filter their credentials.
+- **Filter**: Apply the selected filter.
+- **Clear**: Reset the filter to show all records.
+
+### Launching an External VR
+- Click the **Launch External VR** icon (🚀) next to the user's name.
+- The configured server URL (e.g., `https://fluencydirect.mmodal.com/cds`) opens in a new tab.
+- The system initializes the connection to the external VR service.
+
+### Editing VR Credentials
+- Click the **edit icon** (✏️) to update stored VR credentials.
+- Edit **username, password, server URL, and account**.
+- Use the **eye icon** beside the password field to view/verify before saving.
+
+### Deleting VR Credentials
+- Click the **delete icon** (🗑️).
+- Confirm deletion in the popup prompt.
+> ⚠️ Note: Deleting credentials is irreversible. Ensure the user no longer requires VR access before proceeding.
+
+**Best Practices**
+- Do not share passwords unless required for troubleshooting.
+- Use **Modified By** and **Modified Date** columns for tracking changes.
+
+---
+
+## User Access
+
+The **User Access** page allows administrators to view, filter, and manage user permissions. It includes a searchable, editable list of users, roles, and accessible pages.
+
+### Navigating to User Access
+1. Go to **Support** in the top menu.
+2. Select **User Access** from the dropdown.
+
+### Search & Filter
+- **Select a User**: Search by name.
+- **Select a Page**: Filter by system page.
+- Click **Filter** or **Clear**.
+
+### Icons & Actions
+- **✏️ Edit Access**: Modify user’s page access and role. Click Save to apply.
+- **🗑️ Delete Access**: Remove a user’s access configuration. Confirm to delete.
+- **➕ Add New Access**: Enter username, select pages and role, and click Save.
+
+> Note: Only Admin users can edit or delete access configurations.
+
+---
+
+## Manage Orders
+
+The **Manage Orders** module allows users to view, track, and manage radiology orders and reports.
+
+### Navigating to Manage Orders
+1. Go to **Support** in the top menu.
+2. Select **Manage Orders** from the dropdown.
+
+### Filters and Search Options
+| Field             | Description                             |
+|------------------|-----------------------------------------|
+| Choose a Location| Filter orders by imaging location       |
+| Accession        | Search by accession number              |
+| Patient Name     | Filter by patient name                  |
+| Patient MRN      | Filter by Medical Record Number         |
+| DOS              | Date range for the order                |
+| Select a User    | Optional filter by physician/radiologist|
+| Filter/Clear     | Apply or reset filters                  |
+
+### Order Row Icons
+1. **📄 Report Icon**: Opens the completed report. Tooltip shows the signing physician.
+2. **🔗 Action Icon**: Opens a popup of pending studies to link. Use checkboxes to select and click **Link Report**.
+3. **Move Report Icon**:
+   - Click to move a report to another accession.
+   - Enter the new accession number.
+   - Confirm and click **Apply**.
+4. **❌ Delete Report Icon**:
+   - Confirm deletion in popup.
+   - Order returns to result pending.
+5. **📤 Resend ORU Icon**:
+   - Resends the HL7 ORU message to EMR/PACS systems.
+
+---
+
+## Address Book
+
+The **Physician Address Book** allows users to manage and search contacts by name, location, specialty, and more.
+
+### Navigating to Address Book
+1. Go to **Support**.
+2. Select **Address Book** from the dropdown.
+
+### Search and Filter Fields
+- Location
+- First/Middle/Last Name
+- Patient Class
+- Facility Name
+- Scope
+- Contact Type
+- Phone Number
+- **IsActive** checkbox
+
+Click **Filter** or **Clear** to reset filters.
+
+### Add a New Physician
+1. Click the **➕ Add** icon.
+2. Select the **Physician Details** tab.
+3. Fill out fields:
+   - First Name* and Last Name*
+   - Middle Name (optional)
+   - Facility Name, NPI, Specialty (optional)
+   - Phone Number*
+   - Type: Ordering or Referring
+   - Check **IsActive**
+4. Click **Save** or **Cancel**.
+
+### Edit Existing Physician
+1. Locate and click the **✏️ Edit** icon.
+2. Modify required fields.
+3. Click **Save** or **Cancel**.
+
+---
+
+## Request Addendum
+
+The **Addendum Request** feature allows users to request changes to signed radiology reports.
+
+- **Assigned To**: Select a reviewing physician.
+- **Reason**: Provide a reason (mandatory).
+- **Send Notification**:
+  - Check **Email** for email notification.
+  - Check **Text** for SMS notification.
+- Click **Save** to submit or **Cancel** to discard.
