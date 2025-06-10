@@ -1,96 +1,215 @@
 ---
-title: "Facesheets "
-description: "Facesheets play a vital role in healthcare billing systems as these documents contains comprehensive patient information which is extracted by our users and fed into the system, further this information is used for billing, insurance processing, medical treatment, and administrative tasks. They help streamline workflows, improve accuracy in billing processes."
+title: "Facesheet"
+description: "Facesheet plays a vital role in healthcare billing system as these documents contain comprehensive patient information, which is extracted by users and entered into the system. This information is further used for billing, insurance processing, medical treatment, and administrative tasks. They help streamline workflows and improve accuracy in billing processes."
 ---
 
-Below are step-by-step instructions outlining the key activities users can perform within the Facesheets tab, facilitating effective management associated with them.
+## 📋 Accessing Facesheet:
 
-## 📋 Facesheet Management
-
-<Steps>
-  <Step title="Facesheet Overview">
-    View facesheets from linked organizations, clients, or subscriptions. Includes status and creation date.
-  </Step>
-  <Step title="Search Facesheets">
-    Use the **Search Bar** to locate a facesheet by file name.
-  </Step>
-  <Step title="Filter Facesheets">
-    Click **Filter** to sort based on status or date.
-
-    <Note>
-      Apply filters to quickly locate specific entries. Use **Add New Record** to enter new patient data.
-    </Note>
-  </Step>
-  <Step title="Export Facesheets">
-    Click **Export** to download a list for reporting or backup.
-  </Step>
-  <Step title="Actions Menu">
-    - Click the **⋮** menu next to a record.
-    - Select **View** to open or **Delete** to remove it (with confirmation).
-  </Step>
-</Steps>
+- **Search**: Use the Search Bar to locate a facesheet by file name.
+- **Filter**: Click Filter to find a facesheet based on Created Date Range, Client Name, File Name, and Status.
+- **Export**: Click Export to download facesheet list in Excel or CSV Format.
+- **Entry count**: There is an Entry count in front of each of the facesheet which represents the number of forms in that Facesheet.
 
 ---
 
-## ➕ Add Facesheet
+## Actions Menu
 
-<Steps>
-  <Step title="Upload New Document">
-    Click the **Add** button at the top-right.
-  </Step>
-  <Step title="Select Client Location">
-    - Use the **Client Location** dropdown (required).
-  </Step>
-  <Step title="Attach PDF">
-    - Upload a `.pdf` file (max 5MB, up to 5 files).
-    - Click **Save** after upload.
-  </Step>
-</Steps>
-
-## 👁️ View Facesheet & Records
-
-<Steps>
-  <Step title="Open Facesheet">
-    - Click **View** from the **Actions** menu (⋮).
-  </Step>
-  <Step title="Check Status">
-    Document status displayed at the top:
-
-    - **In Progress** – Data entry ongoing
-    - **Complete** – All records added
-    - **Invalid** – Rejected document
-    - Use **Action** \> Mark as **Complete** or **Invalid**
-  </Step>
-  <Step title="Comments">
-    - Click **Comments** to view/add notes or attach files.
-    - If none, shows “No comments found.”
-  </Step>
-</Steps>
+- Click the ⋮ menu next to a record.
+- Select **View** to open or **Delete** to remove a facesheet record.
 
 ---
 
-## 🧾 Add New Record from Facesheet
+## Add Facesheet Document
 
-<Steps>
-  <Step title="Start New Record">
-    Click **Add New Record** and fill out patient, guarantor, and insurance details.
-  </Step>
-</Steps>
+When the **Add** button at the top-right corner is clicked, a popup titled **Add Facesheet Document** appears. It enables users to select the client location and upload the required document.
 
-<Tabs>
-  <Tab title="Patient Info">
-    Enter key patient details such as **name**, **date of birth**, **SSN**, **contact information**, **address**, **employer**, **encounter number**, and **MRN**.
+### 1. Select Client Location
 
-    Also include guarantor information including their **name**, **DOB**, **address**, **phone number**, **SSN**, **gender**, **employer**, and their \*\*relationship \*\*wih the patient.
-  </Tab>
-  <Tab title="Admission Info">
-    Enter additional encounter-related details such as **patient class**, **current location**, **place of service**, **admission and discharge dates**, and the **referring physician’s name**.
-  </Tab>
-  <Tab title="Insurance Info">
-    Enter the **Plan ID**, **insurance provider**, **policy or group numbers**, and details of the insured individual including their **name**, **date of birth**, **address**, **SSN**, **gender**, **employer**, and **relationship to the patient**.
-  </Tab>
-</Tabs>
+- **Client Location (Required)**: Use the dropdown to select the location associated with the facesheet.
 
-<Note>
-  💡 **Note:** Expand and complete each section. You can also add Secondary and Tertiary insurance if needed.
-</Note>
+### 2. Upload Document
+
+- **Attach Files**: Click Attach Files to select and upload one or more .pdf facesheet files from your system.
+- **Supported File Type**: Only .pdf format is allowed.
+- **Upload Limits**:
+  - Maximum file size: 5 MB
+  - Maximum number of files: 5
+
+### 3. Manage Uploads
+
+- **Upload All**: Click this button to upload all the selected facesheet files in one go.
+- **Remove All**: Clears the entire selection of files.
+- **Remove Individual File**: Click the X icon next to any uploaded file to remove it from the list before uploading.
+
+### 4. Save or Cancel
+
+- **Save**: Finalizes the upload and creates the facesheet.
+- **Cancel (X)**: Closes the pop up without uploading or saving.
+
+# View and Edit Facesheet Records
+
+This section guides users through viewing, editing, and managing facesheet records in the Radico Billing application.
+
+---
+
+## 1. Open Facesheet
+
+To open a facesheet:
+
+- Click **View** from the Actions menu (⋮) next to the desired record.
+
+A split-screen interface appears:
+
+- **Left Panel**: Displays the uploaded facesheet in PDF format.
+
+⚠️ **Document Viewer Note**:  
+If the PDF fails to load, a message appears:  
+"An error occurred while loading the document. Try reloading the page."
+
+- **Right Panel**: Lists all patient forms linked to the facesheet.
+
+---
+
+## 2. Check Document Status
+
+The current document status appears at the top of the right panel and updates automatically based on form progress:
+
+- **New**: The facesheet has not been opened or filled.
+- **In Progress**: The form is partially filled.
+- **Completed**: All required fields are completed.
+- **Invalid**: The document is flagged as incorrect.
+
+To manually update the status:
+
+- Click the **Actions** button at the top right.
+- Choose **Mark as Complete** or **Mark as Invalid** based on the document's state.
+
+---
+
+## 3. Add Comments
+
+- Click **Comments** to view any existing remarks for the facesheet.
+- Use the **text box and attachment** option to add new comments or upload related files.
+- If there are no comments, the message **“No comments found”** will be displayed.
+
+---
+
+## 4. Add New Record
+
+### Step 1: Review Patient Information
+
+- View the left-side facesheet PDF.
+- Identify and extract necessary patient details for form entry.
+
+### Step 2: Search for Existing Patient
+
+- Click **Search Patient** on the right panel.
+- Apply filters to search the database.
+- If found, select the patient to auto-fill the form.
+
+### Step 3: Add New Patient (If Not Found)
+
+Manually enter patient details from the facesheet:
+
+#### Patient Information
+
+- Name, Date of Birth, Gender, SSN, Contact, Address, Employer
+- Encounter Number and MRN
+
+#### Guarantor Details
+
+- If same as patient, select the checkbox to auto-fill.
+- If different, enter Name, DOB, Address, Phone, SSN, Gender, Employer, and Relationship.
+
+#### Admission Information
+
+- Patient Class, Location, Place of Service
+- Admit Date and Discharge Dates
+- Referring Physician's Name
+
+#### Insurance Information
+
+- Plan ID, Insurance Provider, Group Numbers
+- Insured Person’s Name, DOB, Address, SSN, Gender, Employer, and Relationship
+
+💡 **Note**: Expand each section and fill all required fields. You may also add **Secondary or Tertiary** insurance if applicable.
+
+### Step 4: Save Record
+
+- Click **Save** to store the entered data.
+- The facesheet status changes to **In Progress**.
+
+### Step 5: Mark as Complete
+
+- After entering all records, click **Actions > Mark as Complete** to update the status.
+
+---
+
+## 5. Record-Level Actions
+
+Each patient record includes the following options:
+
+- **Edit (✏️)**: Modify patient or insurance details.
+- **Delete (🗑️)**: Remove the record (confirmation required).
+- **Link (🔗)**: Reassign the patient to another encounter or record.
+
+---
+
+## 6. Link Patient to Facesheet
+
+This function ensures the correct patient is connected to the facesheet.
+
+### Steps:
+
+#### 1. Click Link Patient (🔗)
+
+- Found next to the patient’s name in the record list.
+- Opens the patient search interface.
+
+#### 2. Search and Select Patient
+
+- Use filters like First Name, Last Name, MRN, or SSN.
+- Click the arrow icon (➡️) to select.
+
+#### 3. Review and Update Details
+
+- The form auto-fills with patient data.
+- Validate fields such as:
+  - Name, DOB, Gender, SSN
+  - Phone, Address, State, ZIP Code
+- Complete any required fields.
+- Click **Save** to link the patient.
+- *(Page range and Attachment is missing)*
+
+⚠️ **Note**:  
+If required fields are missing, an error will appear. All data must be completed to successfully link the patient.
+
+---
+
+## 7. Attachment-Level Actions
+
+Each document in the Attachments table includes:
+
+- **View**: Opens the PDF viewer.
+- **Download**: Downloads the document in original format.
+- **Delete**: Removes the file (use only for incorrect uploads).
+
+🔒 **Permissions Note**:  
+Attachment actions may be limited to users with specific roles such as Admin or Coder.
+
+---
+
+## 8. Add Patient (If patient not found)
+
+This page opens when a user clicks the **Add** button from the **Search Patient** page. Steps to add a new patient:
+
+### Step 1: Fill in the following details mentioned as per the facesheet document. Fields marked with asterisk (*) are required/mandatory:
+
+- Select the **Location** using the dropdown provided.
+- Enter the **First Name, Last Name, DOB, Gender, ZIP Code, MRN, SSN, Phone Number, Address, City**, and **State**.
+
+### Step 2: Final Actions
+
+- **Save**: Click to add the patient and link them to the facesheet document.
+- **Reset**: Clears the form.
+- **Back**: Returns to the previous page without saving.
