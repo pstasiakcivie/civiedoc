@@ -1,101 +1,169 @@
----
-title: "Order Entry"
-description: "The Order Entry section allows users to upload, manage, and review order entry documents for patient processing. This includes adding new records, tracking document status, and managing related details."
----
+# Order Entry
 
-## 📂 Accessing Order Entry
-
-<Steps>
-  <Step title="Order Entry Tab">
-    Navigate to the **Order Entry** tab from the left menu.
-  </Step>
-  <Step title="Search">
-    Use the **Search Bar** to find entries by file name.
-  </Step>
-  <Step title="Filter">
-    Click **Filter** to narrow results by criteria like status or date.
-
-    <Note>
-      Use filters for quick access to relevant records.
-    </Note>
-  </Step>
-  <Step title="Export">
-    Click **Export** to download the displayed records.
-  </Step>
-  <Step title="View Order Entry">
-    Click **View** in the **Actions** column to open order details.
-  </Step>
-</Steps>
+The Order Entry module streamlines the documentation and management of patient visit records. It enables users to upload, organize, and track order entry documents associated with patient appointments. This module ensures accurate record-keeping, supports workflow efficiency, and facilitates integration with patient encounters and clinical forms.
 
 ---
 
-## ➕ Add Order Entry
+## Accessing the Order Entry Module
 
-<Steps>
-  <Step title="Add Document">
-    Click the **Add** button at the top-right corner.
-  </Step>
-  <Step title="Select Client Location">
-    - Use the **Client Location** dropdown to select a site.
-    - This field is **mandatory**.
-  </Step>
-  <Step title="Upload Document">
-    - Click **Attach Files** and choose a `.pdf` document.
-    - Max size: 5MB; Up to 5 files allowed.
-  </Step>
-  <Step title="Save">
-    Click **Save** to complete the upload.
-  </Step>
-</Steps>
+To access the Order Entry interface:
+
+1. Navigate to the Order Entry tab in the left navigation menu.
+2. Use the Search bar to locate documents by file name.
+3. Click Filter to refine the results using one or more criteria:  
+   - Created Date Range  
+   - Client Name  
+   - File Name  
+   - Document Status
+4. Click Export to download the filtered list in CSV or Excel format.
+5. Click the View button (in the Actions column) to open a specific order entry record.
 
 ---
 
-## 👁️ View and Manage Entry
+## Creating a New Order Entry Document
 
-<Steps>
-  <Step title="Open Entry">
-    - Use the **Actions** column menu and click **View** to open a document.
-  </Step>
-  <Step title="Document Status">
-    - Status shown on the right:
-      - **In Progress** – Records are being added.
-      - **Complete** – All records are finalized.
-      - **Invalid** – Document is rejected.
-    - To update:
-      - Click **Action** \> Choose **Complete** or **Invalid**.
-  </Step>
-  <Step title="Add Comments">
-    - Click **Comments** to view or post feedback.
-    - If no comments, the page shows **No comments found**.
-    - Type in the field and click **Send** to submit.
-  </Step>
-</Steps>
+To create a new order entry document, click on Add button:
+
+### 1 Select Client Location
+
+- Client Location (Required): Choose the relevant location from the dropdown list.
+
+### 2 Upload Documents
+
+- Click Attach Files to upload one or more .pdf documents.
+- Supported File Format: .pdf only
+
+**Upload Constraints:**
+
+- Maximum file size per document: 5 MB  
+- Maximum number of documents: 5
+
+### 3 Manage File Uploads
+
+- Upload All: Uploads all selected files in one action.
+- Remove All: Clears the entire file selection.
+- Remove Individual File: Click the X icon next to a file to remove it from the queue.
+
+### 4 Finalize or Cancel
+
+- Save: Uploads files and creates the order entry.
+- Cancel: Closes the dialog without saving or uploading.
 
 ---
 
-## 📝 Add New Record
+## Managing Order Entries
 
-<Steps>
-  <Step title="Start New Record">
-    - Click **Add New Record**.
-    - Expand sections to enter required information.
-  </Step>
-</Steps>
+### 1 Viewing Order Details
 
-<Tabs>
-  <Tab title="Patient Info">
-    Enter key patient details such as **name**, **date of birth**, **SSN**, **contact information**, **address**, **employer**, **encounter number**, and **medical record ID**.
+To view and manage an order entry:
 
-    Also include guarantor information including their **name**, **DOB**, **address**, **phone number**, **SSN**, **gender**, **employer**, and their **relationship to the patient**.
-  </Tab>
-  <Tab title="Admission Info">
-    Include additional encounter-related details such as **patient class**, **current location**, **place of service**, **admission and discharge dates**, and the **referring physician’s name**.
-  </Tab>
-  <Tab title="Insurance Info">
-    Enter the **Plan ID**, **insurance provider**, **policy or group numbers**, and details of the insured individual including their **name**, **date of birth**, **address**, **SSN**, **gender**, **employer**, and **relationship to the patient**.
-  </Tab>
-</Tabs>
+1. Click View in the Actions menu next to the desired entry.
+2. The interface will open in a split view:  
+   - Left Panel: Displays the uploaded order document (PDF).  
+   - Right Panel: Lists associated patient forms.
 
-<Note>
-  💡 **Note:** Expand each section to complete or review data. You may also add Secondary or Tertiary insurance if needed.
-</Note>
+⚠️ **Document Viewer Note**  
+If the PDF fails to load, an error message appears:  
+"An error occurred while loading the document. Try reloading the page."
+
+---
+
+### 2 Understanding Document Status
+
+Order document status is shown at the top of the right panel:
+
+| Status       | Description                   |
+|--------------|-------------------------------|
+| New          | Document has not been opened or edited. |
+| In Progress  | Partially completed.          |
+| Completed    | All required fields are filled. |
+| Invalid      | Document has been marked as incorrect. |
+
+To manually update the status:
+
+- Click the Actions button.
+- Select Mark as Complete or Mark as Invalid.
+
+---
+
+### 3 Adding Comments
+
+- Click Comments to view or add remarks.
+- Use the text field and attachment option to add new notes or upload supporting files.
+- If no comments exist, the message “No comments found” is displayed.
+
+---
+
+## Creating an Order/Encounter
+
+### Step 1: Review Patient Information
+
+- View the PDF on the left panel.
+- Extract key patient details for entry.
+
+### Step 2: Search or Add Patient
+
+- Click Search in the right panel to locate existing patient records.
+- Apply filters and select a matching result to auto-fill form data.
+
+**If no match is found:**
+
+#### Add New Patient
+
+- Click Add button on the search patient page to enter the patient's details manually.
+- Complete all required fields (marked with *), including:  
+  Client Location, First Name, Last Name, Date of Birth, Gender, ZIP Code, MRN, SSN, Phone, Address, City, and State.
+
+- Save: Creates the patient record and links it to the order.
+- Reset: Clears all fields.
+- Back: Returns to the previous page without saving.
+
+### Step 3: Add Encounter
+
+- Upon selecting/adding a patient click Create Encounter.
+- Enter the following details:
+
+| Field              | Description                          |
+|-------------------|--------------------------------------|
+| Start Date         | Start date of the encounter          |
+| End Date (Required)| Actual or expected end date          |
+| Patient Class      | Auto-filled for existing patients; otherwise select |
+| Attending Dr. NPI  | Enter National Provider Identifier   |
+| Attending Dr. Name | Auto-populated after NPI entry       |
+
+- Click Create to generate the encounter or click Reset to clear the form if necessary.
+
+---
+
+### Step 4: Review and Populate Encounter/Order Fields
+
+Fill in the following:  
+Review and fill in the missing fields of the corresponding Encounter/Order details:
+
+Enter or select the necessary information, including:
+
+- Accession Number, Procedure Description, Date of Service (DOS), Signed Date, Reading Doctor (if different from the attending), and Client Location as required fields, along with optional fields such as Observation Number, CPT Code, Reading Location, Client Bill (if applicable), Reason for Study, Ordering Doctor, and Result Status.
+
+---
+
+### Step 5: Save and Attach Document
+
+- Click Save to store all data.
+- The order entry status changes to In Progress.
+- Select the page range in the PDF to attach to the encounter record.
+
+---
+
+### Step 6: Mark the Order as Complete
+
+- Navigate to Actions > Mark as Complete to update the status.
+
+---
+
+## Creating an Order/Encounter Without Patient Details
+
+If patient details are unavailable:
+
+- Click **Add Without Patient** on the right panel.
+- This allows creation of an order entry record with limited information.
+- Patient information can be added later, once available.
