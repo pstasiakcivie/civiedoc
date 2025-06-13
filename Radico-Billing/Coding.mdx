@@ -3,7 +3,7 @@ title: "Coding"
 description: "The Coding Dashboard provides users with a centralized view of their coding activities, allowing them to track daily performance, view worklists, and access reports based on status. This helps prioritize tasks and ensures efficient workflow management."
 ---
 
-The Coding Dashboard gives a quick summary of your coding activity and worklists.
+### The Coding Dashboard gives a quick summary of your coding activity and worklists:
 
 - **Your Daily Progress**: Shows how many records you’ve completed today and the total RVUs.
 - **Coding Bucket**: A pie chart showing report counts—Pending, Submitted, CAP, and Disabled.
@@ -19,191 +19,35 @@ To create a new private or shared worklist:
 
 ### Steps:
 
-1. Click the “\+” icon to open the Create Worklist form.
-2. **Enter Worklist Name**
-   - Provide a descriptive, unique name for easy identification.
-3. **Enter Description (Optional)**
-   - Add details to clarify the scope or criteria.
-4. **Mark as Private**
-   - Enable to restrict the worklist to the logged-in user only.
+1. **Click** the “\+” icon to open the Create Worklist form.
+2. **Enter Worklist Name**\
+   Provide a descriptive, unique name for easy identification.
+3. **Enter Description (Optional)**\
+   Add details to clarify the scope or criteria.
+4. **Mark as Private**\
+   Enable to restrict the worklist to the logged-in user only.
 
 ### User Group Configuration (Shared Worklists Only)
 
-⚠️ Enabled only when "Mark as Private" is unchecked.
+> ⚠️ Enabled only when "Mark as Private" is unchecked.
 
 - **Add User**: Search and select users to add to the worklist.
 - **Create/Edit User Group**: Manage user groups for easier sharing.
 - **Allow Shared Users to Edit/Delete**: Grant editing privileges to shared users.
 
-5. **Set Filter Conditions**
-   - Select field (e.g., Approved At), operator (e.g., Equals), and value (e.g., Last 30 Days).
-   - Combine conditions using AND/OR logic.
-6. **Preview Records**
-   - Click Preview to display matching records with columns like:
-     - Patient ID, Name, Accession Number, Modality, CPT/DX, Coding Status, Assigned To, Client Location.
-7. **Save or Clear**
-   - Save: Finalize and store the worklist.
-   - Clear: Reset all entered data.
-
----
-
-## Preview Worklist
-
-In the Private and Shared Worklist, user can initially preview a worklist (all the records present) before starting it. To do so the user clicks the Preview option besides the required worklist.
-
-The Preview screen displays a list of coding records that match the filter conditions set during worklist creation.
-
-1. **Search Bar**
-   - Use the Search Patient field at the top-left to quickly locate a coding record of the patient by ID or name.
-2. **Filter and Refresh**
-   - Use the Filter button to apply specific criteria to refine your search.
-   - Following toggles are provided in the filter panel to filter by CAP status:
-     1. **Is Back From CAP**
-        - Displays records that were previously flagged for Coding Assistance (CAP) and have now been reviewed and returned by the physician.
-     2. **Is Pending Question from CAP**
-        - Filters records that are currently awaiting a response or clarification from the physician within the CAP portal.
-   - Click the Refresh (⟳) button to reload updated data.
-3. **Start Coding**
-   - Click Start Worklist (top-right corner) to begin working on the records.
-   - Else click the View icon besides the required coding record to start coding
-
-| Icon | Function                                                     |
-| ---- | ------------------------------------------------------------ |
-| 👁️  | View Details: Opens the detailed view of the selected record |
-| 📑   | Multiple Encounters: View all patient encounters             |
-| 💬   | Comments: Opens the comments section                         |
-
----
-
-## Mass Edit /Bulk Update
-
-The Mass Edit (or Bulk Update) feature allows users to apply changes to multiple records simultaneously. This feature becomes available once multiple records are selected from the preview list.
-
-### Steps to Perform a Mass Edit
-
-1. **Select Records**: Use checkboxes to select multiple entries.
-2. **Open the Edit Dialog**: Click the Edit button.
-3. **Choose Fields to Update**:
-   - Tags (Add)
-   - Tags (Delete)
-   - Assigned To
-   - Coding Status
+5. **Set Filter Conditions**\
+   Select field (e.g., Approved At), operator (e.g., Equals), and value (e.g., Last 30 Days).\
+   Combine conditions using AND/OR logic.
+6. **Preview Records**\
+   Click Preview to display matching records with columns like:
+   - Patient ID
+   - Name
+   - Accession Number
    - Modality
-
-   Conditional Display – Coding Status Field:
-   - If all records are New/In Progress – Approve appears.
-   - If any records are Approved/Pending/Disabled – Send Back to Coding appears.
-4. **Enter New Value**
-5. **Add Additional Fields (Optional)**
-6. **Finalizing the Update**
-   - Click Save or Cancel
-
----
-
-## View and Edit Coding Records
-
-The Coding Record interface opens when a user clicks the 👁️ icon or Start Worklist. It enables coders to:
-
-- Review clinical report
-- Assign CPT and ICD codes
-- Enter NDC info
-- Update coding status
-- Manage documentation and comments
-
-### Tabs on Record View Screen
-
-| Tab               | Description                            |
-| ----------------- | -------------------------------------- |
-| Report            | Displays the radiology/clinical report |
-| Encounter History | Previous encounters & Link Report      |
-| ADT               | Admission, Discharge, Transfer info    |
-| Docs              | Supporting documents                   |
-| Comments          | View/add internal notes                |
-| Activity          | Audit trail of changes                 |
-
-### Chart Details Panel
-
-- Record ID, MRN, Accession, Procedure Description
-- Billing Provider, Ordering Physician
-- DOS, Signed Date, Location, POS
-- Coding Status, Reason for Study, Carrier
-
----
-
-## Entering CPT and NDC Information
-
-### CPT Code Entry
-
-Each CPT row includes:
-
-- CPT Code
-- Procedure Description
-- Modifiers (M1–M4)
-- Units
-- ICD POS
-
-**Actions**:
-
-- ➕ Add CPT Row
-- 🗑️ Delete CPT Row
-
----
-
-### NDC Entry (Optional)
-
-1. Click NDC/Unit icon
-2. Enter:
-   - NDC Code
-   - NDC Unit
-   - Unit Measure
-3. Save auto-applies or click ✔️
-
-📌 _Note_: Pre-linked NDC codes may auto-fill
-
----
-
-## Adding ICD Codes
-
-Assign ICD-10 diagnosis codes based on CPT and documentation.
-
-- **Auto-Suggested ICDs**: Click ➕ to add
-- **Manual ICD Entry**: Type in new codes
-
-📌 _Note_: Max 12 ICDs per record
-
----
-
-## Finalizing the Record
-
-Use the **Actions** dropdown:
-
-| Action  | Description          |
-| ------- | -------------------- |
-| Tag     | Label records        |
-| Disable | Remove from workflow |
-| Save    | Save progress        |
-
-📌 _Best Practice_: Save frequently
-
----
-
-## Marking a Record for Coding Assistance (CAP)
-
-Use CAP when physician clarification is needed.
-
-### Steps:
-
-1. Click **CAP**
-2. Select **CAP Reason**
-3. (Optional) Add comments
-4. Click **Submit**
-5. Click **Cancel** to discard
-
-📌 _Note_:
-
-- Records marked CAP are removed from coding queue.
-- CAP status updates in Activity tab.
-- Physician replies appear in Coding \> Discussion.
-- Actions like Addendum, No Change, Sign Change/Anyway update CAP to Addendum and Coding to In Progress.
-- If CAP expires, Coding returns to In Progress.
-- Coder-manager flagged CAPs with discussion change to “In Coder’s Queue”.
+   - CPT/DX
+   - Coding Status
+   - Assigned To
+   - Client Location
+7. **Save or Clear**
+   - **Save**: Finalize and store the worklist.
+   - **Clear**: Reset all entered data.
