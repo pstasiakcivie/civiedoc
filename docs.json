@@ -49,10 +49,22 @@
               "api-reference/endpoint/get",
               "api-reference/endpoint/create",
               "api-reference/endpoint/delete"
-            ]
-          }
+               ]
+      }
+    ]
+  },
+  {
+    "tab": "Radico Billing",
+    "groups": [
+      {
+        "group": "Radico Billing",
+        "pages": [
+          "Radico-Billing/Facesheet"
         ]
       }
+    ]
+  }
+           
     ],
     "global": {
       "anchors": [
