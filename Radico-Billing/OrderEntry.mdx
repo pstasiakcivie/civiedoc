@@ -1,8 +1,10 @@
-# Order Entry
+---
+title: "Order Entry"
+---
 
 The Order Entry module streamlines the documentation and management of patient visit records. It enables users to upload, organize, and track order entry documents associated with patient appointments. This module ensures accurate record-keeping, supports workflow efficiency, and facilitates integration with patient encounters and clinical forms.
 
----
+![Picture26 Pn](/images/Picture26.png)
 
 ## Accessing the Order Entry Module
 
@@ -10,10 +12,10 @@ To access the Order Entry interface:
 
 1. Navigate to the Order Entry tab in the left navigation menu.
 2. Use the Search bar to locate documents by file name.
-3. Click Filter to refine the results using one or more criteria:  
-   - Created Date Range  
-   - Client Name  
-   - File Name  
+3. Click Filter to refine the results using one or more criteria:
+   - Created Date Range
+   - Client Name
+   - File Name
    - Document Status
 4. Click Export to download the filtered list in CSV or Excel format.
 5. Click the View button (in the Actions column) to open a specific order entry record.
@@ -24,18 +26,24 @@ To access the Order Entry interface:
 
 To create a new order entry document, click on Add button:
 
+![Picture27 Pn](/images/Picture27.png)
+
 ### 1 Select Client Location
 
-- Client Location (Required): Choose the relevant location from the dropdown list.
+- **Client Location (Required): **Choose the relevant location from the dropdown list.
+
+![Picture28 Pn](/images/Picture28.png)
 
 ### 2 Upload Documents
 
 - Click Attach Files to upload one or more .pdf documents.
 - Supported File Format: .pdf only
 
+![Picture29 Pn](/images/Picture29.png)
+
 **Upload Constraints:**
 
-- Maximum file size per document: 5 MB  
+- Maximum file size per document: 5 MB
 - Maximum number of documents: 5
 
 ### 3 Manage File Uploads
@@ -53,42 +61,47 @@ To create a new order entry document, click on Add button:
 
 ## Managing Order Entries
 
-### 1 Viewing Order Details
+**1 Viewing Order Details**
 
 To view and manage an order entry:
 
-1. Click View in the Actions menu next to the desired entry.
-2. The interface will open in a split view:  
-   - Left Panel: Displays the uploaded order document (PDF).  
+1. Click **View **in the **Actions **menu next to the desired entry.
+
+   ![Picture30 Pn](/images/Picture30.png)
+2. The interface will open in a split view:
+   - Left Panel: Displays the uploaded order document (PDF).
    - Right Panel: Lists associated patient forms.
 
-⚠️ **Document Viewer Note**  
-If the PDF fails to load, an error message appears:  
-"An error occurred while loading the document. Try reloading the page."
+![Picture31 Pn](/images/Picture31.png)
 
----
+⚠️ **Document Viewer Note**\
+If the PDF fails to load, an error message appears:\
+**_"An error occurred while loading the document. Try reloading the page."_**
 
-### 2 Understanding Document Status
+**2 Understanding Document Status**
 
 Order document status is shown at the top of the right panel:
 
-| Status       | Description                   |
-|--------------|-------------------------------|
-| New          | Document has not been opened or edited. |
-| In Progress  | Partially completed.          |
-| Completed    | All required fields are filled. |
-| Invalid      | Document has been marked as incorrect. |
+| Status          | Description                             |
+| --------------- | --------------------------------------- |
+| **New**         | Document has not been opened or edited. |
+| **In Progress** | Partially completed.                    |
+| **Completed**   | All required fields are filled.         |
+| **Invalid**     | Document has been marked as incorrect.  |
 
 To manually update the status:
 
-- Click the Actions button.
-- Select Mark as Complete or Mark as Invalid.
+- Click the **Actions **button.
+- Select**Mark as Complete or Mark as Invalid.** 
 
 ---
 
-### 3 Adding Comments
+**3 Adding Comments**
 
-- Click Comments to view or add remarks.
+- Click **Comments **to view or add remarks.
+
+![Picture33 Pn](/images/Picture33.png)
+
 - Use the text field and attachment option to add new notes or upload supporting files.
 - If no comments exist, the message “No comments found” is displayed.
 
@@ -96,71 +109,88 @@ To manually update the status:
 
 ## Creating an Order/Encounter
 
-### Step 1: Review Patient Information
+**Step 1: Review Patient Information**
 
 - View the PDF on the left panel.
 - Extract key patient details for entry.
 
-### Step 2: Search or Add Patient
+**Step 2: Search or Add Patient**
 
-- Click Search in the right panel to locate existing patient records.
+- Click **Search** in the right panel to locate existing patient records.
+
+![Picture34 Pn](/images/Picture34.png)
+
 - Apply filters and select a matching result to auto-fill form data.
 
 **If no match is found:**
 
 #### Add New Patient
 
-- Click Add button on the search patient page to enter the patient's details manually.
-- Complete all required fields (marked with *), including:  
+- Click **Add** button on the search patient page to enter the patient's details manually.
+
+![Picture34 Pn](/images/Picture34.png)
+
+- Complete all required fields (marked with \*), including:\
   Client Location, First Name, Last Name, Date of Birth, Gender, ZIP Code, MRN, SSN, Phone, Address, City, and State.
+
+![Picture35 Pn](/images/Picture35.png)
 
 - Save: Creates the patient record and links it to the order.
 - Reset: Clears all fields.
 - Back: Returns to the previous page without saving.
 
-### Step 3: Add Encounter
+**Step 3: Add Encounter**
 
 - Upon selecting/adding a patient click Create Encounter.
+
+![Picture38 Pn](/images/Picture38.png)
+
 - Enter the following details:
 
-| Field              | Description                          |
-|-------------------|--------------------------------------|
-| Start Date         | Start date of the encounter          |
-| End Date (Required)| Actual or expected end date          |
-| Patient Class      | Auto-filled for existing patients; otherwise select |
-| Attending Dr. NPI  | Enter National Provider Identifier   |
-| Attending Dr. Name | Auto-populated after NPI entry       |
+| Field               | Description                                         |
+| ------------------- | --------------------------------------------------- |
+| Start Date          | Start date of the encounter                         |
+| End Date (Required) | Actual or expected end date                         |
+| Patient Class       | Auto-filled for existing patients; otherwise select |
+| Attending Dr. NPI   | Enter National Provider Identifier                  |
+| Attending Dr. Name  | Auto-populated after NPI entry                      |
 
-- Click Create to generate the encounter or click Reset to clear the form if necessary.
+![Picture39 Pn](/images/Picture39.png)
+
+- Click **Create **to generate the encounter or click **Reset **to clear the form if necessary.
 
 ---
 
-### Step 4: Review and Populate Encounter/Order Fields
+**Step 4: Review and Populate Encounter/Order Fields**
 
-Fill in the following:  
+**Fill in the following:**\
 Review and fill in the missing fields of the corresponding Encounter/Order details:
 
-Enter or select the necessary information, including:
+**Enter or select the necessary information, including:**
 
 - Accession Number, Procedure Description, Date of Service (DOS), Signed Date, Reading Doctor (if different from the attending), and Client Location as required fields, along with optional fields such as Observation Number, CPT Code, Reading Location, Client Bill (if applicable), Reason for Study, Ordering Doctor, and Result Status.
 
+![Picture40 Pn](/images/Picture40.png)
+
 ---
 
-### Step 5: Save and Attach Document
+**Step 5: Save and Attach Document**
 
-- Click Save to store all data.
-- The order entry status changes to In Progress.
+- Click **Save **to store all data.
+- The order entry status changes to **In Progress.**
 - Select the page range in the PDF to attach to the encounter record.
 
 ---
 
-### Step 6: Mark the Order as Complete
+**Step 6: Mark the Order as Complete**
 
-- Navigate to Actions > Mark as Complete to update the status.
+- Navigate to **Actions \> Mark as Complete** to update the status.
 
 ---
 
 ## Creating an Order/Encounter Without Patient Details
+
+![Picture41 Pn](/images/Picture41.png)
 
 If patient details are unavailable:
 
