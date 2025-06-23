@@ -34,8 +34,9 @@ To create a new private or shared worklist:
 
     **User Group Configuration (Shared Worklists Only)**
 
-    > ⚠️ Enabled only when "**_Mark as Private_**" is unchecked.
-
+    <Tip>
+      ⚠️ Enabled only when "**_Mark as Private_**" is unchecked.
+    </Tip>
     - **Add User**: Search and select users to add to the worklist.
     - **Create/Edit User Group**: Manage user groups for easier sharing.
     - **Allow Shared Users to Edit/Delete**: Grant editing privileges to shared users.
@@ -56,8 +57,7 @@ To create a new private or shared worklist:
   </Step>
 </Steps>
 
-## \
-**Preview Worklist**
+## **Preview Worklist**
 
 In the Private and Shared Worklist, users can initially preview a worklist (all the records present) before starting it. To do so, the user clicks the **Preview** option beside the required worklist.
 
@@ -120,15 +120,15 @@ The **Mass Edit** (or **Bulk Update**) feature allows users to apply changes to 
 
     - Available fields for bulk editing:
 
-      Tags (Add) – Add new tags to selected records.
+      **Tags** (Add) – Add new tags to selected records.
 
-      Tags (Delete) – Remove existing tags.
+      **Tags** (Delete) – Remove existing tags.
 
-      Assigned To – Assign records to a user.
+      **Assigned To** – Assign records to a user.
 
-      Coding Status – Change the coding status.
+      **Coding Status** – Change the coding status.
 
-      Modality – Update the imaging modality.
+      **Modality** – Update the imaging modality.
   </Step>
   <Step title="Conditional Display – Coding Status Field">
     If all selected records are in **New** or **In** **Progress** status- The **Approve** option is displayed. Selecting this will mark all chosen records as **Approved**.
@@ -148,10 +148,9 @@ The **Mass Edit** (or **Bulk Update**) feature allows users to apply changes to 
   </Step>
 </Steps>
 
-
 ## View and Edit Coding Records
 
-The Coding Record interface opens when a user clicks the View Details (👁️) icon from the Preview Worklist screen or selects the Start Worklist option—available either at the top right corner or next to each listed worklist on the Coding Dashboard page. This interface provides comprehensive access to the coding workspace, enabling coders to:
+The Coding Record interface opens when a user clicks the **View** ****Details (👁️) icon from the Preview Worklist screen or selects theStart Worklist****  option—available either at the top right corner or next to each listed worklist on the Coding Dashboard page. This interface provides comprehensive access to the coding workspace, enabling coders to:
 
 - Review the complete clinical report
 - Assign CPT and ICD codes
@@ -201,19 +200,19 @@ This panel provides key metadata about the coding record for context and verific
     **ICD POS:** Indicate the ICD Place of Service as applicable.
   </Step>
   <Step title="Actions">
-    **Add CPT Row: **Click the plus icon to insert a new CPT code row.
+    **Add CPT Row**: Click the plus icon to insert a new CPT code row.
 
     **Delete CPT Row**: Click the trash icon to remove a CPT entry.
   </Step>
 </Steps>
 
-**NDC Entry **
+**NDC Entry**
 
 <Steps>
   <Step title="NDC Entry (Optional)">
     To associate a National Drug Code (NDC) with a CPT entry:
 
-    Click the NDC/Unit icon next to the desired CPT row to open the NDC Entry Panel.
+    Click the **NDC/Unit** icon next to the desired CPT row to open the NDC Entry Panel.
   </Step>
   <Step title="New Step">
     Enter the following information:
@@ -240,11 +239,15 @@ This panel provides key metadata about the coding record for context and verific
 
 **Types of ICD Entry**
 
-**Auto-Suggested ICDs: **The system recommends ICD codes based on the selected CPT. To add a suggested ICD, click the ➕ icon next to the code.
+**Auto-Suggested ICDs**: The system recommends ICD codes based on the selected CPT. To add a suggested ICD, click the ➕ icon next to the code.
 
-**Manual ICD Entry: **Enter custom ICD-10 codes in the input fields if not auto-suggested.
+**Manual ICD Entry**: Enter custom ICD-10 codes in the input fields if not auto-suggested.
 
-> 📌 **Note**: A maximum of 12 ICD codes can be added per record.
+<Note>
+  **Note**
+
+  A maximum of 12 ICD codes can be added per record.
+</Note>
 
 **Finalizing the Record**
 
@@ -256,30 +259,41 @@ Use the Actions Dropdown in the top-right corner of the Record View to manage th
 | Disable | Remove the record from the active coding workflow.          |
 | Save    | Save the record in its current state for future completion. |
 
-> 📌 Best Practice: Save frequently to avoid data loss and maintain audit integrity.
+<Tip>
+  **Best Practice:**  
+
+  Save frequently to avoid data loss and maintain audit integrity.
+</Tip>
 
 **Marking a Record for Coding Assistance (CAP)**
 
 Use the CAP feature when physician input or clarification is needed for a coding report.
 
-To mark a record as CAP:
+<Steps>
+  <Step title="To mark a record as CAP">
+    Click the CAP button at the top right corner of the right panel.
 
-1. Click the CAP button at the top right corner of the right panel.
+    ![\+newappointment Pn](/images/Picture54.png)
+  </Step>
+  <Step title="Select a CAP Reason from the dropdown.">
+    (Optional) Add comments for context or clarification.
 
-![Picture54 Pn](/images/Picture54.png)
+    ![\+newappointment Pn](/images/Picture55.png)
+  </Step>
+  <Step title="Submit ">
+    Click the **Submit** button.
+  </Step>
+  <Step title="Cancel">
+    Click the **Cancel** button to discard the changes.
+  </Step>
+</Steps>
 
-1. Select a CAP Reason from the dropdown.
-2. (Optional) Add comments for context or clarification.
+<Note>
+  **Note**
 
-![Picture55 Pn](/images/Picture55.png)
-
-1. Click the Submit button.
-2. Click the Cancel button to discard the changes.
-
-> 📌 **Note:**
->
-> - When a record is marked as CAP, it is removed from the active coding queue, and its coding status updates to CAP. This change is also reflected in the Activity tab.
-> - The report is automatically routed to the CAP portal for physician review. If the physician responds via the Discussion Panel in the CAP portal, the message appears in the Discussion tab of the Coding module for the coder or manager to review.
-> - If the physician takes any of the following actions in the CAP portal—Addendum in the Hospital System, No Change, Sign Change, or Sign Anyway—the CAP status is updated to Addendum, and the corresponding status in the Coding module changes to In Progress. It is also reflected in the Activity tab.
-> - If the CAP record expires without physician action, its status in the CAP portal becomes Expired, and the Coding module updates the record’s status back to In Progress.
-> - If a coder manager flags a record as CAP and the physician reassigns it to a coder who then raises a question via the CAP Discussion Panel, the Days to Expire status changes to In Coder’s Queue. If the coder manager or admin reverts the record, the expiration timer resets to the Default days to expire in the CAP portal.
+  - When a record is marked as CAP, it is removed from the active coding queue, and its coding status updates to CAP. This change is also reflected in the Activity tab.
+  - The report is automatically routed to the CAP portal for physician review. If the physician responds via the Discussion Panel in the CAP portal, the message appears in the Discussion tab of the Coding module for the coder or manager to review.
+  - If the physician takes any of the following actions in the CAP portal—Addendum in the Hospital System, No Change, Sign Change, or Sign Anyway—the CAP status is updated to Addendum, and the corresponding status in the Coding module changes to In Progress. It is also reflected in the Activity tab.
+  - If the CAP record expires without physician action, its status in the CAP portal becomes Expired, and the Coding module updates the record’s status back to In Progress.
+  - If a coder manager flags a record as CAP and the physician reassigns it to a coder who then raises a question via the CAP Discussion Panel, the Days to Expire status changes to In Coder’s Queue. If the coder manager or admin reverts the record, the expiration timer resets to the Default days to expire in the CAP portal.
+</Note>
