@@ -45,22 +45,19 @@ To create a new private or shared worklist:
     Combine conditions using AND/OR logic.
   </Step>
   <Step title="Preview Records">
-    
+    Click Preview to display matching records with columns like:
+
+    - Patient ID, Name, Accession Number, Modality, CPT/DX, Coding Status, Assigned To and Client Location.
+  </Step>
+  <Step title="Save or Clear">
+    **Save**: Finalize and store the worklist.
+
+    **Clear**: Reset all entered data.
   </Step>
 </Steps>
 
-
-5. **Set Filter Conditions**\
-   Select field (e.g., Approved At), operator (e.g., Equals), and value (e.g., Last 30 Days).\
-   Combine conditions using AND/OR logic.
-6. **Preview Records**\
-   Click Preview to display matching records with columns like:
-   - Patient ID, Name, Accession Number, Modality, CPT/DX, Coding Status, Assigned To and Client Location.
-7. **Save or Clear**
-   - **Save**: Finalize and store the worklist.
-   - **Clear**: Reset all entered data.
-
-## Preview Worklist
+## \
+**Preview Worklist**
 
 In the Private and Shared Worklist, users can initially preview a worklist (all the records present) before starting it. To do so, the user clicks the **Preview** option beside the required worklist.
 
@@ -68,29 +65,30 @@ In the Private and Shared Worklist, users can initially preview a worklist (all 
 
 The Preview screen displays a list of coding records that match the filter conditions set during worklist creation.
 
-**1. Search Bar**
+<Steps>
+  <Step title="Search Bar">
+    Use the **Search Patient** field at the top-left to quickly locate a coding record of the patient by ID or name.
+  </Step>
+  <Step title="Filter and Refresh">
+    Use the **Filter** button to open a panel where you can apply specific criteria to refine your search.
 
-- Use the **Search Patient** field at the top-left to quickly locate a coding record of the patient by ID or name.
+    ![\+newappointment Pn](/images/Picture46.png)
 
-**2. Filter and Refresh**
+    - Following toggles are provided in the filter panel to filter by CAP status:
 
-- Use the **Filter** button to open a panel where you can apply specific criteria to refine your search.
+      **Is Back From CAP**\
+      Displays records that were previously flagged for Coding Assistance (CAP) and have now been reviewed and returned by the physician. These records are ready for the coder to revisit and take the next action, such as updating codes or finalizing the record.
 
-![Picture46 Pn](/images/Picture46.png)
+      **Is Pending Question from CAP**\
+      Filters records that are currently awaiting a response or clarification from the physician within the CAP portal. These records remain on hold until the necessary input is provided to proceed with coding.
+    - Click the **Refresh (⟳)** button to reload updated data.
+  </Step>
+  <Step title=" Start Coding">
+    Click **Start Worklist** (top-right corner) to begin working on the records or click the **View** icon beside the required coding record to start coding.
 
-- Following toggles are provided in the filter panel to filter by CAP status:
-  - **Is Back From CAP**\
-    Displays records that were previously flagged for Coding Assistance (CAP) and have now been reviewed and returned by the physician. These records are ready for the coder to revisit and take the next action, such as updating codes or finalizing the record.
-  - **Is Pending Question from CAP**\
-    Filters records that are currently awaiting a response or clarification from the physician within the CAP portal. These records remain on hold until the necessary input is provided to proceed with coding.
-- Click the **Refresh (⟳)** button to reload updated data.
-
-**3. Start Coding**
-
-- Click **Start Worklist** (top-right corner) to begin working on the records.
-- Or click the **View** icon beside the required coding record to start coding.
-
-![Picture47 Pn](/images/Picture47.png)
+    ![\+newappointment Pn](/images/Picture47.png)
+  </Step>
+</Steps>
 
 | Icon                       | Function                                                                                                      |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------- |
@@ -108,30 +106,48 @@ The **Mass Edit** (or **Bulk Update**) feature allows users to apply changes to 
 
 **Steps to Perform a Mass Edit**
 
-1. **Select Records**
-   - Use the checkboxes next to each record in the preview list to select entries.
-   - Once two or more records are selected, the **Edit** button at the top-right becomes active.
-2. **Open the Edit Dialog**
-   - Click the **Edit** button to open the **Edit Work Items** popup window.
-3. **Choose Field(s) to Update**
-   - In the dialog, click the **Field** dropdown to choose the field to update.
-   - Available fields for bulk editing:
-     - Tags (Add) – Add new tags to selected records.
-     - Tags (Delete) – Remove existing tags.
-     - Assigned To – Assign records to a user.
-     - Coding Status – Change the coding status.
-     - Modality – Update the imaging modality.
+<Steps>
+  <Step title="Select Records">
+    Use the checkboxes next to each record in the preview list to select entries.
 
-   **Conditional Display – Coding Status Field**
-   - If all selected records are in **New** or **In** **Progress** status- The **Approve** option is displayed. Selecting this will mark all chosen records as **Approved**.
-   - If one or more selected records are in **Approved**, **Pending for Approval**, or **Disabled** status- The **Send Back to Coding** option is displayed. Selecting this will return the records to the coding queue for further review or edits.
-4. **Enter New Value**
-   - Enter or select the new value to apply to all selected records.
-5. **Add Additional Fields (Optional)**
-   - Click the **\+** icon to add another field-value pair for update.
-6. **Finalizing the Update**
-   - Click **Save** to apply changes to all selected records.
-   - Click **Cancel** to discard changes and close the dialog.
+    Once two or more records are selected, the **Edit** button at the top-right becomes active.
+  </Step>
+  <Step title="Open the Edit Dialog">
+    Click the **Edit** button to open the **Edit Work Items** popup window.
+  </Step>
+  <Step title="Choose Field(s) to Update">
+    In the dialog, click the **Field** dropdown to choose the field to update.
+
+    - Available fields for bulk editing:
+
+      Tags (Add) – Add new tags to selected records.
+
+      Tags (Delete) – Remove existing tags.
+
+      Assigned To – Assign records to a user.
+
+      Coding Status – Change the coding status.
+
+      Modality – Update the imaging modality.
+  </Step>
+  <Step title="Conditional Display – Coding Status Field">
+    If all selected records are in **New** or **In** **Progress** status- The **Approve** option is displayed. Selecting this will mark all chosen records as **Approved**.
+
+    If one or more selected records are in **Approved**, **Pending for Approval**, or **Disabled** status- The **Send Back to Coding** option is displayed. Selecting this will return the records to the coding queue for further review or edits.
+  </Step>
+  <Step title="Enter New Value">
+    Enter or select the new value to apply to all selected records.
+  </Step>
+  <Step title="Add Additional Fields (Optional)">
+    Click the **\+** icon to add another field-value pair for update.
+  </Step>
+  <Step title="Finalizing the Update">
+    Click **Save** to apply changes to all selected records.
+
+    Click **Cancel** to discard changes and close the dialog.
+  </Step>
+</Steps>
+
 
 ## View and Edit Coding Records
 
@@ -147,14 +163,14 @@ The Coding Record interface opens when a user clicks the View Details (👁️) 
 
 The interface includes multiple tabs to provide comprehensive access to all necessary patient and encounter information.
 
-| Tab               | Description                                                                                                                     |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| Report            | Displays the structured radiology or clinical report. Sections typically include History, Comparison, Findings, and Impression. |
-| Encounter History | Lists previous patient encounters to support clinical context. 🔗 Includes a “Link Report” feature for reference integration.   |
-| ADT               | Presents Admission, Discharge, and Transfer information sourced from ADT data feeds.                                            |
-| Docs              | Shows uploaded supporting documents such as physician notes or scanned forms.                                                   |
-| Comments          | Allows users to view, add, or reply to internal comments related to the record.                                                 |
-| Activity          | Displays a complete audit trail, including user actions, timestamps, and changes made.                                          |
+| Tab                   | Description                                                                                                                     |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| **Report**            | Displays the structured radiology or clinical report. Sections typically include History, Comparison, Findings, and Impression. |
+| **Encounter History** | Lists previous patient encounters to support clinical context. 🔗 Includes a “Link Report” feature for reference integration.   |
+| **ADT**               | Presents Admission, Discharge, and Transfer information sourced from ADT data feeds.                                            |
+| **Docs**              | Shows uploaded supporting documents such as physician notes or scanned forms.                                                   |
+| **Comments**          | Allows users to view, add, or reply to internal comments related to the record.                                                 |
+| **Activity**          | Displays a complete audit trail, including user actions, timestamps, and changes made.                                          |
 
 **Chart Details Panel**
 
@@ -167,57 +183,68 @@ This panel provides key metadata about the coding record for context and verific
 
 **Entering CPT and NDC Information**
 
-**CPT Code Entry**
+<Steps>
+  <Step title="CPT Code Entry">
+    Users may enter one or more **Current Procedural Terminology (CPT)** codes as required for the report.
 
-Users may enter one or more \*\*Current Procedural Terminology (CPT) \*\*codes as required for the report.
+    ![\+newappointment Pn](/images/Picture51.png)
+  </Step>
+  <Step title="Each CPT entry row contains the following fields:">
+    **CPT Code**: Enter the relevant procedure code.
 
-![Picture51 Pn](/images/Picture51.png)
+    **Procedure Description:** Provide a description of the performed service.
 
-Each CPT entry row contains the following fields:
+    **Modifiers (M1–M4):** Add up to four modifiers to refine billing context.
 
-- \*\*CPT Code: \*\*Enter the relevant procedure code.
-- \*\*Procedure Description: \*\*Provide a description of the performed service.
-- \*\*Modifiers (M1–M4): \*\*Add up to four modifiers to refine billing context.
-- **Units**: Specify the number of units for each CPT.
-- **ICD POS:** Indicate the ICD Place of Service as applicable.
+    **Units**: Specify the number of units for each CPT.
 
-**Actions**
+    **ICD POS:** Indicate the ICD Place of Service as applicable.
+  </Step>
+  <Step title="Actions">
+    **Add CPT Row: **Click the plus icon to insert a new CPT code row.
 
-- ➕ Add CPT Row: Click the plus icon to insert a new CPT code row.
-- 🗑️ Delete CPT Row: Click the trash icon to remove a CPT entry.
+    **Delete CPT Row**: Click the trash icon to remove a CPT entry.
+  </Step>
+</Steps>
 
-**NDC Entry (Optional)**
+**NDC Entry **
 
-To associate a National Drug Code (NDC) with a CPT entry:
+<Steps>
+  <Step title="NDC Entry (Optional)">
+    To associate a National Drug Code (NDC) with a CPT entry:
 
-1. Click the NDC/Unit icon next to the desired CPT row to open the NDC Entry Panel.
+    Click the NDC/Unit icon next to the desired CPT row to open the NDC Entry Panel.
+  </Step>
+  <Step title="New Step">
+    Enter the following information:
 
-![Picture52 Pn](/images/Picture52.png)
+    **NDC Code:** Select from the dropdown list.
 
-1. Enter the following information:
-   - **NDC Code:** Select from the dropdown list.
-   - \*\*NDC Unit: \*\*Specify the quantity administered.
-   - \*\*Unit Measure: \*\*Choose a unit (e.g., mL, mg, IU) from the dropdown.
+    **NDC Unit:** Specify the quantity administered.
 
-![Picture53 Pn](/images/Picture53.png)
+    **Unit Measure**: Choose a unit (e.g., mL, mg, IU) from the dropdown.
 
-1. Save Options:
-   - The system auto-saves changes when selections are made.
-   - Alternatively, click the ✔️ icon to manually confirm.
+    ![\+newappointment Pn](/images/Picture53.png)
+  </Step>
+  <Step title="Save Options:">
+    The system auto-saves changes when selections are made.
 
-> 📌 **Note**: If NDC codes are pre-linked to the selected CPT, they may auto-populate.
+    Alternatively, click the ✔️ icon to manually confirm.
 
-**Adding ICD Codes**
-
-You can assign ICD-10 diagnosis codes based on the CPT entries and supporting documentation.
+    > 📌 **Note**: If NDC codes are pre-linked to the selected CPT, they may auto-populate.
+  </Step>
+  <Step title="Adding ICD Codes">
+    You can assign ICD-10 diagnosis codes based on the CPT entries and supporting documentation.
+  </Step>
+</Steps>
 
 **Types of ICD Entry**
 
-- Auto-Suggested ICDs: The system recommends ICD codes based on the selected CPT.
-  - To add a suggested ICD, click the ➕ icon next to the code.
-- Manual ICD Entry: Enter custom ICD-10 codes in the input fields if not auto-suggested.
+**Auto-Suggested ICDs: **The system recommends ICD codes based on the selected CPT. To add a suggested ICD, click the ➕ icon next to the code.
 
-> 📌 Note: A maximum of 12 ICD codes can be added per record.
+**Manual ICD Entry: **Enter custom ICD-10 codes in the input fields if not auto-suggested.
+
+> 📌 **Note**: A maximum of 12 ICD codes can be added per record.
 
 **Finalizing the Record**
 
