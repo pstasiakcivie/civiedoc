@@ -19,120 +19,193 @@ To access the Order Entry interface:
 4. Click Export to download the filtered list in CSV or Excel format.
 5. Click the View button (in the Actions column) to open a specific order entry record.
 
----
-
-## Creating a New Order Entry Document
+## **Creating a New Order Entry Document**
 
 To create a new order entry document, click on Add button:
 
 ![Picture27 Pn](/images/Picture27.png)
 
-**1.  Select Client Location**
+<Steps>
+  <Step title="Select Client Location">
+    **Client Location (Required):** Choose the relevant location from the dropdown list.
 
-- **Client Location (Required):** Choose the relevant location from the dropdown list.
+    <img
+      src="/images/Picture28.png"
+      alt="+newappointment Pn"
+      title="+newappointment Pn"
+      style={{ width:"70%" }}
+    />
+  </Step>
+  <Step title="Upload Documents">
+    Click Attach Files to upload one or more .pdf documents.
 
-![Picture28 Pn](/images/Picture28.png)
+    Supported File Format: .pdf only
 
-**2. Upload Documents**
+    <img
+      src="/images/Picture29.png"
+      alt="+newappointment Pn"
+      title="+newappointment Pn"
+      style={{ width:"71%" }}
+    />
+  </Step>
+  <Step title="Upload Constraints:">
+    - Maximum file size per document: 5 MB
+    - Maximum number of documents: 5
+  </Step>
+  <Step title="Manage File Uploads">
+    **Upload All**: Uploads all selected files in one action.
 
-- Click Attach Files to upload one or more .pdf documents.
-- Supported File Format: .pdf only
+    **Remove All**: Clears the entire file selection.
 
-![Picture29 Pn](/images/Picture29.png)
+    **Remove Individual File**: Click the X icon next to a file to remove it from the queue.
+  </Step>
+  <Step title="Finalize or Cancel">
+    **Save**: Uploads files and creates the order entry.
 
-**Upload Constraints:**
-
-- Maximum file size per document: 5 MB
-- Maximum number of documents: 5
-
-**3. Manage File Uploads**
-
-- Upload All: Uploads all selected files in one action.
-- Remove All: Clears the entire file selection.
-- Remove Individual File: Click the X icon next to a file to remove it from the queue.
-
-**4. Finalize or Cancel**
-
-- Save: Uploads files and creates the order entry.
-- Cancel: Closes the dialog without saving or uploading.
-
----
+    **Cancel**: Closes the dialog without saving or uploading.
+  </Step>
+</Steps>
 
 ## Managing Order Entries
 
-**1. Viewing Order Details**
+<Steps>
+  <Step title="Viewing Order Details">
+    To view and manage an order entry:
 
-To view and manage an order entry:
+    Click**View**  in the **Actions** menu next to the desired entry.
 
-1. Click **View **in the **Actions **menu next to the desired entry.
+    <img
+      src="/images/Picture30.png"
+      alt="+newappointment Pn"
+      title="+newappointment Pn"
+      style={{ width:"92%" }}
+    />
+  </Step>
+  <Step title="The interface will open in a split view">
+    **Left Panel**: Displays the uploaded order document (PDF).
 
-   ![Picture30 Pn](/images/Picture30.png)
-2. The interface will open in a split view:
-   - Left Panel: Displays the uploaded order document (PDF).
-   - Right Panel: Lists associated patient forms.
+    **Right Panel**: Lists associated patient forms.
 
-![Picture31 Pn](/images/Picture31.png)
+    <img
+      src="/images/Picture31.png"
+      alt="+newappointment Pn"
+      title="+newappointment Pn"
+      style={{ width:"89%" }}
+    />
 
-⚠️ **Document Viewer Note**\
-If the PDF fails to load, an error message appears:\
-**_"An error occurred while loading the document. Try reloading the page."_**
+    <Note>
+      **Document Viewer Note**\
+      If the PDF fails to load, an error message appears: **_"An error occurred while loading the document. Try reloading the page."_**
+    </Note>
+  </Step>
+  <Step title="Understanding Document Status">
+    Order document status is shown at the top of the right panel:
 
-**2 Understanding Document Status**
+    | Status          | Description                             |
+    | :-------------- | :-------------------------------------- |
+    | **New**         | Document has not been opened or edited. |
+    | **In Progress** | Partially completed.                    |
+    | **Completed**   | All required fields are filled.         |
+    | **Invalid**     | Document has been marked as incorrect.  |
 
-Order document status is shown at the top of the right panel:
+    To manually update the status:
 
-| Status          | Description                             |
-| --------------- | --------------------------------------- |
-| **New**         | Document has not been opened or edited. |
-| **In Progress** | Partially completed.                    |
-| **Completed**   | All required fields are filled.         |
-| **Invalid**     | Document has been marked as incorrect.  |
+    Click the **Actions** button.
 
-To manually update the status:
+    Select **Mark as Complete or Mark as Invalid.**
+  </Step>
+  <Step title="Adding Comments">
+    Click **Comments** to view or add remarks.
 
-- Click the **Actions **button.
-- Select **Mark as Complete or Mark as Invalid.**
+    Use the text field and attachment option to add new notes or upload supporting files.
 
----
+    If no comments exist, the message “**_No comments found_**” is displayed.
 
-**3 Adding Comments**
+    <img
+      src="/images/Picture33.png"
+      alt="+newappointment Pn"
+      title="+newappointment Pn"
+      style={{ width:"81%" }}
+    />
+  </Step>
+</Steps>
 
-- Click **Comments **to view or add remarks.
+## **Creating an Order/Encounter**
 
-![Picture33 Pn](/images/Picture33.png)
+<Steps>
+  <Step title="Review Patient Information">
+    View the PDF on the left panel.
 
-- Use the text field and attachment option to add new notes or upload supporting files.
-- If no comments exist, the message “**_No comments found_**” is displayed.
+    Extract key patient details for entry.
+  </Step>
+  <Step title="Search or Add Patient">
+    Click **Search** in the right panel to locate existing patient records.
 
----
+    Apply filters and select a matching result to auto-fill form data.
 
-## Creating an Order/Encounter
+    <img
+      src="/images/Picture34.png"
+      alt="+newappointment Pn"
+      title="+newappointment Pn"
+      style={{ width:"88%" }}
+    />
+  </Step>
+</Steps>
 
-**Step 1: Review Patient Information**
+### **Add New Patient (If no match is found)**
 
-- View the PDF on the left panel.
-- Extract key patient details for entry.
+<Steps>
+  <Step title="Add new patient">
+    Click **Add** button on the search patient page to enter the patient's details manually.
 
-**Step 2: Search or Add Patient**
+    <img
+      src="/images/Picture34.png"
+      alt="+newappointment Pn"
+      title="+newappointment Pn"
+      style={{ width:"90%" }}
+    />
+  </Step>
+  <Step title="Complete all required fields">
+    Complete all required fields (marked with \*), including: Client Location, First Name, Last Name, Date of Birth, Gender, ZIP Code, MRN, SSN, Phone, Address, City, and State.
 
-- Click **Search** in the right panel to locate existing patient records.
+    <img
+      src="/images/Picture35.png"
+      alt="+newappointment Pn"
+      title="+newappointment Pn"
+      style={{ width:"91%" }}
+    />
 
-![Picture34 Pn](/images/Picture34.png)
+    Save: Creates the patient record and links it to the order.
 
-- Apply filters and select a matching result to auto-fill form data.
+    Reset: Clears all fields.
 
-**If no match is found:**
+    Back: Returns to the previous page without saving.
+  </Step>
+  <Step title=" Add Encounter">
+    Upon selecting/adding a patient click **Create Encounter**.
 
-**Add New Patient**
+    ![\+newappointment Pn](/images/Picture38.png)
 
-- Click **Add** button on the search patient page to enter the patient's details manually.
+    Enter the following details:
 
-![Picture34 Pn](/images/Picture34.png)
+    | Field               | Description                                         |
+    | :------------------ | :-------------------------------------------------- |
+    | Start Date          | Start date of the encounter                         |
+    | End Date (Required) | Actual or expected end date                         |
+    | Patient Class       | Auto-filled for existing patients; otherwise select |
+    | Attending Dr. NPI   | Enter National Provider Identifier                  |
+    | Attending Dr. Name  | Auto-populated after NPI entry                      |
+
+    Click **Create **to generate the encounter or click **Reset** to clear the form if necessary.
+  </Step>
+</Steps>
+
+- 
+
 
 - Complete all required fields (marked with \*), including:\
   Client Location, First Name, Last Name, Date of Birth, Gender, ZIP Code, MRN, SSN, Phone, Address, City, and State.
 
-![Picture35 Pn](/images/Picture35.png)
 
 - Save: Creates the patient record and links it to the order.
 - Reset: Clears all fields.
@@ -142,7 +215,6 @@ To manually update the status:
 
 - Upon selecting/adding a patient click Create Encounter.
 
-![Picture38 Pn](/images/Picture38.png)
 
 - Enter the following details:
 
@@ -156,7 +228,7 @@ To manually update the status:
 
 ![Picture39 Pn](/images/Picture39.png)
 
-- Click **Create **to generate the encounter or click \*\*Reset \*\*to clear the form if necessary.
+- Click \*\*Create \*\*to generate the encounter or click \*\*Reset \*\*to clear the form if necessary.
 
 ---
 
@@ -175,7 +247,7 @@ Review and fill in the missing fields of the corresponding Encounter/Order detai
 
 **Step 5: Save and Attach Document**
 
-- Click **Save **to store all data.
+- Click \*\*Save \*\*to store all data.
 - The order entry status changes to **In Progress.**
 - Select the page range in the PDF to attach to the encounter record.
 
