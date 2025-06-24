@@ -59,7 +59,7 @@
       {
         "group": "Radico Billing",
         "pages": [
-          "Radico-Billing/Facesheet",
+          "https://collaborativeimaging.mintlify.app/Radico-Billing/Facesheet",
           "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding",
           "https://collaborativeimaging.mintlify.app/Radico-Billing/Provider",
           "https://collaborativeimaging.mintlify.app/Radico-Billing/OrderEntry",
