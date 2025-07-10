@@ -38,9 +38,19 @@
         "tab": "API Reference",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Radico Billing",
             "pages": [
-              "api-reference/introduction"
+              "api-reference/introduction",
+                        "https://collaborativeimaging.mintlify.app/Radico-Billing/Facesheet",
+          "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding",
+          "https://collaborativeimaging.mintlify.app/Radico-Billing/Provider",
+          "https://collaborativeimaging.mintlify.app/Radico-Billing/OrderEntry",
+          "https://collaborativeimaging.mintlify.app/Radico-Billing/Users",
+          "https://collaborativeimaging.mintlify.app/Radico-Billing/Role",
+          "https://collaborativeimaging.mintlify.app/Radico-Billing/Permissions",
+          "https://collaborativeimaging.mintlify.app/Radico-Billing/Ordering_Doctor",
+          "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding_Audit",
+          "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding"
             ]
           },
           {
