@@ -61,28 +61,7 @@
       }
     ]
   },
-  {
-    "tab": "Radico Billing",
-    "groups": [
-      {
-        "group": "Radico Billing",
-        "pages": [
-          "https://collaborativeimaging.mintlify.app/Radico-Billing/Facesheet",
-          "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding",
-          "https://collaborativeimaging.mintlify.app/Radico-Billing/Provider",
-          "https://collaborativeimaging.mintlify.app/Radico-Billing/OrderEntry",
-          "https://collaborativeimaging.mintlify.app/Radico-Billing/Users",
-          "https://collaborativeimaging.mintlify.app/Radico-Billing/Role",
-          "https://collaborativeimaging.mintlify.app/Radico-Billing/Permissions",
-          "https://collaborativeimaging.mintlify.app/Radico-Billing/Ordering_Doctor",
-          "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding_Audit",
-          "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding"
           
-        ]
-      }
-    ]
-  }
-           
     ],
     "global": {
       "anchors": [
@@ -105,6 +84,24 @@
         "anchor": "Facesheet",
         "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/Facesheet",
         "icon": "newspaper"
+      }
+         },
+        {
+        "anchor": "Worklist",
+        "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/Worklist",
+        "icon": "newspaper"
+      }
+         },
+        {
+        "anchor": "Coding",
+        "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding_Audit",
+        "icon": "Coding"
+      }
+        },
+        {
+        "anchor": "Order Entry",
+        "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/OrderEntry",
+        "icon": "Coding"
       }
     ]
     } 
