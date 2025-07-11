@@ -64,7 +64,12 @@
         ],
         "global": {
             "anchors": [
-                {
+              {
+                    "anchor": "Coding",
+                    "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding",
+                    "icon": "book-open-cover"
+                },  
+              {
                     "anchor": "Permissions",
                     "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/Permissions",
                     "icon": "book-open-cover"
@@ -72,7 +77,7 @@
                 {
                     "anchor": "Users",
                     "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/Users",
-                    "icon": "slack"
+                    "icon": "book-open-cover"
                 },
                 {
                     "anchor": "Ordering_Doctor",
@@ -90,14 +95,14 @@
                     "icon": "newspaper"
                 },
                 {
-                    "anchor": "Coding",
+                    "anchor": "Coding Audit",
                     "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding_Audit",
-                    "icon": "Coding"
+                    "icon": "book-open-cover"
                 },
                 {
                     "anchor": "Order Entry",
                     "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/OrderEntry",
-                    "icon": "Coding"
+                    "icon": "book-open-cover"
                 }
             ]
         }
