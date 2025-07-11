@@ -35,20 +35,20 @@
                 ]
             },
             {
-                "tab": "API Reference",
+                "tab": "Radico Billing",
                 "groups": [
                     {
                         "group": "Radico Billing",
                         "pages": [
-                            "Radico Billing/https://collaborativeimaging.mintlify.app/Radico-Billing/Coding",
-                            "Radico Billing/https://collaborativeimaging.mintlify.app/Radico-Billing/Provider",
-                            "Radico Billing/https://collaborativeimaging.mintlify.app/Radico-Billing/OrderEntry",
-                            "Radico Billing/https://collaborativeimaging.mintlify.app/Radico-Billing/Users",
-                            "Radico Billing/https://collaborativeimaging.mintlify.app/Radico-Billing/Role",
-                            "Radico Billing/https://collaborativeimaging.mintlify.app/Radico-Billing/Permissions",
-                            "Radico Billing/https://collaborativeimaging.mintlify.app/Radico-Billing/Ordering_Doctor",
-                            "Radico Billing/https://collaborativeimaging.mintlify.app/Radico-Billing/Coding_Audit",
-                            "Radico Billing/https://collaborativeimaging.mintlify.app/Radico-Billing/Coding"
+                            "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding",
+                            "https://collaborativeimaging.mintlify.app/Radico-Billing/Provider",
+                            "https://collaborativeimaging.mintlify.app/Radico-Billing/OrderEntry",
+                            "https://collaborativeimaging.mintlify.app/Radico-Billing/Users",
+                            "https://collaborativeimaging.mintlify.app/Radico-Billing/Role",
+                            "https://collaborativeimaging.mintlify.app/Radico-Billing/Permissions",
+                            "https://collaborativeimaging.mintlify.app/Radico-Billing/Ordering_Doctor",
+                            "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding_Audit",
+                            "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding"
                         ]
                     },
                     {
@@ -65,18 +65,18 @@
         "global": {
             "anchors": [
                 {
-                    "anchor": "Documentation",
-                    "href": "https://mintlify.com/docs",
+                    "anchor": "Permissions",
+                    "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/Permissions",
                     "icon": "book-open-cover"
                 },
                 {
-                    "anchor": "Community",
-                    "href": "https://mintlify.com/community",
+                    "anchor": "Users",
+                    "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/Users",
                     "icon": "slack"
                 },
                 {
-                    "anchor": "Blog",
-                    "href": "https://mintlify.com/blog",
+                    "anchor": "Ordering_Doctor",
+                    "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/Ordering_Doctor",
                     "icon": "newspaper"
                 },
                 {
