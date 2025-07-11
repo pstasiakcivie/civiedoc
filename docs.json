@@ -1,133 +1,129 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "CIVIE RIS Documentation",
-  "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "development"
+    "$schema": "https://mintlify.com/docs.json",
+    "theme": "mint",
+    "name": "CIVIE RIS Documentation",
+    "colors": {
+        "primary": "#16A34A",
+        "light": "#07C983",
+        "dark": "#15803D"
+    },
+    "favicon": "/favicon.svg",
+    "navigation": {
+        "tabs": [
+            {
+                "tab": "Guides",
+                "groups": [
+                    {
+                        "group": "Get Started",
+                        "pages": [
+                            "introduction",
+                            "quickstart",
+                            "development"
+                        ]
+                    },
+                    {
+                        "group": "Essentials",
+                        "pages": [
+                            "essentials/markdown",
+                            "essentials/code",
+                            "essentials/images",
+                            "essentials/settings",
+                            "essentials/navigation",
+                            "essentials/reusable-snippets"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "API Reference",
+                "groups": [
+                    {
+                        "group": "Radico Billing",
+                        "pages": [
+                            "api-reference/https://collaborativeimaging.mintlify.app/Radico-Billing/Coding",
+                            "api-reference/https://collaborativeimaging.mintlify.app/Radico-Billing/Provider",
+                            "api-reference/https://collaborativeimaging.mintlify.app/Radico-Billing/OrderEntry",
+                            "api-reference/https://collaborativeimaging.mintlify.app/Radico-Billing/Users",
+                            "api-reference/https://collaborativeimaging.mintlify.app/Radico-Billing/Role",
+                            "api-reference/https://collaborativeimaging.mintlify.app/Radico-Billing/Permissions",
+                            "api-reference/https://collaborativeimaging.mintlify.app/Radico-Billing/Ordering_Doctor",
+                            "api-reference/https://collaborativeimaging.mintlify.app/Radico-Billing/Coding_Audit",
+                            "api-reference/https://collaborativeimaging.mintlify.app/Radico-Billing/Coding"
+                        ]
+                    },
+                    {
+                        "group": "Endpoint Examples",
+                        "pages": [
+                            "api-reference/endpoint/get",
+                            "api-reference/endpoint/create",
+                            "api-reference/endpoint/delete"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "global": {
+            "anchors": [
+                {
+                    "anchor": "Documentation",
+                    "href": "https://mintlify.com/docs",
+                    "icon": "book-open-cover"
+                },
+                {
+                    "anchor": "Community",
+                    "href": "https://mintlify.com/community",
+                    "icon": "slack"
+                },
+                {
+                    "anchor": "Blog",
+                    "href": "https://mintlify.com/blog",
+                    "icon": "newspaper"
+                },
+                {
+                    "anchor": "Facesheet",
+                    "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/Facesheet",
+                    "icon": "newspaper"
+                },
+                {
+                    "anchor": "Worklist",
+                    "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/Worklist",
+                    "icon": "newspaper"
+                },
+                {
+                    "anchor": "Coding",
+                    "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding_Audit",
+                    "icon": "Coding"
+                },
+                {
+                    "anchor": "Order Entry",
+                    "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/OrderEntry",
+                    "icon": "Coding"
+                }
             ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "Radico Billing",
-            "pages": [
-              "api-reference/https://collaborativeimaging.mintlify.app/Radico-Billing/Coding",
-          "api-reference/https://collaborativeimaging.mintlify.app/Radico-Billing/Provider",
-          "api-reference/https://collaborativeimaging.mintlify.app/Radico-Billing/OrderEntry",
-          "api-reference/https://collaborativeimaging.mintlify.app/Radico-Billing/Users",
-          "api-reference/https://collaborativeimaging.mintlify.app/Radico-Billing/Role",
-          "api-reference/https://collaborativeimaging.mintlify.app/Radico-Billing/Permissions",
-          "api-reference/https://collaborativeimaging.mintlify.app/Radico-Billing/Ordering_Doctor",
-          "api-reference/https://collaborativeimaging.mintlify.app/Radico-Billing/Coding_Audit",
-          "api-reference/https://collaborativeimaging.mintlify.app/Radico-Billing/Coding"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete"
-               ]
-      }
-    ]
-  },
-          
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        },
-        {
-        "anchor": "Facesheet",
-        "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/Facesheet",
-        "icon": "newspaper"
-      }
-         },
-        {
-        "anchor": "Worklist",
-        "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/Worklist",
-        "icon": "newspaper"
-      }
-         },
-        {
-        "anchor": "Coding",
-        "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding_Audit",
-        "icon": "Coding"
-      }
-        },
-        {
-        "anchor": "Order Entry",
-        "href": "https://collaborativeimaging.mintlify.app/Radico-Billing/OrderEntry",
-        "icon": "Coding"
-      }
-    ]
-    } 
-  },
-  "logo": {
-    "light": "/logo/main-logo.png",
-    "dark": "/logo/main-logo.png"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+        }
+    },
+    "logo": {
+        "light": "/logo/main-logo.png",
+        "dark": "/logo/main-logo.png"
+    },
+    "navbar": {
+        "links": [
+            {
+                "label": "Support",
+                "href": "mailto:hi@mintlify.com"
+            }
+        ],
+        "primary": {
+            "type": "button",
+            "label": "Dashboard",
+            "href": "https://dashboard.mintlify.com"
+        }
+    },
+    "footer": {
+        "socials": {
+            "x": "https://x.com/mintlify",
+            "github": "https://github.com/mintlify",
+            "linkedin": "https://linkedin.com/company/mintlify"
+        }
     }
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
-  }
 }
