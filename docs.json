@@ -40,15 +40,8 @@
                     {
                         "group": "Radico Billing",
                         "pages": [
-                            "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding",
-                            "https://collaborativeimaging.mintlify.app/Radico-Billing/Provider",
-                            "https://collaborativeimaging.mintlify.app/Radico-Billing/OrderEntry",
-                            "https://collaborativeimaging.mintlify.app/Radico-Billing/Users",
-                            "https://collaborativeimaging.mintlify.app/Radico-Billing/Role",
-                            "https://collaborativeimaging.mintlify.app/Radico-Billing/Permissions",
-                            "https://collaborativeimaging.mintlify.app/Radico-Billing/Ordering_Doctor",
-                            "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding_Audit",
-                            "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding"
+"https://collaborativeimaging.mintlify.app/Radico-Billing/Coding",
+                                                     "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding"
                         ]
                     },
                     {
