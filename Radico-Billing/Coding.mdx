@@ -37,12 +37,15 @@ To create a new private or shared worklist:
 
     **User Group Configuration (Shared Worklists Only)**
 
+    **Add User**: Search and select users to add to the worklist.
+
+    **Create/Edit User Group**: Manage user groups for easier sharing.
+
+    **Allow Shared Users to Edit/Delete**: Grant editing privileges to shared users.
+
     <Tip>
       Enabled only when "**_Mark as Private_**" is unchecked.
     </Tip>
-    - **Add User**: Search and select users to add to the worklist.
-    - **Create/Edit User Group**: Manage user groups for easier sharing.
-    - **Allow Shared Users to Edit/Delete**: Grant editing privileges to shared users.
   </Step>
   <Step title="Set Filter Conditions">
     Select field (e.g., Approved At), operator (e.g., Equals), and value (e.g., Last 30 Days).\
@@ -87,14 +90,15 @@ The Preview screen displays a list of coding records that match the filter condi
       style={{ width:"87%" }}
     />
 
-    - Following toggles are provided in the filter panel to filter by CAP status:
+    Following toggles are provided in the filter panel to filter by CAP status:
 
-      **Is Back From CAP**\
-      Displays records that were previously flagged for Coding Assistance (CAP) and have now been reviewed and returned by the physician. These records are ready for the coder to revisit and take the next action, such as updating codes or finalizing the record.
+    **Is Back From CAP**\
+    Displays records that were previously flagged for Coding Assistance (CAP) and have now been reviewed and returned by the physician. These records are ready for the coder to revisit and take the next action, such as updating codes or finalizing the record.
 
-      **Is Pending Question from CAP**\
-      Filters records that are currently awaiting a response or clarification from the physician within the CAP portal. These records remain on hold until the necessary input is provided to proceed with coding.
-    - Click the **Refresh (⟳)** button to reload updated data.
+    **Is Pending Question from CAP**\
+    Filters records that are currently awaiting a response or clarification from the physician within the CAP portal. These records remain on hold until the necessary input is provided to proceed with coding.
+
+    Click the **Refresh (⟳)** button to reload updated data.
   </Step>
   <Step title=" Start Coding">
     Click **Start Worklist** (top-right corner) to begin working on the records or click the **View** icon beside the required coding record to start coding.
@@ -166,9 +170,9 @@ The **Mass Edit** (or **Bulk Update**) feature allows users to apply changes to 
   </Step>
 </Steps>
 
-## View and Edit Coding Records
+## **View and Edit Coding Records**
 
-The Coding Record interface opens when a user clicks the **View** ****Details (👁️) icon from the Preview Worklist screen or selects theStart Worklist****  option—available either at the top right corner or next to each listed worklist on the Coding Dashboard page. This interface provides comprehensive access to the coding workspace, enabling coders to:
+The Coding Record interface opens when a user clicks the **View** ****Details ****icon from the**Preview ** Worklist screen or selects the **Start Worklist**  option—available either at the top right corner or next to each listed worklist on the **Coding** Dashboard page. This interface provides comprehensive access to the coding workspace, enabling coders to:
 
 - Review the complete clinical report
 - Assign CPT and ICD codes
@@ -193,10 +197,13 @@ The interface includes multiple tabs to provide comprehensive access to all nece
 
 This panel provides key metadata about the coding record for context and verification:
 
-- Identifiers: Record ID, MRN, Accession Number, Procedure Description
-- Provider Information: Billing Provider, Ordering Physician
-- Service Details: Date of Service (DOS), Signed Date, Location, Place of Service (POS)
-- Status and Billing: Coding Status, Reason for Study, Carrier
+**Identifiers:** Record ID, MRN, Accession Number, Procedure Description
+
+**Provider Information: **Billing Provider, Ordering Physician
+
+**Service Details:** Date of Service (DOS), Signed Date, Location, Place of Service (POS)
+
+**Status and Billing:** Coding Status, Reason for Study, Carrier
 
 **Entering CPT and NDC Information**
 
@@ -232,9 +239,7 @@ This panel provides key metadata about the coding record for context and verific
 
     Click the **NDC/Unit** icon next to the desired CPT row to open the NDC Entry Panel.
   </Step>
-  <Step title="New Step">
-    Enter the following information:
-
+  <Step title="Enter the following information">
     **NDC Code:** Select from the dropdown list.
 
     **NDC Unit:** Specify the quantity administered.
@@ -243,13 +248,13 @@ This panel provides key metadata about the coding record for context and verific
 
     ![\+newappointment Pn](/images/Picture53.png)
   </Step>
-  <Step title="Save Options:">
+  <Step title="Save Options">
     The system auto-saves changes when selections are made.
 
-    Alternatively, click the ✔️ icon to manually confirm.
+    Alternatively, click the <Icon icon="check" /> icon to manually confirm.
 
     <Note>
-      **Note**: 
+      **Note**:
 
       If NDC codes are pre-linked to the selected CPT, they may auto-populate.
     </Note>
@@ -257,35 +262,33 @@ This panel provides key metadata about the coding record for context and verific
   <Step title="Adding ICD Codes">
     You can assign ICD-10 diagnosis codes based on the CPT entries and supporting documentation.
   </Step>
+  <Step title="Types of ICD Entry">
+    **Auto-Suggested ICDs**: The system recommends ICD codes based on the selected CPT. To add a suggested ICD, click the **\+** icon next to the code.
+
+    **Manual ICD Entry**: Enter custom ICD-10 codes in the input fields if not auto-suggested.
+
+    <Note>
+      **Note**
+
+      A maximum of 12 ICD codes can be added per record.
+    </Note>
+  </Step>
+  <Step title="Finalizing the Record">
+    Use the Actions Dropdown in the top-right corner of the Record View to manage the record status:
+
+    **Tag: **Assign labels to classify or track the record.
+
+    **Disable: **Remove the record from the active coding workflow.
+
+    **Save: **Save the record in its current state for future completion.
+
+    <Tip>
+      **Best Practice:**
+
+      Save frequently to avoid data loss and maintain audit integrity.
+    </Tip>
+  </Step>
 </Steps>
-
-**Types of ICD Entry**
-
-**Auto-Suggested ICDs**: The system recommends ICD codes based on the selected CPT. To add a suggested ICD, click the ➕ icon next to the code.
-
-**Manual ICD Entry**: Enter custom ICD-10 codes in the input fields if not auto-suggested.
-
-<Note>
-  **Note**
-
-  A maximum of 12 ICD codes can be added per record.
-</Note>
-
-**Finalizing the Record**
-
-Use the Actions Dropdown in the top-right corner of the Record View to manage the record status:
-
-| Action  | Description                                                 |
-| ------- | ----------------------------------------------------------- |
-| Tag     | Assign labels to classify or track the record.              |
-| Disable | Remove the record from the active coding workflow.          |
-| Save    | Save the record in its current state for future completion. |
-
-<Tip>
-  **Best Practice:**
-
-  Save frequently to avoid data loss and maintain audit integrity.
-</Tip>
 
 **Marking a Record for Coding Assistance (CAP)**
 
