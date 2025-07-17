@@ -54,6 +54,37 @@
                     }
                 ]
             }
+           {
+                "tab": "CIVIE",
+                "groups": [
+                    {
+                        "group": "Get Started",
+                        "pages": [
+                            "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Calendar#receipt",
+                            "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Incoming_Document",
+                          "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Patients",
+                          "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Orders_Worklist",
+                          "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Technologist_Worklist",
+                          "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Radiology_Report",
+                          "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Insurance_Auth_Worklist",
+                            "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Medical_Record_Request",
+                          "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Resources",
+                          "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Document_Template"
+                        ]
+                    },
+                    {
+                        "group": "Essentials",
+                        "pages": [
+                            "essentials/markdown",
+                            "essentials/code",
+                            "essentials/images",
+                            "essentials/settings",
+                            "essentials/navigation",
+                            "essentials/reusable-snippets"
+                        ]
+                    }
+                ]
+            },
         ],
         "global": {
             "anchors": [
