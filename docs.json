@@ -40,10 +40,10 @@
                     {
                         "group": "Radico Billing",
                         "pages": [
-"https://collaborativeimaging.mintlify.app/Radico-Billing/Coding",
-                                                     "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding"
+"https://collaborativeimaging.mintlify.app/Radico-Billing/Coding" 
                         ]
-                    },
+                          },
+                    
                     {
                         "group": "Endpoint Examples",
                         "pages": [
@@ -53,7 +53,7 @@
                         ]
                     }
                 ]
-            }
+            },
            {
                 "tab": "CIVIE",
                 "groups": [
@@ -84,7 +84,7 @@
                         ]
                     }
                 ]
-            },
+            }
         ],
         "global": {
             "anchors": [
