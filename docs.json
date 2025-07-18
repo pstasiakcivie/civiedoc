@@ -38,12 +38,19 @@
                 "tab": "Radico Billing",
                 "groups": [
                     {
-                        "group": "Radico Billing",
+                        "group": "Modules",
                         "pages": [
-"Radico Billing/Coding" 
+                            "Radico-Billing/Coding",
+                            "Radico-Billing/Permissions",
+                            "Radico-Billing/Users",
+                            "Radico-Billing/Ordering_Doctor",
+                            "Radico-Billing/Facesheet",
+                            "Radico-Billing/Worklist",
+                            "Radico-Billing/Order_Worklist",
+                            "Radico-Billing/Coding_Audit",
+                            "Radico-Billing/OrderEntry"
                         ]
-                          },
-                    
+                    },
                     {
                         "group": "Endpoint Examples",
                         "pages": [
@@ -54,22 +61,22 @@
                     }
                 ]
             },
-           {
+            {
                 "tab": "CIVIE",
                 "groups": [
                     {
                         "group": "Get Started",
                         "pages": [
-                          "CIVIE-RIS/Calendar#receipt",
-                          "CIVIE-RIS/Incoming_Document",
-                          "CIVIE-RIS/Patients",
-                          "CIVIE-RIS/Orders_Worklist",
-                          "CIVIE-RIS/Technologist_Worklist",
-                          "CIVIE-RIS/Radiology_Report",
-                          "CIVIE-RIS/Insurance_Auth_Worklist",
-                          "CIVIE-RIS/Medical_Record_Request",
-                          "CIVIE-RIS/Resources",
-                          "CIVIE-RIS/Document_Template"
+                            "CIVIE-RIS/Calendar",
+                            "CIVIE-RIS/Incoming_Document",
+                            "CIVIE-RIS/Patients",
+                            "CIVIE-RIS/Orders_Worklist",
+                            "CIVIE-RIS/Technologist_Worklist",
+                            "CIVIE-RIS/Radiology_Report",
+                            "CIVIE-RIS/Insurance_Auth_Worklist",
+                            "CIVIE-RIS/Medical_Record_Request",
+                            "CIVIE-RIS/Resources",
+                            "CIVIE-RIS/Document_Template"
                         ]
                     },
                     {
@@ -85,56 +92,7 @@
                     }
                 ]
             }
-        ],
-        "global": {
-            "anchors": [
-              {
-                    "anchor": "Coding",
-                    "href": "Radico-Billing/Coding",
-                    "icon": "book-open-cover"
-                },  
-              {
-                    "anchor": "Permissions",
-                    "href": "Radico-Billing/Permissions",
-                    "icon": "book-open-cover"
-                },
-                {
-                    "anchor": "Users",
-                    "href": "Radico-Billing/Users",
-                    "icon": "book-open-cover"
-                },
-                {
-                    "anchor": "Ordering Doctor",
-                    "href": "Radico-Billing/Ordering_Doctor",
-                    "icon": "newspaper"
-                },
-                {
-                    "anchor": "Facesheet",
-                    "href": "Radico-Billing/Facesheet",
-                    "icon": "newspaper"
-                },
-                {
-                    "anchor": "Worklist",
-                    "href": "Radico-Billing/Worklist",
-                    "icon": "newspaper"
-                },
-              {
-                    "anchor": "Order Worklist",
-                    "href": "Radico-Billing/Order_Worklist",
-                    "icon": "newspaper"
-                },
-                {
-                    "anchor": "Coding Audit",
-                    "href": "Radico-Billing/Coding_Audit",
-                    "icon": "book-open-cover"
-                },
-                {
-                    "anchor": "Order Entry",
-                    "href": "Radico-Billing/OrderEntry",
-                    "icon": "book-open-cover"
-                }
-            ]
-        }
+        ]
     },
     "logo": {
         "light": "/logo/main-logo.png",
