@@ -33,29 +33,56 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
+      "name": "Coding",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "https://collaborativeimaging.mintlify.app/Radico-Billing/Coding"
     },
     {
-      "name": "Community",
+      "name": "Permissions",
       "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "url": "https://collaborativeimaging.mintlify.app/Radico-Billing/Permissions"
     },
     {
-      "name": "Blog",
+      "name": "Users",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-        }
+      "url": "https://collaborativeimaging.mintlify.app/Radico-Billing/Users"
+        },
+    {
+      "name": "Ordering Doctor",
+      "icon": "slack",
+      "url": "https://collaborativeimaging.mintlify.app/Radico-Billing/Ordering_Doctor"
+    },
+    {
+      "name": "Facesheet",
+      "icon": "slack",
+      "url": "https://collaborativeimaging.mintlify.app/Radico-Billing/Facesheet"
+    },
+    {
+      "name": "Permissions",
+      "icon": "slack",
+      "url": "https://collaborativeimaging.mintlify.app/Radico-Billing/Permissions"
+    },
+    {
+      "name": "Permissions",
+      "icon": "slack",
+      "url": "https://collaborativeimaging.mintlify.app/Radico-Billing/Permissions"
+    }
   ],
   "navigation": [
     {
       "group": "Get Started",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
+                            "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Calendar#receipt",
+                            "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Incoming_Document",
+                          "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Patients",
+                          "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Orders_Worklist",
+                          "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Technologist_Worklist",
+                          "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Radiology_Report",
+                          "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Insurance_Auth_Worklist",
+                            "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Medical_Record_Request",
+                          "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Resources",
+                          "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Document_Template"
+                        ]
     },
     {
       "group": "Essentials",
@@ -74,6 +101,7 @@
         "api-reference/introduction"
       ]
     },
+    
     {
       "group": "Endpoint Examples",
       "pages": [
