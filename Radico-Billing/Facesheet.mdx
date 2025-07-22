@@ -1,0 +1,353 @@
+---
+title: "Facesheet"
+description: "Facesheet plays a vital role in healthcare billing system as these documents contain comprehensive patient information, which is extracted by users and entered into the system. This information is further used for billing, insurance processing, medical treatment, and administrative tasks. They help streamline workflows and improve accuracy in billing processes."
+---
+
+![Picture8 Pn](/images/Picture8.png)
+
+**Accessing Facesheet**
+
+**Search**: Use the Search Bar to locate a facesheet by file name.
+
+**Filter**: Click Filter to find a facesheet based on Created Date Range, Client Name, File Name, and Status.
+
+**Export**: Click Export to download facesheet list in Excel or CSV Format.
+
+**Entry count**: There is an Entry count in front of each of the facesheet which represents the number of forms in that Facesheet.
+
+**Actions Menu**
+
+- Click the ⋮ menu next to a record.
+- Select **View** to open or **Delete** to remove a facesheet record.
+
+## Add Facesheet Document
+
+When the **Add** button at the top-right corner is clicked, a popup titled **Add Facesheet Document** appears. It enables users to select the client location and upload the required document.
+
+<img
+  src="/Addfacesheet.png"
+  alt="Picture9 Pn"
+  style={{ width:"51%" }}
+  title=""
+  className="mx-auto"
+/>
+
+<Steps>
+  <Step title=" Select Client Location">
+    **Client Location (Required)**: Use the dropdown to select the location associated with the facesheet.
+
+    <img
+      src="/Addfacesheet.png"
+      alt="+newappointment Pn"
+      title="+newappointment Pn"
+      className="mx-auto"
+      style={{ width:"54%" }}
+    />
+  </Step>
+  <Step title="Upload Document">
+    **Attach Files**: Click Attach Files to select and upload one or more .pdf facesheet files from your system.
+
+    <img
+      src="/images/Picture10.png"
+      alt="+newappointment Pn"
+      title="+newappointment Pn"
+      style={{ width:"59%" }}
+      className="mx-auto"
+    />
+
+    - **Supported File Type**: Only .pdf format is allowed.
+    - **Upload Limits**:
+      - Maximum file size: 5 MB
+      - Maximum number of files: 5
+  </Step>
+  <Step title="Manage Uploads">
+    **Upload All**: Click this button to upload all the selected facesheet files in one go.
+
+    **Remove All**: Clears the entire selection of files.
+
+    **Remove Individual File**: Click the X icon next to any uploaded file to remove it from the list before uploading.
+  </Step>
+  <Step title="Save or Cancel">
+    **Save**: Finalizes the upload and creates the facesheet.
+
+    **Cancel (X)**: Closes the pop up without uploading or saving.
+  </Step>
+</Steps>
+
+## **View and Edit Facesheet Records**
+
+This section guides users through viewing, editing, and managing facesheet records in the Radico Billing application.
+
+![Picture11 Pn](/images/Picture11.png)
+
+<Steps>
+  <Step title="Open Facesheet">
+    **To open a facesheet**: Click **View** from the Actions menu (⋮)  next to the desired record.
+
+    ![\+newappointment Pn](/images/Picture11.png)
+
+    A split-screen interface appears:
+
+    **Left Panel**: Displays the uploaded facesheet in PDF format.
+
+    **Right Panel**: Lists all patient forms linked to the facesheet.
+
+    <Note>
+      **Document Viewer Note**:\
+      If the PDF fails to load, a message appears: "An error occurred while loading the document. Try reloading the page."
+    </Note>
+  </Step>
+  <Step title="Check Document Status">
+    The current document status appears at the top of the right panel and updates automatically based on form progress:
+
+    **New**: The facesheet has not been opened or filled.
+
+    **In Progress**: The form is partially filled.
+
+    **Completed**: All required fields are completed.
+
+    **Invalid**: The document is flagged as incorrect.
+
+    To manually update the status:
+
+    - Click the **Actions** button at the top right.
+    - Choose **Mark as Complete** or **Mark as Invalid** based on the document's state.
+  </Step>
+  <Step title="Check Document Status">
+    **as Invalid** based on the document's state.
+  </Step>
+  <Step title="Add Comments">
+    Click **Comments** to view any existing remarks for the facesheet.
+
+    <img
+      src="/images/Picture12.png"
+      alt="+newappointment Pn"
+      title="+newappointment Pn"
+      style={{ width:"79%" }}
+    />
+
+    Use the **text box and attachment** option to add new comments or upload related files.
+
+    If there are no comments, the message **No comments found** will be displayed.
+  </Step>
+</Steps>
+
+## **Add New Record**
+
+<img
+  src="/images/Picture13.png"
+  alt="Picture13 Pn"
+  style={{ width:"91%" }}
+/>
+
+<Steps>
+  <Step title="Review Patient Information">
+    View the left-side facesheet PDF.
+
+    Identify and extract necessary patient details for form entry.
+  </Step>
+  <Step title="Search for Existing Patient">
+    <img
+      src="/images/Picture14.png"
+      alt="+newappointment Pn"
+      title="+newappointment Pn"
+      style={{ width:"91%" }}
+      className="mx-auto"
+    />
+
+    Click **Search Patient** on the right panel.
+
+    Apply filters to search the database.
+
+    If found, select the patient to auto-fill the form.
+  </Step>
+  <Step title="Add New Patient (If Not Found)">
+    Manually enter patient details from the facesheet:
+
+    **Patient Information**
+
+    Name, Date of Birth, Gender, SSN, Contact, Address, Employer
+
+    Encounter Number and MRN
+
+    <img
+      src="/images/Picture15.png"
+      alt="+newappointment Pn"
+      title="+newappointment Pn"
+      style={{ width:"73%" }}
+      className="mx-auto"
+    />
+  </Step>
+  <Step title="Guarantor Details">
+    If same as patient, select the checkbox to auto-fill.
+
+    If different, enter Name, DOB, Address, Phone, SSN, Gender, Employer, and Relationship.
+
+    <img
+      src="/images/Picture16.png"
+      alt="+newappointment Pn"
+      title="+newappointment Pn"
+      style={{ width:"74%" }}
+      className="mx-auto"
+    />
+  </Step>
+  <Step title="Admission Information">
+    Patient Class, Location, Place of Service
+
+    Admit Date and Discharge Dates
+
+    Referring Physician's Name
+
+    <img
+      src="/images/Picture17.png"
+      alt="+newappointment Pn"
+      title="+newappointment Pn"
+      style={{ width:"82%" }}
+      className="mx-auto"
+    />
+  </Step>
+  <Step title="Insurance Information">
+    Plan ID, Insurance Provider, Group Numbers
+
+    Insured Person’s Name, DOB, Address, SSN, Gender, Employer, and Relationship
+
+    <img
+      src="/images/Picture18.png"
+      alt="+newappointment Pn"
+      title="+newappointment Pn"
+      style={{ width:"81%" }}
+      className="mx-auto"
+    />
+
+    <Note>
+      **Note**
+
+      Expand each section and fill all required fields. You may also add **Secondary or Tertiary** insurance if applicable.
+    </Note>
+  </Step>
+  <Step title="Save Record">
+    Click **Save** to store the entered data.
+
+    The facesheet status changes to **In Progress**.
+  </Step>
+  <Step title="Mark as Complete">
+    After entering all records, click **Actions \> Mark as Complete** to update the status.
+
+    <img
+      src="/images/Picture19.png"
+      alt="+newappointment Pn"
+      className="mx-auto"
+    />
+  </Step>
+  <Step title="Record-Level Actions">
+    Each patient record includes the following options:
+
+    **Edit**: Modify patient or insurance details.
+
+    **Delete**: Remove the record (confirmation required).
+
+    **Link**: Reassign the patient to another encounter or record.
+
+    ![\+newappointment Pn](/images/Picture20.png)
+  </Step>
+</Steps>
+
+## **Link Patient to Facesheet**
+
+This function ensures the correct patient is connected to the facesheet.
+
+<Steps>
+  <Step title="Click Link Patient">
+    Found next to the patient’s name in the record list.
+
+    Opens the patient search interface.
+  </Step>
+  <Step title="Search and Select Patient">
+    Use filters like Name, Last Name, MRN, or SSN.
+
+    Click the arrow icon  <Icon icon="arrow-right-long" /> to select.
+
+    <img
+      src="/images/Picture21.png"
+      alt="+newappointment Pn"
+      title="+newappointment Pn"
+      style={{ width:"91%" }}
+    />
+  </Step>
+  <Step title="Review and Update Details">
+    The form auto-fills with patient data.
+
+    Validate fields such as:
+
+    - Name, DOB, Gender, SSN
+    - Phone, Address, State, ZIP Code
+    - Complete any required fields and  click **Save** to link the patient.
+
+    <img
+      src="/images/Picture22.png"
+      alt="+newappointment Pn"
+      title="+newappointment Pn"
+      style={{ width:"85%" }}
+    />
+
+    <Note>
+      **Note**:\
+      If required fields are missing, an error will appear. All data must be completed to successfully link the patient.
+    </Note>
+  </Step>
+  <Step title="Attachment-Level Actions">
+    Each document in the Attachments table includes:
+
+    **View**: Opens the PDF viewer.
+
+    **Download**: Downloads the document in original format.
+
+    **Delete**: Removes the file (use only for incorrect uploads).
+
+    <Tip>
+      **Permissions Note**:\
+      Attachment actions may be limited to users with specific roles such as Admin or Coder.
+    </Tip>
+  </Step>
+  <Step title="Add Patient (If patient not found)">
+    This page opens when a user clicks the **Add** button from the **Search Patient** page. Steps to add a new patient:
+
+    ![\+newappointment Pn](/images/Picture24.png)
+  </Step>
+</Steps>
+
+## **Add Patient (If patient not found)**
+
+This page opens when a user clicks the **Add** button from the **Search Patient** page. Steps to add a new patient:
+
+<img
+  src="/images/Picture24.png"
+  alt="+newappointment Pn"
+  className="mx-auto"
+  style={{ width:"91%" }}
+/>
+
+<Steps>
+  <Step title="Add Patient">
+    Fill in the following details mentioned as per the facesheet document. Fields marked with asterisk (\*) are required/mandatory:
+
+    Select the **Location** using the dropdown provided.
+
+    Enter the **First Name, Last Name, DOB, Gender, ZIP Code, MRN, SSN, Phone Number, Address, City**, and **State**.
+
+    <img
+      src="/images/Picture25.png"
+      alt="+newappointment Pn"
+      title="+newappointment Pn"
+      style={{ width:"76%" }}
+      className="mx-auto"
+    />
+  </Step>
+  <Step title="Final Actions">
+    **Save**: Click to add the patient and link them to the facesheet document.
+
+    **Reset**: Clears the form.
+
+    **Back**: Returns to the previous page without saving.
+  </Step>
+</Steps>
