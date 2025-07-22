@@ -10,31 +10,7 @@
     "favicon": "/favicon.svg",
     "navigation": {
         "tabs": [
-            {
-                "tab": "Guides",
-                "groups": [
-                    {
-                        "group": "Get Started",
-                        "pages": [
-                            "introduction",
-                            "quickstart",
-                            "development"
-                        ]
-                    },
-                    {
-                        "group": "Essentials",
-                        "pages": [
-                            "essentials/markdown",
-                            "essentials/code",
-                            "essentials/images",
-                            "essentials/settings",
-                            "essentials/navigation",
-                            "essentials/reusable-snippets"
-                        ]
-                    }
-                ]
-            },
-            {
+                        {
                 "tab": "Radico Billing",
                 "groups": [
                     {
@@ -51,49 +27,11 @@
                             "Radico-Billing/OrderEntry"
                         ]
                     },
-                    {
-                        "group": "Endpoint Examples",
-                        "pages": [
-                            "api-reference/endpoint/get",
-                            "api-reference/endpoint/create",
-                            "api-reference/endpoint/delete"
-                        ]
+                    {                        ]
                     }
                 ]
             },
-            {
-                "tab": "CIVIE",
-                "groups": [
-                    {
-                        "group": "Get Started",
-                        "pages": [
-                            "CIVIE-RIS/Calendar",
-                            "CIVIE-RIS/Incoming_Document",
-                            "CIVIE-RIS/Patients",
-                            "CIVIE-RIS/Orders_Worklist",
-                            "CIVIE-RIS/Technologist_Worklist",
-                            "CIVIE-RIS/Radiology_Report",
-                            "CIVIE-RIS/Insurance_Auth_Worklist",
-                            "CIVIE-RIS/Medical_Record_Request",
-                            "CIVIE-RIS/Resources",
-                            "CIVIE-RIS/Document_Template"
-                        ]
-                    },
-                    {
-                        "group": "Essentials",
-                        "pages": [
-                            "essentials/markdown",
-                            "essentials/code",
-                            "essentials/images",
-                            "essentials/settings",
-                            "essentials/navigation",
-                            "essentials/reusable-snippets"
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
+                        
     "logo": {
         "light": "/logo/main-logo.png",
         "dark": "/logo/main-logo.png"
