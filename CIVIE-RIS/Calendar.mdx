@@ -45,7 +45,7 @@ description: "The Calendar tab in the CIVIE application provides a centralized s
 
 <Steps>
   <Step title="Initiate Appointment Creation">
-    Click on the **'\+ New Appointment'** button located at the **top-right corner** of the calendar.
+    Click on the **\+ New Appointment** button located at the **top-right corner** of the calendar.
 
     <img
       src="/images/image(2).jpg"
@@ -55,7 +55,7 @@ description: "The Calendar tab in the CIVIE application provides a centralized s
     />
   </Step>
   <Step title="Choose Patient & Order Type">
-    - **Search for an existing patient** or **add a new patient**.
+    **Search for an existing patient** or **add a new patient**.
 
     <img
       src="/images/image(1).png"
@@ -64,7 +64,9 @@ description: "The Calendar tab in the CIVIE application provides a centralized s
       style={{ width:"90%" }}
     />
 
-    - Select the **Order Type** from options like **Online Order, Self-Schedule, Follow-Up, Walk-In, Physician Portal, EMR Orders, or BCS Measure**.
+    Select the **Order Type** from options like **Online Order, Self-Schedule, Follow-Up, Walk-In, Physician Portal, EMR Orders, or BCS Measure**.
+
+    Click on **\+** icon to Add new Patient details.
 
     <img
       src="/images/image(3).jpg"
@@ -81,11 +83,13 @@ description: "The Calendar tab in the CIVIE application provides a centralized s
       style={{ width:"92%" }}
     />
 
-    Click on **\+ icon** to Add new Patient details. Enter **Name, Gender, Preferred Language, Race, Marital Status, and Ethnicity**. Use the **Is Blocked** checkbox if a slot needs to be reserved.
+    Enter **Name, Gender, Preferred Language, Race, Marital Status, and Ethnicity**. Use the **Is Blocked** checkbox if a slot needs to be reserved.
 
     Assign the **Patient Flag** based on requirements.
   </Step>
   <Step title="Add Contact & Address Information">
+    Navigate to the **Address Tab** and enter **Street, ZIP Code, City, and Country**.
+
     <img
       src="/images/2025-03-13_15-11-22.png"
       alt=""
@@ -93,13 +97,13 @@ description: "The Calendar tab in the CIVIE application provides a centralized s
       style={{ width:"81%" }}
     />
 
-    Navigate to the **Address Tab** and enter **Street, ZIP Code, City, and Country**.
-
     Add **Primary Phone, Secondary Phone, Email, and Alternative Email**.
 
     Choose a **Contact Preference** (Text, Email, Fax, Phone Call) and **Location Preference**.
   </Step>
   <Step title="Enter Emergency Contact & Guarantor Details">
+    Add **Emergency Contact** with Name, Phone, and Relationship.
+
     <img
       src="/images/image(5).jpg"
       alt=""
@@ -107,23 +111,19 @@ description: "The Calendar tab in the CIVIE application provides a centralized s
       style={{ width:"84%" }}
     />
 
-    Add **Emergency Contact** with Name, Phone, and Relationship.
-
     Navigate to **Guarantor Tab**, click **\+ Add Guarantor**, and enter relevant details.
 
     Choose **Same Address as Patient** if applicable.
   </Step>
   <Step title="Enter Insurance Details">
+    Navigate to **Insurance Tab**. Click **\+ Add Insurance** and enter:
+
     <img
       src="/images/image(6).jpg"
       alt=""
       className="mx-auto"
       style={{ width:"81%" }}
     />
-
-    Navigate to **Insurance Tab**.
-
-    Click **\+ Add Insurance** and enter:
 
     **Insurance Rank (Primary, Secondary)**
 
@@ -136,6 +136,8 @@ description: "The Calendar tab in the CIVIE application provides a centralized s
     Update **Deductibles, Copay, Out-of-Pocket Expenses**.
   </Step>
   <Step title="Add Employer Information">
+    Navigate to **Employer Tab**. Click **\+ Add Employer**, then enter the details: **Employer Name, Website, Phone, Email, and Address**.
+
     <img
       src="/images/image(7).jpg"
       alt=""
@@ -143,23 +145,17 @@ description: "The Calendar tab in the CIVIE application provides a centralized s
       style={{ width:"93%" }}
     />
 
-    Navigate to **Employer Tab**.
-
-    Click **\+ Add Employer**, then enter the details: **Employer Name, Website, Phone, Email, and Address**.
-
     Click **Save** to confirm.
   </Step>
   <Step title="Enter Notes for the Appointment">
+    Navigate to **Notes Tab**. Click **Add Note**, type in important details, and categorize as: **Important (Red), Warning (Yellow), or Information (Blue)**.
+
     <img
       src="/images/image(9).jpg"
       alt=""
       className="mx-auto"
       style={{ width:"90%" }}
     />
-
-    Navigate to **Notes Tab**.
-
-    Click **Add Note**, type in important details, and categorize as: **Important (Red), Warning (Yellow), or Information (Blue)**.
 
     Save the note to finalize it.
   </Step>
@@ -270,7 +266,11 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
         1. 1. Right-click on the blocked slot.
         2. 1. Select **Decline** from the menu.
 
-        ![](/images/image\(20\).jpg)
+        <img
+          src="/images/image(20).jpg"
+          alt={true}
+          className="mx-auto"
+        />
 
         1. 1. Choose **Occurrence** to remove only the selected instance.
         2. 1. Confirm the action by clicking **Yes** on the pop-up.
@@ -308,26 +308,37 @@ The **Calendar module** in CIVIE provides an intuitive interface for managing **
   <Tab title="Managing Appointments">
     Users can **update the appointment status** based on communication (call, text, or email) by selecting:
 
-    ![](/images/image\(19\).jpg)
+    <Card title="Appointment Status" icon="person-running">
+      <img
+        src="/images/image(19).jpg"
+        alt="+newappointment Pn"
+        title="+newappointment Pn"
+        className="mx-auto"
+        style={{ width:"33%" }}
+      />
 
-    1. steps tbd
+      **Confirmed:** The patient has confirmed the appointment via call, text, or email.
 
-    | |                                                                                                    | |
-    | --- | -------------------------------------------------------------------------------------------------- | --- |
-    | | The patient has confirmed the appointment via call, text, or email.                                | |
-    | | The patient has arrived at the facility and completed the check-in process.                        | |
-    | | The patient is in the pre-exam stage, such as filling out forms or undergoing initial assessments. | |
-    | | A technician has acknowledged the appointment and is preparing to assist the patient.              | |
-    | | The examination or procedure is currently being conducted.                                         | |
-    | | The appointment has been successfully completed.                                                   | |
-    | | The patient did not arrive for the scheduled appointment and did not notify the facility.          | |
-    | | The appointment was cancelled either by the patient or the facility.                               | |
-    | | The patient has reached the facility but has not yet checked in.                                   | |
-    | | The appointment is temporarily paused due to unforeseen circumstances.                             | |
-    | | The patient has informed the facility that they will arrive later than the scheduled time.         | |
-    | |                                                                                                    | |
+      **Checked In:** The patient has arrived at the facility and completed the check-in process.
 
-    - 
+      **Preparation:** The patient is in the pre-exam stage, such as filling out forms or undergoing initial assessments.
+
+      **Tech Acknowledged:** A technician has acknowledged the appointment and is preparing to assist the patient.
+
+      **In Progress:** The examination or procedure is currently being conducted.
+
+      **Complete:** The appointment has been successfully completed.
+
+      **No show:** The patient did not arrive for the scheduled appointment and did not notify the facility.
+
+      **Cancelled:** The appointment was cancelled either by the patient or the facility.
+
+      **Arrived:** The patient has reached the facility but has not yet checked in.
+
+      **On Hold:** The appointment is temporarily paused due to unforeseen circumstances.
+
+      **Running Late:** The patient has informed the facility that they will arrive later than the scheduled time.
+    </Card>
   </Tab>
 </Tabs>
 
@@ -344,9 +355,9 @@ The **Appointment Summary** section provides **detailed information** about the 
 
 ## **Sending Check-In Link & QR Code**
 
-The **CIVIE Calendar** allows users to send a **check-in link** or generate a **QR code** for patients to check in seamlessly.
+The **CIVIE Calendar** allows users to send a **Check-In Link** or generate a **QR code** for patients to check in seamlessly.
 
-**Quick Access:** Patients can check in using a direct link sent via **text or email**, or by scanning a **QR code**.
+**Quick Access:** Patients can check in using a direct link sent via **Text or Email**, or by scanning a **QR code**.
 
 <Accordion title="Sending Check-In Link to Patient" defaultOpen="false">
   <Steps>
@@ -371,19 +382,17 @@ The **CIVIE Calendar** allows users to send a **check-in link** or generate a **
       **Email:** Enter the patient’s email address.
     </Step>
     <Step title="Confirm and Send">
-      Click **Send** to share the link with the patient.
-
-      The patient receives the link and can check in directly.
+      Click **Send** to share the link with the patient. The patient receives the link and can check in directly.
     </Step>
   </Steps>
   <Tip>
     ## **Best Practices**
 
-    ✅ Reduces waiting time at the front desk. 
+    ✅ Reduces waiting time at the front desk.
 
     ✅Benefits of sending Checks-In-links
 
-    ✅ Ensures a seamless check-in process. 
+    ✅ Ensures a seamless check-in process.
 
     ✅ Allows patients to update information remotely.
   </Tip>
@@ -392,9 +401,7 @@ The **CIVIE Calendar** allows users to send a **check-in link** or generate a **
 <Accordion title="Generating & Viewing Check-In QR Code" defaultOpen="false">
   <Steps>
     <Step title="Navigate to Appointment Summary">
-      Open the **Appointment Summary** panel.
-
-      Locate the **Booking Details** section.
+      Open the **Appointment Summary** panel. Locate the **Booking Details** section.
     </Step>
     <Step title="Open QR Code">
       Click on the **QR Code Icon** next to "Send Check-In Link".
@@ -422,7 +429,7 @@ The **CIVIE Calendar** allows users to send a **check-in link** or generate a **
 
 ## **View Appointment Details**
 
-Click on a patient’s **scheduled appointment** to open the **Appointment Summary** in the right panel.
+Click on a patient’s **Scheduled Appointment** to open the **Appointment Summary** in the right panel.
 
 <AccordionGroup>
   <Accordion title="Key Information Displayed" defaultOpen="false">
@@ -442,26 +449,16 @@ Click on a patient’s **scheduled appointment** to open the **Appointment Summa
     </Warning>
   </Accordion>
   <Accordion title="Booking Details" defaultOpen="false">
-    Displays patient and appointment details:
-
-    Patient Name, MRN (Medical Record Number), DOB, Gender, Phone & Email and Billing Type (Medical Insurance)
+    Displays patient and appointment details: **Patient Name, MRN (Medical Record Number), DOB, Gender, Phone, Email** and **Billing Type** (Medical Insurance)
   </Accordion>
   <Accordion title="Exam Info" defaultOpen="false">
-    - Lists **exam details**, including:
-
-      **Exam Name** (e.g., US Saline Hysterosonogram)
-
-      **Scheduled Date & Time**
-
-      **Location** (e.g., Lake Worth US Vascular)
-
-      **Exam Category** (Routine, STAT, etc.)
+    Lists **exam details**, including: **Exam Name** (e.g., US Saline Hysterosonogram), **Scheduled Date & Time, Location** (e.g., Lake Worth US Vascular), **Exam Category** (Routine, STAT, etc.)
   </Accordion>
   <Accordion title="Physician Information" defaultOpen="false">
-    - Displays the **referring physician’s name and ID**.
+    Displays the **referring physician’s name and ID**.
   </Accordion>
   <Accordion title="Notes" defaultOpen="false">
-    Navigate to **Notes**.
+    Navigate to **Notes**. Click **Add Note** type in important details, and categorize as: **Important (Red), Warning (Yellow), or Information (Blue)**. Save the note to finalize it.
 
     <img
       src="/images/image(2).png"
@@ -469,8 +466,6 @@ Click on a patient’s **scheduled appointment** to open the **Appointment Summa
       className="mx-auto"
       style={{ width:"65%" }}
     />
-
-    - Click **Add Note** type in important details, and categorize as: **Important (Red), Warning (Yellow), or Information (Blue)**. Save the note to finalize it.
   </Accordion>
   <Accordion title="Documents" defaultOpen="false">
     In the **Documents section**, View and Upload documents for the selected patient will be displayed.
@@ -479,7 +474,7 @@ Click on a patient’s **scheduled appointment** to open the **Appointment Summa
       src="/images/image(14).jpg"
       alt=""
       className="mx-auto"
-      style={{ width:"66%" }}
+      style={{ width:"54%" }}
     />
   </Accordion>
   <Accordion title="Screening & intake forms" defaultOpen="false">
@@ -492,7 +487,7 @@ Click on a patient’s **scheduled appointment** to open the **Appointment Summa
       src="/images/image(4).png"
       alt=""
       className="mx-auto"
-      style={{ width:"64%" }}
+      style={{ width:"36%" }}
     />
   </Accordion>
   <Accordion title="Receipt" defaultOpen="false">
@@ -502,7 +497,7 @@ Click on a patient’s **scheduled appointment** to open the **Appointment Summa
       src="/images/img.jpg"
       alt=""
       className="mx-auto"
-      style={{ width:"72%" }}
+      style={{ width:"48%" }}
     />
   </Accordion>
 </AccordionGroup>
