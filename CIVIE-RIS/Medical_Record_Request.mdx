@@ -3,28 +3,27 @@ title: "Medical Record Request"
 description: "The Medical Record Requests module allows users to manage and track all requests for patient reports and CDs across locations. It provides a categorized, filterable worklist where requests are organized by status—New, Processing, Failed, Completed, and Cancelled. Users can create, edit, and fulfill requests, define delivery preferences (email, fax, text, or in-person), and specify delivery contacts. This module ensures secure and efficient handling of patient record retrieval and delivery while maintaining full traceability and accountability."
 ---
 
-![image.png](/images/image.png)
+![image.png](/MRR.png)
 
 # **Adding a New Request**
 
-To submit a new medical record request:
+To submit a new medical record request: Click on the **\+ New Request** button at the top right.
 
-- Click on the **\+ New Request** button at the top right.
+![Addnew MRR Pn](/images/addnewMRR.png)
 
-  ![Addnew MRR Pn](/images/addnewMRR.png)
-- An **Add Request** form will open, this form allows you to initiate a new request for a patient’s medical records, including images and reports, based on selected parameters as follows:
+An **Add Request** form will open, this form allows you to initiate a new request for a patient’s medical records, including images and reports, based on selected parameters as follows:
 
 <AccordionGroup>
   <Accordion title="Request Details Tab">
-    ![REQUESRDETAILMRR Pn](/images/REQUESRDETAILMRR.png)
-
     <Steps>
       <Step title="Select Request Details tab">
+        ![Addreq Pn](/images/Addreq.png)
+
         **Location**: Choose the relevant facility from the dropdown.
 
         **Due Date:** Enter the expected completion date.
 
-        **Request Type**: Select the priority type (e.g., STAT, Routine).
+        **Request Type**: Select the priority type (e.g., STAT VERBAL, Routine).
 
         **Status:** Default is set to NEW, but can be updated to Processing, Completed, etc.
       </Step>
@@ -32,38 +31,42 @@ To submit a new medical record request:
         **Requested By:** Choose the name of the requestor from the dropdown. This could be a physician or internal user.
       </Step>
       <Step title="Record Belongs To">
+        ![Recordbelongto Pn](/images/recordbelongto.png)
+
         **Search Patient**: Start typing the patient’s name to auto-search and link the request to a patient profile.
       </Step>
       <Step title="What is Requested">
-        Select one or both options: Reports and CD.
-
-        Specify the Exam Duration using: Start Date and End Date.
+        Select one or both options: **Reports** and **CD**. Specify the Exam Duration using: **Start Date** and **End Date**.
       </Step>
       <Step title="Type of Studies">
         Use the dropdown to Search or Select Studies (e.g., MRI, CT, Mammogram).
 
-        **Note**: You must select at least one modality to proceed.
+        ![Typeofstudy Pn](/images/Typeofstudy.png)
+
+        <Note>
+          **Note**: You must select at least one modality to proceed.
+        </Note>
       </Step>
       <Step title="Please indicate How You Would Like These to Be Received">
-        Choose between:
+        ![Etf Pn](/images/etf.png)
 
-        - Other (Email/Fax/Mail/Text)
-        - In-person Pickup
+        Choose between: **Other (Email/Fax/Mail/Text)** or **In-person Pickup**
 
-        If Other is selected:
+        If **Other** is selected Add one or more delivery methods:
 
-        - Add one or more delivery methods:
-          - Delivery Method: Select Email, Mail Address, Text, etc.
-          - Delivery To: Specify the destination (e.g., email address or mailing address).
-          - Contact Name: Enter the recipient’s name.
-          - Use the ➕ icon to add multiple methods and 🗑️ to remove.
+        **Delivery Method**: Select Email, Mail Address, Text, etc.
 
-        If Inperson selected:
+        **Delivery To**: Specify the destination (e.g., email address or mailing address).
 
-        - Add pickup details:
-          - Pickup Date Time.
-          - Enable checkbox if it is Same as Patient.
-          - Pickup Person Name and Phone.
+        **Contact Name**: Enter the recipient’s name.
+
+        Use the **\+** icon to add multiple methods and delete to remove.
+
+        If **Inperson** selected Add pickup details:
+
+        ![Inperson Pn](/inperson.png)
+
+        Enter **Pickup Date Time**. Enable checkbox if it is **Same as Patient**. Provide the Pickup Person Name and Phone details.
       </Step>
       <Step title="Save and Cancel">
         Click **Save** to submit the request or click **Cancel** to exit without saving.
@@ -71,23 +74,33 @@ To submit a new medical record request:
     </Steps>
   </Accordion>
   <Accordion title="Comments Tab">
-    - Switch to the Comments tab to add comments or add notes for tracking purposes.
+    Switch to the **Comments tab** to add comments or add notes for tracking purposes.
 
-      ![COMMENTSMRR Pn](/images/COMMENTSMRR.png)
-    - To add a comment:
-      - Click **Add Comment**.
-      - Enter the comment/Message in the text box provided.
-      - Click the **Add** button to post the comment.
+    <img
+      src="/images/COMMENTSMRR.png"
+      alt="COMMENTSMRR Pn"
+      className="mx-auto"
+      style={{ width:"91%" }}
+    />
+
+    To add a comment: Click **Add Comment**. Enter the comment/Message in the text box provided. Click the **Add** button to post the comment.
   </Accordion>
   <Accordion title="Documents Tab">
     <Steps>
       <Step title="Choose Fax Document">
-        Click this button to open the **Incoming Documents** window. Here, you can:
+        Navigate to the **Document** tab to view documents received via fax. Click on **Choose Fax Document** to open a new window, where you can search by **File Name**, **Patient Name**, or **Create Date**.
 
-        - View documents received via fax.
-        - Search by **File Name**, **Patient Name**, or **Create Date**.
-        - Use the dropdown to filter by document status (e.g., New, Reviewed).
-        - Click **Select** next to the relevant file to attach it to the current request.
+        ![Documenttabfax Pn](/images/documenttabfax.png)
+
+        Use the dropdown to filter by document status (e.g., New, Reviewed). Click **Select** next to the relevant file to attach it to the current request.
+
+        <img
+          src="/images/documenttabfax2.png"
+          alt="Documenttabfax2 Pn"
+          title="Documenttabfax2 Pn"
+          className="mx-auto"
+          style={{ width:"85%" }}
+        />
       </Step>
       <Step title="Scan Document">
         This allows users to scan physical documents directly into the system and attach them to the request.
@@ -104,29 +117,28 @@ To submit a new medical record request:
 
 # Editing a Medical Record Request
 
-View and Edit Existing Requests
+To **view and edit existing requests**, navigate to the **Medical Record Request** landing page.
 
-- In the last column of each row, you will see a **Edit** icon (✏️). Click this to open the selected request.
-- You can review and modify the information as needed.
+In the last column of each row, you'll find an **Edit icon (✏️)**. Click it to open the corresponding request. You can then **review and update** the information as required.
 
 **Steps to Edit a Medical Record Request**
 
 <AccordionGroup>
   <Accordion title="Request details Tab">
-    ![Editrequestdetails MRR Pn](/images/EditrequestdetailsMRR.png)
-
     <Steps>
       <Step title="Request details">
         Click the **Edit** icon (✏️) from the Medical Record Requests list.
 
         A right-side panel titled **Edit** **Request** will open displaying detailed request information.
       </Step>
-      <Step title="Verify Request Metadata">
+      <Step title="Verify Request ">
         View the Created By, Created Date, Modified By, and Modified Date at the top.
 
         This helps in tracking who initiated or last updated the request.
       </Step>
       <Step title="Review & Update Request Details">
+        ![Edit1 Pn](/images/Edit1.png)
+
         **Location**: Select the applicable facility from the dropdown.
 
         **Due Date**: Adjust the due date if necessary.
@@ -136,70 +148,73 @@ View and Edit Existing Requests
         **Status**: Update the request status (e.g., NEW, PROCESSING, COMPLETED).
       </Step>
       <Step title="Referring Physician Details">
-        Confirm or update the Referring Physician name.
+        Confirm or update the Referring Physician name. Phone and fax numbers are auto populated if linked.
 
-        Phone and fax numbers are auto populated if linked.
+        ![Reqbyedit Pn](/images/reqbyedit.png)
       </Step>
       <Step title="Patient Information Section">
-        - Review details under Patient Information including:
-          - Patient Name
-          - Gender
-          - Date of Birth
-          - Primary Phone
-          - Address
-        - Click the **Eye** icon to view more patient information or use the Trash icon to remove the record.
+        Review details under Patient Information including: **Patient Name**, **Gender**, **Date of Birth**, **Primary Phone**, and **Address**.
+
+        ![Recordbelongtoedit Pn](/images/recordbelongtoedit.png)
+
+        Click the **Eye** icon to view more patient information or use the Trash icon to remove the record.
       </Step>
       <Step title="Select What is Requested">
-        - Tick the checkboxes for:
-          - Reports
-          - CD
-        - This defines what part of the medical record is being requested.
+        Tick the checkboxes for: Reports or CD this defines what part of the medical record is being requested.
+
+        ![C Dedit Pn](/images/CDedit.png)
       </Step>
       <Step title="Set the Exam Duration">
         Enter the Start Date and End Date for the requested exams.
       </Step>
       <Step title="Type of Studies">
         Use the Search or Select Studies dropdown to choose the specific study type (e.g., MRI, CT, Mammogram).
+
+        ![Typeofstudyedit Pn](/images/Typeofstudyedit.png)
       </Step>
       <Step title="Entering the Note">
-        - Type in your note or instruction.
-        - Clearly specify:
-          - Purpose of the note (e.g., missing consent, follow-up required).
-          - Responsible person/team if action is needed.
-          - Any deadlines or critical dates if applicable.
+        Update your note or instruction. Clearly specify: 
+
+        Purpose of the note (e.g., missing consent, follow-up required). Responsible person/team if action is needed.
+
+        ![Notesedit Pn](/images/notesedit.png)
+
+        Any deadlines or critical dates if applicable.
       </Step>
       <Step title="Adding Delivery Methods">
         **Select the Delivery Method**
 
-        You can choose between two main options:
+        You can choose between two main options: Other (Email / Fax / Mail / Text) or In-Person Pickup
 
-        - Other (Email / Fax / Mail / Text)
-        - In-Person Pickup
+        ![Etfedit Pn](/images/etfedit.png)
 
-        By default, the Other option is selected.
-
-        You may click the ➕ icon to add another delivery method, or the 🗑️ (delete) icon to remove a specific method.
+        By default, the Other option is selected. You may click the \+ icon to add another delivery method, or the delete icon to remove a specific method.
 
         Once basic request details are updated, you can access additional tabs for more context or required documentation.
       </Step>
     </Steps>
   </Accordion>
   <Accordion title="Procedures Tab">
-    ![Procedure MRR Pn](/images/procedureMRR.png)
-
     <Steps>
       <Step title="Link More Exams">
-        - Click the **\+ Link More Exams** button to open the Attach Procedures window.
-        - This window shows all available exams associated with the patient, including:
-          - Exam Name
-          - Appointment Date
-          - Modality (e.g., US, MG)
+        Click the **\+ Link More Exams** button to open the Attach Procedures window. This window shows all available exams associated with the patient, including: Exam Name, Appointment Date and Modality (e.g., US, MG)
+
+        <img
+          src="/procedueedit.png"
+          alt="Procedueedit Pn"
+          title="Procedueedit Pn"
+          className="mx-auto"
+          style={{ width:"82%" }}
+        />
       </Step>
       <Step title="Search & Filter ">
         Use the top fields to **Search & Filter** the procedure list:
 
-        - **Procedure** – Search by name or code
-        - **Start** **Date** / **End** **Date** – Filter exams based on a date range
+        **Procedure** – Search by name or code
+
+        **Start** **Date** / **End** **Date** – Filter exams based on a date range
+
+        ![Procedueedit Pn](/procedueedit2.png)
 
         Select & Link
 
@@ -211,12 +226,15 @@ View and Edit Existing Requests
   <Accordion title="Comments Tab">
     Switch to the Comments tab to review existing comments or add notes for tracking purposes.
 
-    ![Editcomment MRR Pn](/images/editcommentMRR.png)
+    To add a comment: Click into the comment field. Type the comment. Click the **Add** button.
 
-    - To add a comment:
-      - Click into the comment field.
-      - Type the comment.
-      - Click the **Add** button.
+    <img
+      src="/images/comments.png"
+      alt="Comments Pn"
+      title="Comments Pn"
+      className="mx-auto"
+      style={{ width:"88%" }}
+    />
 
     Use this space to collaborate or flag follow-ups for staff.
   </Accordion>
