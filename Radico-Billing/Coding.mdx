@@ -79,8 +79,7 @@ The **Coding** Dashboard provides users with a centralized view of their coding 
     Combine multiple conditions using AND/OR logic.
   </Step>
   <Step title="Preview Records">
-    Click **Preview** to display matching records.\
-    Columns include: Patient ID, Name, Accession Number, Modality, CPT/DX, Coding Status, Assigned To, and Client Location.
+    Click **Preview** to display matching records.
   </Step>
   <Step title="Save or Clear">
     **Save**: Finalize and store the worklist.
@@ -108,7 +107,7 @@ The **Preview** screen displays a list of coding records that match the filter c
 
     ![4 Pn](/images/4.png)
 
-    Following toggles are provided in the filter panel to filter by CAP status:
+    Following toggles are provided in the filter panel to filter by **CAP** status:
 
     **Is Back From CAP**\
     Displays records that were previously flagged for Coding Assistance (CAP) and have now been reviewed and returned by the physician. These records are ready for the coder to revisit and take the next action, such as updating codes or finalizing the record.
@@ -116,28 +115,26 @@ The **Preview** screen displays a list of coding records that match the filter c
     **Is Pending Question from CAP**\
     Filters records that are currently awaiting a response or clarification from the physician within the CAP portal. These records remain on hold until the necessary input is provided to proceed with coding.
 
-    Click the **Refresh (⟳)** button to reload updated data.
+    Click the **Refresh (⟳)** button to reload the worklist data.
   </Step>
   <Step title=" Start Coding">
     Click **Start Worklist** (top-right corner) to begin working on the records or click the **View** icon beside the required coding record to start coding.
 
     ![5 Pn](/images/5.png)
 
-    | Icon                    | Function                                                                                                      |
-    | :---------------------- | :------------------------------------------------------------------------------------------------------------ |
-    | **View Details**        | Opens the detailed view of the selected record, including tabs like Report, EH, Docs, Comments, and Activity. |
-    | **Multiple Encounters** | Indicates that the patient has more than one encounter. Click this icon to view all associated encounters.    |
-    | **Comments**            | Opens the comments section for that record where users can view, add, or reply to remarks.                    |
+    | Icon                    | Function                                                                                                                           |
+    | :---------------------- | :--------------------------------------------------------------------------------------------------------------------------------- |
+    | **View Details**        | Opens the detailed view of the selected record, including tabs like Report, EH, Docs, Comments, Activity and Assign ICD/CPT codes. |
+    | **Multiple Encounters** | Indicates that the patient has more than one encounter. Click this icon to view all associated encounters.                         |
+    | **Comments**            | Opens the comments section for that record where users can view, add, or reply to remarks.                                         |
   </Step>
 </Steps>
 
-## Mass Edit / Bulk Update
+## Mass Edit 
 
-The **Mass Edit** (or **Bulk Update**) feature allows users to apply changes to multiple records simultaneously, promoting efficiency and consistency across workflows. This feature becomes available once multiple records are selected from the preview list.
+The **Mass Edit**  feature allows users to apply changes to multiple records simultaneously, promoting efficiency and consistency across workflows. This feature becomes available once multiple records are selected from the preview list using the checkboxes.
 
 ![6 Pn](/images/6.png)
-
-**Steps to Perform a Mass Edit**
 
 <Steps>
   <Step title="Select Records">
@@ -147,13 +144,13 @@ The **Mass Edit** (or **Bulk Update**) feature allows users to apply changes to 
 
     ![2025 07 23 17 47 28 Pn](/images/2025-07-23_17-47-28.png)
   </Step>
-  <Step title="Open the Edit Dialog">
+  <Step title="Open the Mass Update">
     Click the **Edit** button to open the **Mass** **Update** popup window.
 
     ![2025 07 23 17 48 42 Pn](/images/2025-07-23_17-48-42.png)
   </Step>
   <Step title="Choose Field(s) to Update">
-    In the dialog, click the **Field** dropdown to choose the field to update.
+    Click the **Field** dropdown in the Mass Update pop-up and select the field you want to update.
 
     <img
       src="/images/2025-07-23_17-50-14.png"
@@ -165,28 +162,30 @@ The **Mass Edit** (or **Bulk Update**) feature allows users to apply changes to 
 
     - Available fields for bulk editing:
 
-      **Tags** (Add) – Add new tags to selected records.
+      **Add Tags**  – Add new tags to selected records.
 
-      **Tags** (Delete) – Remove existing tags.
+      **Delete Tags** – Remove existing tags.
 
-      **Assigned To** – Assign records to a user.
+      **Assign To** – Assign records to a user.
 
       **Coding Status** – Change the coding status.
 
       **Modality** – Update the imaging modality.
   </Step>
-  <Step title="Conditional Display – Coding Status Field">
-    If all selected records are in **New** or **In** **Progress** status- The **Approve** option is displayed. Selecting this will mark all chosen records as **Approved**.
-
-    ![2025 07 23 17 46 10 Pn](/images/2025-07-23_17-46-10.png)
-
-    If one or more selected records are in **Approved**, **Pending for Approval**, or **Disabled** status- The **Send Back to Coding** option is displayed. Selecting this will return the records to the coding queue for further review or edits.
-  </Step>
   <Step title="Enter New Value">
-    Enter or select the new value to apply to all selected records.
+    Enter or choose the new value to update all selected records for the corresponding field.
+
+    <Note>
+      **Note: **When performing a **Mass Edit** action and selecting **Coding Status** as the target field, the options available in the **Values** dropdown depend on the current statuses of the selected records.
+
+      - If the selected records are in **New** and/or **In Progress** status:\
+        → The **Approve** option will appear in the dropdown.
+      - If the selected records are in **Approved** status:\
+        → The **In Progress** option will appear in the dropdown.
+    </Note>
   </Step>
-  <Step title="Add Additional Fields (Optional)">
-    Click the **\+** icon to add another field-value pair for update.
+  <Step title="Add Multiple Fields ">
+    Click the **\+** icon to add another field-value pair for mass update.
 
     <img
       src="/2025-07-23_17-51-43.png"
@@ -196,10 +195,10 @@ The **Mass Edit** (or **Bulk Update**) feature allows users to apply changes to 
       style={{ width:"68%" }}
     />
   </Step>
-  <Step title="Finalizing the Update">
-    Click **Save** to apply changes to all selected records.
+  <Step title="Finalizing the Mass Update">
+    Click **Save** to update all the selected records with the changes.
 
-    Click **Cancel** to discard changes and close the dialog.
+    Click **Cancel** to discard changes and close the pop-up.
   </Step>
 </Steps>
 
@@ -213,7 +212,7 @@ The Coding Record interface opens when a user clicks the **View** **Details** ic
 - Update the coding status
 - Manage documentation and comments
 
-**Tabs on the Record View Screen**
+**Tabs on the View Report Screen**
 
 The interface includes multiple tabs to provide comprehensive access to all necessary patient and encounter information.
 
@@ -246,19 +245,15 @@ This panel provides key metadata about the coding record for context and verific
 
 <Steps>
   <Step title="CPT Code Entry">
-    Users may enter one or more **Current Procedural Terminology (CPT)** codes as required for the report.
+    Users must enter one or more **Current Procedural Terminology (CPT)** codes as mentioned in the report.
 
     ![7 Pn](/images/7.png)
   </Step>
   <Step title="Each CPT entry row contains the following fields:">
-    **CPT Code**: Enter the relevant procedure code.
-
-    **Procedure Description:** Provide a description of the performed service.
-
-    **Modifiers (M1–M4):** Add up to four modifiers to refine billing context.
-
-    **Units**: Specify the number of units for each CPT.
-
+    **CPT Code:** Enter the appropriate procedure code.\
+    **Procedure Description:** Automatically fills in based on the selected CPT code.\
+    **Modifiers (M1–M4):** Add up to four modifiers to refine billing context.\
+    **Units**: Specify the number of units for each CPT.\
     **ICD POS:** Indicate the ICD Place of Service as applicable.
   </Step>
   <Step title="Actions">
