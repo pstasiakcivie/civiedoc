@@ -1,59 +1,86 @@
 ---
 title: "Coding"
-description: "The Coding module plays a vital role in streamlining healthcare billing by converting medical procedures, diagnoses, treatments, and services into standardized CPT and ICD codes. It helps coders manage daily workflows efficiently while ensuring compliance with industry standards. "
+description: "The Coding module streamlines healthcare billing by converting medical data into standardized CPT and ICD codes. It enables coders to efficiently manage workflows, review documentation, assign accurate codes, flag discrepancies (CAP), and collaborate with physicians. Built-in quality checks help reduce errors and denials. Users can also create private or shared worklists to organize tasks by priority and team needs. "
 ---
 
-Coders can review clinical documentation, assign accurate codes, flag discrepancies (CAP). The module includes built-in quality checks, such as error and warning prompts, to support accurate billing and minimize denials.  
-
-Users can create and manage coding worklists to organize tasks based on priority. These worklists can be configured as private or shared, depending on workflow requirements and team collaboration needs.
-
-![1 Pn](/images/1.png)
+![1 Pn](/1.png)
 
 The **Coding** Dashboard provides users with a centralized view of their coding activities, allowing them to track daily performance, view worklists, and access reports based on status. This helps prioritize tasks and ensures efficient workflow management.
 
 **The Coding Dashboard gives a quick summary of your coding activity and worklists:**
 
 - **Your Daily Progress**: Shows how many records you’ve completed today and the total RVUs.
-- **Coding Bucket**: A pie chart showing report counts—Pending, Submitted, CAP, and Disabled.
+- **Coding Bucket**: A pie chart showing report counts Pending, Submitted, CAP, and Disabled.
 - **Daily Client Activity**: Displays the number of new and completed reports by client.
 - **My Private Worklist**: Lists your personal worklists based on status like New, In Progress, Approved, etc.
 - **Shared Worklist**: Shows shared worklists (if available) for team collaboration.
 
-## Create a Worklist
-
-To create a new private or shared worklist:
+## Create a New Private or Shared Worklist
 
 <Steps>
   <Step title="Click the “+” icon to open the Create Worklist form.">
-    ![2 Pn](/images/2.png)
+    ![Worklist Button](/2.png)
   </Step>
   <Step title="Enter Worklist Name">
-    Provide a descriptive, unique name for easy identification.
+    Provide a descriptive, unique name for easy identification of the worklist.
   </Step>
   <Step title="Enter Description (Optional)">
     Add details to clarify the scope or criteria.
   </Step>
   <Step title="Mark as Private">
-    Enable to restrict the worklist to the logged-in user only.
+    Select this checkbox to create a **Private Worklist** visible only to you.
 
-    **User Group Configuration (Shared Worklists Only)**
+    ![2025 07 23 17 36 21 Pn](/2025-07-23_17-38-40.png)
 
-    **Add User**: Search and select users to add to the worklist.
+    If **unchecked**, a **Shared Worklist** will be created, allowing access to specific **Users** or **User Groups**.
 
-    **Create/Edit User Group**: Manage user groups for easier sharing.
+    ![2025 07 23 17 36 21 Pn](/images/2025-07-23_17-36-21.png)
+  </Step>
+  <Step title="Manage User Groups (for Shared Worklists)">
+    When creating or editing a shared worklist, manage access through user groups.
 
-    **Allow Shared Users to Edit/Delete**: Grant editing privileges to shared users.
+    **Create User Group**
 
-    <Tip>
-      Enabled only when "**_Mark as Private_**" is unchecked.
-    </Tip>
+    <img
+      src="/images/2025-07-23_17-36-41.png"
+      alt="2025 07 23 17 36 41 Pn"
+      title="2025 07 23 17 36 41 Pn"
+      className="mx-auto"
+      style={{ width:"54%" }}
+    />
+
+    1. Click the **Create User Group** button.
+    2. Enter the **Group Name**.
+    3. **Search and select users** to include.
+    4. Click **Submit** to save.
+
+    **Edit User Group**
+
+    <img
+      src="/images/2025-07-23_17-37-23.png"
+      alt="2025 07 23 17 37 23 Pn"
+      title="2025 07 23 17 37 23 Pn"
+      className="mx-auto"
+      style={{ width:"51%" }}
+    />
+
+    1. Click the **Edit User Group** button.
+    2. Select the existing group.
+    3. **Add** or **remove users** as needed.
+    4. Click **Submit** to update.
+
+    **User Group Field**
+
+    1. Use the **User Group** dropdown to select from newly created or existing groups.
+    2. Once selected, proceed to define filter conditions.
   </Step>
   <Step title="Set Filter Conditions">
-    Select field (e.g., Approved At), operator (e.g., Equals), and value (e.g., Last 30 Days).\
-    Combine conditions using AND/OR logic.
+    Select the field (e.g., Approved At), operator (e.g., Equals), and value (e.g., Last 30 Days).\
+    Combine multiple conditions using AND/OR logic.
   </Step>
   <Step title="Preview Records">
-    Click Preview to display matching records with columns like: Patient ID, Name, Accession Number, Modality, CPT/DX, Coding Status, Assigned To and Client Location.
+    Click **Preview** to display matching records.\
+    Columns include: Patient ID, Name, Accession Number, Modality, CPT/DX, Coding Status, Assigned To, and Client Location.
   </Step>
   <Step title="Save or Clear">
     **Save**: Finalize and store the worklist.
@@ -68,11 +95,13 @@ In the Private and Shared Worklist, users can initially preview a worklist (all 
 
 The Preview screen displays a list of coding records that match the filter conditions set during worklist creation.
 
-![3 Pn](/images/3.png)
+![3 Pn](/2025-07-23_17-34-43.png)
 
 <Steps>
   <Step title="Search Bar">
     Use the **Search Patient** field at the top-left to quickly locate a coding record of the patient by ID or name.
+
+    ![F17 Pn](/3.png)
   </Step>
   <Step title="Filter and Refresh">
     Use the **Filter** button to open a panel where you can apply specific criteria to refine your search.
@@ -115,12 +144,24 @@ The **Mass Edit** (or **Bulk Update**) feature allows users to apply changes to 
     Use the checkboxes next to each record in the preview list to select entries.
 
     Once two or more records are selected, the **Edit** button at the top-right becomes active.
+
+    ![2025 07 23 17 47 28 Pn](/images/2025-07-23_17-47-28.png)
   </Step>
   <Step title="Open the Edit Dialog">
-    Click the **Edit** button to open the **Edit Work Items** popup window.
+    Click the **Edit** button to open the **Mass** **Update **popup window.
+
+    ![2025 07 23 17 48 42 Pn](/images/2025-07-23_17-48-42.png)
   </Step>
   <Step title="Choose Field(s) to Update">
     In the dialog, click the **Field** dropdown to choose the field to update.
+
+    <img
+      src="/images/2025-07-23_17-50-14.png"
+      alt="2025 07 23 17 50 14 Pn"
+      title="2025 07 23 17 50 14 Pn"
+      className="mx-auto"
+      style={{ width:"58%" }}
+    />
 
     - Available fields for bulk editing:
 
@@ -137,6 +178,8 @@ The **Mass Edit** (or **Bulk Update**) feature allows users to apply changes to 
   <Step title="Conditional Display – Coding Status Field">
     If all selected records are in **New** or **In** **Progress** status- The **Approve** option is displayed. Selecting this will mark all chosen records as **Approved**.
 
+    ![2025 07 23 17 46 10 Pn](/images/2025-07-23_17-46-10.png)
+
     If one or more selected records are in **Approved**, **Pending for Approval**, or **Disabled** status- The **Send Back to Coding** option is displayed. Selecting this will return the records to the coding queue for further review or edits.
   </Step>
   <Step title="Enter New Value">
@@ -144,6 +187,14 @@ The **Mass Edit** (or **Bulk Update**) feature allows users to apply changes to 
   </Step>
   <Step title="Add Additional Fields (Optional)">
     Click the **\+** icon to add another field-value pair for update.
+
+    <img
+      src="/images/2025-07-23_17-51-43.png"
+      alt="2025 07 23 17 51 43 Pn"
+      title="2025 07 23 17 51 43 Pn"
+      className="mx-auto"
+      style={{ width:"68%" }}
+    />
   </Step>
   <Step title="Finalizing the Update">
     Click **Save** to apply changes to all selected records.
