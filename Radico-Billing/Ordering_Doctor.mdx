@@ -1,244 +1,121 @@
 ---
-title: "Order Worklist"
-description: "In the Order Worklist section, users can create various worklists to track missing order details such as ordering doctors, modalities, date of service (DOS), and more. The Order Worklist Dashboard offers a centralized view of these activities, enabling users to monitor daily performance, access relevant worklists, and view reports based on order status. This helps prioritize tasks and ensures efficient workflow management by addressing incomplete order information."
+title: "Ordering Doctor"
+description: "The Ordering Doctor section allows users to view, add, and manage ordering physicians in the system. Ensuring accurate doctor details is crucial for proper claim submission and report association. This module helps maintain a validated list of ordering doctors, ensuring compliance with regulatory requirements."
 ---
 
-![2025 07 07 13 13 49 Pn](/images/2025-07-07_13-13-49.png)
-
-**Order Worklist Dashboard Summary**
-
-- **Total Submitted Today**: Shows how many records you’ve completed today and how many of them are missing.
-- **Worklist Summary**: Displays how may records have missing records in different worklists.
-- **Top 3 Users**: `<TBD>`
-- **My Private Worklist**: Lists your personal.
-- **Shared Worklist**: Shows shared worklists such as Missing Ordering Doctors, Missing Modality, Missing Date of Service, Missing Reading Doctors, and Missing Reading Locations for team collaboration.
-
-## Creating a Worklist
-
-To create a new private or shared worklist:
+**Accessing the Ordering Doctor List**
 
 <Steps>
-  <Step title="Open Create Worklist Form">
-    Click the \+ icon to open the Create Worklist form.
+  <Step title="Navigate to the Ordering Doctor Section">
+    From the left-side menu, go to **Settings \> Ordering Doctor**.
 
-    <img
-      src="/images/2025-07-07_13-13-49.png"
-      alt="2025 07 07 13 13 49 Pn"
-      title="2025 07 07 13 13 49 Pn"
-      className="mx-auto"
-    />
-  </Step>
-  <Step title="Enter Worklist Name">
-    Provide a descriptive, unique name for easy identification.
+    The **Ordering Doctor list** page opens, displaying all registered doctors.
 
-    ![2025 07 08 15 15 15 Pn](/images/2025-07-08_15-15-15.png)
-  </Step>
-  <Step title="Enter Description (Optional)">
-    Add details to clarify the scope or criteria.
-  </Step>
-  <Step title="Mark as Private">
-    Enable to restrict the worklist to the logged-in user only.
+    - Each entry includes:
+      - NPI (National Provider Identifier)
+      - Doctor’s Name (First, Middle, Last)
+      - Degree (MD, DO, etc.)
+      - License Number
+      - Status (Active/Inactive)
 
-    ![2025 07 07 12 42 13 Pn](/images/2025-07-07_12-42-13.png)
-  </Step>
-  <Step title="User Group Configuration (Shared Worklists Only)">
-    Enabled only when **Mark as Private** is unchecked.
-
-    If creating a shared worklist, do not click the checkbox. A User Group section will appear.
-
-    Select the **User Group** from existing groups using the dropdown menu. Also, select corresponding users for the selected user group.
-
-    Alternatively, you can create a new user group by clicking the **Create User Group** button, entering the Group Name, selecting users, and submitting.
-
-    ![\+newappointment Pn](/images/2025-07-07_12-43-23.png)
-
-    To edit an existing user group, click the **Edit User Group** button, select the group to be edited, add or remove users as required, then submit.
-
-    **Allow Shared Users to Edit/Delete**: Grant editing privileges to shared users.
-  </Step>
-  <Step title="Set Filter Conditions">
-    Combine operator using **AND/OR** logic.
-
-    Select field (e.g., Approved At), conditions (e.g., Equals), and value (e.g., Last 30 Days).
-
-    ![2025 07 07 12 44 16 Pn](/images/2025-07-07_12-36-04.png)
-  </Step>
-  <Step title="Preview Records">
-    - Click **Preview** to display matching records based on provided conditions.
-  </Step>
-  <Step title="Save or Clear">
-    - **Save**: Finalize and store the worklist.
-    - **Clear**: Reset all entered data.
-    - **Cancel**: Discard all changes and go back to worklist.
+      <Info>
+        **_Note_**_: Inactive doctors do not appear in claim entry dropdowns._
+      </Info>
   </Step>
 </Steps>
 
-## Preview Worklist
-
-In the Private and Shared Worklist, user can initially preview a worklist (all the records present) before starting it. To do so the user clicks the **Preview** option besides the required worklist.
-
-The Shared Order Worklists include categories like Missing Ordering Doctors, Missing Modality, Missing Date of Service, Missing Reading Doctors, and Missing Reading Locations. Each worklist highlights records with specific missing information.
-
-Click **Preview** to view the incomplete entries then use the **Filter** and **Refresh** options to update the list. The left panel shows the missing data list, while the right panel displays the document, allowing you to review and fill in the required details.
-
-![2025 07 08 16 59 35 Pn](/images/2025-07-08_16-59-35.png)
-
-**Missing Ordering Doctors**
+## **Searching for a Doctor**
 
 <Steps>
-  <Step title="Steps" icon="chevron-down" titleSize="p">
-    1. Locate the **Missing Ordering Doctors** worklist.
-    2. Click **Preview** to load the list of records missing ordering doctors.
-    3. Use the **Filter** option to narrow down results if needed.
-    4. Click the **Refresh** button to load the latest data.
-    5. On the left panel, you’ll see the list of patients/studies without an ordering doctor. And on the right panel, the document opens where you can review the case.
-    6. Add the missing Ordering Doctor directly within the document if available.
-    7. After adding the ordering doctor, the record is auto-saved, and a toast message appears confirming “Record saved successfully.”
+  <Step title="Search by Keywords" icon="chevron-right">
+    Use the **Search** bar to look up a doctor using NPI, name, or relevant keyword.
   </Step>
 </Steps>
 
-**Missing Modality**
+## **Applying Filters**
 
 <Steps>
-  <Step title="Steps" icon="chevron-down">
-    1. Find and click on the **Missing Modality** worklist.
-    2. Click Preview to display the list of records missing modality information.
-    3. Apply filters using the **Filter** button to refine results.
-    4. Click the **Refresh** button to update the list.
-    5. The left panel shows all affected entries. And the right panel opens the related document.
-    6. From the document, identify and enter the missing Modality.
-    7. After adding the modality, the record is auto saved, and a toast message appears confirming “Record saved successfully.”
-  </Step>
-</Steps>
+  <Step title="Filter the Doctor List" icon="chevron-right">
+    Click the **Filter** button at the top-right.
 
-**Missing Date of Service**
-
-<Steps>
-  <Step title="Steps" icon="chevron-down">
-    1. Locate the **Missing Date of Service** worklist.
-    2. Click **Preview** to open the list of entries missing the date of service.
-    3. Use the **Filter** option to refine the records.
-    4. Click **Refresh** to ensure the list is updated.
-    5. The left side displays the incomplete records, and the right side shows the related document.
-    6. From the document, add the missing Date of Service.
-    7. After adding the date of service, the record is auto-saved, and a toast message appears confirming “Record saved successfully.”
-  </Step>
-</Steps>
-
-**Missing Reading Doctors**
-
-<Steps>
-  <Step title="Steps" icon="chevron-down">
-    1. Select the **Missing Reading Doctors** worklist.
-    2. Click **Preview** to view all records lacking a reading doctor.
-    3. Apply filters if necessary, using the **Filter** option.
-    4. Click **Refresh** to get the latest results.
-    5. Use the left panel to navigate the list and in the right panel, open the associated document.
-    6. Fill in the missing Reading Doctor details.
-    7. After adding the reading doctor, the record will auto-save and a toaster message will confirm with “Record saved successfully.”
-  </Step>
-</Steps>
-
-**Missing Reading Locations**
-
-<Steps>
-  <Step title="Steps" icon="chevron-down">
-    1. Choose the **Missing Reading** Locations worklist.
-    2. Click **Preview** to bring up the list of items missing a reading location.
-    3. Use the **Filter** button to search specific criteria.
-    4. Click **Refresh** to update the records list.
-    5. The left side shows affected records, and the right side displays the document for each record.
-    6. Review and enter the missing Reading Location.
-    7. After adding the reading location, the record will auto-save and a toaster message will confirm with “Record saved successfully.”
-  </Step>
-</Steps>
-
-**Editing Worklist**
-
-To edit an existing private or shared worklist:
-
-<Steps>
-  <Step title="Open the Worklist for Editing">
-    1. Click the **three-dot menu (︙)** next to the shared worklist you want to edit.
-    2. Select the Edit to update (if any changes needed).
-
-    ![2025 07 08 15 16 19 Pn](/images/2025-07-08_15-16-19.png)
-  </Step>
-  <Step title="Modify Worklist Name">
-    Update the name to reflect any changes.
-
-    Ensure the name remains descriptive and unique.
-  </Step>
-  <Step title="Update Description (Optional)">
-    Edit or add information to define the worklist's scope or filtering criteria more clearly.
-  </Step>
-  <Step title="Change Privacy Settings">
-    Toggle Mark as Private to restrict access to the current user only.
-
-    Uncheck to allow sharing with other users.
-  </Step>
-  <Step title="User Group (For Shared Worklists Only)">
-    This section becomes editable only when **Mark as Private** is unchecked.
-
-    **Add Use**r: Search for and select users to include in the shared worklist.
-
-    **Create/Edit User Group**: Organize users into groups for simplified sharing.
-
-    **Allow Shared Users to Edit/Delete**: Enable this to grant edit or delete permissions to shared users.
-  </Step>
-  <Step title="Adjust Filter Conditions">
-    Edit or add filter criteria by choosing a field (e.g., Approved At), an operator (e.g., Equals), and a value (e.g., Last 30 Days).
-
-    Use **AND/OR** logic to combine multiple conditions as needed.
-  </Step>
-  <Step title="Preview Updated Records">
-    Click Preview to view a list of records matching the updated criteria.
-  </Step>
-  <Step title="Save or Reset Changes">
-    **Save**: Apply and store the updated changes.
-
-    **Clear**: Discard all changes and revert to the original settings.
-  </Step>
-</Steps>
-
-**Deleting Worklist**
-
-<Steps>
-  <Step title="Steps" icon="chevron-down">
-    1. Click the **three-dot menu (…)** next to the worklist name you want to delete.
-    2. Select **Delete** from the dropdown options.
-    3. In the confirmation pop-up, click Yes to confirm and permanently delete the worklist.
-
-    ![2025 07 08 15 16 19 Pn](/2025-07-08_15-16-19.png)
+    - Apply filters like: Status (Active/Inactive), Degree (MD, DO, etc.)
+      - Click **Apply** to view results.
 
     <Info>
-      **Note**: Deleted worklists cannot be recovered. Make sure to double-check before confirming.
+      **_Note_**_: Filtering is helpful in systems with large datasets._
     </Info>
   </Step>
 </Steps>
 
-**Hide Worklist**
+## **Updating Ordering Doctor Details**
 
 <Steps>
-  <Step title="Steps to Hide" icon="chevron-down">
-    1. Click the **three-dot menu (︙)** next to the shared worklist you want to hide.
-    2. Select the Hide toggle to change its visibility status.
-    3. The worklist will be hidden from the default view but is not deleted.
-
-    ![2025 07 08 15 16 19 Pn](/2025-07-08_15-16-19.png)
+  <Step title="Refresh Doctor Profile" icon="chevron-right">
+    - Select the doctor to update.
+    - Click the **Refresh** icon beside their name.
+    - The system pulls the latest data from the NPI Registry.
 
     <Info>
-      Note: Hidden worklists can be restored later using the appropriate filters or settings. No data is lost.
+      Note: _Any updates from the official registry will be reflected._
     </Info>
   </Step>
 </Steps>
 
-**View Hidden Worklists**
+## **Enabling or Disabling an Ordering Doctor**
 
 <Steps>
-  <Step title="Steps" icon="chevron-down">
-    1. Click the “**Show Hidden”** toggle at the top of the worklist view.
-    2. This will display all worklists that are currently hidden.
-    3. You can then unhide any shared worklist by using the same three-dot menu (︙) and toggling off the Hide option.
+  <Step title="Change Doctor Status" icon="chevron-right">
+    Locate the doctor in the list.
+
+    - Use the **Status toggle**:
+      - Purple = Active (available in claims)
+      - Gray = Inactive (hidden from dropdowns)
+
+      <Info>
+        **Note**: _Disabling does not remove the doctor. You can reactivate them anytime._
+      </Info>
+  </Step>
+</Steps>
+
+## Adding a New Ordering Doctor
+
+<Steps>
+  <Step title="Enter NPI Information">
+    Click the **Add Ordering Doctor** button.
+
+    Enter the doctor's **NPI** in the field provided.
+
+    - The system may auto-validate against the NPI Registry.
+
+      <Info>
+        _NPI is mandatory for claim submission._
+      </Info>
+  </Step>
+  <Step title="Enter Name and Degree">
+    First Name (Mandatory), Middle Name (Optional), Last Name (Mandatory), and Degree (e.g., MD, DO, MBBS)
+  </Step>
+  <Step title="Enter Licensing and Contact Info">
+    License Number and Telephone (Format: (999) 999-9999)
+
+    <Info>
+      _Ensure the license is current and valid._
+    </Info>
+  </Step>
+  <Step title="Enter Taxonomy Code and Status">
+    Taxonomy Code: Defines the doctor's specialty
+
+    Use the **Status Toggle** to mark as Active or Inactive
+  </Step>
+  <Step title="Set Enumeration Date">
+    Enter the **Enumeration Date** (MM/DD/YYYY)
+
+    <Info>
+      _Enumeration is when the NPI was officially assigned._
+    </Info>
+  </Step>
+  <Step title="Save or Cancel">
+    Click **Save** to add the doctor to the system.
+
+    Click **Cancel** to discard the entry.
   </Step>
 </Steps>
