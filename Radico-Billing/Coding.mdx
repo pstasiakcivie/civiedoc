@@ -90,7 +90,7 @@ The **Coding** Dashboard provides users with a centralized view of their coding 
 
 ## **Preview Worklist**
 
-In the **Private** and **Shared** **Worklist**, users can initially preview a worklist (all the records present) before starting it. To do so, the user clicks the **Preview** option beside the required worklist.
+Whether it's a **Private** or **Shared** **Worklist**, users have the option to preview all associated records before getting started. Simply click the **Preview** icon located next to the relevant worklist to view its contents.
 
 ![3 Pn](/2025-07-23_17-34-43.png)
 
@@ -122,17 +122,17 @@ The **Preview** screen displays a list of coding records that match the filter c
 
     ![5 Pn](/images/5.png)
 
-    | Icon                    | Function                                                                                                                           |
-    | :---------------------- | :--------------------------------------------------------------------------------------------------------------------------------- |
-    | **View Details**        | Opens the detailed view of the selected record, including tabs like Report, EH, Docs, Comments, Activity and Assign ICD/CPT codes. |
-    | **Multiple Encounters** | Indicates that the patient has more than one encounter. Click this icon to view all associated encounters.                         |
-    | **Comments**            | Opens the comments section for that record where users can view, add, or reply to remarks.                                         |
+    | Icon                    | Function                                                                                                                                          |
+    | :---------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
+    | **View Details**        | Opens the detailed view of the selected record, including tabs like Report, Encounter History, Docs, Comments, Activity and Assign ICD/CPT codes. |
+    | **Multiple Encounters** | Indicates that the patient has more than one encounter. Click this icon to view all associated encounters.                                        |
+    | **Comments**            | Opens the comments section for that record where users can view, add, or reply to remarks.                                                        |
   </Step>
 </Steps>
 
-## Mass Edit 
+## Mass Edit
 
-The **Mass Edit**  feature allows users to apply changes to multiple records simultaneously, promoting efficiency and consistency across workflows. This feature becomes available once multiple records are selected from the preview list using the checkboxes.
+The **Mass Edit** feature enables users to update multiple records at once, enhancing both efficiency and consistency within workflows. It becomes accessible after selecting multiple records from the preview list using the checkboxes.
 
 ![6 Pn](/images/6.png)
 
@@ -173,10 +173,11 @@ The **Mass Edit**  feature allows users to apply changes to multiple records sim
       **Modality** – Update the imaging modality.
   </Step>
   <Step title="Enter New Value">
-    Enter or choose the new value to update all selected records for the corresponding field.
+    Enter or choose the new value to update all selected records for the selected field.
 
     <Note>
-      **Note: **When performing a **Mass Edit** action and selecting **Coding Status** as the target field, the options available in the **Values** dropdown depend on the current statuses of the selected records.
+      **_Note:_** \
+      When performing a **Mass Edit** action and selecting **Coding Status** as the target field, the options available in the **Values** dropdown depend on the current statuses of the selected records.
 
       - If the selected records are in **New** and/or **In Progress** status:\
         → The **Approve** option will appear in the dropdown.
@@ -248,40 +249,34 @@ This panel provides key metadata about the coding record for context and verific
     Users must enter one or more **Current Procedural Terminology (CPT)** codes as mentioned in the report.
 
     ![7 Pn](/images/7.png)
-  </Step>
-  <Step title="Each CPT entry row contains the following fields:">
-    **CPT Code:** Enter the appropriate procedure code.\
-    **Procedure Description:** Automatically fills in based on the selected CPT code.\
-    **Modifiers (M1–M4):** Add up to four modifiers to refine billing context.\
-    **Units**: Specify the number of units for each CPT.\
-    **ICD POS:** Indicate the ICD Place of Service as applicable.
-  </Step>
-  <Step title="Actions">
-    **Add CPT Row**: Click the plus icon to insert a new CPT code row.
 
-    **Delete CPT Row**: Click the trash icon to remove a CPT entry.
+    **CPT Code:** Enter the appropriate procedure code.
+
+    **Procedure Description:** Auto-filled based on the selected CPT.
+
+    **Modifiers (M1–M4):** Add up to four modifiers for billing specificity.
+
+    **Units:** Specify the number of units for each CPT.
+
+    **ICD POS:** Indicate the ICD Place of Service as required.
   </Step>
-</Steps>
+  <Step title="Adding multiple CPT codes (if required)" stepNumber={2}>
+    **Add CPT :** Click the **\+** icon to add a new CPT entry.
 
-**NDC Entry**
-
-<Steps>
-  <Step title="NDC Entry (Optional)">
+    **Delete CPT :** Click the **Delete** icon to remove a CPT entry.
+  </Step>
+  <Step title="NDC Entry " stepNumber={3}>
     To associate a National Drug Code (NDC) with a CPT entry:
 
-    Click the **NDC/Unit** icon next to the desired CPT row to open the NDC Entry Panel.
-  </Step>
-  <Step title="Enter the following information">
+    ![3 Pn](/images/8.png)
+
+    Click the **NDC/Unit** icon next to the desired CPT row to open the NDC Entry Panel.\
+    \
     **NDC Code:** Select from the dropdown list.
 
     **NDC Unit:** Specify the quantity administered.
 
-    **Unit Measure**: Choose a unit (e.g., mL, mg, IU) from the dropdown.
-
-    ![8 Pn](/images/8.png)
-  </Step>
-  <Step title="Save Options">
-    The system auto-saves changes when selections are made.
+    **Unit Measure**: Choose a unit (e.g., mL, mg, IU) from the dropdown for the selected **NDC** code. The system auto-saves changes when selections are made.
 
     Alternatively, click the <Icon icon="check" /> icon to manually confirm.
 
@@ -291,28 +286,33 @@ This panel provides key metadata about the coding record for context and verific
       If NDC codes are pre-linked to the selected CPT, they may auto-populate.
     </Note>
   </Step>
-  <Step title="Adding ICD Codes">
-    You can assign ICD-10 diagnosis codes based on the CPT entries and supporting documentation.
-  </Step>
-  <Step title="Types of ICD Entry">
-    **Auto-Suggested ICDs**: The system recommends ICD codes based on the selected CPT. To add a suggested ICD, click the **\+** icon next to the code.
+</Steps>
 
-    **Manual ICD Entry**: Enter custom ICD-10 codes in the input fields if not auto-suggested.
+**ICD Code Entry**
 
+<Steps>
+  <Step title="Manual ICD Entry Without CPT">
+    You can assign **ICD-10 diagnosis codes** based on the selected **CPT code** and the related patient report documentation.
+
+    **Auto-Suggested ICDs**: When a CPT code is selected, the system automatically suggests relevant ICD-10 codes. Click the **\+ icon** next to a suggested code to add it.
+
+    **Manual ICD Entry**: If suitable ICD codes are not suggested, you can manually enter custom ICD-10 codes in the provided input fields.
+
+    <Tip>
+      **Best Practice:** Ensure all manually entered ICDs are accurate and mapped correctly to the patient diagnosis.
+    </Tip>
     <Note>
-      **Note**
-
-      A maximum of 12 ICD codes can be added per record.
+      **Note:** Duplicate ICD codes are not allowed. The system supports a maximum of 12 unique ICD entries per record.
     </Note>
   </Step>
-  <Step title="Finalizing the Record">
-    Use the Actions Dropdown in the top-right corner of the Record View to manage the record status:
+  <Step title="Finalizing the Record" stepNumber={2}>
+    Use the  buttons at the top right corner of the right panel.:
 
     **Tag:** Assign labels to classify or track the record.
 
     **Disable**: Remove the record from the active coding workflow.
 
-    **Save:** Save the record in its current state for future completion.
+    **Save:** Save the record.
 
     <Tip>
       **Best Practice:**
@@ -328,20 +328,19 @@ Use the CAP feature when physician input or clarification is needed for a coding
 
 <Steps>
   <Step title="To mark a record as CAP">
-    Click the CAP button at the top right corner of the right panel.
+    Click the **CAP** button at the top right corner of the right panel.
 
     ![9 Pn](/images/9.png)
   </Step>
   <Step title="Select a CAP Reason from the dropdown.">
-    (Optional) Add comments for context or clarification.
+    Upon selecting a relevant **CAP** **Reason**, add **Comment(s)** (optional) for context or clarification.
 
     ![10 Pn](/images/10.png)
   </Step>
-  <Step title="Submit ">
-    Click the **Submit** button.
-  </Step>
-  <Step title="Cancel">
-    Click the **Cancel** button to discard the changes.
+  <Step title="Submit or Cancel">
+    Click the **Submit** button to mark the record as a **Coding Assistance Portal (CAP)** request.
+
+    Click the **Cancel** button to discard any changes and exit without submitting.
   </Step>
 </Steps>
 
