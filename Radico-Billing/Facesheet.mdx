@@ -7,21 +7,23 @@ description: "Facesheet plays a vital role in healthcare billing system as these
 
 **Accessing Facesheet**
 
-**Search**: Use the Search Bar to locate a facesheet by file name.
-
-**Filter**: Click Filter to find a facesheet based on Created Date Range, Client Name, File Name, and Status.
-
-**Export**: Click Export to download facesheet list in Excel or CSV Format.
-
-**Entry count**: There is an Entry count in front of each of the facesheet which represents the number of forms in that Facesheet.
-
-**Actions Menu**
-
-- Click the ⋮ menu next to a record. Select **View** to open or **Delete** to remove a facesheet record.
+<Steps>
+  <Step title="To access the Order Entry interface:" icon="chevron-down">
+    1. Navigate to the **Facesheet** tab from the left navigation menu.
+    2. Use the **Search** bar to locate documents by **file name**.
+    3. Click **Filter** to refine the results using one or more criteria:
+       - Created Date Range
+       - Client Name
+       - File Name
+       - Document Status
+    4. Click **Export** to download the filtered list in **CSV **or **Excel **format.
+    5. Click the **View** button (in the **Actions **column) to open a specific facesheet document.
+  </Step>
+</Steps>
 
 ## Add Facesheet Document
 
-When the **Add** button at the top-right corner is clicked, a popup titled **Add Facesheet Document** appears. It enables users to select the client location and upload the required document.
+To add a facesheet document, click on **Add** button:
 
 ![2 Pn](/images/2.png)
 
@@ -38,7 +40,7 @@ When the **Add** button at the top-right corner is clicked, a popup titled **Add
     />
   </Step>
   <Step title="Upload Document">
-    **Attach Files**: Click Attach Files to select and upload one or more .pdf facesheet files from your system.
+    **Attach Files**: Click **Attach Files** button to select and upload one or more .pdf facesheet files from your system.
 
     <img
       src="/images/f4.png"
@@ -48,21 +50,19 @@ When the **Add** button at the top-right corner is clicked, a popup titled **Add
       style={{ width:"67%" }}
     />
 
-    **Supported File Type**: Only .pdf format is allowed.
+    **Supported File Format**: Only .pdf format is allowed.
 
-    - **Upload Limits**:
-      - Maximum file size: 5 MB
-      - Maximum number of files: 5
+    **Upload Limits:** Maximum file size is **5 MB** per file, and you can upload up to **5 **files.
   </Step>
   <Step title="Manage Uploads">
     **Upload All**: Click this button to upload all the selected facesheet files in one go.
 
     **Remove All**: Clears the entire selection of files.
 
-    **Remove Individual File**: Click the X icon next to any uploaded file to remove it from the list before uploading.
+    **Remove Individual File**: Click the **X** icon next to any uploaded file to remove it from the list before uploading.
   </Step>
   <Step title="Save or Cancel">
-    **Save**: Finalizes the upload and creates the facesheet.
+    **Save**: Finalizes the upload and adds the facesheet.
 
     **Cancel (X)**: Closes the pop up without uploading or saving.
   </Step>
@@ -70,13 +70,13 @@ When the **Add** button at the top-right corner is clicked, a popup titled **Add
 
 ## **View and Edit Facesheet Records**
 
-This section guides users through viewing, editing, and managing facesheet records in the Radico Billing application.
+This section guides users through viewing, editing, and managing facesheet records in the RCM application.
 
 ![F6 Pn](/images/f6.png)
 
 <Steps>
   <Step title="Open Facesheet">
-    **To open a facesheet**: Click **View** from the Actions menu (⋮)  next to the desired record.
+    **To open a facesheet**: Click **View** from the **Actions menu (⋮)**  next to the desired record.
 
     ![F5 Pn](/images/f5.png)
 
@@ -84,38 +84,33 @@ This section guides users through viewing, editing, and managing facesheet recor
 
     **Left Panel**: Displays the uploaded facesheet in PDF format.
 
-    **Right Panel**: Lists all patient forms linked to the facesheet.
+    **Right Panel:** Displays all patient forms associated with the facesheet, such as **Patient Demographics, Insurance, Address**, and more. Enter the corresponding details as provided in the facesheet.
 
     <Note>
       **Document Viewer Note**:\
-      If the PDF fails to load, a message appears: "An error occurred while loading the document. Try reloading the page."
+      If the PDF fails to load, a message appears: "_An error occurred while loading the document. Try reloading the page_."
     </Note>
   </Step>
   <Step title="Check Document Status">
-    The current document status appears at the top of the right panel and updates automatically based on form progress:
+    The current document status appears at the top of the right panel and updates automatically as form progresses, the status can be as follow:
 
-    **New**: The facesheet has not been opened or filled.
-
-    **In Progress**: The form is partially filled.
-
-    **Completed**: All required fields are completed.
-
-    **Invalid**: The document is flagged as incorrect.
+    | Status          | Description                             |
+    | :-------------- | :-------------------------------------- |
+    | **New**         | Document has not been opened or edited. |
+    | **In Progress** | Partially completed.                    |
+    | **Completed**   | All required fields are filled.         |
+    | **Invalid**     | Document has been marked as incorrect.  |
 
     To manually update the status:
 
-    - Click the **Actions** button at the top right.
-    - Choose **Mark as Complete** or **Mark as Invalid** based on the document's state.
+    Click the **Actions** button at the top right. Choose **Mark as Complete** or **Mark as Invalid** based on the document's state.
   </Step>
-  <Step title="Check Document Status">
-    **as Invalid** based on the document's state.
-  </Step>
-  <Step title="Add Comments">
+  <Step title="Add Comments" stepNumber={3}>
     Click **Comments** to view any existing remarks for the facesheet.
 
     ![F7 Pn](/images/f7.png)
 
-    Use the **text box and attachment** option to add new comments or upload related files.
+    Use the **Text Box **and**Attachment**  option to add new comments or upload related files.
 
     If there are no comments, the message **No comments found** will be displayed.
   </Step>
@@ -127,42 +122,40 @@ This section guides users through viewing, editing, and managing facesheet recor
 
 <Steps>
   <Step title="Review Patient Information">
-    View the left-side facesheet PDF. Identify and extract necessary patient details for form entry.
+    Review the facesheet PDF on the left panel and extract the required patient details for entering into the form.
   </Step>
   <Step title="Search for Existing Patient">
-    Click **Search Patient** on the right panel.
+    Click **Search Patient **button at the top of the right panel.
 
     ![F9 Pn](/images/f9.png)
 
-    Apply filters to search the database. If found, select the patient to auto-fill the form.
+    Apply filters to search the required patient. If found, select the patient to auto-fill the form.
 
     ![F9 1 Pn](/images/f9.1.png)
   </Step>
   <Step title="Add New Patient (If Not Found)">
-    Manually enter patient details from the facesheet:
+    Manually enter the following patient details from the facesheet:
 
-    **Patient Information**
-
-    Name, Date of Birth, Gender, SSN, Contact, Address, Employer Encounter Number and MRN.
+    **Name, Date of Birth, Gender, SSN, Contact, Address, Employer Encounter Number **and **MRN**.
 
     ![F10 Pn](/images/f10.png)
   </Step>
   <Step title="Guarantor Details">
-    If same as patient, select the checkbox to auto-fill.
+    If guarantor is**same as patient** , select the checkbox to auto-fill.
 
-    If different, enter Name, DOB, Address, Phone, SSN, Gender, Employer, and Relationship.
+    If different enter **Name, DOB, Address, Phone, SSN, Gender, Employer,** and **Relationship**.
 
     ![F11 Pn](/images/f11.png)
   </Step>
   <Step title="Admission Information">
-    Enter Patient Class, Location, Place of Service, Admit Date and Discharge Dates
+    Enter **Patient Class, Location, Place of Service, Admit Date,** **Discharge Dates**
 
-    and Referring Physician's Name.
+    and **Referring Physician's Name**.
 
     ![F12 Pn](/images/f12.png)
   </Step>
   <Step title="Primary Insurance Information">
-    Fill the details Plan ID, Insurance Provider, Group Numbers, Insured Person’s Name, DOB, Address, SSN, Gender, Employer, and Relationship
+    Fill the details **Plan ID, Insurance Provider, Group Numbers, Insured Person’s Name, DOB, Address, SSN, Gender, Employer,** and **Relationship.**
 
     ![F13 Pn](/images/f13.png)
 
@@ -176,7 +169,7 @@ This section guides users through viewing, editing, and managing facesheet recor
     Click **Save** to store the entered data. The facesheet status changes to **In Progress**.
   </Step>
   <Step title="Mark as Complete">
-    After entering all records, click **Actions \> Mark as Complete** to update the status.
+    Once data entry is finished, select **Mark as Complete** from the **Actions** menu to change the status to **Completed**.
 
     ![F14 Pn](/images/f14.png)
   </Step>

@@ -34,33 +34,109 @@ To create a new private or shared worklist:
   </Step>
 </Steps>
 
-## Preview Worklist
+## Creating a New Worklist
 
-In the Private and Shared Worklist, user can initially preview a worklist (all the records present) before starting it. To do so the user clicks the **Preview** option besides the required worklist.
+<Steps>
+  <Step title="Enter Worklist Details">
+    **Worklist Name**: Enter a name for the worklist in the **Worklist** **Name** field.
 
-The Shared Order Worklists include categories like Missing Ordering Doctors, Missing Modality, Missing Date of Service, Missing Reading Doctors, and Missing Reading Locations. Each worklist highlights records with specific missing information.
+    The **Order Worklist** is selected by default in the **Category** field.
 
-Click **Preview** to view the incomplete entries then use the **Filter** and **Refresh** options to update the list. The left panel shows the missing data list, while the right panel displays the document, allowing you to review and fill in the required details.
+    **Description (Optional)**: Provide a description in the **Description** field to define the worklist’s purpose.
+
+    **Private or Shared**:
+
+    - To create a **Private** **Worklist**, check the checkbox (Mark as Private).
+
+      To create a **Shared** **Worklist**, leave the checkbox unchecked.
+  </Step>
+  <Step title="Define Filter Conditions">
+    Specify filter conditions to customize the worklist.
+
+    Use **AND/OR Operators**  to logically combine the conditions.
+
+    Apply comparison **Conditions** such as **Equals**, **Contains**, or **Greater Than** to refine your results.
+  </Step>
+  <Step title="Preview Worklist">
+    Click **Preview** to review the filtered results and ensure they meet the specified criteria.
+  </Step>
+  <Step title="Save Worklist">
+    Click **Save** to create the worklist for the selected category.
+  </Step>
+</Steps>
+
+**Additional Steps for Shared Worklist**
+
+<Info>
+  Applicable only if you are creating a shared worklist (i.e., the **Mark as Private** checkbox is unchecked).
+</Info>
+
+<Steps>
+  <Step title="Select User Group">
+    A **User Group** section appears.
+
+    Choose from existing groups using the dropdown provided and select the corresponding users.
+  </Step>
+  <Step title="Create a New User Group">
+    Alternatively, Click the **Create User Group** button to create a new user group .
+
+    Enter the **Group Name**, select **Users**, and click **Submit**.
+  </Step>
+  <Step title="Edit Existing User Group">
+    Click the **Edit User Group** button.
+
+    Select the group to be edited, add or remove users as needed, then click **Submit**.
+  </Step>
+  <Step title="Allow Shared Users to Edit/Delete">
+    Enable the **Allow Shared Users to Edit/Delete** checkbox to grant editing and deletion access to shared users.
+
+    <Note>
+      Note:\
+      The Shared Order Worklists include following default worklists-**Missing Ordering Doctors, Missing Modality, Missing Date of Service, Missing Reading Doctors**, and **Missing Reading Locations**. Each worklist highlights records with specific missing information.
+    </Note>
+  </Step>
+</Steps>
+
+<Steps>
+  <Step title="Save or Cancel" icon="chevron-down">
+    **Save**: Confirm and save the worklist.
+
+    **Clear**: Remove all entered data and reset the form.
+
+    **Cancel**: Exit without saving and return to the worklist view.
+  </Step>
+</Steps>
+
+## Default Shared Worklists
+
+The **Ordering Worklist** includes the following default shared worklists: **Missing Ordering Doctors, Missing Modality, Missing Date of Service, Missing Reading Doctors,** and **Missing Reading Locations**. Each worklist highlights records missing specific information.
+
+ Click the **Preview** button next to any worklist to view its complete list of records. Use the **Filter** and **Refresh** options to refine the list as needed.
+
+The interface is split into two panels:\
+The **left panel** displays records with missing fields and provides input fields to fill in the data. \
+The **right panel** shows the corresponding document or report, allowing you to review the content and update the missing details accordingly.
 
 ![2025 07 08 16 59 35 Pn](/ow8.png)
 
 **Missing Ordering Doctors**
 
 <Steps>
-  <Step title="Steps" icon="chevron-down" titleSize="p">
-    1. Locate the **Missing Ordering Doctors** worklist.
+  <Step title="Steps to Completing the Missing Ordering Doctor Worklist:" icon="chevron-down" titleSize="p">
+    1. Click **Preview** next to the **Missing Ordering Doctors** worklist to view all records lacking an ordering physician.
 
-    ![Ow9 Pn](/images/ow9.png)
-
-    1. Click **Preview** to load the list of records missing ordering doctors.
-    2. Use the **Filter** option to narrow down results if needed.
-    3. Click the **Refresh** button to load the latest data.
-    4. On the left panel, you’ll see the list of patients/studies without an ordering doctor. And on the right panel, the document opens where you can review the case.
+       <img
+         src="/images/ow9.png"
+         alt="1 Pn"
+         title="1 Pn"
+         style={{ width:"92%" }}
+       />
+    2. For each record, review the document or report in the **right panel**, and enter the appropriate **Ordering Doctor** name in the input field provided on the **left**.
+    3. As you type, the system will **auto-suggest matching doctor names and NPI numbers** based on the input.
 
     ![Ow9 1 Pn](/images/ow9.1.png)
 
-    1. Add the missing Ordering Doctor directly within the document if available.
-    2. After adding the ordering doctor, the record is auto-saved, and a toast message appears confirming “Record saved successfully.”
+    4. After adding the ordering doctor, the record is auto-saved, and a toast message appears confirming **Record saved successfully.**
   </Step>
 </Steps>
 
@@ -68,13 +144,10 @@ Click **Preview** to view the incomplete entries then use the **Filter** and **R
 
 <Steps>
   <Step title="Steps" icon="chevron-down">
-    1. Find and click on the **Missing Modality** worklist.
-    2. Click Preview to display the list of records missing modality information.
-    3. Apply filters using the **Filter** button to refine results.
-    4. Click the **Refresh** button to update the list.
-    5. The left panel shows all affected entries. And the right panel opens the related document.
-    6. From the document, identify and enter the missing Modality.
-    7. After adding the modality, the record is auto saved, and a toast message appears confirming “Record saved successfully.”
+    1. Click **Preview** next to the **Missing Modality** worklist to view all records lacking an ordering physician.
+    2. For each record, review the document or report in the **right panel**, and enter the appropriate **Missing Modality** name in the input field provided on the **left**.
+    3. As you type, the system will **auto-suggest matching Modality**  based on the input.
+    4. After adding the modality, the record is auto saved, and a toast message appears confirming **Record saved successfully**.
   </Step>
 </Steps>
 
@@ -82,13 +155,10 @@ Click **Preview** to view the incomplete entries then use the **Filter** and **R
 
 <Steps>
   <Step title="Steps" icon="chevron-down">
-    1. Locate the **Missing Date of Service** worklist.
-    2. Click **Preview** to open the list of entries missing the date of service.
-    3. Use the **Filter** option to refine the records.
-    4. Click **Refresh** to ensure the list is updated.
-    5. The left side displays the incomplete records, and the right side shows the related document.
-    6. From the document, add the missing Date of Service.
-    7. After adding the date of service, the record is auto-saved, and a toast message appears confirming “Record saved successfully.”
+    1. Click **Preview** next to the \*\*Missing Date of Service \*\*worklist to view all records lacking an ordering physician.
+    2. For each record, review the document or report in the **right panel**, and enter the appropriate **Missing Date of Service** name in the input field provided on the **left**.
+    3. As you type, the system will \*\*auto-suggest matching Date of Service \*\*based on the input.
+    4. After adding the date of service, the record is auto-saved, and a toast message appears confirming **Record saved successfully**.
   </Step>
 </Steps>
 
@@ -96,13 +166,10 @@ Click **Preview** to view the incomplete entries then use the **Filter** and **R
 
 <Steps>
   <Step title="Steps" icon="chevron-down">
-    1. Select the **Missing Reading Doctors** worklist.
-    2. Click **Preview** to view all records lacking a reading doctor.
-    3. Apply filters if necessary, using the **Filter** option.
-    4. Click **Refresh** to get the latest results.
-    5. Use the left panel to navigate the list and in the right panel, open the associated document.
-    6. Fill in the missing Reading Doctor details.
-    7. After adding the reading doctor, the record will auto-save and a toaster message will confirm with “Record saved successfully.”
+    1. Click **Preview** next to the \*\*Missing Reading Doctors \*\*worklist to view all records lacking an ordering physician.
+    2. For each record, review the document or report in the **right panel**, and enter the appropriate **Missing Reading Doctors** name in the input field provided on the **left**.
+    3. As you type, the system will \*\*auto-suggest matching Reading Doctors \*\*based on the input.
+    4. After adding the reading doctor, the record will auto-save and a toaster message will confirm with **Record saved successfully**.
   </Step>
 </Steps>
 
@@ -110,24 +177,21 @@ Click **Preview** to view the incomplete entries then use the **Filter** and **R
 
 <Steps>
   <Step title="Steps" icon="chevron-down">
-    1. Choose the **Missing Reading** Locations worklist.
-    2. Click **Preview** to bring up the list of items missing a reading location.
-    3. Use the **Filter** button to search specific criteria.
-    4. Click **Refresh** to update the records list.
-    5. The left side shows affected records, and the right side displays the document for each record.
-    6. Review and enter the missing Reading Location.
-    7. After adding the reading location, the record will auto-save and a toaster message will confirm with “Record saved successfully.”
+    1. Click **Preview** next to the \*\*Missing Reading Locations \*\*worklist to view all records lacking an ordering physician.
+    2. For each record, review the document or report in the **right panel**, and enter the appropriate \*\*Missing Reading Locations \*\*name in the input field provided on the **left**.
+    3. As you type, the system will \*\*auto-suggest matching Reading Locations \*\*based on the input.
+    4. After adding the reading location, the record will auto-save and a toaster message will confirm with **Record saved successfully**.
   </Step>
 </Steps>
 
-**Editing Worklist**
+**Editing a Worklist**
 
 To edit an existing private or shared worklist:
 
 <Steps>
   <Step title="Open the Worklist for Editing">
-    1. Click the **three-dot menu (︙)** next to the shared worklist you want to edit.
-    2. Select the Edit to update (if any changes needed).
+    1. Click the **three-dot menu (︙)** next to the desired worklist name.
+    2. Select **Edit** to make updates, if any changes are required.
 
     ![2025 07 08 15 16 19 Pn](/ow10.png)
   </Step>
@@ -187,25 +251,25 @@ To edit an existing private or shared worklist:
 **Hide Worklist**
 
 <Steps>
-  <Step title="Steps to Hide" icon="chevron-down">
+  <Step title="Steps to Hide a Worklist" icon="chevron-down">
     1. Click the **three-dot menu (︙)** next to the shared worklist you want to hide.
-    2. Select the Hide toggle to change its visibility status.
+    2. Select the **Hide toggle** to change its visibility status.
     3. The worklist will be hidden from the default view but is not deleted.
 
     ![2025 07 08 15 16 19 Pn](/2025-07-08_15-16-19.png)
 
-    <Info>
-      Note: Hidden worklists can be restored later using the appropriate filters or settings. No data is lost.
-    </Info>
+    <Note>
+      **Note:** Hidden worklists can be restored later using the appropriate filters or settings. No data is lost
+    </Note>
   </Step>
 </Steps>
 
 **View Hidden Worklists**
 
 <Steps>
-  <Step title="Steps" icon="chevron-down">
-    1. Click the “**Show Hidden”** toggle at the top of the worklist view.
+  <Step title="Steps to View and Unhide a Worklist" icon="chevron-down">
+    1. Click the **Show Hidden** toggle at the top of the worklist view.
     2. This will display all worklists that are currently hidden.
-    3. You can then unhide any shared worklist by using the same three-dot menu (︙) and toggling off the Hide option.
+    3. You can then unhide any shared worklist by using the same **three-dot menu (︙)** and toggle off the Hide option.
   </Step>
 </Steps>
