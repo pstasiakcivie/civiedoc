@@ -5,7 +5,7 @@ description: "Facesheet plays a vital role in healthcare billing system as these
 
 ![1 Pn](/images/1.png)
 
-# **Accessing Facesheet**
+# **Navigate to Facesheet**
 
 <Steps>
   <Step title="To access the Order Entry interface:" icon="chevron-down">
@@ -16,7 +16,7 @@ description: "Facesheet plays a vital role in healthcare billing system as these
        - Client Name
        - File Name
        - Document Status
-    4. Click **Export** to download the filtered list in \*\*CSV \*\*or \*\*Excel \*\*format.
+    4. Click **Export** to download the filtered list in \*\*CSV \*\*or \*\*Exormat.cel \*\*f
     5. Click the **View** button (in the \*\*Actions \*\*column) to open a specific facesheet document.
   </Step>
 </Steps>
@@ -188,25 +188,43 @@ This section guides users through viewing, editing, and managing facesheet recor
 
 ## **Manage Facesheet Records**
 
+Each patient record includes the options- **Edit**, **Delete **and **Link **to mange the records.
+
 ![2 Pn](/images/f15.png)
 
-Each patient record includes the following options:
+<Steps>
+  <Step title="Locate the facesheet record you want to update.">
+    Click the **Edit **icon next to the record.
+  </Step>
+  <Step title="Modify the required information in the form.">
+    
+  </Step>
+  <Step title="Click Save to apply the changes.">
+    
+  </Step>
+</Steps>
 
-**Edit**: Modify patient or insurance details.
 
-**Delete**: Remove the record (confirmation required).
+**Delete a Facesheet Record**
 
-**Link**: Assign the patient to another encounter or record
+<Steps>
+  <Step title="Locate the facesheet record you want to delete">
+    
+  </Step>
+  <Step title="Click the Delete icon next to the record.">
+    When prompted, click **Yes** to proceed with deletion.
+  </Step>
+</Steps>
 
-**Link Patient to Facesheet**
+### **Link Patient to Facesheet**
 
 This function ensures the correct patient is connected to the facesheet.
 
 <Steps>
-  <Step title="Click Link Patient">
-    ![F16 Pn](/images/f16.png)
+  <Step title="Locate the unlinked facesheet record.">
+    Click the **Link** icon.
 
-    Found next to the patient’s name in the record list. Opens the patient search interface.
+    ![F16 Pn](/images/f16.png)
   </Step>
   <Step title="Search and Select Patient">
     Use filters like **Name**, **Last Name**, **MRN**, or **SSN**. Click the arrow icon  <Icon icon="arrow-right-long" /> to select.
@@ -220,48 +238,11 @@ This function ensures the correct patient is connected to the facesheet.
     - Phone, Address, State, ZIP Code
     - Complete any required fields and click **Save** to link the patient.
 
-    ![F18 Pn](/images/f18.png)
-
-    <Note>
-      **Note**: If required fields are missing, an error will appear. All data must be completed to successfully link the patient.
-    </Note>
-  </Step>
-  <Step title="Attachment-Level Actions">
-    Each document in the Attachments table includes:
-
-    **View**: Opens the PDF viewer.
-
-    **Download**: Downloads the document in original format.
-
-    **Delete**: Removes the file (use only for incorrect uploads).
-
-    <Tip>
-      **Permissions Note**: Attachment actions may be limited to users with specific roles such as Admin or Coder.
-    </Tip>
-  </Step>
-</Steps>
-
-## **Add Patient (If patient not found)**
-
-This page opens when a user clicks the **Add** button from the **Search Patient** page. Steps to add a new patient:
-
-![F19 Pn](/images/f19.png)
-
-<Steps>
-  <Step title="Add Patient">
-    Fill in the following details mentioned as per the facesheet document. Fields marked with asterisk **(\*)** are required/mandatory:
-
-    Select the **Location** using the dropdown provided.
-
-    Enter the **First Name, Last Name, DOB, Gender, ZIP Code, MRN, SSN, Phone Number, Address, City**, and **State**.
-
-    ![F20 Pn](/images/f20.png)
-  </Step>
-  <Step title="Final Actions">
-    **Save**: Click to add the patient and link them to the facesheet document.
-
-    **Reset**: Clears the form.
-
-    **Back**: Returns to the previous page without saving.
+    <img
+      src="/images/f18.png"
+      alt="F18 Pn"
+      className="mx-auto"
+      style={{ width:"92%" }}
+    />
   </Step>
 </Steps>
