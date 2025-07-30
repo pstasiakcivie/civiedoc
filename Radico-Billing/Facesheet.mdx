@@ -5,7 +5,7 @@ description: "Facesheet plays a vital role in healthcare billing system as these
 
 ![1 Pn](/images/1.png)
 
-**Accessing Facesheet**
+# **Accessing Facesheet**
 
 <Steps>
   <Step title="To access the Order Entry interface:" icon="chevron-down">
@@ -16,12 +16,12 @@ description: "Facesheet plays a vital role in healthcare billing system as these
        - Client Name
        - File Name
        - Document Status
-    4. Click **Export** to download the filtered list in **CSV **or **Excel **format.
-    5. Click the **View** button (in the **Actions **column) to open a specific facesheet document.
+    4. Click **Export** to download the filtered list in \*\*CSV \*\*or \*\*Excel \*\*format.
+    5. Click the **View** button (in the \*\*Actions \*\*column) to open a specific facesheet document.
   </Step>
 </Steps>
 
-## Add Facesheet Document
+# **Add Facesheet Document**
 
 To add a facesheet document, click on **Add** button:
 
@@ -52,7 +52,10 @@ To add a facesheet document, click on **Add** button:
 
     **Supported File Format**: Only .pdf format is allowed.
 
-    **Upload Limits:** Maximum file size is **5 MB** per file, and you can upload up to **5 **files.
+    <Note>
+      **Note:**\
+      Maximum file size is **5 MB** per file, and you can upload up to **5** files.
+    </Note>
   </Step>
   <Step title="Manage Uploads">
     **Upload All**: Click this button to upload all the selected facesheet files in one go.
@@ -68,14 +71,14 @@ To add a facesheet document, click on **Add** button:
   </Step>
 </Steps>
 
-## **View and Edit Facesheet Records**
+# **View Facesheet**
 
 This section guides users through viewing, editing, and managing facesheet records in the RCM application.
 
 ![F6 Pn](/images/f6.png)
 
 <Steps>
-  <Step title="Open Facesheet">
+  <Step title="Navigate to Facesheet">
     **To open a facesheet**: Click **View** from the **Actions menu (⋮)**  next to the desired record.
 
     ![F5 Pn](/images/f5.png)
@@ -101,16 +104,19 @@ This section guides users through viewing, editing, and managing facesheet recor
     | **Completed**   | All required fields are filled.         |
     | **Invalid**     | Document has been marked as incorrect.  |
 
-    To manually update the status:
-
-    Click the **Actions** button at the top right. Choose **Mark as Complete** or **Mark as Invalid** based on the document's state.
+    To manually update the status- Click the **Actions** button at the top right. Choose **Mark as Complete** or **Mark as Invalid** based on the document's state.
   </Step>
-  <Step title="Add Comments" stepNumber={3}>
+  <Step title="Add Comments (If any)" stepNumber={3}>
     Click **Comments** to view any existing remarks for the facesheet.
 
-    ![F7 Pn](/images/f7.png)
+    <img
+      src="/images/f7.png"
+      alt="F7 Pn"
+      className="mx-auto"
+      style={{ width:"75%" }}
+    />
 
-    Use the **Text Box **and**Attachment**  option to add new comments or upload related files.
+    Use the ****Text Box andAttachment****  option to add new comments or upload related files.
 
     If there are no comments, the message **No comments found** will be displayed.
   </Step>
@@ -118,25 +124,23 @@ This section guides users through viewing, editing, and managing facesheet recor
 
 ## **Add New Record**
 
-![F8 Pn](/images/f8.png)
-
 <Steps>
   <Step title="Review Patient Information">
     Review the facesheet PDF on the left panel and extract the required patient details for entering into the form.
   </Step>
-  <Step title="Search for Existing Patient">
-    Click **Search Patient **button at the top of the right panel.
+  <Step title="Identify if the record belongs to an existing patient:">
+    Click **Search** **Patient** button at the top of the right panel.
 
     ![F9 Pn](/images/f9.png)
 
     Apply filters to search the required patient. If found, select the patient to auto-fill the form.
 
     ![F9 1 Pn](/images/f9.1.png)
-  </Step>
-  <Step title="Add New Patient (If Not Found)">
-    Manually enter the following patient details from the facesheet:
 
-    **Name, Date of Birth, Gender, SSN, Contact, Address, Employer Encounter Number **and **MRN**.
+    If **patient not found** proceed to create a new record using the form provided below.
+  </Step>
+  <Step title="For a New Patient">
+    Manually enter the following patient details from the facesheet. Complete all required fields (marked with **\***): **Name**, **Date** **of** **Birth**, **Gender**, **SSN**, **Contact**, **Address**, **Employer** **Encounter** **Number** and **MRN**.
 
     ![F10 Pn](/images/f10.png)
   </Step>
@@ -168,25 +172,33 @@ This section guides users through viewing, editing, and managing facesheet recor
   <Step title="Save Record">
     Click **Save** to store the entered data. The facesheet status changes to **In Progress**.
   </Step>
-  <Step title="Mark as Complete">
+  <Step title="If there are multiple records in the same facesheet" stepNumber={8}>
+    After saving the first record, click the **Add New Record** button located at the top of the right panel.
+
+    ![1 Pn](/images/f8.png)
+
+    Enter the next patient’s details following the same steps as above. Repeat this process for each additional patient listed in the facesheet.
+  </Step>
+  <Step title="Mark as Complete" stepNumber={9}>
     Once data entry is finished, select **Mark as Complete** from the **Actions** menu to change the status to **Completed**.
 
-    ![F14 Pn](/images/f14.png)
-  </Step>
-  <Step title="Record-Level Actions">
-    Each patient record includes the following options:
-
-    **Edit**: Modify patient or insurance details.
-
-    **Delete**: Remove the record (confirmation required).
-
-    **Link**: Reassign the patient to another encounter or record.
-
-    ![F15 Pn](/images/f15.png)
+    ![1 Pn](/images/f14.png)
   </Step>
 </Steps>
 
-## **Link Patient to Facesheet**
+## **Manage Facesheet Records**
+
+![2 Pn](/images/f15.png)
+
+Each patient record includes the following options:
+
+**Edit**: Modify patient or insurance details.
+
+**Delete**: Remove the record (confirmation required).
+
+**Link**: Assign the patient to another encounter or record
+
+**Link Patient to Facesheet**
 
 This function ensures the correct patient is connected to the facesheet.
 
@@ -197,7 +209,7 @@ This function ensures the correct patient is connected to the facesheet.
     Found next to the patient’s name in the record list. Opens the patient search interface.
   </Step>
   <Step title="Search and Select Patient">
-    Use filters like Name, Last Name, MRN, or SSN. Click the arrow icon  <Icon icon="arrow-right-long" /> to select.
+    Use filters like **Name**, **Last Name**, **MRN**, or **SSN**. Click the arrow icon  <Icon icon="arrow-right-long" /> to select.
 
     ![F16 Pn](/f17.png)
   </Step>
@@ -237,7 +249,7 @@ This page opens when a user clicks the **Add** button from the **Search Patient*
 
 <Steps>
   <Step title="Add Patient">
-    Fill in the following details mentioned as per the facesheet document. Fields marked with asterisk (\*) are required/mandatory:
+    Fill in the following details mentioned as per the facesheet document. Fields marked with asterisk **(\*)** are required/mandatory:
 
     Select the **Location** using the dropdown provided.
 

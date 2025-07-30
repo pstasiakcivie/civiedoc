@@ -16,14 +16,14 @@ description: "The Order Entry module streamlines the documentation and managemen
        - Client Name
        - File Name
        - Document Status
-    4. Click **Export** to download the filtered list in CSV or Excel format.
-    5. Click the **View** button (in the Actions column) to open a specific order entry record.
+    4. Click **Export** to download the filtered list in \*\*CSV \*\*or \*\*Excel \*\*format.
+    5. Click the **View** button \*\*(in the Actions column) \*\*to open a specific order entry record.
   </Step>
 </Steps>
 
-## **Creating a New Order Entry Document**
+## **Add a New Order Entry Document**
 
-To create a new order entry document, click on **Add** button:
+To add a new order entry document, click the **Add** button:
 
 <img
   src="/o2.png"
@@ -48,25 +48,27 @@ To create a new order entry document, click on **Add** button:
   <Step title="Upload Documents">
     Click **Attach** Files to upload one or more .pdf documents.
 
-    Supported File Format: **.pdf** only
-
     <img
       src="/o4.png"
-      alt="+newappointment Pn"
-      title="+newappointment Pn"
-      style={{ width:"60%" }}
+      alt="1 Pn"
+      title="1 Pn"
       className="mx-auto"
+      style={{ width:"66%" }}
     />
-  </Step>
-  <Step title="Upload Constraints:">
-    Maximum file size per document: 5 MB and Maximum number of documents: 5
+
+    **Supported File Format**: Only .pdf format is allowed.
+
+    <Note>
+      **Note:**\
+      Maximum file size per document: 5 MB and Maximum number of documents: 5
+    </Note>
   </Step>
   <Step title="Manage File Uploads">
-    **Upload All**: Uploads all selected files in one action.
+    **Upload All**: Click this button to upload all the selected facesheet files in one go.
 
     **Remove All**: Clears the entire file selection.
 
-    **Remove Individual File**: Click the X icon next to a file to remove it from the queue.
+    **Remove Individual File**: Click the \*\*X \*\*icon next to a file to remove it from the queue.
   </Step>
   <Step title="Finalize or Cancel">
     **Save**: Uploads files and creates the order entry.
@@ -77,8 +79,10 @@ To create a new order entry document, click on **Add** button:
 
 ## Managing Order Entries
 
+This section guides users through viewing, editing, and managing order entry records in the RCM application.
+
 <Steps>
-  <Step title="Viewing Order Details">
+  <Step title="Navigate to Order Details">
     To view and manage an order entry:
 
     Click **View** in the **Actions** menu next to the desired entry.
@@ -91,7 +95,7 @@ To create a new order entry document, click on **Add** button:
       className="mx-auto"
     />
   </Step>
-  <Step title="The interface will open in a split view">
+  <Step title="The interface opens in a split view">
     **Left Panel**: Displays the uploaded order document (PDF).
 
     **Right Panel**: Lists associated patient forms.
@@ -106,11 +110,11 @@ To create a new order entry document, click on **Add** button:
 
     <Note>
       **Document Viewer Note**\
-      If the PDF fails to load, an error message appears: **_"An error occurred while loading the document. Try reloading the page."_**
+      If the PDF fails to load, an error message appears: **_An error occurred while loading the document. Try reloading the page._**
     </Note>
   </Step>
-  <Step title="Understanding Document Status">
-    Order document status is shown at the top of the right panel:
+  <Step title="Check Document Status">
+    The current document status appears at the top of the right panel and updates automatically as form progresses, the status can be as follow:
 
     | Status          | Description                             |
     | :-------------- | :-------------------------------------- |
@@ -121,16 +125,10 @@ To create a new order entry document, click on **Add** button:
 
     To manually update the status:
 
-    Click the **Actions** button.
-
-    Select **Mark as Complete or Mark as Invalid.**
+    Click the **Actions** button at the top right. Choose **Mark as Complete** or **Mark as Invalid** based on the document's state.
   </Step>
-  <Step title="Adding Comments">
+  <Step title="Add Comments (If any)">
     Click **Comments** to view or add remarks.
-
-    Use the text field and attachment option to add new notes or upload supporting files.
-
-    If no comments exist, the message “**_No comments found_**” is displayed.
 
     <img
       src="/o7.png"
@@ -139,19 +137,23 @@ To create a new order entry document, click on **Add** button:
       style={{ width:"81%" }}
       className="mx-auto"
     />
+
+    Use the **Text Box andAttachment**  option to add new comments or upload related files.
+
+    If there are no comments, the message **No comments found** will be displayed.
   </Step>
 </Steps>
 
-## **Creating an Order/Encounter**
+## **Add New Order**
 
 <Steps>
   <Step title="Review Patient Information">
-    View the PDF on the left panel. Extract key patient details for entry.
+    Review the order entery PDF on the left panel and extract the required patient details for entering into the form.
   </Step>
-  <Step title="Search or Add Patient">
-    Click **Search** in the right panel to locate existing patient records.
+  <Step title="Determine if the order is for an existing patient">
+    Click the **Add New Orde**r button.
 
-    Apply filters and select a matching result to auto-fill form data.
+    Click **Search** in the right panel to locate existing patient records. Apply filters and select a matching result to auto-fill form data.
 
     <img
       src="/o9.png"
@@ -160,41 +162,20 @@ To create a new order entry document, click on **Add** button:
       style={{ width:"88%" }}
       className="mx-auto"
     />
+
+    Select the appropriate **Encounter/Add New Encounter** for which the order is to be added.
+
+    Fill in the **Order Form** with the required details. Click \*\*Save \*\*to submit the order.
+  </Step>
+  <Step title="If the order is for a new patient:">
+    
   </Step>
 </Steps>
 
-### **Add New Patient (If no match is found)**
+### **Add New Encounter**
 
 <Steps>
-  <Step title="Add new patient">
-    Click **Add** button on the search patient page to enter the patient's details manually.
-
-    <img
-      src="/o8.png"
-      alt="+newappointment Pn"
-      title="+newappointment Pn"
-      style={{ width:"90%" }}
-      className="mx-auto"
-    />
-  </Step>
-  <Step title="Complete all required fields">
-    Complete all required fields (marked with \*), including: Client Location, First Name, Last Name, Date of Birth, Gender, ZIP Code, MRN, SSN, Phone, Address, City, and State.
-
-    <img
-      src="/o10.png"
-      alt="+newappointment Pn"
-      title="+newappointment Pn"
-      style={{ width:"74%" }}
-      className="mx-auto"
-    />
-
-    **Save**: Creates the patient record and links it to the order.
-
-    **Reset:** Clears all fields.
-
-    **Back:** Returns to the previous page without saving.
-  </Step>
-  <Step title=" Add Encounter">
+  <Step title=" Add Encounter" stepNumber={1}>
     Upon selecting/adding a patient click **Create Encounter**.
 
     <img
@@ -219,18 +200,18 @@ To create a new order entry document, click on **Add** button:
 
     Click **Create** to generate the encounter or click **Reset** to clear the form if necessary.
   </Step>
-  <Step title="Complete all required fields (marked with *), including:">
+  <Step title="Complete all required fields (marked with *), including:" stepNumber={2}>
     Complete all required fields (marked with \*), including:\
     Client Location, First Name, Last Name, Date of Birth, Gender, ZIP Code, MRN, SSN, Phone, Address, City, and State.
   </Step>
-  <Step title="Save">
+  <Step title="Save" stepNumber={3}>
     **Save**: Creates the patient record and links it to the order.
 
     **Reset**: Clears all fields.
 
     **Back**: Returns to the previous page without saving.
   </Step>
-  <Step title="Review and Populate Encounter/Order Fields">
+  <Step title="Review and Populate Encounter/Order Fields" stepNumber={4}>
     **Fill in the following:**\
     Review and fill in the missing fields of the corresponding Encounter/Order details:
 
@@ -246,30 +227,28 @@ To create a new order entry document, click on **Add** button:
       style={{ width:"85%" }}
     />
   </Step>
-  <Step title="Save and Attach Document">
-    Click **Save** to store all data.
-
-    The order entry status changes to **In Progress.**
+  <Step title="Save and Attach Document" stepNumber={5}>
+    Click **Save** to store all data. The order entry status changes to **In Progress.**
 
     Select the page range in the PDF to attach to the encounter record.
   </Step>
-  <Step title="Mark the Order as Complete">
+  <Step title="Mark the Order as Complete" stepNumber={6}>
     Navigate to **Actions \> Mark as Complete** to update the status.
   </Step>
 </Steps>
 
-## Creating an Order/Encounter Without Patient Details
+## Add New Patient Order
 
 ![Picture41 Pn](/o13.png)
 
 <Steps>
   <Step title="If patient details are unavailable:" icon="chevron-down">
-    Click **Add Without Patient** on the right panel.
+    Click **Add New Patient Order** on the right panel.
 
-    This allows creation of an order entry record with limited information.
+    This allows creation of an order entry record with limited information. Patient information can be added later, once available.
 
     ![O14 Pn](/images/o14.png)
-
-    Patient information can be added later, once available.
   </Step>
 </Steps>
+
+**Finalizing the Order Document**
