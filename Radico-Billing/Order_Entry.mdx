@@ -5,7 +5,7 @@ description: "The Order Entry module streamlines the documentation and managemen
 
 ![Picture26 Pn](/o1.png)
 
-**Accessing the Order Entry Module**
+# **Navigate to Order Entry**
 
 <Steps>
   <Step title="To access the Order Entry interface:" icon="chevron-down">
@@ -16,12 +16,12 @@ description: "The Order Entry module streamlines the documentation and managemen
        - Client Name
        - File Name
        - Document Status
-    4. Click **Export** to download the filtered list in \*\*CSV \*\*or \*\*Excel \*\*format.
+    4. Click **Export** to download the filtered list in CSV or Excel format.
     5. Click the **View** button \*\*(in the Actions column) \*\*to open a specific order entry record.
   </Step>
 </Steps>
 
-## **Add a New Order Entry Document**
+# **Add a New Order Entry Document**
 
 To add a new order entry document, click the **Add** button:
 
@@ -77,7 +77,7 @@ To add a new order entry document, click the **Add** button:
   </Step>
 </Steps>
 
-## Managing Order Entries
+# View Order Entries
 
 This section guides users through viewing, editing, and managing order entry records in the RCM application.
 
@@ -144,49 +144,37 @@ This section guides users through viewing, editing, and managing order entry rec
   </Step>
 </Steps>
 
-## **Add New Order**
+## **Add Order**
+
+### **Review the Order Document**
+
+Review the order entery PDF on the left panel and extract the required patient details for entering into the form.
+
+### **Add New Order (for Existing Patients)**
 
 <Steps>
-  <Step title="Review Patient Information">
-    Review the order entery PDF on the left panel and extract the required patient details for entering into the form.
-  </Step>
-  <Step title="Determine if the order is for an existing patient">
+  <Step title="Add New Order">
     Click the **Add New Orde**r button.
 
-    Click **Search** in the right panel to locate existing patient records. Apply filters and select a matching result to auto-fill form data.
-
-    <img
-      src="/o9.png"
-      alt="+newappointment Pn"
-      title="+newappointment Pn"
-      style={{ width:"88%" }}
-      className="mx-auto"
-    />
-
-    Select the appropriate **Encounter/Add New Encounter** for which the order is to be added.
-
-    Fill in the **Order Form** with the required details. Click \*\*Save \*\*to submit the order.
+    ![2025 07 23 17 38 40 Pn](/o9.png)
   </Step>
-  <Step title="If the order is for a new patient:">
-    
+  <Step title="Search Patient">
+    Search and select the **existing patient**.
   </Step>
-</Steps>
-
-### **Add New Encounter**
-
-<Steps>
-  <Step title=" Add Encounter" stepNumber={1}>
-    Upon selecting/adding a patient click **Create Encounter**.
+  <Step title="Select Encounter">
+    **Select an existing encounter** associated with the patient.\
+    – If no relevant encounter exists, click the **Add New Encounter **button to create one.
 
     <img
       src="/o11.png"
-      alt="+newappointment Pn"
+      alt="2025 07 23 17 38 40 Pn"
+      title="2025 07 23 17 38 40 Pn"
       className="mx-auto"
-      style={{ width:"85%" }}
-      title=""
+      style={{ width:"77%" }}
     />
-
-    **Enter the following details:**
+  </Step>
+  <Step title="Add New Encounter">
+    If adding a new encounter enter the following details:
 
     **Start Date:** Start date of the encounter
 
@@ -198,19 +186,32 @@ This section guides users through viewing, editing, and managing order entry rec
 
     **Attending Dr. Name:** Auto-populated after NPI entry
 
-    Click **Create** to generate the encounter or click **Reset** to clear the form if necessary.
-  </Step>
-  <Step title="Complete all required fields (marked with *), including:" stepNumber={2}>
-    Complete all required fields (marked with \*), including:\
-    Client Location, First Name, Last Name, Date of Birth, Gender, ZIP Code, MRN, SSN, Phone, Address, City, and State.
-  </Step>
-  <Step title="Save" stepNumber={3}>
-    **Save**: Creates the patient record and links it to the order.
+    <img
+      src="/o12.png"
+      alt="2025 07 23 17 38 40 Pn"
+      title="2025 07 23 17 38 40 Pn"
+      className="mx-auto"
+      style={{ width:"81%" }}
+    />
 
-    **Reset**: Clears all fields.
-
-    **Back**: Returns to the previous page without saving.
+    <Note>
+      **Note:**\
+      Complete all required fields (marked with \*), including: Client Location, First Name, Last Name, Date of Birth, Gender, ZIP Code, MRN, SSN, Phone, Address, City, and State.
+    </Note>
+    Click **Save **to generate the encounter and the corressponding order.
   </Step>
+  <Step title="Fill the Order Form">
+    Fill in the **Order Form** with the required details.
+  </Step>
+  <Step title="Save">
+    Click **Save** to submit the order.
+  </Step>
+</Steps>
+
+
+### **Add New Encounter**
+
+<Steps>
   <Step title="Review and Populate Encounter/Order Fields" stepNumber={4}>
     **Fill in the following:**\
     Review and fill in the missing fields of the corresponding Encounter/Order details:
