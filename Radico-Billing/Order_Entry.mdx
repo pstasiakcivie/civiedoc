@@ -163,7 +163,7 @@ Review the order entery PDF on the left panel and extract the required patient d
   </Step>
   <Step title="Select Encounter">
     **Select an existing encounter** associated with the patient.\
-    – If no relevant encounter exists, click the **Add New Encounter **button to create one.
+    – If no relevant encounter exists, click the \*\*Add New Encounter \*\*button to create one.
 
     <img
       src="/o11.png"
@@ -198,7 +198,7 @@ Review the order entery PDF on the left panel and extract the required patient d
       **Note:**\
       Complete all required fields (marked with \*), including: Client Location, First Name, Last Name, Date of Birth, Gender, ZIP Code, MRN, SSN, Phone, Address, City, and State.
     </Note>
-    Click **Save **to generate the encounter and the corressponding order.
+    Click **Save** to generate the encounter and the corressponding order.
   </Step>
   <Step title="Fill the Order Form">
     Fill in the **Order Form** with the required details.
@@ -208,26 +208,7 @@ Review the order entery PDF on the left panel and extract the required patient d
   </Step>
 </Steps>
 
-
-### **Add New Encounter**
-
 <Steps>
-  <Step title="Review and Populate Encounter/Order Fields" stepNumber={4}>
-    **Fill in the following:**\
-    Review and fill in the missing fields of the corresponding Encounter/Order details:
-
-    **Enter or select the necessary information, including:**
-
-    Accession Number, Procedure Description, Date of Service (DOS), Signed Date, Reading Doctor (if different from the attending), and Client Location as required fields, along with optional fields such as Observation Number, CPT Code, Reading Location, Client Bill (if applicable), Reason for Study, Ordering Doctor, and Result Status.
-
-    <img
-      src="/o12.png"
-      alt="+newappointment Pn"
-      title="+newappointment Pn"
-      className="mx-auto"
-      style={{ width:"85%" }}
-    />
-  </Step>
   <Step title="Save and Attach Document" stepNumber={5}>
     Click **Save** to store all data. The order entry status changes to **In Progress.**
 
@@ -240,16 +221,35 @@ Review the order entery PDF on the left panel and extract the required patient d
 
 ## Add New Patient Order
 
-![Picture41 Pn](/o13.png)
+If the mentioned order is not for an existing patient, in that case use the **Add New Patient Order** form to add the order details.
 
 <Steps>
-  <Step title="If patient details are unavailable:" icon="chevron-down">
+  <Step title="If patient details are unavailable" stepNumber={1}>
     Click **Add New Patient Order** on the right panel.
 
-    This allows creation of an order entry record with limited information. Patient information can be added later, once available.
+    ![2025 07 23 17 38 40 Pn](/o13.png)
+  </Step>
+  <Step title="Fill in the following sections">
+    Patient Information, Patient Contact Information and Admission Information.
 
-    ![O14 Pn](/images/o14.png)
+    <img
+      src="/images/o14.png"
+      alt="1 Pn"
+      title="1 Pn"
+      className="mx-auto"
+      style={{ width:"72%" }}
+    />
+  </Step>
+  <Step title="Save">
+    Click **Save **to create a new patient record and submit the order.
+
+    <Note>
+      For multiple new patients, click**Add New Patient Order**  again and repeat the steps.
+    </Note>
   </Step>
 </Steps>
 
-**Finalizing the Order Document**
+## **Finalizing the Order Document**
+
+- Once all patient orders are entered, click the **Actions **menu and select mark as **Complete** to update the status.
+- If the document contains incorrect or invalid data, select mark as **Invalid.**
