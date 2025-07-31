@@ -57,10 +57,10 @@
         ]
       },
       {
-        "tab": "CIVIE",
+        "tab": "CIVIE-RIS",
         "groups": [
           {
-            "group": "CIVIE-RIS",
+            "group": "RIS Modules",
             "pages": [
               "CIVIE-RIS/Calendar",
               "CIVIE-RIS/Incoming_Document",
@@ -73,9 +73,14 @@
               "CIVIE-RIS/Resources",
               "CIVIE-RIS/Document_Template"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "CIVR",
+        "groups": [
           {
-            "group": "CIVR",
+            "group": "Voice Reporting",
             "pages": [
               "CIVR/Analytics",
               "CIVR/CIVR_Help_Section",
