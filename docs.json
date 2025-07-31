@@ -18,16 +18,23 @@
         "tab": "Radico Billing",
         "groups": [
           {
-            "group": "Modules",
+            "group": "Menu",
             "pages": [
               "Radico-Billing/Coding",
-              "Radico-Billing/Order_Entry",
+              "Radico-Billing/Coding_Audit",
               "Radico-Billing/Facesheet",
+              "Radico-Billing/Order_Entry",
               "Radico-Billing/Worklist",
               "Radico-Billing/Orders_Worklist",
-              "Radico-Billing/Permissions",
+              {
+
+              "group": "Administration",
+            "pages": [
               "Radico-Billing/Users",
-              "Radico-Billing/Coding_Audit"
+              "Radico-Billing/Role",
+              "Radico-Billing/Permissions"
+              
+              
             ]
           }
         ]
