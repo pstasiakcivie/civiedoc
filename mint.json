@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Civie Ris Documenation",
+  "name": "Civie Ris Documentation",
   "logo": {
     "dark": "/logo/main-logo.png",
     "light": "/logo/main-logo.png"
@@ -25,37 +25,42 @@
     "name": "Dashboard",
     "url": "https://dashboard.mintlify.com"
   },
+  "languages": [
+    {
+      "language": "en",
+      "default": true,
+      "href": "/"
+    },
+    {
+      "language": "es",
+      "href": "/es/"
+    },
+    {
+      "language": "fr",
+      "hidden": false,
+      "href": "/fr/"
+    }
+  ],
   "tabs": [
     {
       "name": "API Reference",
       "url": "api-reference"
     }
   ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
   "navigation": [
     {
       "group": "Get Started",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development",
-        "Test_Doc/CIVIE_UserManual"
+        "CIVIE-RIS/Calendar",
+        "CIVIE-RIS/Incoming_Document",
+        "CIVIE-RIS/Patients",
+        "CIVIE-RIS/Orders_Worklist",
+        "CIVIE-RIS/Technologist_Worklist",
+        "CIVIE-RIS/Radiology_Report",
+        "CIVIE-RIS/Insurance_Auth_Worklist",
+        "CIVIE-RIS/Medical_Record_Request",
+        "CIVIE-RIS/Resources",
+        "CIVIE-RIS/Document_Template"
       ]
     },
     {
@@ -88,5 +93,26 @@
     "x": "https://x.com/mintlify",
     "github": "https://github.com/mintlify",
     "linkedin": "https://linkedin.com/company/mintlify"
+  },
+  "i18n": {
+    "defaultLocale": "en",
+    "locales": {
+      "en": {
+        "label": "English",
+        "direction": "ltr"
+      },
+      "hi": {
+        "label": "हिंदी",
+        "direction": "ltr"
+      },
+      "es": {
+        "label": "Español",
+        "direction": "ltr"
+      },
+      "fr": {
+        "label": "Français",
+        "direction": "ltr"
+      }
+    }
   }
 }
