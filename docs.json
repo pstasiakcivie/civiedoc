@@ -25,13 +25,25 @@
               "Radico-Billing/Coding_Audit",
               "Radico-Billing/Facesheet",
               "Radico-Billing/Order_Entry",
-              "Radico-Billing/Worklist",
-              "Radico-Billing/Orders_Worklist"
+              {
+                "page": "Radico-Billing/Worklist",
+                "title": "Worklist",
+                "subpages": [
+                  {
+                    "page": "Radico-Billing/Worklist",
+                    "title": "Worklist"
+                  },
+                  {
+                    "page": "Radico-Billing/Orders_Worklist",
+                    "title": "Order Worklist"
+                  }
+                ]
+              }
             ]
           },
           {
             "group": "Administration",
-            "icon": "settings",
+            "icon": "gear",
             "pages": [
               "Radico-Billing/Users",
               "Radico-Billing/Role",
