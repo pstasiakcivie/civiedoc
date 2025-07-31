@@ -21,14 +21,13 @@
             "group": "Modules",
             "pages": [
               "Radico-Billing/Coding",
-              "Radico-Billing/Permissions",
-              "Radico-Billing/Users",
-              "Radico-Billing/Ordering_Doctor",
+              "Radico-Billing/OrderEntry",
               "Radico-Billing/Facesheet",
               "Radico-Billing/Worklist",
               "Radico-Billing/Order_Worklist",
-              "Radico-Billing/Coding_Audit",
-              "Radico-Billing/OrderEntry"
+              "Radico-Billing/Permissions",
+              "Radico-Billing/Users",
+              "Radico-Billing/Coding_Audit"
             ]
           }
         ]
