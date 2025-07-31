@@ -2,12 +2,16 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "CIVIE RIS Documentation",
+  "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/main-logo.png",
+    "dark": "/logo/main-logo.png"
+  },
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
@@ -41,22 +45,13 @@
             "group": "Modules",
             "pages": [
               "Radico-Billing/Coding",
-              "Radico-Billing/Permissions",
-              "Radico-Billing/Users",
-              "Radico-Billing/Ordering_Doctor",
+              "Radico-Billing/OrderEntry",
               "Radico-Billing/Facesheet",
               "Radico-Billing/Worklist",
               "Radico-Billing/Order_Worklist",
-              "Radico-Billing/Coding_Audit",
-              "Radico-Billing/OrderEntry"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete"
+              "Radico-Billing/Permissions",
+              "Radico-Billing/Users",
+              "Radico-Billing/Coding_Audit"
             ]
           }
         ]
@@ -68,24 +63,19 @@
             "group": "CIVIE-RIS",
             "pages": [
               "CIVIE-RIS/Calendar",
-              "CIVIE-RIS/Document_Template",
               "CIVIE-RIS/Incoming_Document",
+              "CIVIE-RIS/Patients",
+              "CIVIE-RIS/Orders_Worklist",
+              "CIVIE-RIS/Technologist_Worklist",
+              "CIVIE-RIS/Radiology_Report",
               "CIVIE-RIS/Insurance_Auth_Worklist",
               "CIVIE-RIS/Medical_Record_Request",
-              "CIVIE-RIS/Orders_Worklist",
-              "CIVIE-RIS/Patients",
-              "CIVIE-RIS/Radiology_Report",
               "CIVIE-RIS/Resources",
-              "CIVIE-RIS/Technologist_Worklist"
+              "CIVIE-RIS/Document_Template"
             ]
-          }
-        ]
-      },
-      {
-        "tab": "CIVR",
-        "groups": [
+          },
           {
-            "group": "Modules",
+            "group": "CIVR",
             "pages": [
               "CIVR/Analytics",
               "CIVR/CIVR_Help_Section",
@@ -105,10 +95,6 @@
       }
     ]
   },
-  "logo": {
-    "light": "/logo/main-logo.png",
-    "dark": "/logo/main-logo.png"
-  },
   "navbar": {
     "links": [
       {
@@ -127,6 +113,23 @@
       "x": "https://x.com/mintlify",
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
+    }
+  },
+  "i18n": {
+    "defaultLocale": "en",
+    "locales": {
+      "en": {
+        "label": "English",
+        "direction": "ltr"
+      },
+      "hi": {
+        "label": "हिंदी",
+        "direction": "ltr"
+      },
+      "es": {
+        "label": "Español",
+        "direction": "ltr"
+      }
     }
   }
 }
