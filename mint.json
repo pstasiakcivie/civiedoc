@@ -35,16 +35,16 @@
     {
       "group": "Get Started",
       "pages": [
-        "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Calendar#receipt",
-        "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Incoming_Document",
-        "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Patients",
-        "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Orders_Worklist",
-        "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Technologist_Worklist",
-        "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Radiology_Report",
-        "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Insurance_Auth_Worklist",
-        "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Medical_Record_Request",
-        "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Resources",
-        "https://collaborativeimaging.mintlify.app/CIVIE-RIS/Document_Template"
+        "CIVIE-RIS/Calendar",
+        "CIVIE-RIS/Incoming_Document",
+        "CIVIE-RIS/Patients",
+        "CIVIE-RIS/Orders_Worklist",
+        "CIVIE-RIS/Technologist_Worklist",
+        "CIVIE-RIS/Radiology_Report",
+        "CIVIE-RIS/Insurance_Auth_Worklist",
+        "CIVIE-RIS/Medical_Record_Request",
+        "CIVIE-RIS/Resources",
+        "CIVIE-RIS/Document_Template"
       ]
     },
     {
