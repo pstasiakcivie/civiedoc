@@ -21,54 +21,21 @@
             "group": "Menu",
             "icon": "list",
             "pages": [
-              {
-                "page": "Radico-Billing/Coding",
-                "title": "Coding"
-              },
-              {
-                "page": "Radico-Billing/Coding_Audit",
-                "title": "Coding Audit"
-              },
-              {
-                "page": "Radico-Billing/Facesheet",
-                "title": "Facesheet"
-              },
-              {
-                "page": "Radico-Billing/Order_Entry",
-                "title": "Order Entry"
-              },
-              {
-                "page": "Radico-Billing/Worklist",
-                "title": "Worklist",
-                "subpages": [
-                  {
-                    "page": "Radico-Billing/Worklist",
-                    "title": "Worklist"
-                  },
-                  {
-                    "page": "Radico-Billing/Orders_Worklist",
-                    "title": "Order Worklist"
-                  }
-                ]
-              }
+              "Radico-Billing/Coding",
+              "Radico-Billing/Coding_Audit",
+              "Radico-Billing/Facesheet",
+              "Radico-Billing/Order_Entry",
+              "Radico-Billing/Worklist",
+              "Radico-Billing/Orders_Worklist"
             ]
           },
           {
             "group": "Administration",
-            "icon": "settings",
+            "icon": "gear",
             "pages": [
-              {
-                "page": "Radico-Billing/Users",
-                "title": "Users"
-              },
-              {
-                "page": "Radico-Billing/Role",
-                "title": "Role"
-              },
-              {
-                "page": "Radico-Billing/Permissions",
-                "title": "Permissions"
-              }
+              "Radico-Billing/Users",
+              "Radico-Billing/Role",
+              "Radico-Billing/Permissions"
             ]
           }
         ]
