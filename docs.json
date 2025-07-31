@@ -25,16 +25,15 @@
               "Radico-Billing/Facesheet",
               "Radico-Billing/Order_Entry",
               "Radico-Billing/Worklist",
-              "Radico-Billing/Orders_Worklist",
-              {
-
-              "group": "Administration",
+              "Radico-Billing/Orders_Worklist"
+            ]
+          },
+          {
+            "group": "Administration",
             "pages": [
               "Radico-Billing/Users",
               "Radico-Billing/Role",
               "Radico-Billing/Permissions"
-              
-              
             ]
           }
         ]
