@@ -14,19 +14,19 @@
         "tab": "CIVR",
         "groups": [
           {
-            "group": "Voice Reporting",
+            "group": "CIVR",
             "pages": [
-              "CIVR/Analytics",
-              "CIVR/CIVR_Help_Section",
-              "CIVR/CIVR_Wizard",
               "CIVR/Introduction",
-              "CIVR/Launch_Study",
               "CIVR/Login_and_Logout",
               "CIVR/Profile_Management",
+              "CIVR/Launch_Study",
               "CIVR/Recently_Dictated_Studies",
               "CIVR/Report_Dictation",
               "CIVR/Settings",
-              "CIVR/Support"
+              "CIVR/Analytics",
+              "CIVR/Support",
+              "CIVR/CIVR_Help_Section",
+              "CIVR/CIVR_Wizard"
             ]
           }
         ]
