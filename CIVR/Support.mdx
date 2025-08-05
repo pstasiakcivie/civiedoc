@@ -1,0 +1,316 @@
+---
+title: "Support"
+---
+
+## External VR
+
+The External VR section under the Support tab allows administrators to manage external voice recognition credentials for users. This includes setting up, launching, editing, and deleting external VR configurations—typically used for integrations such as M\*Modal’s Fluency Direct.
+
+### Navigating to External VR
+
+<Steps>
+  <Step title="Go to the top navigation bar">
+    
+  </Step>
+  <Step title="Click Support">
+    
+  </Step>
+  <Step title="From the dropdown, select External VR">
+    
+  </Step>
+</Steps>
+
+**Filtering Users**
+
+At the top of the External VR screen, there is a **Select a User** dropdown and **Filter/Clear** button:
+
+1. **Select a User**: Choose a specific user to filter their credentials.
+2. **Filter**: Apply the selected filter.
+3. **Clear**: Reset the filter to show all records.
+
+**Launching an External VR**
+
+This function allows you to open the configured voice recognition server for a specific user in a new browser tab.
+
+<Steps>
+  <Step title="Click the Launch External VR icon (🚀) located next to the user's name">
+    
+  </Step>
+  <Step title="The configured server URL (e.g., https://fluencydirect.mmodal.com/cds) will open automatically in a new tab">
+    
+  </Step>
+  <Step title="The system initializes the connection to the external VR service">
+    
+  </Step>
+</Steps>
+
+**Editing VR Credentials**
+
+This option enables administrators to update or correct the stored VR credentials for any user.
+
+<Steps>
+  <Step title="Click the edit icon (✏️) next to the user's entry">
+    
+  </Step>
+  <Step title="Editable fields for username, password, server URL, and account will become visible">
+    
+  </Step>
+  <Step title="Update the necessary fields and ensure you save the changes to apply the updates">
+    
+  </Step>
+</Steps>
+
+<Info>
+  Use the eye icon beside the password field to view or verify the entered password before saving.
+</Info>
+
+### Deleting VR Credentials
+
+Use this option to permanently remove a user’s external VR credentials from the system.
+
+<Steps>
+  <Step title="Click the delete icon (🗑️) next to the user’s record">
+    
+  </Step>
+  <Step title="A confirmation prompt will appear to avoid accidental deletion">
+    
+  </Step>
+  <Step title="Confirm the action to permanently delete the credentials">
+    
+  </Step>
+</Steps>
+
+<Warning>
+  Deleting credentials is irreversible. Ensure that the user no longer requires VR access before proceeding.
+</Warning>
+
+<Info>
+  **Best Practices**
+
+  - Do not share passwords in visible format unless required for troubleshooting.
+  - Review **Modified By** and **Modified Date** columns to track recent changes.
+</Info>
+
+## User Access
+
+The User Access page allows administrators to view, filter, and manage user permissions across the application. It contains a searchable and editable list of users, their associated roles, and the pages they can access.
+
+**Navigating to User Access**
+
+<Steps>
+  <Step title="Go to the top navigation bar">
+    
+  </Step>
+  <Step title="Click Support">
+    
+  </Step>
+  <Step title="From the dropdown, select User Access">
+    
+  </Step>
+</Steps>
+
+**Search & Filter**
+
+Use the filters at the top to locate specific records:
+
+1. **Select a User**: Begin typing to search for a specific user by name.
+2. **Select a Page**: Use the dropdown to filter by specific system pages.
+3. **Click Filter** to apply the search criteria.
+4. **Click Clear** to reset the filters and view the full list.
+
+\*\*Edit Access \*\*
+
+<Steps>
+  <Step title="Click the edit icon (✏️) to modify the user’s page access along with the user role">
+    
+  </Step>
+  <Step title="The associated fields will open for editing">
+    
+  </Step>
+  <Step title="Click Save to apply changes">
+    
+  </Step>
+</Steps>
+
+\*\*Delete Access \*\*
+
+<Steps>
+  <Step title="Click the delete icon (🗑️) to remove the user’s access configuration">
+    
+  </Step>
+  <Step title="A confirmation prompt will appear">
+    
+  </Step>
+  <Step title="Confirm deletion to permanently remove the user’s access settings">
+    
+  </Step>
+</Steps>
+
+\*\*Add New Access \*\*
+
+<Steps>
+  <Step title="Click the plus icon (➕) located in the header row to add a new user access entry">
+    
+  </Step>
+  <Step title="Enter the user details, enter the username, select applicable pages and role">
+    
+  </Step>
+  <Step title="Click save to finalize the entry">
+    
+  </Step>
+</Steps>
+
+<Info>
+  Only Admin users have permission to edit or delete access configurations.
+</Info>
+
+## Manage Orders
+
+The Manage Orders module allows users to efficiently view, track, and manage radiology orders and their associated reports. Users can filter, review, edit, link, reassign, or resend order-related data directly from this interface.
+
+### Navigating to Manage Orders
+
+<Steps>
+  <Step title="Go to the top navigation bar.">
+    
+  </Step>
+  <Step title="Click Support.">
+    
+  </Step>
+  <Step title="From the dropdown, select Manage Orders.">
+    
+  </Step>
+</Steps>
+
+### Filters and Search Options
+
+Located at the top, the filters allow users to narrow down results based on the following fields:
+
+| Field                 | Description                                                      |
+| --------------------- | ---------------------------------------------------------------- |
+| Choose a Location     | Dropdown to filter orders by imaging location                    |
+| Accession             | Search by unique accession number                                |
+| Patient Name          | Search using patient’s full or partial name                      |
+| Patient MRN           | Filter by Medical Record Number                                  |
+| DOS (Date of Service) | Date range selector to specify the order timeframe               |
+| Select a User         | Optional user filter to refine based on physician or radiologist |
+| Filter/Clear          | Filter applies selections, Clear resets all fields               |
+
+Each order row in the Manage Orders table includes a series of functional icons that allow users to interact with the report and manage its workflow. Below is a detailed breakdown of each icon's purpose from left to right:
+
+**1. Report Icon** 📄
+
+1. Clicking the Report icon opens the completed report of the selected order.
+2. Upon hovering it displays a tooltip which shows the name of the physician who electronically signed the report.
+
+**2. Action Icon 🔗**
+
+1. In the Manage Orders table, locate the completed order you want to link with pending studies. Click the Action icon in that row.
+2. A Pending Open Orders popup will open, displaying a list of all pending studies available for linking.
+3. In the popup, review the list of pending studies. Use the checkboxes next to each study to select one or more pending orders that should be linked to the completed order.
+4. After selecting the appropriate studies, click the Link Report button. The selected pending studies are now linked to the chosen completed order, and their statuses are updated accordingly.
+
+**3. Move Report to Another Accession Icon**
+
+1. In the Manage Orders table, locate the row of the completed order you want to move. Click the Move Report to Another Accession icon.
+2. Review the Information Prompt - The popup explains that the selected order’s report details will be copied to a new accession. The original order will be marked as Cancelled, and the new accession will be marked as Completed and Locked on the worklist.
+3. In the Accession input field, type the accession number of the order to which the report should be moved.
+4. After entering the accession number, click the Add button. The table below will populate with details such as: Accession, Procedure Description, Patient Name, Patient MRN and Ordering Physician.
+5. Confirm that the target accession information matches the intended record (correct patient, procedure, etc.). Once confirmed, click the Apply button to complete the transfer.
+
+**4. Delete/Dissociate Report Icon ❌**
+
+1. Upon clicking the Delete icon opens a confirmation popup to confirm deletion.
+2. Selecting the Delete option on the pop-up moves the order back to the result pending.
+
+**5. Resend ORU Icon 📤**
+
+1. Resend ORU icon triggers a resend of the HL7 ORU message which retransmits the report data to downstream systems (e.g., EMR, PACS).
+
+## Address Book
+
+The Physician Address Book allows users to manage and search physician contacts based on multiple filters such as name, location, specialty, and more.
+
+**Navigating to Address Book**
+
+<Steps>
+  <Step title="Go to the top navigation bar.">
+    
+  </Step>
+  <Step title="Click Support.">
+    
+  </Step>
+  <Step title="From the dropdown, select Address Book.">
+    
+  </Step>
+</Steps>
+
+**Search and Filter Physicians**
+
+Users can filter the physician list using the following fields available at the top of the screen — Location, First Name / Middle Name / Last Name, Patient Class, Facility Name, Scope, Contact Type, Phone Number and IsActive checkbox (to view only active physicians).
+
+Click **Filter** to apply the selected filters or **Clear** to reset all filters.
+
+**Add a New Physician**
+
+<Steps>
+  <Step title="Click the ➕ Add icon at the top right of the Phone Info column.">
+    
+  </Step>
+  <Step title="The Add/Edit Details window will appear.">
+    
+  </Step>
+  <Step title="Make sure the Physician Details tab is selected.">
+    
+  </Step>
+  <Step title="Fill in the following fields:">
+    1. First Name\* and Last Name\* (mandatory)
+    2. Middle Name (optional)
+    3. Facility Name (optional)
+    4. NPI (optional)
+    5. Speciality (optional)
+    6. Phone Number\* (mandatory)
+    7. Type: Select either Ordering or Referring
+    8. IsActive: Check this box to mark the physician as active
+  </Step>
+  <Step title="Click Save to add the physician or Cancel to discard the entry.">
+    
+  </Step>
+</Steps>
+
+**Edit an Existing Physician**
+
+To update physician details:
+
+<Steps>
+  <Step title="Locate the physician in the list.">
+    
+  </Step>
+  <Step title="Click the ✏️ Edit icon under the Phone Info column.">
+    
+  </Step>
+  <Step title="The Add/Edit Details window will open with the current information pre-filled.">
+    
+  </Step>
+  <Step title="Modify the necessary fields.">
+    
+  </Step>
+  <Step title="Click Save to apply changes or Cancel to discard updates.">
+    
+  </Step>
+</Steps>
+
+## Request Addendum
+
+The Addendum Request feature in RadFlow allows users to formally assign a request for changes or additions to a previously signed radiology report. This is typically used when corrections, clarifications, or updates are needed after a report has been finalized.
+
+**Assigned To**: Select the name of the physician or user responsible for reviewing the addendum.
+
+**Reason**: Enter the reason for the addendum. This field is mandatory.
+
+**Send Notification _(Optional)_:**
+
+1. Check **Email** to send an email notification.
+2. Check **Text** to send an SMS notification.
+
+Click **Save** to submit the request or click **Cancel** to discard the request.
