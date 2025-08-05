@@ -21,6 +21,7 @@
             "group": "Menu",
             "icon": "list",
             "pages": [
+              "Radico-Billing/Introduction",
               "Radico-Billing/Coding",
               "Radico-Billing/Coding_Audit",
               "Radico-Billing/Facesheet",
