@@ -1,137 +1,106 @@
 ---
 title: "Analytics"
-description: "Monitor radiologist productivity and AI dictation efficiency using CIVR’s intuitive analytics dashboard."
+description: "The Analytics tab in CIVR provides a comprehensive dashboard designed to monitor, assess, and evaluate the productivity of radiologists using key performance indicators. It includes graphical representations and filters for performance insights, supporting operational transparency and informed decision-making."
 ---
 
-# 📊 CIVR Analytics Dashboard
+# 📊 Analytics
 
-Gain real-time insights into radiologist performance, workload distribution, and AI dictation tool usage — all from one centralized place.
+<Card title="Summary" icon="chart-bar">
+  High-level KPIs and filters to assess radiologist productivity.
+</Card>
 
-<Info>
-  Whether you're a radiologist, manager, or admin, the **Analytics tab** helps you track productivity trends, identify bottlenecks, and export actionable data.
-</Info>
+<Card title="Productivity Metrics" icon="chart-pie-simple">
+  Breakdown of read volume by doctor, site, patient class, and more.
+</Card>
 
----
-
-## 🧭 What's Inside?
-
-
-  <Card title="Summary" icon="BarChart2">
-    A high-level overview of today's KPIs — reads, wRVUs, and turnaround time.
-  </Card>
-  <Card title="Productivity Metrics" icon="Layers">
-    In-depth performance breakdown by doctor, site, patient class, and more.
-  </Card>
-  <Card title="CIVR Usage" icon="Mic">
-    Track AI dictation patterns: templates, voice commands, macros, and errors.
-  </Card>
-
+<Card title="CIVR Usage" icon="microphone">
+  Usage patterns of CIVR dictation tools across radiologists.
+</Card>
 
 ---
 
-## 🚀 Quick Access Guide
+## 🚀 Accessing Analytics
 
 <Steps>
-  <Step title="Navigate to Analytics">
-    Click the **Analytics** tab from the top menu of the CIVR Portal.
+  <Step title="Click on the Analytics tab">
+    Click on the Analytics tab from the top menu.
   </Step>
-  <Step title="Explore the Dashboard">
-    The dashboard will open with these 3 sub-tabs:
-    - **Summary**
-    - **Productivity Metrics**
-    - **CIVR Usage**
+  <Step title="Load the dashboard">
+    The dashboard will load with three main sub-tabs:
+
+    - Summary
+    - Productivity Metrics
+    - CIVR Usage
   </Step>
 </Steps>
 
 <Note>
-  The **Summary** view loads by default.
+  By default, the Summary view is selected.
 </Note>
 
 ---
 
-## 📈 Summary Dashboard
+## 📈 Summary Dashboard Overview
 
-A snapshot of your team’s real-time performance.
+The Summary dashboard provides a high-level view of daily and 24-hour read performance.
 
-### 🔑 Top KPIs
+### 🧮 Top KPIs (Key Performance Indicators):
 
-- **📄 Read Count (Today)** – Number of studies completed today  
-- **💰 Work RVU (Today)** – Total wRVU generated from today’s reads  
-- **⏱ TAT (Today Avg)** – Average turnaround time for today’s studies
+- 📄 **Read Count (Today):** Displays the total number of studies read today.
+- 💰 **Work RVU (Today):** Shows the estimated wRVU value generated from today’s reads.
+- ⏱ **TAT (Average - Today):** Displays the average turnaround time for reads today.
 
 <Info>
-  Each KPI also shows **yesterday’s value** for quick comparison.
+  Each of these KPIs also shows values for the previous day as a reference point.
 </Info>
 
 ---
 
-### 🎛 Filters & Export
+### 🎛️ Filters Available
 
-You can slice the data by:
-
-- **👤 Radiologist** — Filter by individual user  
-- **🏢 Practice/Tenant** — Focus on a specific group  
-- **📥 Export Button** — Download filtered data in CSV/Excel
-
-<Tip>
-  Use filters before exporting to generate targeted performance reports.
-</Tip>
+- 👤 **Radiologist Name:** Filter data by a specific user.
+- 🏢 **Practice/Tenant Selector:** View analytics for a specific practice group or tenant.
+- 📥 **Export Button:** Download the analytics data in preferred formats for reporting.
 
 ---
 
 ## 📊 Productivity Metrics
 
-Visual dashboards help you assess where time and effort are being used.
+It visualizes performance metrics based on the last 24 hours across multiple dimensions:
 
-### Dimensions Covered:
+👨‍⚕️ **Read Count by Reading Doctor**
 
-- 👨‍⚕️ **By Reading Doctor**
-- 🏥 **By Site** (with drilldowns by location)
-- 👥 **By Patient Class**
-- ⚠️ **By Priority**
-- 🖥️ **By Modality**
+🏥 **Read Count by Sites (drilldown by Location)**
+
+**👥 Productivity Metrics by Patient Class**
+
+**🚨 Productivity Metrics by Priority**
+
+**🖼 Productivity Metrics by Modality**
 
 <Note>
-  These graphs help quickly spot trends, outliers, or bottlenecks in performance.
+  Charts help users quickly understand where time and effort are being utilized and how resources are performing across various patient classes, sites, and modalities.
 </Note>
 
 ---
 
 ## 🧠 CIVR Usage
 
-Track how radiologists are using AI-powered dictation tools.
+The CIVR Usage section under the Analytics tab provides detailed insights into the dictation behavior and usage patterns of individual radiologists within the past 24 hours. This helps in evaluating efficiency, adoption, and effectiveness of the AI dictation tool.
 
-| **Metric**                            | **What It Tells You**                                            |
-|--------------------------------------|------------------------------------------------------------------|
-| 🧩 Frequently Used Template           | Most-used report templates today                                |
-| ⚙️ Frequently Used Macro              | Common macro commands triggered                                 |
-| 📋 Frequently Used Picklist           | Most selected picklist values                                   |
-| 🎤 Frequently Used Voice Command      | Most spoken voice triggers                                      |
-| ⏳ Total Dictation Time               | Cumulative time spent dictating                                 |
-| 📝 Total Dictated Word Count          | Word count generated through dictation                         |
-| ❌ Total Dictation Errors             | Number of failed dictation attempts                            |
-| 📦 Total Macros Used                  | Number of macro invocations                                     |
-| 🎙️ Total Mic Buttons Used            | Physical mic interactions                                       |
-| 🔊 Total Voice Commands Used          | Recognized and executed voice commands                         |
-| ⌨️ Total Keyboard Shortcuts Used      | Number of keyboard shortcut activations                         |
-| 🚫 Default Template Mismatches        | Times default template did not match expected structure        |
+### 📋 Dashboard Metrics
 
-<Tip>
-  These insights can help diagnose inefficiencies, boost adoption, and coach users.
-</Tip>
-
----
-
-## ✅ Summary
-
-CIVR’s Analytics tab provides an operational lens into:
-
-- 📊 What’s being done  
-- 🧠 How AI tools are used  
-- 📥 What can be optimized
-
-Ready to dive deeper? Visit **Productivity Metrics** or **CIVR Usage** tabs to unlock more insights.
-
----
-
-Would you like this version in `.mdx` file or applied to other docs like **Users**, **Coding**, or **Intro to CIVR**?
+| Metric                                | Description                                                  |
+| ------------------------------------- | ------------------------------------------------------------ |
+| **Frequently Used Template**          | The most commonly used report template in the past 24 hours. |
+| **Frequently Used Macro**             | The most frequently used macro commands.                     |
+| **Frequently Used Picklist**          | The picklist selections used most often.                     |
+| **Frequently Used Voice Command**     | The voice commands invoked most frequently.                  |
+| **Total Dictation Time**              | Cumulative dictation time within the last 24 hours.          |
+| **Total Dictated Word Count**         | Total number of words dictated.                              |
+| **Total Dictation Errors**            | Number of errors encountered during dictation.               |
+| **Total Macros Used**                 | Total macro instances used.                                  |
+| **Total Mic Buttons Used**            | Number of times mic hardware buttons were pressed.           |
+| **Total Voice Commands Used**         | Total count of recognized voice commands.                    |
+| **Total Keyboard Shortcuts Used**     | Number of keyboard shortcuts executed.                       |
+| **Total Default Template Mismatches** | Instances where a default template mismatch was identified.  |
