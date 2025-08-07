@@ -96,28 +96,46 @@ This section guides users through viewing, editing, and managing facesheet recor
     </Note>
   </Step>
   <Step title="Check Document Status">
-    The current document status appears at the top of the right panel and updates automatically as form progresses, the status can be as follow:
+    The current document status appears at the top of the right panel and updates automatically as form progresses, the status can be as follow: 
 
-    | Status          | Description                             |
-    | :-------------- | :-------------------------------------- |
-    | **New**         | Document has not been opened or edited. |
-    | **In Progress** | Partially completed.                    |
-    | **Completed**   | All required fields are filled.         |
-    | **Invalid**     | Document has been marked as incorrect.  |
+    | Status                            | Description                             |
+    | :-------------------------------- | :-------------------------------------- |
+    | **<Tooltip tip="">New</Tooltip>** | Document has not been opened or edited. |
+    | **In Progress**                   | Partially completed.                    |
+    | **Completed**                     | All required fields are filled.         |
+    | **Invalid**                       | Document has been marked as incorrect.  |
 
     To manually update the status- Click the **Actions** button at the top right. Choose **Mark as Complete** or **Mark as Invalid** based on the document's state.
   </Step>
-  <Step title="Add Comments (If any)" stepNumber={3}>
+  <Step title="Mark as Invalid" stepNumber={3}>
+    The **Mark as Invalid** feature allows users to flag a facesheet document as invalid if it cannot be used or processed. Here’s how you can complete this action:
+
+    ![F22 Pn](/images/f22.png)
+
+    1. **Select a Reason**\
+       Use the **Reason** dropdown to choose the appropriate reason for marking the document invalid (e.g., _Can't Open_).
+    2. **Add Comment (Optional)**\
+       Enter any additional information or context in the **Comment** box to help clarify the issue.
+    3. **Submit or Cancel**
+
+       Click **Mark as Invalid** to confirm and save the changes and click **Cancel** if you do not wish to proceed.
+
+    <Note>
+      Once marked invalid, the document will be moved to Invalid status.
+    </Note>
+  </Step>
+  <Step title="Add Comments (If any)">
     Click **Comments** to view any existing remarks for the facesheet.
 
     <img
       src="/images/f7.png"
-      alt="F7 Pn"
+      alt="2025 07 23 17 38 40 Pn"
+      title="2025 07 23 17 38 40 Pn"
       className="mx-auto"
-      style={{ width:"75%" }}
+      style={{ width:"82%" }}
     />
 
-    Use the ****Text Box andAttachment****  option to add new comments or upload related files.
+    Use the **Text Box and Attachment**  option to add new comments or upload related files.
 
     If there are no comments, the message **No comments found** will be displayed.
   </Step>
@@ -189,16 +207,22 @@ This section guides users through viewing, editing, and managing facesheet recor
 
 ## **Manage Facesheet Records**
 
-Each patient record includes the options- **Edit**, \*\*Delete \*\*and \*\*Link \*\*to mange the records.
-
-![2 Pn](/images/f15.png)
+Each patient record includes the options- **Edit**, **Delete** and **Link** to mange the records.
 
 <Steps>
   <Step title="Locate the facesheet record you want to update.">
-    Click the \*\*Edit \*\*icon next to the record.
+    Click the **Edit** icon next to the record.
+
+    ![1 Pn](/images/f15.png)
   </Step>
   <Step title="Modify the required information in the form.">
-    
+    <img
+      src="/images/f23.png"
+      alt="F23 Pn"
+      title="F23 Pn"
+      className="mx-auto"
+      style={{ width:"81%" }}
+    />
   </Step>
   <Step title="Click Save to apply the changes.">
     
@@ -209,10 +233,18 @@ Each patient record includes the options- **Edit**, \*\*Delete \*\*and \*\*Link 
 
 <Steps>
   <Step title="Locate the facesheet record you want to delete">
-    
+    ![1 Pn](/images/f15.png)
   </Step>
   <Step title="Click the Delete icon next to the record.">
     When prompted, click **Yes** to proceed with deletion.
+
+    <img
+      src="/images/f24.png"
+      alt="F24 Pn"
+      title="F24 Pn"
+      className="mx-auto"
+      style={{ width:"83%" }}
+    />
   </Step>
 </Steps>
 
@@ -242,7 +274,42 @@ This function ensures the correct patient is connected to the facesheet.
       src="/images/f18.png"
       alt="F18 Pn"
       className="mx-auto"
-      style={{ width:"92%" }}
+      style={{ width:"85%" }}
     />
+  </Step>
+  <Step title="Select Page Range After Saving">
+    After clicking the **Save** button at the bottom of the form:
+
+    <img
+      src="/images/f25.png"
+      alt="F25 Pn"
+      title="F25 Pn"
+      className="mx-auto"
+      style={{ width:"84%" }}
+    />
+
+    1. A **Select Page Range** popup appears.
+    2. Choose the appropriate option to attach the document:
+       - **Current Page** – Attach only the page currently visible.
+       - **Page Range** – Specify a custom range using the **Start Page** and **End Page** fields.
+       - **All Pages** – Attach the entire document.
+       - **No Attachment** – Proceed without attaching any pages.
+    3. Click **Attach & Save** to finalize your selection and attach the document to the record.
+  </Step>
+  <Step title="Attachments">
+    The **Attachments** section displays all documents linked to the current record. Here's how you can interact with attachments:
+
+    ![F26 Pn](/images/f26.png)
+
+    1. **Created At: **Shows the date and time the file was attached to the record.
+    2. **File Name: **Displays the exact name of the uploaded or attached file.
+    3. **Actions: **Use the icons in the **Actions** column to manage attachments:
+       - **View**: Click the eye icon to preview the attachment in the viewer.
+       - **Download**: Click the download icon to save a copy of the file to your device.
+       - **Delete**: Click the trash icon to permanently remove the attachment from the record.
+
+    <Note>
+      Once deleted, attachments cannot be recovered. Ensure accuracy before removing files.
+    </Note>
   </Step>
 </Steps>

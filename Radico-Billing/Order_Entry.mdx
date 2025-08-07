@@ -128,15 +128,37 @@ This section guides users through viewing, editing, and managing order entry rec
 
     Click the **Actions** button at the top right. Choose **Mark as Complete** or **Mark as Invalid** based on the document's state.
   </Step>
+  <Step title="Mark as Invalid">
+    The **Mark as Invalid** feature allows users to flag a order entry document as invalid if it cannot be used or processed. Here’s how you can complete this action:
+
+    ![O19 Pn](/images/o19.png)
+
+    1. **Reason**
+
+       Select a predefined reason from the dropdown (e.g., _Can't Open_). This helps categorize the issue for reporting and resolution.
+    2. **Comment**
+
+       Optionally, add a comment to provide more context or specific details about why the document is invalid.
+    3. **Mark as Invalid Button**
+
+       Click **Mark as Invalid** to confirm and submit the action. The document will be flagged and removed from active processing.
+    4. **Cancel Button**
+
+       Use **Cancel** to discard changes and return without marking the file.
+
+    <Note>
+       **Note**: Once a document is marked as invalid, it will no longer appear in the active worklist for processing.
+    </Note>
+  </Step>
   <Step title="Add Comments (If any)">
     Click **Comments** to view or add remarks.
 
     <img
       src="/o7.png"
-      alt="+newappointment Pn"
-      title="+newappointment Pn"
-      style={{ width:"81%" }}
+      alt="2025 07 31 16 33 49 Pn"
+      title="2025 07 31 16 33 49 Pn"
       className="mx-auto"
+      style={{ width:"73%" }}
     />
 
     Use the **Text Box andAttachment**  option to add new comments or upload related files.
@@ -164,10 +186,10 @@ Review the order entery PDF on the left panel and extract the required patient d
   </Step>
   <Step title="Select Encounter">
     **Select an existing encounter** associated with the patient.\
-    – If no relevant encounter exists, click the \*\*Add New Encounter \*\*button to create one.
+    – If no relevant encounter exists, click the <Icon icon="arrow-right-long" iconType="solid" /> icon to create one.
 
     <img
-      src="/o11.png"
+      src="/o20.png"
       alt="2025 07 23 17 38 40 Pn"
       title="2025 07 23 17 38 40 Pn"
       className="mx-auto"
@@ -177,15 +199,24 @@ Review the order entery PDF on the left panel and extract the required patient d
   <Step title="Add New Encounter">
     If adding a new encounter enter the following details:
 
-    **Start Date:** Start date of the encounter
+    If adding a new encounter, enter the following details:
 
-    **End Date (Required):** Actual or expected end date
-
-    **Patient Class:** Auto-filled for existing patients; otherwise select patient class
-
-    **Attending Dr. NPI:** Enter National Provider Identifier
-
-    **Attending Dr. Name:** Auto-populated after NPI entry
+     1. **Patient Class**: Enter the appropriate patient class
+     2. **Admit Date**: Enter the admit date in MM/DD/YYYY format
+     3. **Discharge Date**: Enter the discharge date in MM/DD/YYYY format
+     4. **Accession Number**: Enter the accession number for the encounter
+     5. **Observation Number**: Enter the observation number, if applicable
+     6. **CPT**: Select the relevant CPT code
+     7. **Procedure Description**: Enter a description of the procedure performed
+     8. **DOS **(Mandatory): Enter the Date of Service in MM/DD/YYYY format
+     9. **Signed Date **(Mandatory): Enter the signed date in MM/DD/YYYY format
+    10. **Reading Location**: Select the reading location from the dropdown
+    11. **Reason for Study**: Enter the reason for the study
+    12. **Ordering Doctor**: Enter the name of the ordering doctor
+    13. **Client Bill**: Enter the client billing details, if applicable
+    14. **Reading Doctor** (Mandatory): Enter the name of the reading doctor (required)
+    15. **Result Status**: Enter or select the result status
+    16. **Location **(Mandatory): Select the client location from the dropdown
 
     <img
       src="/o12.png"
@@ -195,10 +226,6 @@ Review the order entery PDF on the left panel and extract the required patient d
       style={{ width:"81%" }}
     />
 
-    <Note>
-      **Note:**\
-      Complete all required fields (marked with \*), including: Client Location, First Name, Last Name, Date of Birth, Gender, ZIP Code, MRN, SSN, Phone, Address, City, and State.
-    </Note>
     Click **Save** to generate the encounter and the corressponding order.
   </Step>
   <Step title="Fill the Order Form">
