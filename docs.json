@@ -18,6 +18,13 @@
         "tab": "Radico Billing",
         "groups": [
           {
+            "group": "Introduction",
+            "icon": "flag",
+            "pages": [
+              "Radico-Billing/Introdction"
+            ]
+          },
+          {
             "group": "Menu",
             "icon": "list",
             "pages": [
