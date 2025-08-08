@@ -147,7 +147,7 @@ This section guides users through viewing, editing, and managing order entry rec
        Use **Cancel** to discard changes and return without marking the file.
 
     <Note>
-       **Note**: Once a document is marked as invalid, it will no longer appear in the active worklist for processing.
+      **Note**: Once a document is marked as invalid, it will no longer appear in the active worklist for processing.
     </Note>
   </Step>
   <Step title="Add Comments (If any)">
@@ -208,15 +208,15 @@ Review the order entery PDF on the left panel and extract the required patient d
      5. **Observation Number**: Enter the observation number, if applicable
      6. **CPT**: Select the relevant CPT code
      7. **Procedure Description**: Enter a description of the procedure performed
-     8. **DOS **(Mandatory): Enter the Date of Service in MM/DD/YYYY format
-     9. **Signed Date **(Mandatory): Enter the signed date in MM/DD/YYYY format
+     8. **DOS** (Mandatory): Enter the Date of Service in MM/DD/YYYY format
+     9. **Signed** **Date** (Mandatory): Enter the signed date in MM/DD/YYYY format
     10. **Reading Location**: Select the reading location from the dropdown
     11. **Reason for Study**: Enter the reason for the study
     12. **Ordering Doctor**: Enter the name of the ordering doctor
     13. **Client Bill**: Enter the client billing details, if applicable
     14. **Reading Doctor** (Mandatory): Enter the name of the reading doctor (required)
     15. **Result Status**: Enter or select the result status
-    16. **Location **(Mandatory): Select the client location from the dropdown
+    16. **Location** (Mandatory): Select the client location from the dropdown
 
     <img
       src="/o12.png"
@@ -234,16 +234,71 @@ Review the order entery PDF on the left panel and extract the required patient d
   <Step title="Save">
     Click **Save** to submit the order.
   </Step>
+  <Step title="Select Page Range After Saving">
+    After clicking the **Save** button at the bottom of the form:
+
+    <img
+      src="/images/o21.png"
+      alt="2025 07 23 17 38 40 Pn"
+      title="2025 07 23 17 38 40 Pn"
+      className="mx-auto"
+      style={{ width:"73%" }}
+    />
+
+    1. A **Select Page Range** popup appears.
+    2. Choose the appropriate option to attach the document:
+       - **Current Page** – Attach only the page currently visible.
+       - **Page Range** – Specify a custom range using the **Start Page** and **End Page** fields.
+       - **All Pages** – Attach the entire document.
+       - **No Attachment** – Proceed without attaching any pages.
+    3. Click **Attach & Save** to finalize your selection and attach the document to the record.
+  </Step>
+  <Step title="New Step">
+    
+  </Step>
 </Steps>
 
 <Steps>
-  <Step title="Save and Attach Document" stepNumber={5}>
-    Click **Save** to store all data. The order entry status changes to **In Progress.**
+  <Step title="Select Page Range After Saving" stepNumber={5}>
+    After clicking the **Save** button at the bottom of the form:
 
-    Select the page range in the PDF to attach to the encounter record.
+    <img
+      src="/images/o21.png"
+      alt="O21 Pn"
+      title="O21 Pn"
+      className="mx-auto"
+      style={{ width:"83%" }}
+    />
+
+    1. A **Select Page Range** popup appears.
+    2. Choose the appropriate option to attach the document:
+       - **Current Page** – Attach only the page currently visible.
+       - **Page Range** – Specify a custom range using the **Start Page** and **End Page** fields.
+       - **All Pages** – Attach the entire document.
+       - **No Attachment** – Proceed without attaching any pages.
+    3. Click **Attach & Save** to finalize your selection and attach the document to the record.
   </Step>
-  <Step title="Mark the Order as Complete" stepNumber={6}>
-    Navigate to **Actions \> Mark as Complete** to update the status.
+  <Step title="Attachments " stepNumber={6}>
+    The **Attachments** section displays all documents linked to the current record. Here's how you can interact with attachments:
+
+    ![O22 Pn](/images/o22.png)
+
+    1. **Created At**\
+       Shows the date and time the file was attached to the record.
+    2. **File Name**\
+       Displays the exact name of the uploaded or attached file.
+    3. **Actions**\
+       Use the icons in the **Actions** column to manage attachments:
+       - **View**: Click the eye icon to preview the attachment in the viewer.
+       - **Download**: Click the download icon to save a copy of the file to your device.
+       - **Delete**: Click the trash icon to permanently remove the attachment from the record.
+
+    <Note>
+      Once deleted, attachments cannot be recovered. Ensure accuracy before removing files.
+    </Note>
+  </Step>
+  <Step title="New Step">
+    
   </Step>
 </Steps>
 
