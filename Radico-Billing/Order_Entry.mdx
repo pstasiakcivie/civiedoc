@@ -161,7 +161,7 @@ This section guides users through viewing, editing, and managing order entry rec
       style={{ width:"73%" }}
     />
 
-    Use the **Text Box andAttachment**  option to add new comments or upload related files.
+    Use the **Text** **Box** and **Attachment**  option to add new comments or upload related files.
 
     If there are no comments, the message **No comments found** will be displayed.
   </Step>
@@ -253,35 +253,16 @@ Review the order entery PDF on the left panel and extract the required patient d
        - **No Attachment** – Proceed without attaching any pages.
     3. Click **Attach & Save** to finalize your selection and attach the document to the record.
   </Step>
-  <Step title="New Step">
-    
-  </Step>
-</Steps>
-
-<Steps>
-  <Step title="Select Page Range After Saving" stepNumber={5}>
-    After clicking the **Save** button at the bottom of the form:
-
-    <img
-      src="/images/o21.png"
-      alt="O21 Pn"
-      title="O21 Pn"
-      className="mx-auto"
-      style={{ width:"83%" }}
-    />
-
-    1. A **Select Page Range** popup appears.
-    2. Choose the appropriate option to attach the document:
-       - **Current Page** – Attach only the page currently visible.
-       - **Page Range** – Specify a custom range using the **Start Page** and **End Page** fields.
-       - **All Pages** – Attach the entire document.
-       - **No Attachment** – Proceed without attaching any pages.
-    3. Click **Attach & Save** to finalize your selection and attach the document to the record.
-  </Step>
-  <Step title="Attachments " stepNumber={6}>
+  <Step title="Attachments ">
     The **Attachments** section displays all documents linked to the current record. Here's how you can interact with attachments:
 
-    ![O22 Pn](/images/o22.png)
+    <img
+      src="/images/o22.png"
+      alt="2025 07 23 17 38 40 Pn"
+      title="2025 07 23 17 38 40 Pn"
+      className="mx-auto"
+      style={{ width:"85%" }}
+    />
 
     1. **Created At**\
        Shows the date and time the file was attached to the record.
@@ -296,9 +277,6 @@ Review the order entery PDF on the left panel and extract the required patient d
     <Note>
       Once deleted, attachments cannot be recovered. Ensure accuracy before removing files.
     </Note>
-  </Step>
-  <Step title="New Step">
-    
   </Step>
 </Steps>
 
@@ -324,7 +302,7 @@ If the mentioned order is not for an existing patient, in that case use the **Ad
     />
   </Step>
   <Step title="Save">
-    Click \*\*Save \*\*to create a new patient record and submit the order.
+    Click **Save** to create a new patient record and submit the order.
 
     <Note>
       For multiple new patients, click **Add New Patient Order**  again and repeat the steps.
@@ -336,6 +314,33 @@ If the mentioned order is not for an existing patient, in that case use the **Ad
 
 - Once all patient orders are entered, click the **Actions** menu and select mark as **Complete** to update the status.
 - If the document contains incorrect or invalid data, select mark as **Invalid.**
+
+<Steps>
+  <Step title="Mark as Invalid ">
+    The **Mark as Invalid** feature allows users to flag a order entry document as invalid if it cannot be used or processed. Here’s how you can complete this action:
+
+    <img
+      src="/images/o19.png"
+      alt="2025 07 23 17 38 40 Pn"
+      title="2025 07 23 17 38 40 Pn"
+      className="mx-auto"
+      style={{ width:"93%" }}
+    />
+
+    1. **Reason**
+
+       Select a predefined reason from the dropdown (e.g., _Can't Open_). This helps categorize the issue for reporting and resolution.
+    2. **Comment**
+
+       Optionally, add a comment to provide more context or specific details about why the document is invalid.
+    3. **Mark as Invalid Button**
+
+       Click **Mark as Invalid** to confirm and submit the action. The document will be flagged and removed from active processing.
+    4. **Cancel Button**
+
+       Use **Cancel** to discard changes and return without marking the file.
+  </Step>
+</Steps>
 
 ## Manage Order
 
