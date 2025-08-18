@@ -82,7 +82,13 @@ This section guides users through viewing, editing, and managing facesheet recor
   <Step title="Navigate to Facesheet">
     **To open a facesheet**: Click **View** from the **Actions menu (⋮)**  next to the desired record.
 
-    ![F5 Pn](/images/f5.png)
+    <img
+      src="/f27.png"
+      alt="F5 Pn"
+      title=""
+      className="mx-auto"
+      style={{ width:"94%" }}
+    />
 
     A split-screen interface appears:
 
@@ -107,22 +113,23 @@ This section guides users through viewing, editing, and managing facesheet recor
 
     To manually update the status- Click the **Actions** button at the top right. Choose **Mark as Complete** or **Mark as Invalid** based on the document's state.
   </Step>
-  <Step title="Mark as Invalid" stepNumber={3}>
+  <Step title="Mark as Complete or  Invalid" stepNumber={3}>
     The **Mark as Invalid** feature allows users to flag a facesheet document as invalid if it cannot be used or processed. Here’s how you can complete this action:
 
     ![F22 Pn](/images/f22.png)
 
     1. **Select a Reason**\
-       Use the **Reason** dropdown to choose the appropriate reason for marking the document invalid (e.g., _Can't Open_).
+       Use the **Reason** dropdown to choose the appropriate reason for marking the facesheet as invalid (e.g., _Can't Open_).
     2. **Add Comment (Optional)**\
-       Enter any additional information or context in the **Comment** box to help clarify the issue.
-    3. **Submit or Cancel**
+       Enter any additional information or context in the **Comment** box to help clarify the reason.
+    3. **Mark as Invalid **or**Cancel** 
 
-       Click **Mark as Invalid** to confirm and save the changes and click **Cancel** if you do not wish to proceed.
+       Click **Mark as Invalid** to confirm and save the changes or click **Cancel** if you do not wish to proceed.
 
     <Note>
       Once marked invalid, the document will be moved to Invalid status.
     </Note>
+    4. If the facesheet is valid and the entered data has been verified, click **Complete** to mark the facesheet as completed.
   </Step>
   <Step title="Add Comments (If any)">
     Click **Comments** to view any existing remarks for the facesheet.
@@ -135,7 +142,7 @@ This section guides users through viewing, editing, and managing facesheet recor
       style={{ width:"82%" }}
     />
 
-    Use the **Text Box and Attachment**  option to add new comments or upload related files.
+    Use the **Text Box **and **Attachment**  option to add new comments or upload related files.
 
     If there are no comments, the message **No comments found** will be displayed.
   </Step>
@@ -164,14 +171,14 @@ This section guides users through viewing, editing, and managing facesheet recor
     ![F10 Pn](/images/f10.png)
   </Step>
   <Step title="Guarantor Details">
-    If guarantor is**same as patient** , select the checkbox to auto-fill.
+    If guarantor is **same as patient**, select the checkbox to auto-fill.
 
     If different enter **Name, DOB, Address, Phone, SSN, Gender, Employer,** and **Relationship**.
 
     ![F11 Pn](/images/f11.png)
   </Step>
   <Step title="Admission Information">
-    Enter **Patient Class, Location, Place of Service, Admit Date,** **Discharge Dates**
+    Enter **Patient Class, Location, Place of Service, Admit Date,** **Discharge Date**
 
     and **Referring Physician's Name**.
 
@@ -185,7 +192,7 @@ This section guides users through viewing, editing, and managing facesheet recor
     <Note>
       **Note**
 
-      Expand each section and fill all required fields. You may also add **Secondary or Tertiary** insurance if applicable.
+      Expand each section and fill all required fields. You may also add **Secondary **or **Tertiary** insurance if applicable.
     </Note>
   </Step>
   <Step title="Save Record">
@@ -208,6 +215,8 @@ This section guides users through viewing, editing, and managing facesheet recor
 ## **Manage Facesheet Records**
 
 Each patient record includes the options- **Edit**, **Delete** and **Link** to mange the records.
+
+**Edit a Facesheet Record**
 
 <Steps>
   <Step title="Locate the facesheet record you want to update.">
@@ -248,7 +257,7 @@ Each patient record includes the options- **Edit**, **Delete** and **Link** to m
   </Step>
 </Steps>
 
-### **Link Patient to Facesheet**
+**Link Patient to Facesheet**
 
 This function ensures the correct patient is connected to the facesheet.
 
@@ -311,10 +320,6 @@ This function ensures the correct patient is connected to the facesheet.
     3. **Actions**: Use the icons in the **Actions** column to manage attachments:
        - **View**: Click the eye icon to preview the attachment in the viewer.
        - **Download**: Click the download icon to save a copy of the file to your device.
-       - **Delete**: Click the trash icon to permanently remove the attachment from the record.
-
-    <Note>
-      Once deleted, attachments cannot be recovered. Ensure accuracy before removing files.
-    </Note>
+       - **Delete**: Click the delete icon to permanently remove the attachment from the record.
   </Step>
 </Steps>
