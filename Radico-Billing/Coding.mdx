@@ -16,78 +16,147 @@ The **Coding** Dashboard provides users with a centralized view of their coding 
 - **My Private Worklist**: Lists your personal worklists based on status like New, In Progress, Approved, etc.
 - **Shared Worklist**: Shows shared worklists (if available) for team collaboration.
 
-## Create a New Private or Shared Worklist
+## **Create a New Private or Shared Worklist**
 
 <Steps>
-  <Step title="Click the “+” icon to open the Create Worklist form.">
-    ![Worklist Button](/2.png)
+  <Step title="Enter Worklist Details">
+    **Worklist Name**: Enter a name for the worklist in the **Worklist Name** field.
+
+    **Select Category**: The **Coding** category is selected by default when creating a new worklist.
+
+    **Description (Optional)**: Provide a description in the **Description** field to define the worklist’s purpose.
+
+    ![2025 07 07 12 26 38 Pn](/w2.png)
+
+    - **Private or Shared**:
+
+      To create a **Private Worklist**, check the checkbox (Mark as Private).
+
+      To create a **Shared Worklist**, leave the checkbox unchecked.
+
+    ![W3 Pn](/2025-07-31_16-33-49.png)
   </Step>
-  <Step title="Enter Worklist Name">
-    Provide a descriptive, unique name for easy identification of the worklist.
+  <Step title="Define Filter Conditions">
+    Specify filter conditions to customize the worklist.
+
+    Use **AND/OR Operators** to logically combine the conditions.
+
+    Apply comparison **Conditions** such as **Equals**, **Contains**, or **Greater Than** to refine your results.
+
+    Group filters by selecting the **Group By** option to organize data (e.g., by Client, Location, or Status).
+
+    ![2025 07 07 12 36 04 Pn](/w7.png)
   </Step>
-  <Step title="Enter Description (Optional)">
-    Add details to clarify the scope or criteria.
+  <Step title="Preview Worklist">
+    Click **Preview** to review the filtered results and ensure they meet the specified criteria.
+
+    ![W6 Pn](/images/w6.png)
   </Step>
-  <Step title="Mark as Private">
-    Select this checkbox to create a **Private Worklist** visible only to you.
-
-    ![2025 07 23 17 36 21 Pn](/2025-07-23_17-38-40.png)
-
-    If **unchecked**, a **Shared Worklist** will be created, allowing access to specific **Users** or **User Groups**.
-
-    ![2025 07 23 17 36 21 Pn](/images/2025-07-23_17-36-21.png)
-  </Step>
-  <Step title="Manage User Groups (for Shared Worklists)">
-    When creating or editing a shared worklist, manage access through user groups.
-
-    **Create User Group**
-
-    <img
-      src="/images/2025-07-23_17-36-41.png"
-      alt="2025 07 23 17 36 41 Pn"
-      title="2025 07 23 17 36 41 Pn"
-      className="mx-auto"
-      style={{ width:"54%" }}
-    />
-
-    1. Click the **Create User Group** button.
-    2. Enter the **Group Name**.
-    3. **Search and select users** to include.
-    4. Click **Submit** to save.
-
-    **Edit User Group**
-
-    <img
-      src="/images/2025-07-23_17-37-23.png"
-      alt="2025 07 23 17 37 23 Pn"
-      title="2025 07 23 17 37 23 Pn"
-      className="mx-auto"
-      style={{ width:"51%" }}
-    />
-
-    1. Click the **Edit User Group** button.
-    2. Select the existing group.
-    3. **Add** or **remove users** as needed.
-    4. Click **Submit** to update.
-
-    **User Group Field**
-
-    1. Use the **User Group** dropdown to select from newly created or existing groups.
-    2. Once selected, proceed to define filter conditions.
-  </Step>
-  <Step title="Set Filter Conditions">
-    Select the field (e.g., Approved At), operator (e.g., Equals), and value (e.g., Last 30 Days).\
-    Combine multiple conditions using AND/OR logic.
-  </Step>
-  <Step title="Preview Records">
-    Click **Preview** to display matching records.
-  </Step>
-  <Step title="Save or Clear">
-    **Save**: Finalize and store the worklist.
-
-    **Clear**: Reset all entered data.
+  <Step title="Save Worklist">
+    Click **Save** to create the worklist for the selected category.
   </Step>
 </Steps>
+
+**Additional Steps for Shared Worklist**
+
+<Info>
+  Applicable only if you are creating a shared worklist (i.e., the **Mark as Private** checkbox is unchecked).
+</Info>
+
+<Steps>
+  <Step title="Select User Group">
+    A **User Group** section appears.
+
+    Choose from existing groups using the dropdown provided and select the corresponding users.
+
+    ![2025 07 07 12 42 13 Pn](/w3.png)
+  </Step>
+  <Step title="Create a New User Group">
+    Alternatively, click the **Create User Group** button to create a new user group.
+
+    Enter the **Group Name**, select **Users**, and click **Submit**.
+
+    <img
+      src="/w4.png"
+      alt="2025 07 07 12 43 23 Pn"
+      className="mx-auto"
+      title=""
+      style={{ width:"65%" }}
+    />
+  </Step>
+  <Step title="Edit Existing User Group">
+    Click the **Edit User Group** button.
+
+    Select the group to be edited, add or remove users as needed, then click **Submit**.
+
+    <img
+      src="/w5.png"
+      alt="2025 07 07 12 44 16 Pn"
+      title=""
+      className="mx-auto"
+      style={{ width:"69%" }}
+    />
+  </Step>
+  <Step title="Allow Shared Users to Edit/Delete">
+    Enable the **Allow Shared Users to Edit/Delete** checkbox to grant editing and deletion access to shared users.
+
+    ![2025 07 31 16 33 49 Pn](/images/2025-07-31_16-33-49.png)
+  </Step>
+</Steps>
+
+<Steps>
+  <Step title="Save or Cancel" icon="chevron-down">
+    **Save**: Confirm and save the worklist.
+
+    **Clear**: Remove all entered data and reset the form.
+
+    **Cancel**: Exit without saving and return to the worklist view.
+  </Step>
+  <Step title="New Step">
+    
+  </Step>
+</Steps>
+
+## **Managing Worklist**
+
+**Deleting Worklist**
+
+<Steps>
+  <Step title="Steps" icon="chevron-down">
+    1. Click the **three-dot menu (…)** next to the worklist name you want to delete.
+    2. Select **Delete** from the dropdown options.
+    3. In the confirmation pop-up, click Yes to confirm and permanently delete the worklist.
+
+    <Info>
+      **Note**: Deleted worklists cannot be recovered. Make sure to double-check before confirming.
+    </Info>
+  </Step>
+</Steps>
+
+**Hide Worklist**
+
+<Steps>
+  <Step title="Steps to Hide" icon="chevron-down">
+    1. Click the **three-dot menu (︙)** next to the shared worklist you want to hide.
+    2. Select the Hide toggle to change its visibility status.
+    3. The worklist will be hidden from the default view but is not deleted.
+
+    <Info>
+      Note: Hidden worklists can be restored later using the appropriate filters or settings. No data is lost.
+    </Info>
+  </Step>
+</Steps>
+
+**View Hidden Worklists**
+
+<Steps>
+  <Step title="Steps" icon="chevron-down">
+    1. Click the “**Show Hidden”** toggle at the top of the worklist view.
+    2. This will display all worklists that are currently hidden.
+    3. You can then unhide any shared worklist by using the same three-dot menu (︙) and toggling off the Hide option.
+  </Step>
+</Steps>
+
 
 ## **Preview Worklist**
 
@@ -117,6 +186,10 @@ The **Preview** screen displays a list of coding records that match the filter c
     Filters records that are currently awaiting a response or clarification from the physician within the CAP portal. These records remain on hold until the necessary input is provided to proceed with coding.
 
     Click the **Refresh (⟳)** button to reload the worklist data.
+
+    <Note>
+      Applied filters on the Preview screen are now retained when users navigate away and return. It eliminates the need to reapply filters
+    </Note>
   </Step>
   <Step title=" Start Coding">
     Click **Start Worklist** (top-right corner) to begin working on the records or click the **View** icon beside the required coding record to start coding.
@@ -158,14 +231,30 @@ The **Mass Edit** feature enables users to update multiple records at once, enha
       alt="2025 07 23 17 50 14 Pn"
       title="2025 07 23 17 50 14 Pn"
       className="mx-auto"
-      style={{ width:"58%" }}
+      style={{ width:"54%" }}
     />
 
     - Available fields for bulk editing:
 
       **Add Tags**  – Add new tags to selected records.
 
+      <img
+        src="/images/12.png"
+        alt="12 Pn"
+        title="12 Pn"
+        className="mx-auto"
+        style={{ width:"87%" }}
+      />
+
       **Delete Tags** – Remove existing tags.
+
+      <img
+        src="/images/11.png"
+        alt="11 Pn"
+        title="11 Pn"
+        className="mx-auto"
+        style={{ width:"56%" }}
+      />
 
       **Assign To** – Assign records to a user.
 
@@ -206,7 +295,7 @@ The **Mass Edit** feature enables users to update multiple records at once, enha
 
 ## **View and Edit Coding Records**
 
-The Coding Record interface opens when a user clicks the **View** **Details** icon from the **Preview**  Worklist screen or selects the **Start Worklist**  option available either at the top right corner or next to each listed worklist on the **Coding** Dashboard page. This interface provides comprehensive access to the coding workspace, enabling coders to:
+The coding record interface opens when a user clicks the **View** **Details** icon from the **Preview**  Worklist screen or selects the **Start Worklist**  option available either at the top right corner of the **Preview** screen or next to each listed worklist on the **Coding** **Dashboard** page. This interface provides comprehensive access to the coding workspace, enabling coders to:
 
 - Review the complete clinical report
 - Assign CPT and ICD codes
@@ -214,7 +303,15 @@ The Coding Record interface opens when a user clicks the **View** **Details** ic
 - Update the coding status
 - Manage documentation and comments
 
-**Tabs on the View Report Screen**
+**View Details – Split Screen Layout**\
+When the user clicks the **View Details** icon, the corresponding coding record opens in a **split-screen view**:
+
+- **Right Panel:** Displays tabs such as **Report, ADT, Encounter History,** and others, allowing the user to navigate supporting information and documentation related to the encounter.
+- **Left Panel:** Shows the **patient chart details** along with fields to enter or edit **CPT codes, ICD codes, Modifiers, NDCs,** and other coding elements.
+
+This layout enables the user to reference encounter-related data on the right while simultaneously performing coding activities on the left, ensuring accuracy and efficiency.
+
+**Left Panel**
 
 The interface includes multiple tabs to provide comprehensive access to all necessary patient and encounter information.
 
@@ -235,11 +332,84 @@ The interface includes multiple tabs to provide comprehensive access to all nece
 | **Comments**          | Allows users to view, add, or reply to internal comments related to the record.                                                 |
 | **Activity**          | Displays a complete audit trail, including user actions, timestamps, and changes made.                                          |
 
-**Chart Details Panel**
+### Encounter History
 
-This panel provides key metadata about the coding record for context and verification:
+The **Encounter History** tab provides a chronological record of all patient encounters within the healthcare facility. Each encounter represents a visit, consultation, admission, or interaction with a provider, captured as an event in the patient’s medical record.
 
-![2025 07 23 18 02 48 Pn](/images/2025-07-23_18-02-48.png)
+From the **Encounter History** tab, a user can also \*\*view the report, claim, EOB, or charge \*\*associated with each corresponding encounter.
+
+<img
+  src="/images/f34.png"
+  alt="F34 Pn"
+  title="F34 Pn"
+  className="mx-auto"
+  style={{ width:"59%" }}
+/>
+
+<Steps>
+  <Step title="View Report">
+    Click the **View Report** icon next to the desired encounter, the selected **report will open**, displaying all relevant details.
+  </Step>
+  <Step title="View  Encounter History ">
+    Click the **View History** option to open the encounter history panel.
+  </Step>
+  <Step title="View Claim ">
+    Click the **View** **Claim** icon to access the insurance claim generated for the encounter, containing billing codes and submitted charges.
+
+    ![F35 Pn](/images/f35.png)
+  </Step>
+  <Step title="View EOB ">
+    Click the **View** **EOB** icon to review the payer’s response to the claim, including approved amounts, adjustments, and patient responsibility.
+
+    <img
+      src="/images/f36.png"
+      alt="F36 Pn"
+      title="F36 Pn"
+      className="mx-auto"
+      style={{ width:"83%" }}
+    />
+  </Step>
+  <Step title="Charge ID">
+    Click the **Charge ID** to \_c_heck the itemized list of services or procedures billed for that specific encounter.
+
+    <img
+      src="/images/f37.png"
+      alt="F37 Pn"
+      title="F37 Pn"
+      className="mx-auto"
+      style={{ width:"86%" }}
+    />
+  </Step>
+</Steps>
+
+**Right Panel**
+
+1. **Report Details**
+
+   Displays key identifiers such as **Patient Name, Date of Birth (DOB), Medical Record Number (MRN), Date of Service (DOS), Coding Status, Tags,** and **CAP Reason** linked to the coding report. Allows the user to enter additional claim-related information, including:
+   - **Claim Note Type**
+   - **Box 19 HCFA**
+   - **Authorization Number**
+
+<img
+  src="/13.png"
+  alt="13 Pn"
+  title="13 Pn"
+  className="mx-auto"
+  style={{ width:"86%" }}
+/>
+
+2. **Chart Details**
+
+   This panel provides key metadata about the coding record for context and verification:
+
+<img
+  src="/14.png"
+  alt="2025 07 23 18 02 48 Pn"
+  title=""
+  className="mx-auto"
+  style={{ width:"91%" }}
+/>
 
 **Identifiers:** Record ID, MRN, Accession Number, Procedure Description
 
@@ -248,6 +418,8 @@ This panel provides key metadata about the coding record for context and verific
 **Service Details:** Date of Service (DOS), Signed Date, Location, Place of Service (POS)
 
 **Status and Billing:** Coding Status, Reason for Study, Carrier
+
+3. **CPT**
 
 **Entering CPT and NDC Information**
 
@@ -295,7 +467,9 @@ This panel provides key metadata about the coding record for context and verific
   </Step>
 </Steps>
 
-**ICD Code Entry**
+4. \*\*ICD \*\*
+
+   **Entering ICD Information**
 
 <Steps>
   <Step title="Manual ICD Entry Without CPT">
@@ -361,40 +535,12 @@ Use the CAP feature when physician input or clarification is needed for a coding
   - If a coder manager flags a record as CAP and the physician reassigns it to a coder who then raises a question via the CAP Discussion Panel, the Days to Expire status changes to In Coder’s Queue. If the coder manager or admin reverts the record, the expiration timer resets to the Default days to expire in the CAP portal.
 </Note>
 
-**Deleting Worklist**
 
-<Steps>
-  <Step title="Steps" icon="chevron-down">
-    1. Click the **three-dot menu (…)** next to the worklist name you want to delete.
-    2. Select **Delete** from the dropdown options.
-    3. In the confirmation pop-up, click Yes to confirm and permanently delete the worklist.
+The system provides several actions for managing a coding record. The availability of these actions may vary depending on the user’s role and workflow permissions.
 
-    <Info>
-      **Note**: Deleted worklists cannot be recovered. Make sure to double-check before confirming.
-    </Info>
-  </Step>
-</Steps>
-
-**Hide Worklist**
-
-<Steps>
-  <Step title="Steps to Hide" icon="chevron-down">
-    1. Click the **three-dot menu (︙)** next to the shared worklist you want to hide.
-    2. Select the Hide toggle to change its visibility status.
-    3. The worklist will be hidden from the default view but is not deleted.
-
-    <Info>
-      Note: Hidden worklists can be restored later using the appropriate filters or settings. No data is lost.
-    </Info>
-  </Step>
-</Steps>
-
-**View Hidden Worklists**
-
-<Steps>
-  <Step title="Steps" icon="chevron-down">
-    1. Click the “**Show Hidden”** toggle at the top of the worklist view.
-    2. This will display all worklists that are currently hidden.
-    3. You can then unhide any shared worklist by using the same three-dot menu (︙) and toggling off the Hide option.
-  </Step>
-</Steps>
+- **Accept:** Acknowledge any warnings or errors, and proceed with editing CCE (Clinical Coding Edit) errors if applicable.
+- **Approve:** Finalize the coding record after review. This action updates the record status from _In Progress_ to _Approved_ and makes it ready for claim submission.
+- **Undo and Send Back to Coding:** Reverses an approved record and returns it to the coding queue for correction or rework.
+- **Disable:** Temporarily inactivates a coding record, preventing further actions until it is re-enabled.
+- **Save:** Retains any modifications made to the coding record without finalizing them, allowing the user to continue work at a later time.
+- **Mark as CAP:** Flags the coding record under **Coding Assistance Plan (CAP)** to highlight issues or clarifications required before approval.
