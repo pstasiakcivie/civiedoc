@@ -6,23 +6,162 @@ mode: "wide"
 
 ![2025 07 07 13 13 49 Pn](/ow1.png)
 
-**Order Worklist Dashboard Summary**
+# **Accessing the Order Worklist**
 
-**Total Submitted Today**: Shows how many records you’ve completed today and how many of them are missing.
+<Steps>
+  <Step title="Navigate to the Order Worklist Section" icon="chevron-down">
+    1. Click on the **Menu** **bar** **(≡)** located on the top left corner of the screen.
+    2. From the **Menu** options, Click **Worklist** and select **Order Worklist**\
+       This will take you to the main **Order Worklist** dashboard, where you can create worklists.
+  </Step>
+</Steps>
 
-**Worklist Summary**: Displays how may records have missing records in different worklists.
+## [**​**](https://radicobilling.mintlify.app/Radico-Billing/Coding#worklists)**Worklists**
 
-**Top 3 Users**: `<TBD>`
+In addition to the dashboard view, users can organize and manage records through dedicated worklists:
 
-**My Private Worklist**: List of your personal worklist.
+- **My Private Worklist:** A personalized list where users can maintain their own set of records for individual tracking and workflow management.
+- **Shared Worklist:** A collaborative list where multiple users can access and work on records, enabling team-based users and shared accountability.
 
-**Shared Worklist**: Shows shared worklists such as Missing Ordering Doctors, Missing Modality, Missing Date of Service, Missing Reading Doctors, and Missing Reading Locations for team collaboration.
+# **Creating a New Private or Shared Worklist**
+
+To create a new private or shared worklist:
+
+<Steps>
+  <Step title="Open Create Order Worklist Form">
+    Click the \+ icon to open the **Create** **Worklist** form.
+
+    <img
+      src="/ow2.png"
+      alt="15 Pn"
+      title="15 Pn"
+      style={{ width:"85%" }}
+    />
+  </Step>
+</Steps>
+
+Upon clicking the Create Private Worklist or Create Shared Worklist icon, the **Create Worklist** page will open as shown below:
+
+![1 Pn](/1y.png)
+
+<Steps>
+  <Step title="Enter Worklist Details">
+    **Worklist Name**: Enter a name for the worklist in the **Worklist Name** field.
+
+    **Select Category**: The \*\*Order \*\*category is by default selected when creating a new worklist.
+
+    **Description (Optional)**: Provide a description in the **Description** field to define the worklist’s purpose.
+
+    ![2025 07 07 12 26 38 Pn](/w2.png)
+
+    **Private or Shared**:
+
+    To create a **Private Worklist**, check the checkbox (Mark as Private).
+
+    To create a **Shared Worklist**, leave the checkbox unchecked.
+
+    ![W3 Pn](/2025-07-31_16-33-49.png)
+  </Step>
+  <Step title="Define Filter Conditions">
+    Specify filter conditions to customize the worklist.
+
+    Use **AND/OR Operators** to logically combine the conditions. Apply comparison **Conditions** such as **Equals**, **Contains**, or **Greater Than** to refine your results.
+
+    ![3 Pn](/w7.png)
+
+    **Grouping Filters with AND/OR Operators**
+
+    You can group filters by selecting the \*\*Group Item \*\*icon to organise conditions using AND/OR operators.
+
+    To add grouping to an AND/OR operation, follow these steps:
+
+    1. Click the **\+** icon to add one or more filter conditions.
+    2. Select the filter conditions you want to group using the provided checkboxes.
+    3. Click the Group Item icon. The selected filter conditions will be grouped.
+    4. To remove a condition from the group, click the **x** icon.
+
+    ![2025 07 07 12 36 04 Pn](/15.png)
+  </Step>
+  <Step title="Preview Worklist">
+    Click **Preview** to review the filtered results and ensure they meet the specified criteria.
+
+    ![W6 Pn](/images/w6.png)
+  </Step>
+  <Step title="Save Worklist">
+    Click **Save** to create the worklist for the selected category.
+  </Step>
+</Steps>
+
+**Additional Steps for Shared Worklist**
+
+<Info>
+  Applicable only if you are creating a shared worklist (i.e., the **Mark as Private** checkbox is unchecked).
+</Info>
+
+<Steps>
+  <Step title="Select User Group">
+    A **User Group** section appears.
+
+    Choose from existing groups using the dropdown provided and select the corresponding users.
+
+    ![2025 07 07 12 42 13 Pn](/w3.png)
+  </Step>
+  <Step title="Create a New User Group">
+    Alternatively, click the **Create User Group** button to create a new user group.
+
+    Enter the **Group Name**, select **Users**, and click **Submit**.
+
+    <img
+      src="/w4.png"
+      alt="2025 07 07 12 43 23 Pn"
+      className="mx-auto"
+      title=""
+      style={{ width:"65%" }}
+    />
+  </Step>
+  <Step title="Edit Existing User Group">
+    Click the **Edit User Group** button.
+
+    Select the group to be edited, add or remove users as needed, then click **Submit**.
+
+    <img
+      src="/w5.png"
+      alt="2025 07 07 12 44 16 Pn"
+      title=""
+      className="mx-auto"
+      style={{ width:"69%" }}
+    />
+  </Step>
+  <Step title="Allow Shared Users to Edit/Delete">
+    Enable the **Allow Shared Users to Edit/Delete** checkbox to grant editing and deletion access to shared users.
+
+    ![2025 07 31 16 33 49 Pn](/images/2025-07-31_16-33-49.png)
+  </Step>
+</Steps>
+
+<Steps>
+  <Step title="Save or Cancel" icon="chevron-down">
+    **Save**: Confirm and save the worklist.
+
+    **Clear**: Remove all entered data and reset the form.
+
+    **Cancel**: Exit without saving and return to the worklist view.
+  </Step>
+</Steps>
 
 # **Managing the Worklist**
 
+## **Previewing a Worklist**
+
+Whether it’s a **Private** or **Shared** **Worklist**, users have the option to preview all associated records before getting started. Simply click the **Preview** icon located next to the relevant worklist to view its contents.
+
+![Ow2 Pn](/ow8.png)
+
+The **Preview** screen displays a list of coding records that match the filter conditions set during worklist creation.
+
 ## **Editing a Worklist**
 
-Use this feature when you need to update or modify the details of an existing worklist, such as its name, description, or assigned users. Follow the steps below to edit a worklist:
+Use this feature when you need to update or modify the details of an existing order worklist, such as its name, description, or assigned users. Follow the steps below to edit a worklist:
 
 <Steps>
   <Step title="Open the Worklist for Editing">
@@ -59,7 +198,7 @@ Use this feature when you need to update or modify the details of an existing wo
     Use **AND/OR** logic to combine multiple conditions as needed.
   </Step>
   <Step title="Preview Updated Records">
-    Click Preview to view a list of records matching the updated criteria.
+    Click \*\*Preview \*\*to view a list of records matching the updated criteria.
   </Step>
   <Step title="Save or Reset Changes">
     **Save**: Apply and store the updated changes.
@@ -80,7 +219,7 @@ Use the following steps to delete a worklist
     2. Select **Delete** from the dropdown options.
     3. In the confirmation pop-up, click Yes to confirm and permanently delete the worklist.
 
-    ![2025 07 08 15 16 19 Pn](/f28.png)
+    ![2025 07 08 15 16 19 Pn](/uf28.png)
 
     <Info>
       **Note**: Deleted worklists cannot be recovered. Make sure to double-check before confirming.
@@ -106,7 +245,7 @@ If you want to keep a worklist but temporarily remove it from your active view, 
   </Step>
 </Steps>
 
-## **View/Unhide Worklists**
+## **View Hidden Worklists**
 
 Choose this option to bring back a previously hidden worklist into your active view for continued use.
 
@@ -123,17 +262,14 @@ Choose this option to bring back a previously hidden worklist into your active v
 
 ## **Unhide worklist**
 
-_Use this option to restore a previously hidden worklist so that it becomes visible in your active list again._
-
-**Follow the steps below to unhide a worklist:**
+Use this option to restore a previously hidden worklist so that it becomes visible in your active list again.
 
 <Steps>
-  <Step title="New Step">
+  <Step title="Steps to Unhide Worklist" icon="chevron-down">
     1. From the **Hidden Worklists view**, identify the worklist you want to restore.
-    2. From the **Hidden Worklists view**, identify the worklist you want to restore.
-    3. Click on the **three-dots (⋮) menu** next to the worklist.
-    4. Select the **Unhide** option from the menu.
-    5. The worklist will now reappear in your active view.
+    2. Click on the **three-dots (⋮) menu** next to the worklist.
+    3. Select the **Unhide** option from the menu.
+    4. The worklist will now reappear in your active view.
   </Step>
 </Steps>
 
@@ -141,165 +277,263 @@ _Use this option to restore a previously hidden worklist so that it becomes visi
 
 The **Ordering Worklist** includes the following default shared worklists: **Missing Ordering Doctors, Missing Modality, Missing Date of Service, Missing Reading Doctors,** and **Missing Reading Locations**. Each worklist highlights records missing specific information.
 
- Click the **Preview** button next to any worklist to view its complete list of records. Use the **Filter** and **Refresh** options to refine the list as needed.
-
 The interface is split into two panels:\
 The **left panel** displays records with missing fields and provides input fields to fill in the data. \
 The **right panel** shows the corresponding document or report, allowing you to review the content and update the missing details accordingly.
 
-![2025 07 08 16 59 35 Pn](/ow8.png)
+![2025 07 08 16 59 35 Pn](/oFw8.png)
 
-## **Missing Ordering Doctors**
+## **Missing Ordering Doctor**
+
+The **Missing Ordering Doctor** worklist helps users resolve records that lack an assigned ordering physician.
 
 <Steps>
-  <Step title="Steps to Completing the Missing Ordering Doctor Worklist:" icon="chevron-down" titleSize="p">
-    1. Click **Preview** next to the **Missing Ordering Doctors** worklist to view all records lacking an ordering physician.
+  <Step title="Open the Missing Ordering Doctor Worklist">
+    Click the **Preview** icon next to the \*\*Missing Ordering Doctor \*\*worklist to view all records missing ordering doctor information.
+  </Step>
+  <Step title="View Split Screen Layout">
+    The screen is divided into two panels:
 
-       <img
-         src="/images/ow9.png"
-         alt="1 Pn"
-         title="1 Pn"
-         style={{ width:"92%" }}
-       />
-    2. For each record, review the document or report in the **right panel**, and enter the appropriate **Ordering Doctor** name in the input field provided on the **left**.
-    3. As you type, the system will **auto-suggest matching doctor names and NPI numbers** based on the input.
+    - **Right Panel**: Displays the associated report for the selected record.
+    - **Left Panel**: Provides the interface to assign the **Ordering Doctor** by selecting an NPI from the dropdown.
+  </Step>
+  <Step title="Filter and Export Functionality">
+    Use the **Filter Panel** to refine the list based on the following filters: **Accession Number, Procedure Description, Client Name, Doctor First/Last Name**, and **Mapped/Unmapped** Status.
 
-    ![Ow9 1 Pn](/images/ow9.1.png)
+    click the **Export** button located next to the Filter panel. The export will include only the records currently visible based on the applied filters. It supports **pagination**, so only the data shown on the current page will be exported. The exported file maintains the same **top-down format** as displayed in the UI, ensuring consistency and readability.
 
-    4. After adding the ordering doctor, the record is auto-saved, and a toast message appears confirming **Record saved successfully.**
+    <Tip>
+      Use the **Mapped/Unmapped** status filter to quickly identify records that still need doctor assignment.
+    </Tip>
+  </Step>
+  <Step title="Review the Report">
+    Select the desired record from the list. The corresponding report opens in the right-hand panel.\
+    \
+    Within the report panel, the user has the following options:
+
+    **Zoom In / Zoom Out** – Adjust the report size for better readability.
+
+    **Download** – Save a copy of the report to your device.
+
+    **Open in Separate Window** – View the report in a larger, dedicated window.
+
+    **Rotate** – Change the orientation of the report for easier viewing.
+  </Step>
+  <Step title="Assign Ordering Doctor">
+    Begin typing the ordering doctor name as identified from report displyaed in the right panel. The system will **auto-suggest** matching values. Select the correct ordering doctor from the dropdown.
+
+    If the doctor is not listed in the suggestions, click the **Add Doctor (\+)** icon to manually enter new doctor's information.
+
+    <img
+      src="/f1.png"
+      alt="1 Pn"
+      title="1 Pn"
+      className="mx-auto"
+      style={{ width:"70%" }}
+    />
+
+    1. Clicking the **\+** icon in the left panel opens the **Ordering Doctor** pop-up in the right panel, just below the report section, allowing you to enter the doctor’s \*\*NPI \*\*details.
+    2. The system automatically retrieves and populates the doctor’s details from the **NPI Registry**.
+    3. Once the details are verified, the doctor is added to the system.
+    4. The newly added doctor is then mapped to the selected record.
+  </Step>
+  <Step title="Save and Confirm">
+    Once an Ordering Doctor is selected or added, the record is **automatically saved**.\
+    A confirmation toast will appear: **Record saved successfully.**
+
+    <Note>
+      Click the **Refresh (⟳)** button to reload and update the worklist with the latest data.
+    </Note>
   </Step>
 </Steps>
 
-## **Missing Modality**
+### **Missing Modality**
 
 <Steps>
-  <Step title="Steps" icon="chevron-down">
-    1. Click **Preview** next to the **Missing Modality** worklist to view all records lacking an ordering physician.
-    2. For each record, review the document or report in the **right panel**, and enter the appropriate **Missing Modality** name in the input field provided on the **left**.
-    3. As you type, the system will **auto-suggest matching Modality**  based on the input.
-    4. After adding the modality, the record is auto saved, and a toast message appears confirming **Record saved successfully**.
+  <Step title="Open the Missing Modality Worklist">
+    Click the **Preview** icon next to the _Missing Modality_ worklist to view all records lacking modality information.
+  </Step>
+  <Step title="View Split Screen Layout">
+    The screen is divided into two panels:
+
+    - **Right Panel**: Displays the associated report for the selected record.
+    - **Left Panel**: Provides the interface to assign the **Modality** using the dropdown.
+  </Step>
+  <Step title="Filter and Export Functionality">
+    Use the **Filter Panel** to refine the list based on the following filters: **Accession Number, Procedure Description, Client Name, Doctor First/Last Name**, and **Mapped/Unmapped** Status.
+
+    Click the **Export** button located next to the Filter panel. The export will include only the records currently visible based on the applied filters. It supports **pagination**, so only the data shown on the current page will be exported. The exported file maintains the same **top-down format** as displayed in the UI, ensuring consistency and readability.
+  </Step>
+  <Step title="Review the Report">
+    Select the desired record from the list. The corresponding report opens in the right-hand panel. Within the report panel, the user has the following options:
+
+    **Zoom In / Zoom Out** – Adjust the report size for better readability.
+
+    **Download** – Save a copy of the report to your device.
+
+    **Open in Separate Window** – View the report in a larger, dedicated window.
+
+    **Rotate** – Change the orientation of the report for easier viewing.
+  </Step>
+  <Step title="Assign Missing Modality">
+    Begin typing the modality name as identified from report displyaed in the right panel. The system will **auto-suggest** matching values. Select the correct modality from the dropdown.
+
+    <Note>
+      If the required modality is not listed, contact an administrator to have it added to the master list.
+    </Note>
+  </Step>
+  <Step title="Save and Confirm">
+    Once a modality is selected, the record is **automatically saved**. A confirmation toast will appear: **Record saved successfully.**
+
+    <Note>
+      Click the **Refresh (⟳)** button to reload and update the worklist with the latest data.
+    </Note>
   </Step>
 </Steps>
 
-## **Missing Date of Service**
+### **Missing Date of Service**
 
 <Steps>
-  <Step title="Steps" icon="chevron-down">
-    1. Click **Preview** next to the \*\*Missing Date of Service \*\*worklist to view all records lacking an ordering physician.
-    2. For each record, review the document or report in the **right panel**, and enter the appropriate **Missing Date of Service** name in the input field provided on the **left**.
-    3. As you type, the system will \*\*auto-suggest matching Date of Service \*\*based on the input.
-    4. After adding the date of service, the record is auto-saved, and a toast message appears confirming **Record saved successfully**.
+  <Step title="Open the Missing Date of Service Worklist">
+    Click the **Preview** icon next to the **Missing Date of Service **worklist to view all records missing a service date.
+  </Step>
+  <Step title="View Split Screen Layout">
+    The screen is divided into two panels:
+
+    - **Right Panel**: Displays the associated report.
+    - **Left Panel**: Allows assigning the **Date of Service (DOS)** using the calendar picker.
+  </Step>
+  <Step title="Filter and Export Functionality">
+    Use the **Filter Panel** to refine the list based on the following filters: **Accession Number, Procedure Description, Client Name, Doctor First/Last Name**, and **Status**.
+
+    Click the **Export** button located next to the Filter panel. The export will include only the records currently visible based on the applied filters. It supports **pagination**, so only the data shown on the current page will be exported. The exported file maintains the same **top-down format** as displayed in the UI, ensuring consistency and readability.
+  </Step>
+  <Step title="Review the Report">
+    Select the desired record from the list. The corresponding report opens in the right-hand panel. Within the report panel, the user has the following options:
+
+    **Zoom In / Zoom Out** – Adjust the report size for better readability.
+
+    **Download** – Save a copy of the report to your device.
+
+    **Open in Separate Window** – View the report in a larger, dedicated window.
+
+    **Rotate** – Change the orientation of the report for easier viewing.
+  </Step>
+  <Step title="Assign Date of Service">
+    Begin assigning the date of services as identified from report displyaed in the right panel. Use the calendar field to select the correct **Date of Service**. The system will provide suggestions if any common service dates are detected.
+
+    <Note>
+      Ensure the selected date matches the actual procedure date in the report.
+    </Note>
+  </Step>
+  <Step title="Save and Confirm">
+    Once a date is selected, the record is **auto-saved**, and a toast message will confirm:\
+    **“Record saved successfully.”**
+
+    <Note>
+      Click the **Refresh (⟳)** button to reload and update the worklist with the latest data.
+    </Note>
   </Step>
 </Steps>
 
-## **Missing Reading Doctors**
+### **Missing Reading Doctors**
 
 <Steps>
-  <Step title="Steps" icon="chevron-down">
-    1. Click **Preview** next to the \*\*Missing Reading Doctors \*\*worklist to view all records lacking an ordering physician.
-    2. For each record, review the document or report in the **right panel**, and enter the appropriate **Missing Reading Doctors** name in the input field provided on the **left**.
-    3. As you type, the system will \*\*auto-suggest matching Reading Doctors \*\*based on the input.
-    4. After adding the reading doctor, the record will auto-save and a toaster message will confirm with **Record saved successfully**.
+  <Step title="Open the Missing Reading Doctors Worklist">
+    Click the **Preview** icon next to the _Missing Reading Doctors_ worklist to view all records missing a reading physician.
+  </Step>
+  <Step title="View Split Screen Layout">
+    The interface includes:
+
+    - **Right Panel**: Displays the relevant report for the selected record.
+    - **Left Panel**: Allows assignment of the **Reading Doctor** via dropdown.
+  </Step>
+  <Step title="Filter and Export Functionality">
+    Use the **Filter Panel** to refine the view by: Use the **Filter Panel** to refine the list based on the following filters: **Accession Number, Procedure Description, Client Name, Doctor First/Last Name**, and **Status**.
+
+    Click the **Export** button located next to the Filter panel. The export will include only the records currently visible based on the applied filters. It supports **pagination**, so only the data shown on the current page will be exported. The exported file maintains the same **top-down format** as displayed in the UI, ensuring consistency and readability.
+  </Step>
+  <Step title="Review the Report">
+    Select the desired record from the list. The corresponding report opens in the right-hand panel. Within the report panel, the user has the following options:
+
+    **Zoom In / Zoom Out** – Adjust the report size for better readability.
+
+    **Download** – Save a copy of the report to your device.
+
+    **Open in Separate Window** – View the report in a larger, dedicated window.
+
+    **Rotate** – Change the orientation of the report for easier viewing.
+  </Step>
+  <Step title="Assign Reading Doctor">
+    Begin typing the reading doctor name as identified from report displyaed in the right panel. The system will **auto-suggest** matching values. Select the correct reading doctor from the dropdown.
+
+    To Add locum Provider, click the **Add Locum (\+)** icon to manually enter new doctor's information.
+
+    Allows assigning a **<Tooltip tip="">Locum Provider</Tooltip>** for a specific period.
+
+    - Requires selecting: Reading Provider, Locum Provider, Start Date and End Date
+
+      Validations ensure required fields are filled and date ranges are correct.
+  </Step>
+  <Step title="Disable ">
+    Records can be disabled if invalid.
+
+    **Disable by Doctor Name Present** → All duplicate records with the same doctor name are disabled together.
+
+    **Disable by Doctor Name Missing** → Only the selected record is disabled.
+
+    **Bulk Disable** → Use checkboxes to select multiple records (with/without doctor name) and disable them in one action.
+  </Step>
+  <Step title="Save and Confirm">
+    After selecting or adding the doctor, the record is **automatically saved**.\
+    A toast will confirm: **Record saved successfully.**
+
+    <Note>
+      Click the **Refresh (⟳)** button to reload and update the worklist with the latest data.
+    </Note>
   </Step>
 </Steps>
 
 ## **Missing Reading Locations**
 
 <Steps>
-  <Step title="Steps" icon="chevron-down">
-    1. Click **Preview** next to the \*\*Missing Reading Locations \*\*worklist to view all records lacking an ordering physician.
-    2. For each record, review the document or report in the **right panel**, and enter the appropriate \*\*Missing Reading Locations \*\*name in the input field provided on the **left**.
-    3. As you type, the system will \*\*auto-suggest matching Reading Locations \*\*based on the input.
-    4. After adding the reading location, the record will auto-save and a toaster message will confirm with **Record saved successfully**.
+  <Step title="Open the Missing Reading Locations Worklist">
+    Click the **Preview** icon next to the _Missing Reading Locations_ worklist to view records missing location details.
   </Step>
-</Steps>
+  <Step title="View Split Screen Layout">
+    The interface is divided as follows:
 
-## **Creating a Worklist**
-
-To create a new private or shared worklist:
-
-<Steps>
-  <Step title="Open Create Worklist Form">
-    Click the **\+** icon to open the **Create** **Worklist** form.
-
-    <img
-      src="/ow2.png"
-      alt="2025 07 07 13 13 49 Pn"
-      title="2025 07 07 13 13 49 Pn"
-      className="mx-auto"
-    />
+    - **Right Panel**: Displays the report.
+    - **Left Panel**: Allows selection of the **Reading Location**.
   </Step>
-</Steps>
+  <Step title="Filter and Export Functionality">
+    Use the **Filter Panel** to narrow results: Use the **Filter Panel** to refine the view by: Use the **Filter Panel** to refine the list based on the following filters: **Accession Number, Procedure Description, Client Name, Doctor First/Last Name**, and **Status**.
 
-## Creating a New Worklist
-
-<Steps>
-  <Step title="Enter Worklist Details">
-    **Worklist Name**: Enter a name for the worklist in the **Worklist** **Name** field.
-
-    The **Order Worklist** is selected by default in the **Category** field.
-
-    **Description (Optional)**: Provide a description in the **Description** field to define the worklist’s purpose.
-
-    **Private or Shared**:
-
-    - To create a **Private** **Worklist**, check the checkbox (Mark as Private).
-
-      To create a **Shared** **Worklist**, leave the checkbox unchecked.
+    Click the **Export** button located next to the Filter panel. The export will include only the records currently visible based on the applied filters. It supports **pagination**, so only the data shown on the current page will be exported. The exported file maintains the same **top-down format** as displayed in the UI, ensuring consistency and readability.
   </Step>
-  <Step title="Define Filter Conditions">
-    Specify filter conditions to customize the worklist.
+  <Step title="Review the Report">
+    Select the desired record from the list. The corresponding report opens in the right-hand panel. Within the report panel, the user has the following options:
 
-    Use **AND/OR Operators**  to logically combine the conditions.
+    **Zoom In / Zoom Out** – Adjust the report size for better readability.
 
-    Apply comparison **Conditions** such as **Equals**, **Contains**, or **Greater Than** to refine your results.
+    **Download** – Save a copy of the report to your device.
+
+    **Open in Separate Window** – View the report in a larger, dedicated window.
+
+    **Rotate** – Change the orientation of the report for easier viewing.
   </Step>
-  <Step title="Preview Worklist">
-    Click **Preview** to review the filtered results and ensure they meet the specified criteria.
-  </Step>
-  <Step title="Save Worklist">
-    Click **Save** to create the worklist for the selected category.
-  </Step>
-</Steps>
-
-**Additional Steps for Shared Worklist**
-
-<Info>
-  Applicable only if you are creating a shared worklist (i.e., the **Mark as Private** checkbox is unchecked).
-</Info>
-
-<Steps>
-  <Step title="Select User Group">
-    A **User Group** section appears.
-
-    Choose from existing groups using the dropdown provided and select the corresponding users.
-  </Step>
-  <Step title="Create a New User Group">
-    Alternatively, Click the **Create User Group** button to create a new user group .
-
-    Enter the **Group Name**, select **Users**, and click **Submit**.
-  </Step>
-  <Step title="Edit Existing User Group">
-    Click the **Edit User Group** button.
-
-    Select the group to be edited, add or remove users as needed, then click **Submit**.
-  </Step>
-  <Step title="Allow Shared Users to Edit/Delete">
-    Enable the **Allow Shared Users to Edit/Delete** checkbox to grant editing and deletion access to shared users.
+  <Step title="Assign Reading Location">
+    Begin typing the reading location name as identified from report displyaed in the right panel. The system will **auto-suggest** matching values. Select the correct reading location from the dropdown.
 
     <Note>
-      Note:\
-      The Shared Order Worklists include following default worklists-**Missing Ordering Doctors, Missing Modality, Missing Date of Service, Missing Reading Doctors**, and **Missing Reading Locations**. Each worklist highlights records with specific missing information.
+      Contact your administrator if the correct location is not available in the dropdown.
     </Note>
   </Step>
-</Steps>
+  <Step title="Save and Confirm">
+    After the location is added, the system will **auto-save** the record and display a toast message:**Record saved successfully.** 
 
-<Steps>
-  <Step title="Save or Cancel" icon="chevron-down">
-    **Save**: Confirm and save the worklist.
-
-    **Clear**: Remove all entered data and reset the form.
-
-    **Cancel**: Exit without saving and return to the worklist view.
+    <Note>
+      Click the **Refresh (⟳)** button to reload and update the worklist with the latest data.
+    </Note>
   </Step>
 </Steps>
