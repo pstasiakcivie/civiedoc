@@ -1,32 +1,30 @@
 ---
 title: "Provider"
-description: "The Provider section lists all healthcare professionals registered within the system who are authorized to deliver medical services. This includes roles such as Reading Doctors, Locum Providers, and Supervising Doctors. This module helps administrators view, manage, and update provider-related information efficiently."
+description: "The Provider section lists all healthcare professionals registered within the system who are authorized to deliver medical services. This includes roles such as Reading Doctors, Locum Providers, and Supervising Doctors. This module helps users to view, manage, and update provider-related information efficiently."
 mode: "wide"
 ---
 
-![image.png](/p1.png)
+<img
+  src="/p1.png"
+  alt="image.png"
+  style={{ width:"94%" }}
+/>
 
 **Accessing Provider module:**
 
-**Search**: Use the Search Bar at the top of the provider list to quickly locate providers by Name, NPI, Email, and Phone.
+**Search**: Use the **Search** \*\*Bar \*\*at the top of the provider list to quickly locate providers by **Name**, **NPI**, **Email**, and **Phone**.
 
-**Filter**: Use Filter options to refine the list based on provider Type and Status.
-
-**Add**: Click the Add button to create a new provider entry.
+**Filter**: Use \*\*Filter \*\*options to refine the list based on provider \*\*Type \*\*and **Status**.
 
 **Status**: Activate or Deactivate a provider using the toggle under the Status column.
 
-**Credentialing**: Allows user to verify the location and address of healthcare providers.
+## **Adding a Provider**
 
-**Edit (✏️)**: Click the Edit icon in the Actions column to update provider information.
-
-## Adding a Provider
-
-This page appears when a user clicks the **Add** button in the Provider module. It allows users to manually register a new healthcare provider into the system with detailed information.
-
-Follow these steps to add a new provider to the system:
+To add a new provider click the **Add** button at the top right corner of the Provider module. It allows users to manually register a new healthcare provider into the system with detailed information.
 
 ![Picture1 Pn](/p2.png)
+
+Follow the steps below to add a new provider to the system:
 
 <Steps>
   <Step title="Enter Provider Details">
@@ -46,22 +44,25 @@ Follow these steps to add a new provider to the system:
 
     <Note>
       **Note**\
-      Once the NPI is entered, the system auto-fetches and populates the following fields (name and credentialing) from the NPI Registry - First Name, Last Name, Middle Name (if available), Degree, License Number and Taxonomy Code. (add auto fetch effective date, phone number).
+      Once the NPI is entered, the system auto-fetches and populates the following fields from the NPI Registry - First Name, Last Name, Middle Name (if available), Degree, License Number, Effective Date, Terminated Date and Taxonomy Code.
+
+      ![15 Pn](/images/p4.png)
     </Note>
   </Step>
-  <Step title="Dates and Location">
-    **Effective Date**: Enter the date when the provider becomes active in the system.
-
-    **Terminated Date (Optional)**: If applicable, enter the provider’s termination date.
-
-    ![P4 Pn](/images/p4.png)
-
+  <Step title="Dates and Location (In case of provider type as Reading Doctor)">
     **Default Location** (In case of provider type as Reading Doctor): Select the provider’s default practice location from the dropdown.
+
+    <img
+      src="/images/p9.png"
+      alt="P4 Pn"
+      title=""
+      style={{ width:"100%" }}
+    />
   </Step>
   <Step title="Enter Address Information">
-    **Address 1 (Required)**: Enter the provider’s primary address.
+    **Address 1 (Required)**: Enter the provider’s address.
 
-    **Address 2 (Optional)**: Enter any secondary address details.
+    **Address 2 (Optional)**: Enter provider’s address details.
 
     ![P5 Pn](/images/p5.png)
 
@@ -86,89 +87,84 @@ Follow these steps to add a new provider to the system:
     **Teaching Physician**: Toggle if the provider is designated as a teaching physician.
   </Step>
   <Step title="Save or Cancel">
-    **Click Save** to add the new provider.
+    Click**Save**  to add the new provider.
 
-    **Click Cancel** to discard the changes.
+    Click**Cancel**  to discard the changes.
   </Step>
 </Steps>
 
-## **Editing a Provider**
+## Editing a Provider
 
-This form appears when a user clicks the **Edit** icon next to a provider record. It allows authorized users to update existing provider information.
+This form appears when a user clicks the **Edit** icon next to a provider record. It allows authorized users to update selected fields for an existing provider.
 
 <Steps>
-  <Step title="Review and Modify Provider Details">
-    **Type and NPI**
+  <Step title="Open the Edit Provider Form">
+    Click the **Edit** icon next to the provider you want to update. The edit form will open with the provider’s existing details populated.
 
-    **Type (Required)**: You may update the provider type if necessary (e.g., Locum Provider, Reading Doctor, Supervising Doctor).
+    ![P19 Pn](/images/p19.png)
+  </Step>
+  <Step title="Update Type and Location">
+    **Type (Required):** Select and update the provider type (e.g., Locum Provider, Reading Doctor, Supervising Doctor).
 
-    ![2025 07 23 17 38 40 Pn](/p8.png)
+    ![15 Pn](/p8.png)
 
-    **NPI (Required)**: This field will already be filled. Edits are not allowed if NPI is locked for integrity.
+    **Default Location:** Update the default location (applicable for Reading Doctors).
+
+    ![15 Pn](/images/p9.png)
 
     <Note>
-      **Note**\
-      If NPI is changed (if allowed), the system will auto-fetch and update key fields such as - First Name, Last Name, Middle Name, Degree, License Number, and Taxonomy Code
+      The following fields cannot be edited for existing providers: NPI, First Name, Last Name, Middle Name, Degree, License Number, and Taxonomy Code. These fields are system-controlled to maintain data integrity.
     </Note>
   </Step>
-  <Step title="Dates and Default Location">
-    **Effective Date**: Modify the provider's activation date if required.
+  <Step title="Update Address">
+    ![15 Pn](/images/p10.png)
 
-    **Terminated Date (Optional)**: Update the termination date if the provider is no longer active.
+    **Address 1 (Required):** Update the primary practice address.
 
-    ![P9 Pn](/images/p9.png)
+    **Address 2 (Optional):** Provide additional address details, if applicable.
 
-    **Default Location** (for Reading Doctors): Update the default practice location if needed.
-  </Step>
-  <Step title="Update Address Information">
-    **Address 1 (Required)**: Update the provider’s main practice address.
-
-    **Address 2 (Optional)**: Modify secondary address details, if applicable.
-
-    ![P10 Pn](/images/p10.png)
-
-    **City (Required), State (Required), and ZIP Code (Required)**
+    **City, State, ZIP Code:** Ensure all three fields are filled in correctly.
   </Step>
   <Step title="Update Contact Details">
-    **Phone**: Update the contact number (format: (999) 999-9999).
+    ![15 Pn](/images/p11.png)
 
-    **Email**: Update the provider's email address.
+    **Phone:** Edit the contact number if required (use format: _(999) 999-9999_).
 
-    ![P11 Pn](/images/p11.png)
+    **Email:** Update the provider’s email address.
   </Step>
-  <Step title="Update Provider Status">
-    **Active**: Use the toggle to mark the provider as active or not.
+  <Step title="Toggle Provider Status and Teaching Designation">
+    **Active:** Toggle this ON or OFF to set the provider's active status.
 
-    **Teaching Physician**: Enable this toggle if the provider holds a teaching designation.
+    **Teaching Physician:** Toggle ON if the provider holds a teaching designation.
 
-    ![P12 Pn](/images/p12.png)
+    ![15 Pn](/images/p12.png)
   </Step>
   <Step title="Save or Cancel Changes">
-    Click **Save** to apply the updated information.
+    Click **Save** to apply all updates.
 
-    Click **Cancel** to discard the changes and return to the previous screen.
+    Click **Cancel** to discard changes and return to the previous screen.
   </Step>
 </Steps>
 
 ## **Credentialing**
 
-The Credentialing section manages the process of verifying the credentials, location, and address of healthcare providers for billing and insurance purposes. It ensures that providers meet the necessary qualifications and are enrolled with the appropriate carriers.
+The **Credentialing **feature in the **Provider **module ensures that providers are verified, enrolled, and payer-approved, enabling their services to be billed and reimbursed without denials. Until a provider is successfully enrolled with the corresponding carrier groups, their claims will remain on hold. This feature also allows users to add, edit, or delete provider credentials as needed.
 
 ![Picture4 Pn](/p13.png)
 
-This page appears when the user clicks the Credentialing icon under the Provider module.
+This page appears when the user clicks the **Credentialing** icon besides the Provider whose credentials are to be added.
 
-**Filter**: Click the Filter button to narrow results by provider, Status, Date Range, or Carrier., Start Date, End Date, Assigned To , and Status
+**Filter**: Click the **Filter **button to narrow down the results by **Provider**, **Date Range**, or **Carrier**, **Start Date**, **End Date**, **Assigned To**, and **Status.**
 
-**Add**: Click Add to create a new credentialing record for a provider.
+**Add**: Click **Add **to create a new credentialing record for a provider.
 
-**Edit**: Use the edit icon to update credentialing details.
+**Edit**: Use the **Edit **icon to update credentialing details.
 
-**Delete**: Use the delete icon to remove a credentialing entry.
+**Delete**: Use the **Delete **icon to remove a credentialing entry.
 
 ### **Add Credentialing**
 
-This page appears when the user clicks the Add button on the Credentialing page. It allows the user to create a new credentialing record for a healthcare provider by entering required provider, carrier, and location details.
+This page appears when the user clicks the **Add **button on the **Credentialing **page. It allows the user to create a new credentialing record for a selected healthcare provider by entering required provider, carrier, and location details.
 
 ![Picture5 Pn](/p14.png)
 
@@ -189,28 +185,26 @@ This page appears when the user clicks the Add button on the Credentialing page.
     Select the expected or actual date of completion.
   </Step>
   <Step title="Carrier Code & Carrier Name">
-    Choose the insurance carrier code from the dropdown list.
-
-    Enter the full name of the Carrier. (Auto fill to selected carrier n code)
+    Choose the insurance carrier code from the dropdown list. It auto populates the Carrier Name corresponding to the selected carrier code.
   </Step>
   <Step title="Assign To & Status">
-    Select the admin or user responsible for handling the credentialing task.
+    To assign a record, use the **Assign To **field and select the appropriate credentialing user from the dropdown list.
 
-    Choose the status of the credentialing from the dropdown (e.g., In Progress, Pending and Completed).
+    The credentialing record is assigned to a credentialing user from the Operations team, who is responsible for reviewing the details and completing the enrolment of the provider’s credentials with the corresponding carrier groups. 
+
+    Choose the **status **of the credentialing from the dropdown (e.g., **In Progress**, **Pending **and **Completed**).
   </Step>
   <Step title="Reading Location Code & Reading Location Address">
-    Select the code that identifies the reading location where the provider practices.
-
-    Auto filled according to selected reading location code.
+    Select the **Reading** **Location Code **that identifies the reading location where the provider practices. **Reading Location Address **is auto filled according to selected reading location code.
   </Step>
   <Step title="Save & Cancel">
-    Click **Save**  to add the new credentialing record or Click **Cancel** to exit without saving any changes.
+    Click **Save** to add the new credentialing record or click **Cancel** to exit without saving any changes.
   </Step>
 </Steps>
 
 ## **Edit Credentialing**
 
-This page appears when the user clicks the Edit icon next to an existing credentialing record. It allows the user to modify or update credentialing details for a provider.
+This page appears when the user clicks the **Edit **icon next to an existing credentialing record. It allows the user to modify or update credentialing details for a provider.
 
 ![Picture6 Pn](/p14.png)
 
@@ -220,7 +214,7 @@ The layout is identical to the Add Credentialing form but pre-filled with existi
 
 <Steps>
   <Step title="Provider NPI (Read-only)">
-    Displays the National Provider Identifier of the selected provider. This field cannot be modified.
+    Displays the **National Provider Identifier** of the selected provider. This field cannot be modified.
 
     ![P16 Pn](/images/p16.png)
   </Step>
@@ -228,37 +222,31 @@ The layout is identical to the Add Credentialing form but pre-filled with existi
     Displays the full name of the provider. Also locked for editing.
   </Step>
   <Step title="Start Date & End Date">
-    Modify the start date of the credentialing process if required.
-
-    Update the name of the Carrier. (auto fill based of carrier code)
+    Modify the **Start Date **and **End Date **of the credentialing process if required.
   </Step>
   <Step title="Carrier Code & Carrier Name">
-    Change the carrier code using the dropdown menu, if needed.
-
-    Enter the full name of the Carrier. (Auto fill to selected carrier n code)
+    Update the insurance **Carrier Code **from the dropdown list. It auto populates the **Carrier Name **corresponding to the selected carrier code.
   </Step>
   <Step title="Assign To & Status">
-    Reassign the credentialing task to another user or admin if needed.
+    To Reassign a record, use the **Assign To **field and select the appropriate credentialing user from the dropdown list.
 
-    Update the current status (e.g., change from Pending, In Progress or Completed).
+    Choose the **status **of the credentialing from the dropdown (e.g., **In Progress**, **Pending **and **Completed**).
   </Step>
   <Step title="Reading Location Code & Reading Location Address">
-    Modify the reading location code as per the new assignment.
-
-    Auto filled based on selected reading location code.
+    Update the **Reading** **Location Code **that identifies the reading location where the provider practices. **Reading Location Address **is auto filled according to selected reading location code.
   </Step>
   <Step title="Save & Cancel">
-    Click **Save**  to add the new credentialing record or Click **Cancel** to exit without saving any changes.
+    Click **Save** to update the credentialing record or click **Cancel** to exit without saving any changes.
   </Step>
 </Steps>
 
 ## **Delete Credentialing**
 
-Users can delete an existing credentialing record by clicking the Delete icon located in the Action column of the Credentialing list.
+User can delete an existing credentialing record by clicking the **Delete **icon located in the **Action **column of the Credentialing list.
 
 <Steps>
   <Step title="Delete">
-    Locate the record you wish to delete. Click the delete icon under the Action column.
+    Locate the record you wish to delete. Click the **Delete** icon under the **Action **column.
 
     <img
       src="/images/p17.png"
@@ -271,7 +259,7 @@ Users can delete an existing credentialing record by clicking the Delete icon lo
     A confirmation popup appears with the message: **Are you sure you want to delete this credentialing?**
   </Step>
   <Step title="Confirm ">
-    Click **Yes/Confirm** to proceed and permanently delete the credentialing record or click **Cancel** to abort the action and keep the record intact.
+    Click **Yes** to proceed and permanently delete the credentialing record or click **Cancel** to abort the action and keep the record intact.
 
     <img
       src="/images/p18.png"
