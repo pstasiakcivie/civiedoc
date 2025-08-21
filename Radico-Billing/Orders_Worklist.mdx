@@ -73,7 +73,7 @@ Upon clicking the **Create** **Private Worklist** or **Create Shared Worklist** 
 
     Use **AND/OR Operators** to logically combine the conditions. Apply comparison **Conditions** such as **Equals**, **Contains**, or **Greater Than** to refine your results.
 
-    ![3 Pn](/w7.png)
+    ![3 Pn](/ow55.png)
 
     **Grouping Filters with AND/OR Operators**
 
@@ -86,7 +86,7 @@ Upon clicking the **Create** **Private Worklist** or **Create Shared Worklist** 
     3. Click the **Group Item** icon. The selected filter conditions will be grouped.
     4. To remove a condition from the group, click the **x** icon.
 
-    ![2025 07 07 12 36 04 Pn](/15.png)
+    ![2025 07 07 12 36 04 Pn](/ow56.png)
   </Step>
   <Step title="Preview Worklist">
     Click **Preview** to review the filtered results and ensure they meet the specified criteria.
@@ -205,13 +205,15 @@ Use this feature when you need to update or modify the details of an existing or
 
     Use **AND/OR** logic to combine multiple conditions as needed.
 
-    ![15 Pn](/w7.png)
+    ![15 Pn](/ow55.png)
 
     **Grouping Filters with AND/OR Operators**
 
     You can group filters by selecting the **Group** **Item** icon to organise conditions using AND/OR operators.
 
-    To add grouping to an AND/OR operation, follow these steps:
+    ![Ow56 Pn](/images/ow56.png)
+
+    To update grouping to an AND/OR operation, follow these steps:
 
     1. Click the **\+** icon to add one or more filter conditions.
     2. Select the filter conditions you want to group using the provided checkboxes.
@@ -221,7 +223,7 @@ Use this feature when you need to update or modify the details of an existing or
   <Step title="Preview Updated Records">
     Click **Preview** to view a list of records matching the updated criteria.
   </Step>
-  <Step title="Save or Reset Changes">
+  <Step title="Save or Clear Changes">
     **Save**: Apply and store the updated changes.
 
     **Clear**: Discard all changes and revert to the original settings.
@@ -332,9 +334,11 @@ The **Missing Ordering Doctor** worklist helps users resolve records that lack a
     - **Left Panel**: Provides the interface to assign the **Ordering Doctor** by selecting an NPI from the dropdown.
   </Step>
   <Step title="Filter and Export Functionality">
-    Use the **Filter Panel** to refine the list based on the following filters: **Accession Number, Procedure Description, Client Name, Doctor First/Last Name**, and **Mapped/Unmapped** Status.
+    Use the **Filter Panel** to refine the list based on the following filters: **Accession Number, Procedure Description, Client Name, Doctor First/Last Name**, **Signed Date To, DOS** and **Mapped/Unmapped** Status.
 
     ![Ow26 Pn](/images/ow26.png)
+
+    Click **Reset** to clear the applied filters and return to the default view
 
     <Tip>
       Use the **Mapped/Unmapped** status filter to quickly identify records that still need doctor assignment.
@@ -366,7 +370,9 @@ The **Missing Ordering Doctor** worklist helps users resolve records that lack a
     **Rotate** – Change the orientation of the report for easier viewing.
   </Step>
   <Step title="Assign Ordering Doctor">
-    Begin typing the ordering doctor name as identified from report displyaed in the right panel. The system will **auto-suggest** matching values. Select the correct ordering doctor from the dropdown.
+    1. Review the report displayed in the **right panel** to determine the correct Ordering Doctor.
+    2. In the **Ordering Doctor NPI** field (left panel), begin typing the doctor’s name. The system will automatically suggest matching values. Choose the appropriate doctor from the dropdown list provided.
+    3. Click **STORE** to apply the selected NPI to the current record.
 
     If the doctor is not listed in the suggestions, click the **Add Doctor (\+)** icon to manually enter new doctor's information.
 
@@ -411,7 +417,9 @@ The **Missing Ordering Doctor** worklist helps users resolve records that lack a
     **Left Panel**: Provides the interface to assign the **Modality** using the dropdown.
   </Step>
   <Step title="Filter and Export Functionality">
-    Use the **Filter Panel** to refine the list based on the following filters: **Accession Number, Procedure Description, Client Name, Doctor First/Last Name**, and **Signed Date To**.
+    Apply the **Filter Panel** to refine the list based on the following filters: **Accession Number, Procedure Description, Client Name, Doctor First/Last Name**, **Reading Doctor NPI, Ordering Doctor NPI, Signed Date** and **DOS**.
+
+    Click **Reset** to clear the applied filters and return to the default view.
 
     ![Ow32 Pn](/images/ow32.png)
 
@@ -435,7 +443,9 @@ The **Missing Ordering Doctor** worklist helps users resolve records that lack a
     **Rotate** – Change the orientation of the report for easier viewing.
   </Step>
   <Step title="Assign Missing Modality">
-    Begin typing the modality name as identified from report displyaed in the right panel. The system will **auto-suggest** matching values. Select the correct modality from the dropdown.
+    Review the report displayed in the right panel to determine the correct modality. In the **Modality** field on the left panel, start typing the modality name as identified from the report. The system will auto-suggest matching values based on your input. Choose the correct modality from the dropdown list provided.
+
+    ![Ow57 Pn](/images/ow57.png)
 
     <Note>
       If the required modality is not listed, contact an administrator to have it added to the master list.
@@ -467,7 +477,9 @@ The **Missing Ordering Doctor** worklist helps users resolve records that lack a
     - **Left Panel**: Allows assigning the **Date of Service (DOS)** using the calendar picker.
   </Step>
   <Step title="Filter and Export Functionality">
-    Use the **Filter Panel** to refine the list based on the following filters: **Accession Number, Procedure Description, Client Name, Doctor First/Last Name**, and **Status**.
+    Apply the **Filter Panel** to refine the list based on the following filters: **Accession Number, Procedure Description, Client Name, Doctor First/Last Name**, **Reading Doctor NPI, Ordering Doctor NPI, Signed Date** and **DOS**.
+
+    Click **Reset** to clear the applied filters and return to the default view.
 
     <img
       src="/images/ow37.png"
@@ -495,7 +507,7 @@ The **Missing Ordering Doctor** worklist helps users resolve records that lack a
     **Rotate** – Change the orientation of the report for easier viewing.
   </Step>
   <Step title="Assign Date of Service">
-    Begin assigning the date of services as identified from report displyaed in the right panel. Use the calendar field to select the correct **Date of Service**. The system will provide suggestions if any common service dates are detected.
+    Review the report displayed in the **right panel** to determine the correct Date of Service. In the **Date of Service** field on the left panel, click the **Calendar **icon to open the calendar selector. Choose the appropriate Date of Service based on the report.
 
     ![Ow39 Pn](/images/ow39.png)
 
@@ -505,7 +517,7 @@ The **Missing Ordering Doctor** worklist helps users resolve records that lack a
   </Step>
   <Step title="Save and Confirm">
     Once a date is selected, the record is **auto-saved**, and a toast message will confirm:\
-    **“Record saved successfully.”**
+    **“Updated successfully.”**
 
     <Note>
       Click the **Refresh (⟳)** button to reload and update the worklist with the latest data.
@@ -536,7 +548,9 @@ The **Missing Ordering Doctor** worklist helps users resolve records that lack a
     - **Left Panel**: Allows assignment of the **Reading Doctor** via dropdown.
   </Step>
   <Step title="Filter and Export Functionality">
-    Use the **Filter Panel** to refine the view by: Use the **Filter Panel** to refine the list based on the following filters: **Accession Number, Procedure Description, Client Name, Doctor First/Last Name**.
+    Apply the **Filter Panel** to refine the list based on the following filters: **Accession Number, Procedure Description, Client Name, Doctor First/Last Name**, **Reading Doctor NPI, Ordering Doctor NPI, Signed Date** and **DOS**.
+
+    Click **Reset** to clear the applied filters and return to the default view.
 
     ![Ow42 Pn](/images/ow42.png)
 
@@ -560,7 +574,9 @@ The **Missing Ordering Doctor** worklist helps users resolve records that lack a
     **Rotate** – Change the orientation of the report for easier viewing.
   </Step>
   <Step title="Assign Reading Doctor">
-    Begin typing the reading doctor name as identified from report displyaed in the right panel. The system will **auto-suggest** matching values. Select the correct reading doctor from the dropdown.
+    1. Review the report displayed in the **right panel** to determine the correct Reading Doctor.
+    2. In the **Reading Doctor **field (left panel), begin typing the doctor’s name. The system will automatically suggest matching values. Choose the appropriate doctor from the dropdown list provided.
+    3. Click **STORE** to apply the selected NPI to the current record.
 
     ![Ow45 Pn](/images/ow45.png)
 
@@ -620,7 +636,9 @@ The **Missing Ordering Doctor** worklist helps users resolve records that lack a
     - **Left Panel**: Allows selection of the **Reading Location**.
   </Step>
   <Step title="Filter and Export Functionality">
-    Use the **Filter Panel** to narrow results: Use the **Filter Panel** to refine the view by: Use the **Filter Panel** to refine the list based on the following filters: **Accession Number, Procedure Description, Client Name, Doctor First/Last Name**, and **Status**.
+    Apply the **Filter Panel** to refine the list based on the following filters: **Accession Number, Procedure Description, Client Name, Doctor First/Last Name**, **Reading Doctor NPI, Ordering Doctor NPI, Signed Date** and **DOS**.
+
+    Click **Reset** to clear the applied filters and return to the default view.
 
     ![Ow51 Pn](/images/ow51.png)
 
